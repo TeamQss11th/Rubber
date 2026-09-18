@@ -1,0 +1,157 @@
+{
+  "controlSchemes": [
+    {
+      "devices": [
+        {
+          "isOR": false,
+          "devicePath": "<Keyboard>",
+          "isOptional": false
+        },
+        {
+          "isOR": false,
+          "devicePath": "<Mouse>",
+          "isOptional": false
+        }
+      ],
+      "bindingGroup": "KeyboardMouse",
+      "name": "KeyboardMouse"
+    }
+  ],
+  "maps": [
+    {
+      "bindings": [
+        {
+          "path": "2DVector",
+          "name": "WASD",
+          "isPartOfComposite": false,
+          "action": "Move",
+          "groups": "KeyboardMouse",
+          "id": "b97142af-f112-41f4-a044-1095338e86a4",
+          "isComposite": true
+        },
+        {
+          "path": "<Keyboard>/w",
+          "name": "up",
+          "isPartOfComposite": true,
+          "action": "Move",
+          "groups": "KeyboardMouse",
+          "id": "af1a2b17-703c-4487-945a-a6ccfa0bda1f",
+          "isComposite": false
+        },
+        {
+          "path": "<Keyboard>/s",
+          "name": "down",
+          "isPartOfComposite": true,
+          "action": "Move",
+          "groups": "KeyboardMouse",
+          "id": "4f95a06c-bc18-4f31-afce-500eb39aa373",
+          "isComposite": false
+        },
+        {
+          "path": "<Keyboard>/a",
+          "name": "left",
+          "isPartOfComposite": true,
+          "action": "Move",
+          "groups": "KeyboardMouse",
+          "id": "92ef9d72-9154-44d8-b300-e7273ed47725",
+          "isComposite": false
+        },
+        {
+          "path": "<Keyboard>/d",
+          "name": "right",
+          "isPartOfComposite": true,
+          "action": "Move",
+          "groups": "KeyboardMouse",
+          "id": "64b1d311-09db-4bfc-9287-082ef76d7818",
+          "isComposite": false
+        },
+        {
+          "path": "<Mouse>/delta",
+          "name": "",
+          "isPartOfComposite": false,
+          "action": "Look",
+          "groups": "KeyboardMouse",
+          "id": "956744a2-bd6c-4ef0-b223-2e89e991936d",
+          "isComposite": false
+        },
+        {
+          "path": "<Keyboard>/space",
+          "name": "",
+          "isPartOfComposite": false,
+          "action": "Jump",
+          "groups": "KeyboardMouse",
+          "id": "c33a6a21-84d4-4322-9fa5-5b66ece8fa8f",
+          "isComposite": false
+        },
+        {
+          "path": "<Keyboard>/escape",
+          "name": "",
+          "isPartOfComposite": false,
+          "action": "ReleaseCursor",
+          "groups": "KeyboardMouse",
+          "id": "e2ae428b-1b04-4f8a-9cd2-5809e538c288",
+          "isComposite": false
+        },
+        {
+          "path": "<Mouse>/leftButton",
+          "name": "",
+          "isPartOfComposite": false,
+          "action": "CaptureCursor",
+          "groups": "KeyboardMouse",
+          "id": "54e8bf17-5912-45b0-bc85-52d9e31adeff",
+          "isComposite": false
+        }
+      ],
+      "actions": [
+        {
+          "interactions": "",
+          "name": "Move",
+          "initialStateCheck": true,
+          "type": "Value",
+          "processors": "",
+          "id": "a11941cd-ff26-4c58-9bbe-8c90491949d4",
+          "expectedControlType": "Vector2"
+        },
+        {
+          "interactions": "",
+          "name": "Look",
+          "initialStateCheck": false,
+          "type": "Value",
+          "processors": "",
+          "id": "a094618b-9798-4d43-a026-2882c3a115e2",
+          "expectedControlType": "Vector2"
+        },
+        {
+          "interactions": "",
+          "name": "Jump",
+          "initialStateCheck": false,
+          "type": "Button",
+          "processors": "",
+          "id": "19f6bea2-d200-410b-b864-d310d697ba61",
+          "expectedControlType": "Button"
+        },
+        {
+          "interactions": "",
+          "name": "ReleaseCursor",
+          "initialStateCheck": false,
+          "type": "Button",
+          "processors": "",
+          "id": "fea37a0c-ecf0-4e50-8d5c-c95e5733ef5d",
+          "expectedControlType": "Button"
+        },
+        {
+          "interactions": "",
+          "name": "CaptureCursor",
+          "initialStateCheck": false,
+          "type": "Button",
+          "processors": "",
+          "id": "7ff77e0f-0587-4691-9b82-264202fc801d",
+          "expectedControlType": "Button"
+        }
+      ],
+      "id": "7d999940-ec0f-4f11-8924-eb45c63dad3a",
+      "name": "Player"
+    }
+  ],
+  "name": "PlayerControls"
+}
