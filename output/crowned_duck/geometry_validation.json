@@ -1,0 +1,112 @@
+{
+  "original_duck_meshes_unchanged": true,
+  "original": {
+    "Duck_Body": {
+      "vertices": 3102,
+      "polygons": 6147,
+      "sha256": "5547019552f24cdc920457b82a2d6e41e97d26a6bc648c904c0f6854957ebff4"
+    },
+    "Duck_Eye_L": {
+      "vertices": 478,
+      "polygons": 504,
+      "sha256": "06555607e9718b91f5babfb848b8c0f85f816a5d67ecfa2cdf8c08343edf8a3c"
+    },
+    "Duck_Eye_R": {
+      "vertices": 478,
+      "polygons": 504,
+      "sha256": "cff6043467e683726210d3d7cbd5b0e7401ae28cfbadf2282a6f64e875673d24"
+    },
+    "Duck_LowerBeak": {
+      "vertices": 482,
+      "polygons": 512,
+      "sha256": "aacd99810aab16fc981d96bf839c97e7ac2fee916c40ba32fba726b1ad569fc9"
+    },
+    "Duck_UpperBeak": {
+      "vertices": 610,
+      "polygons": 640,
+      "sha256": "d280225e27dde6c3a1334d27a6248236cafa237b10ac8777caaf675e00a3cc54"
+    },
+    "Duck_Wing_L": {
+      "vertices": 674,
+      "polygons": 728,
+      "sha256": "fed8a2dfa9c718714012a17acab4726cdb63f1160de1efb988677a018dc970bb"
+    },
+    "Duck_Wing_R": {
+      "vertices": 674,
+      "polygons": 728,
+      "sha256": "bdc11f0ff110f880e9c96b303794dcf3dc3e8fd57ab26612e93642ecc8ecfbf3"
+    },
+    "RubberDuck": {
+      "vertices": 6498,
+      "polygons": 12968,
+      "sha256": "1f3115db61838494753dc434f7d659a5a6e202c7abc89bc30547fe2bafd2e1a2"
+    }
+  },
+  "edited": {
+    "Duck_Body": {
+      "vertices": 3102,
+      "polygons": 6147,
+      "sha256": "5547019552f24cdc920457b82a2d6e41e97d26a6bc648c904c0f6854957ebff4"
+    },
+    "Duck_Eye_L": {
+      "vertices": 478,
+      "polygons": 504,
+      "sha256": "06555607e9718b91f5babfb848b8c0f85f816a5d67ecfa2cdf8c08343edf8a3c"
+    },
+    "Duck_Eye_R": {
+      "vertices": 478,
+      "polygons": 504,
+      "sha256": "cff6043467e683726210d3d7cbd5b0e7401ae28cfbadf2282a6f64e875673d24"
+    },
+    "Duck_LowerBeak": {
+      "vertices": 482,
+      "polygons": 512,
+      "sha256": "aacd99810aab16fc981d96bf839c97e7ac2fee916c40ba32fba726b1ad569fc9"
+    },
+    "Duck_UpperBeak": {
+      "vertices": 610,
+      "polygons": 640,
+      "sha256": "d280225e27dde6c3a1334d27a6248236cafa237b10ac8777caaf675e00a3cc54"
+    },
+    "Duck_Wing_L": {
+      "vertices": 674,
+      "polygons": 728,
+      "sha256": "fed8a2dfa9c718714012a17acab4726cdb63f1160de1efb988677a018dc970bb"
+    },
+    "Duck_Wing_R": {
+      "vertices": 674,
+      "polygons": 728,
+      "sha256": "bdc11f0ff110f880e9c96b303794dcf3dc3e8fd57ab26612e93642ecc8ecfbf3"
+    },
+    "RubberDuck": {
+      "vertices": 6498,
+      "polygons": 12968,
+      "sha256": "1f3115db61838494753dc434f7d659a5a6e202c7abc89bc30547fe2bafd2e1a2"
+    }
+  },
+  "crown": {
+    "vertices": 8034,
+    "polygons": 8149,
+    "sha256": "ec105f3011fe81d3891847e482d39e7b09666c75da8015cebaeeff7175baa045"
+  },
+  "blend_reopen_verified": true,
+  "fbx_reimport": {
+    "meshes": [
+      "Crown_Gold",
+      "RubberDuck"
+    ],
+    "duck_vertex_count": 6498,
+    "max_duck_position_error_m": 3.668985441996196e-08,
+    "images": [
+      {
+        "name": "Crown_Gold_BaseColor",
+        "size": [
+          1024,
+          1024
+        ],
+        "path": "C:\\Users\\user\\Desktop\\github\\Rubber\\output\\crowned_duck\\Crown_Gold_BaseColor.png",
+        "loaded": true
+      }
+    ]
+  }
+}
