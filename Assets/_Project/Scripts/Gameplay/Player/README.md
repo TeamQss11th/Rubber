@@ -19,7 +19,8 @@ Move 이벤트와 현재 입력값을 이동 스크립트에 전달합니다. �
 
 - PlayerMovement: View, Player Stats 참조
 - PlayerStats: Move Speed, Acceleration, Deceleration, Jump Height, Coyote Time,
-  Rising/Falling Gravity Multiplier, Step Height, Max Slope Angle, Ground Mask
+  Rising/Falling Gravity Multiplier, Step Height, Max Slope Angle, Ground Mask,
+  Interaction Distance
 - PlayerCamera: Sensitivity, Pitch Limit
 - PlayerInputReader: Input Actions, Movement, Player Camera 참조
 
@@ -32,6 +33,10 @@ Ground Mask에서 제외되어 자신의 캡슐을 지면으로 감지하지 않
 이동 설정은 `ScriptableObjects/Player/PlayerStats.asset`에서 공통으로 관리합니다.
 기본 가속도는 20, 감속도는 50입니다.
 발판에서 벗어난 직후에도 Coyote Time 동안 점프할 수 있습니다. 기본값은 0.12초입니다.
+상호작용 감지 거리는 같은 PlayerStats 에셋의 Interaction Distance에서 관리하며 기본값은 4.5입니다.
+화면 중앙 레이가 `IInteractable`을 감지하면 대상과 모든 자식 Renderer를 하나의 마스크로
+그린 뒤 3픽셀 너비의 화면 공간 외곽선을 합성합니다. 대상의 원본 Material 배열은 변경하지 않습니다.
+외곽선 색상과 픽셀 너비는 PC/Mobile Renderer Data의 `Interaction Outline` Feature에서 조절합니다.
 
 ## 에디터 도구
 

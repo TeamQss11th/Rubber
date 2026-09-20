@@ -24,3 +24,4 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 51
+  interactionDistance: 4.5

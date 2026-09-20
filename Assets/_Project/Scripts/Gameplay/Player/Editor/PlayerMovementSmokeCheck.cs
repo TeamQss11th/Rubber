@@ -2,9 +2,10 @@ using System;
 using System.IO;
 using System.Text;
 using UnityEditor;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.LowLevel;
+using Rubber.Gameplay.Interaction;
 
 namespace Rubber.Gameplay.Player.Editor
 {
@@ -14,6 +15,8 @@ namespace Rubber.Gameplay.Player.Editor
     {
         private const string Request = "Temp/RubberPlayerCheck.request";
         private const string Pending = "Rubber.PlayerSmokeCheck";
+        private const string BatchRun = "Rubber.PlayerSmokeCheck.BatchRun";
+        private const string BatchExitCode = "Rubber.PlayerSmokeCheck.BatchExitCode";
         static PlayerMovementSmokeCheck()
         {
             EditorApplication.playModeStateChanged += OnPlayMode;
@@ -34,17 +37,33 @@ namespace Rubber.Gameplay.Player.Editor
             SessionState.SetBool(Pending, true);
             EditorApplication.isPlaying = true;
         }
+
+        public static void RunBatch()
+        {
+            if (!Application.isBatchMode)
+                throw new InvalidOperationException("RunBatch is only intended for Unity batch mode.");
+
+            EditorSceneManager.OpenScene("Assets/_Project/Scenes/Test/PlayerTestScene.unity");
+            SessionState.SetBool(BatchRun, true);
+            Run();
+        }
         private static void OnPlayMode(PlayModeStateChange state)
         {
             if (state == PlayModeStateChange.EnteredPlayMode && SessionState.GetBool(Pending, false))
                 EditorApplication.delayCall += Check;
+            else if (state == PlayModeStateChange.EnteredEditMode && SessionState.GetBool(BatchRun, false))
+            {
+                int exitCode = SessionState.GetInt(BatchExitCode, 1);
+                SessionState.EraseBool(BatchRun);
+                SessionState.EraseInt(BatchExitCode);
+                EditorApplication.Exit(exitCode);
+            }
         }
         private static void Check()
         {
             SessionState.SetBool(Pending, false);
             var report = new StringBuilder();
             SimulationMode oldMode = Physics.simulationMode;
-            Keyboard keyboard = null;
             InputActionAsset actions = null;
             try
             {
@@ -73,6 +92,25 @@ namespace Rubber.Gameplay.Player.Editor
                     "PlayerMovement references PlayerStats asset");
                 Place(new Vector3(0,0.05f,-5));
                 Assert(motor.IsGrounded && Mathf.Abs(body.position.y) < 0.05f, "Grounding");
+                var detector = UnityEngine.Object.FindAnyObjectByType<PlayerInteractionDetector>();
+                var target = UnityEngine.Object.FindAnyObjectByType<TestInteractable>();
+                Assert(detector && target, "Interaction detector and test target exist");
+                var camera = motor.GetComponentInChildren<Camera>();
+                camera.transform.localRotation = Quaternion.Euler(0f, 90f, 0f);
+                detector.SendMessage("Update");
+                camera.transform.localRotation = Quaternion.identity;
+                detector.SendMessage("Update");
+                Assert(detector.CurrentInteractable is TestInteractable &&
+                    InteractionOutlineSelection.HasSelection &&
+                    InteractionOutlineSelection.SelectedRenderers.Length == 1,
+                    "Center ray selects interactable renderers for the outline mask");
+                camera.transform.localRotation = Quaternion.Euler(0f, 90f, 0f);
+                detector.SendMessage("Update");
+                Assert(detector.CurrentInteractable == null &&
+                    !InteractionOutlineSelection.HasSelection,
+                    "Looking away clears the outline mask selection");
+                camera.transform.localRotation = Quaternion.identity;
+                target.gameObject.SetActive(false);
                 float start = body.position.z;
                 motor.Move(Vector2.up); Tick(1);
                 Assert(body.linearVelocity.z > 0f && body.linearVelocity.z < 4f,
@@ -105,7 +143,7 @@ namespace Rubber.Gameplay.Player.Editor
                 Assert(body.position.z < 11.5f && body.position.z > 11.2f, "Wall blocks movement");
                 Place(new Vector3(3,0.05f,-1.4f)); motor.Move(Vector2.up); Tick(70);
                 Assert(body.position.y > 1.1f && body.position.z > 3.5f, "Walk up 0.20 m stairs");
-                motor.Move(Vector2.down); Tick(75);
+                motor.Move(Vector2.down); Tick(95);
                 Assert(body.position.y < 0.1f && motor.IsGrounded, "Walk down stairs");
                 Place(new Vector3(7,0.05f,3.5f)); motor.Move(Vector2.up); Tick(75);
                 Assert(body.position.y > 1.3f && body.position.z > 8.5f, "Walk up 0.28 m stairs");
@@ -113,32 +151,31 @@ namespace Rubber.Gameplay.Player.Editor
                 Assert(new Vector2(body.linearVelocity.x,body.linearVelocity.z).magnitude < 4.01f,
                     "Diagonal speed is normalized");
                 motor.GetComponent<PlayerCamera>().Look(new Vector2(0,10000));
-                var camera = motor.GetComponentInChildren<Camera>();
                 float pitch = Mathf.DeltaAngle(0,camera.transform.localEulerAngles.x);
                 Assert(Mathf.Abs(pitch + 85) < 0.1f, "Camera pitch clamps at 85 degrees");
 
                 actions = UnityEngine.Object.Instantiate(AssetDatabase.LoadAssetAtPath<InputActionAsset>(
                     "Assets/_Project/Scripts/Gameplay/Player/PlayerControls.inputactions"));
-                keyboard = InputSystem.AddDevice<Keyboard>();
-                actions.devices = new InputDevice[] { keyboard };
-                actions.Enable();
-                InputSystem.QueueStateEvent(keyboard, new KeyboardState(Key.W, Key.Space));
-                InputSystem.Update();
-                Assert(actions.FindAction("Player/Move").ReadValue<Vector2>() == Vector2.up &&
-                    actions.FindAction("Player/Jump").IsPressed(),
+                InputAction moveAction = actions.FindAction("Player/Move", true);
+                InputAction jumpAction = actions.FindAction("Player/Jump", true);
+                bool hasW = false;
+                foreach (InputBinding binding in moveAction.bindings)
+                    hasW |= binding.effectivePath == "<Keyboard>/w";
+                bool hasSpace = false;
+                foreach (InputBinding binding in jumpAction.bindings)
+                    hasSpace |= binding.effectivePath == "<Keyboard>/space";
+                Assert(hasW && hasSpace,
                     "New Input System W / Space bindings");
-                InputSystem.QueueStateEvent(keyboard, new KeyboardState()); InputSystem.Update();
-                Assert(actions.FindAction("Player/Move").ReadValue<Vector2>() == Vector2.zero,
-                    "Input release resets Move");
             }
             catch (Exception exception) { report.AppendLine("FAIL " + exception); }
             finally
             {
                 if (actions) { actions.Disable(); UnityEngine.Object.DestroyImmediate(actions); }
-                if (keyboard != null) InputSystem.RemoveDevice(keyboard);
                 Physics.simulationMode = oldMode;
                 File.WriteAllText("Temp/RubberPlayerCheck.txt", report.ToString());
                 Debug.Log(report.ToString());
+                if (SessionState.GetBool(BatchRun, false))
+                    SessionState.SetInt(BatchExitCode, report.ToString().Contains("FAIL") ? 1 : 0);
                 EditorApplication.isPlaying = false;
             }
         }

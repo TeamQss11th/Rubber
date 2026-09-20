@@ -4,6 +4,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using Rubber.Gameplay.Interaction;
 
 namespace Rubber.Gameplay.Player.Editor
 {
@@ -54,6 +55,9 @@ namespace Rubber.Gameplay.Player.Editor
             Box("Left Boundary", new Vector3(-12,1,4), new Vector3(0.4f,2,26), floor, course.transform);
             Box("Right Boundary", new Vector3(12,1,4), new Vector3(0.4f,2,26), floor, course.transform);
             Box("Front Boundary", new Vector3(0,1,17), new Vector3(24,2,0.4f), floor, course.transform);
+            GameObject interactionTarget = Box("Interaction Test Object", new Vector3(0,1f,-1),
+                new Vector3(2f,2f,2f), obstacle, course.transform);
+            interactionTarget.AddComponent<TestInteractable>();
 
             var player = new GameObject("Player");
             player.layer = 2;
@@ -100,6 +104,11 @@ namespace Rubber.Gameplay.Player.Editor
             var look = player.AddComponent<PlayerCamera>();
             look.Configure(camera.transform);
             player.AddComponent<PlayerInputReader>().Configure(actions, movement, look);
+            player.AddComponent<PlayerInteractionDetector>().Configure(camera, stats);
+
+            var guide = new GameObject("Interaction Guide Canvas", typeof(RectTransform),
+                typeof(Canvas), typeof(InteractionReticle));
+            guide.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
             EditorSceneManager.MarkSceneDirty(scene);
             EditorSceneManager.SaveScene(scene);
             AssetDatabase.SaveAssets();
@@ -117,7 +126,7 @@ namespace Rubber.Gameplay.Player.Editor
             AssetDatabase.CreateAsset(material, path);
             return material;
         }
-        private static void Box(string name, Vector3 position, Vector3 size, Material material, Transform parent)
+        private static GameObject Box(string name, Vector3 position, Vector3 size, Material material, Transform parent)
         {
             GameObject box = GameObject.CreatePrimitive(PrimitiveType.Cube);
             box.name = name;
@@ -125,6 +134,7 @@ namespace Rubber.Gameplay.Player.Editor
             box.transform.position = position;
             box.transform.localScale = size;
             box.GetComponent<Renderer>().sharedMaterial = material;
+            return box;
         }
         private static void BuildStairs(string name, Vector3 origin, int count, float rise, float depth,
             Material material, Transform parent)

@@ -21,6 +21,9 @@ namespace Rubber.Gameplay.Player
         [SerializeField, Range(0f, 80f)] private float maxSlopeAngle = 50f;
         [SerializeField] private LayerMask groundMask = ~4;
 
+        [Header("Interaction")]
+        [SerializeField, Min(0.1f)] private float interactionDistance = 4.5f;
+
         public float MoveSpeed => moveSpeed;
         public float Acceleration => acceleration;
         public float Deceleration => deceleration;
@@ -31,5 +34,6 @@ namespace Rubber.Gameplay.Player
         public float StepHeight => stepHeight;
         public float MaxSlopeAngle => maxSlopeAngle;
         public LayerMask GroundMask => groundMask;
+        public float InteractionDistance => interactionDistance;
     }
 }
