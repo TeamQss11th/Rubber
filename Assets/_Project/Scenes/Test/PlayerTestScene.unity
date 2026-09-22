@@ -2989,6 +2989,7 @@ MonoBehaviour:
   cameraPivot: {fileID: 575063430}
   sensitivity: 0.12
   pitchLimit: 85
+  stepSmoothTime: 0.1
 --- !u!114 &2134956852
 MonoBehaviour:
   m_ObjectHideFlags: 0

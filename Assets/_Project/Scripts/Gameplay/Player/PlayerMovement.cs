@@ -9,6 +9,7 @@ namespace Rubber.Gameplay.Player
         [SerializeField] private PlayerStats stats;
         private Rigidbody body;
         private CapsuleCollider capsule;
+        private PlayerCamera playerCamera;
         private Vector2 moveInput;
         private bool jumpRequested;
         private float coyoteTimeRemaining;
@@ -35,6 +36,7 @@ namespace Rubber.Gameplay.Player
         {
             body = GetComponent<Rigidbody>();
             capsule = GetComponent<CapsuleCollider>();
+            playerCamera = GetComponent<PlayerCamera>();
             body.constraints = RigidbodyConstraints.FreezeRotation;
             body.interpolation = RigidbodyInterpolation.Interpolate;
             body.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
@@ -64,8 +66,12 @@ namespace Rubber.Gameplay.Player
             Vector3 currentHorizontal = Vector3.ProjectOnPlane(body.linearVelocity, Vector3.up);
             Vector3 targetHorizontal = direction * stats.MoveSpeed;
             float speedChange = direction.sqrMagnitude > 0.001f ? stats.Acceleration : stats.Deceleration;
-            Vector3 horizontalVelocity = Vector3.MoveTowards(
-                currentHorizontal, targetHorizontal, speedChange * Time.fixedDeltaTime);
+            // Stop on a ledge as soon as input is released instead of coasting off it.
+            Vector3 horizontalVelocity = direction.sqrMagnitude <= 0.001f &&
+                (IsGrounded || coyoteTimeRemaining > 0f)
+                ? Vector3.zero
+                : Vector3.MoveTowards(currentHorizontal, targetHorizontal,
+                    speedChange * Time.fixedDeltaTime);
             Vector3 velocity = horizontalVelocity;
             velocity.y = body.linearVelocity.y;
             bool jumping = jumpRequested && (IsGrounded || coyoteTimeRemaining > 0f);
@@ -96,6 +102,7 @@ namespace Rubber.Gameplay.Player
                 body.position = spawnPosition;
                 body.linearVelocity = Vector3.zero;
                 ClearInput();
+                if (playerCamera) playerCamera.ResetStepSmoothing();
             }
         }
 
@@ -122,6 +129,7 @@ namespace Rubber.Gameplay.Player
             if (Physics.CheckCapsule(lower + offset, upper + offset, capsule.radius * 0.95f,
                     stats.GroundMask, QueryTriggerInteraction.Ignore)) return;
             body.position += offset;
+            if (playerCamera) playerCamera.SmoothStep(rise);
         }
 
         private void OnDisable() => ClearInput();

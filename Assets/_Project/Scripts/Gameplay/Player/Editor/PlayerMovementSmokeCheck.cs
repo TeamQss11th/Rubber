@@ -104,12 +104,21 @@ namespace Rubber.Gameplay.Player.Editor
                     InteractionOutlineSelection.HasSelection &&
                     InteractionOutlineSelection.SelectedRenderers.Length == 1,
                     "Center ray selects interactable renderers for the outline mask");
+                Assert(detector.TryInteract() && target.InteractionCount == 1 &&
+                    target.LastInteractor == motor.gameObject,
+                    "Interaction executes once on the centered target");
                 camera.transform.localRotation = Quaternion.Euler(0f, 90f, 0f);
                 detector.SendMessage("Update");
                 Assert(detector.CurrentInteractable == null &&
                     !InteractionOutlineSelection.HasSelection,
                     "Looking away clears the outline mask selection");
+                Assert(!detector.TryInteract() && target.InteractionCount == 1,
+                    "Interaction does not execute without a target");
                 camera.transform.localRotation = Quaternion.identity;
+                Place(new Vector3(0,0.05f,-7));
+                Assert(!detector.TryInteract() && target.InteractionCount == 1,
+                    "Interaction does not execute beyond its range");
+                Place(new Vector3(0,0.05f,-5));
                 target.gameObject.SetActive(false);
                 float start = body.position.z;
                 motor.Move(Vector2.up); Tick(1);
@@ -119,10 +128,11 @@ namespace Rubber.Gameplay.Player.Editor
                 Assert(Mathf.Abs(body.linearVelocity.z - 4f) < 0.01f && body.position.z - start > 3.5f,
                     "Forward speed reaches 4 m/s");
                 motor.Move(Vector2.zero); Tick(1);
-                Assert(body.linearVelocity.z > 0f && body.linearVelocity.z < 4f,
-                    "Movement decelerates instead of stopping immediately");
+                Assert(Mathf.Abs(body.linearVelocity.z) < 0.01f,
+                    "Releasing movement stops grounded horizontal drift");
                 Tick(12);
-                Assert(Mathf.Abs(body.linearVelocity.z) < 0.01f, "Deceleration stops horizontal movement");
+                Assert(Mathf.Abs(body.linearVelocity.z) < 0.01f,
+                    "Standing still does not resume horizontal movement");
                 motor.Jump(); Tick(10);
                 Assert(body.position.y > 0.7f && !motor.IsGrounded, "Fast jump rises off floor");
                 float yVelocity = body.linearVelocity.y; motor.Jump(); Tick(1);
@@ -158,14 +168,18 @@ namespace Rubber.Gameplay.Player.Editor
                     "Assets/_Project/Scripts/Gameplay/Player/PlayerControls.inputactions"));
                 InputAction moveAction = actions.FindAction("Player/Move", true);
                 InputAction jumpAction = actions.FindAction("Player/Jump", true);
+                InputAction interactAction = actions.FindAction("Player/Interact", true);
                 bool hasW = false;
                 foreach (InputBinding binding in moveAction.bindings)
                     hasW |= binding.effectivePath == "<Keyboard>/w";
                 bool hasSpace = false;
                 foreach (InputBinding binding in jumpAction.bindings)
                     hasSpace |= binding.effectivePath == "<Keyboard>/space";
-                Assert(hasW && hasSpace,
-                    "New Input System W / Space bindings");
+                bool hasE = false;
+                foreach (InputBinding binding in interactAction.bindings)
+                    hasE |= binding.effectivePath == "<Keyboard>/e";
+                Assert(hasW && hasSpace && hasE,
+                    "New Input System W / Space / E bindings");
             }
             catch (Exception exception) { report.AppendLine("FAIL " + exception); }
             finally

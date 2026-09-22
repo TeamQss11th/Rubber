@@ -11,7 +11,7 @@ namespace Rubber.Gameplay.Interaction.Rendering
     {
         [SerializeField] private Shader outlineShader;
         [SerializeField, ColorUsage(true, true)] private Color outlineColor = new(1f, 0.78f, 0.25f, 0.85f);
-        [SerializeField, Range(1f, 8f)] private float outlineWidthPixels = 3f;
+        [SerializeField, Range(1f, 24f)] private float outlineWidthPixels = 14f;
 
         private Material outlineMaterial;
         private InteractionOutlinePass outlinePass;

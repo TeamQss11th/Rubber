@@ -17,8 +17,8 @@ MonoBehaviour:
   deceleration: 50
   jumpHeight: 1.2
   coyoteTime: 0.12
-  risingGravityMultiplier: 2
-  fallingGravityMultiplier: 2.5
+  risingGravityMultiplier: 2.2
+  fallingGravityMultiplier: 2.7
   stepHeight: 0.3
   maxSlopeAngle: 50
   groundMask:

@@ -30,7 +30,17 @@ namespace Rubber.Gameplay.Interaction
             }
         }
 
-        private void Update()
+        public bool TryInteract()
+        {
+            if (!isActiveAndEnabled || !playerCamera || !stats) return false;
+            RefreshTarget();
+            IInteractable interactable = CurrentInteractable;
+            return currentTarget && interactable != null && interactable.TryInteract(gameObject);
+        }
+
+        private void Update() => RefreshTarget();
+
+        private void RefreshTarget()
         {
             Component detectedTarget = null;
             Ray ray = playerCamera.ViewportPointToRay(new Vector3(0.5f, 0.5f));

@@ -13,8 +13,8 @@ namespace Rubber.Gameplay.Player
         [Header("Jump")]
         [SerializeField, Min(0.1f)] private float jumpHeight = 1.2f;
         [SerializeField, Range(0f, 0.5f)] private float coyoteTime = 0.12f;
-        [SerializeField, Min(1f)] private float risingGravityMultiplier = 2f;
-        [SerializeField, Min(1f)] private float fallingGravityMultiplier = 2.5f;
+        [SerializeField, Min(1f)] private float risingGravityMultiplier = 2.2f;
+        [SerializeField, Min(1f)] private float fallingGravityMultiplier = 2.7f;
 
         [Header("Ground")]
         [SerializeField, Range(0f, 0.5f)] private float stepHeight = 0.3f;
