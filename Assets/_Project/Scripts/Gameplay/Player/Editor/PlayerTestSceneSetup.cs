@@ -4,6 +4,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using Rubber.Gameplay.Ducks;
 using Rubber.Gameplay.Interaction;
 
 namespace Rubber.Gameplay.Player.Editor
@@ -30,7 +31,7 @@ namespace Rubber.Gameplay.Player.Editor
             if (!scene.isLoaded) scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Additive);
             foreach (GameObject root in scene.GetRootGameObjects())
                 if (root.name == "Player Test Course")
-                { Debug.Log("Player test course already exists; existing scene kept."); return; }
+                { Debug.Log("Player test course already exists; use Add Duck Test Objects for pickup testing."); return; }
 
             var actions = AssetDatabase.LoadAssetAtPath<InputActionAsset>(
                 "Assets/_Project/Scripts/Gameplay/Player/PlayerControls.inputactions");
@@ -103,8 +104,11 @@ namespace Rubber.Gameplay.Player.Editor
             movement.Configure(camera.transform, stats);
             var look = player.AddComponent<PlayerCamera>();
             look.Configure(camera.transform);
+            player.AddComponent<PlayerDuckCarrier>().Configure(camera.transform);
             player.AddComponent<PlayerInputReader>().Configure(actions, movement, look);
             player.AddComponent<PlayerInteractionDetector>().Configure(camera, stats);
+
+            AddDuckTestObjects(course.transform, obstacle);
 
             var guide = new GameObject("Interaction Guide Canvas", typeof(RectTransform),
                 typeof(Canvas), typeof(InteractionReticle));
@@ -115,6 +119,61 @@ namespace Rubber.Gameplay.Player.Editor
             Selection.activeGameObject = player;
             if (previous.IsValid() && previous.isLoaded) SceneManager.SetActiveScene(previous);
             Debug.Log("Rubber player test scene ready: CapsuleCollider, Rigidbody, new Input Actions, 2 staircases, 4 obstacles.");
+        }
+
+        [MenuItem("Rubber/Add Duck Test Objects")]
+        public static void AddDuckTestObjectsToCurrentScene()
+        {
+            Scene scene = SceneManager.GetActiveScene();
+            if (scene.path != ScenePath || EditorApplication.isPlayingOrWillChangePlaymode)
+            {
+                Debug.LogWarning("Open PlayerTestScene in Edit mode before adding duck test objects.");
+                return;
+            }
+
+            Transform course = null;
+            foreach (GameObject root in scene.GetRootGameObjects())
+                if (root.name == "Player Test Course") course = root.transform;
+            if (!course) return;
+
+            Material obstacle = AssetDatabase.LoadAssetAtPath<Material>(
+                "Assets/_Project/Art/Materials/TestObstacle.mat");
+            if (AddDuckTestObjects(course, obstacle))
+            {
+                EditorSceneManager.MarkSceneDirty(scene);
+                EditorSceneManager.SaveScene(scene);
+            }
+        }
+
+        private static bool AddDuckTestObjects(Transform course, Material material)
+        {
+            Vector3[] positions =
+            {
+                new(-0.45f, 0.175f, -3f),
+                new(0f, 0.175f, -3f),
+                new(0.45f, 0.175f, -3f),
+                new(-0.225f, 0.175f, -2.55f),
+                new(0.225f, 0.175f, -2.55f)
+            };
+            bool added = false;
+            for (int i = 0; i < positions.Length; i++)
+            {
+                string name = $"Duck Pickup Test {i + 1}";
+                if (course.Find(name)) continue;
+
+                GameObject duck = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                duck.name = name;
+                duck.transform.SetParent(course);
+                duck.transform.position = positions[i];
+                duck.transform.localScale = Vector3.one * 0.35f;
+                duck.GetComponent<Renderer>().sharedMaterial = material;
+                Rigidbody duckBody = duck.AddComponent<Rigidbody>();
+                duckBody.isKinematic = true;
+                duckBody.useGravity = false;
+                duck.AddComponent<RubberDuckInteractable>();
+                added = true;
+            }
+            return added;
         }
 
         private static Material MaterialAsset(string name, Color color)

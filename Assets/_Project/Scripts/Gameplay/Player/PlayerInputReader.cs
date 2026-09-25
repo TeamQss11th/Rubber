@@ -1,3 +1,4 @@
+using Rubber.Gameplay.Ducks;
 using Rubber.Gameplay.Interaction;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -11,6 +12,7 @@ namespace Rubber.Gameplay.Player
         [SerializeField] private PlayerMovement movement;
         [SerializeField] private PlayerCamera playerCamera;
         [SerializeField] private PlayerInteractionDetector interactionDetector;
+        [SerializeField] private PlayerDuckCarrier duckCarrier;
         private InputActionAsset runtimeActions;
         private InputActionMap playerMap;
         private InputAction move, look, jump, interact, releaseCursor, captureCursor;
@@ -26,6 +28,9 @@ namespace Rubber.Gameplay.Player
             if (!interactionDetector) interactionDetector = GetComponent<PlayerInteractionDetector>();
             if (!interactionDetector)
                 Debug.LogWarning("Add PlayerInteractionDetector to enable the Interact action.", this);
+            if (!duckCarrier) duckCarrier = GetComponent<PlayerDuckCarrier>();
+            if (!duckCarrier)
+                Debug.LogWarning("Add PlayerDuckCarrier to enable picking up and dropping ducks.", this);
             if (!inputActions)
             {
                 Debug.LogError("Assign PlayerControls.inputactions to PlayerInputReader.", this);
@@ -61,8 +66,12 @@ namespace Rubber.Gameplay.Player
             // Refresh held input when focus/cursor capture returns.
             movement.Move(move.ReadValue<Vector2>());
             playerCamera.Look(look.ReadValue<Vector2>());
-            if (interact.WasPressedThisFrame() && interactionDetector)
-                interactionDetector.TryInteract();
+            if (interact.WasPressedThisFrame())
+            {
+                bool hasTarget = false;
+                if (interactionDetector) interactionDetector.TryInteract(out hasTarget);
+                if (!hasTarget && duckCarrier) duckCarrier.TryDrop();
+            }
         }
 
         private void OnMove(InputAction.CallbackContext context)

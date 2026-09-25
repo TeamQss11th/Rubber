@@ -30,12 +30,16 @@ namespace Rubber.Gameplay.Interaction
             }
         }
 
-        public bool TryInteract()
+        public bool TryInteract() => TryInteract(out _);
+
+        public bool TryInteract(out bool hasTarget)
         {
+            hasTarget = false;
             if (!isActiveAndEnabled || !playerCamera || !stats) return false;
             RefreshTarget();
             IInteractable interactable = CurrentInteractable;
-            return currentTarget && interactable != null && interactable.TryInteract(gameObject);
+            hasTarget = currentTarget && interactable != null;
+            return hasTarget && interactable.TryInteract(gameObject);
         }
 
         private void Update() => RefreshTarget();

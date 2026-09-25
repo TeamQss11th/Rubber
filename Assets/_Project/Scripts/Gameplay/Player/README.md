@@ -2,7 +2,7 @@
 
 `Assets/_Project/Scenes/Test/PlayerTestScene.unity`를 열고 Play를 실행합니다.
 
-- WASD: 이동 / Space: 점프 / 마우스: 시점 회전 / E: 바라보는 대상과 상호작용
+- WASD: 이동 / Space: 점프 / 마우스: 시점 회전 / E: 상호작용 또는 빈 공간에서 오리 내려놓기
 - Esc: 커서 해제 및 조작 중지 / 게임 화면 좌클릭: 조작 재개
 - 플레이어는 Renderer 없이 CapsuleCollider와 Rigidbody만 사용합니다.
 
@@ -21,6 +21,8 @@ E를 누르면 감지기가 그 순간 카메라 중앙 레이를 다시 확인�
 실제 오리와 수영장은 나중에 같은 인터페이스를 구현하면 되므로 이 테스트 씬을 수정할 필요가 없습니다.
 실제 플레이 씬의 플레이어에도 `PlayerInteractionDetector`를 붙이고 Camera와 PlayerStats를
 연결해야 합니다. 같은 플레이어 오브젝트에 있으면 PlayerInputReader가 자동으로 찾습니다.
+오리를 들고 내려놓으려면 같은 플레이어 오브젝트에 `PlayerDuckCarrier`도 필요합니다.
+오리 프리팹 구성과 테스트 방법은 `Scripts/Gameplay/Ducks/README.md`를 참고합니다.
 
 ## Inspector 설정
 
@@ -29,7 +31,7 @@ E를 누르면 감지기가 그 순간 카메라 중앙 레이를 다시 확인�
   Rising/Falling Gravity Multiplier, Step Height, Max Slope Angle, Ground Mask,
   Interaction Distance
 - PlayerCamera: Sensitivity, Pitch Limit, Step Smooth Time
-- PlayerInputReader: Input Actions, Movement, Player Camera, Interaction Detector 참조
+- PlayerInputReader: Input Actions, Movement, Player Camera, Interaction Detector, Duck Carrier 참조
 
 캡슐은 높이 1.8, 반지름 0.3, 중심 Y 0.9이며 카메라 높이는 1.6입니다.
 플레이어 루트는 스케일 1, Y축 캡슐을 전제로 합니다. 플레이어의 Ignore Raycast 레이어는
@@ -52,6 +54,7 @@ Ground Mask에서 제외되어 자신의 캡슐을 지면으로 감지하지 않
 ## 에디터 도구
 
 - Rubber > Setup Player Test Scene: 테스트 코스가 없을 때만 생성합니다.
+- Rubber > Add Duck Test Objects: PlayerTestScene에 각각 러버덕 상호작용이 가능한 테스트 큐브 5개를 모아 배치합니다.
 - Rubber > Check Player Test Scene: 현재 테스트 씬에서 Play 모드 물리/입력 검증을
   수행하고 종료합니다. 결과는 Console과 `Temp/RubberPlayerCheck.txt`에 기록합니다.
   시뮬레이션 위치는 씬에 저장하지 않습니다.

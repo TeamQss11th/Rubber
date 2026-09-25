@@ -5,6 +5,7 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Rubber.Gameplay.Ducks;
 using Rubber.Gameplay.Interaction;
 
 namespace Rubber.Gameplay.Player.Editor
@@ -119,6 +120,60 @@ namespace Rubber.Gameplay.Player.Editor
                 Assert(!detector.TryInteract() && target.InteractionCount == 1,
                     "Interaction does not execute beyond its range");
                 Place(new Vector3(0,0.05f,-5));
+
+                var carrier = motor.GetComponent<PlayerDuckCarrier>();
+                Assert(carrier, "Player has a duck carrier");
+                var sceneDucks = UnityEngine.Object.FindObjectsByType<RubberDuckInteractable>(FindObjectsSortMode.None);
+                Assert(sceneDucks.Length == 5, "Five independent cube duck placeholders exist in the test scene");
+                foreach (RubberDuckInteractable sceneDuck in sceneDucks)
+                    Assert(sceneDuck.GetComponent<MeshFilter>() && sceneDuck.GetComponent<BoxCollider>() &&
+                        sceneDuck.GetComponent<Rigidbody>() && sceneDuck.transform.childCount == 0,
+                        "Each duck placeholder is one interactable cube");
+                GameObject CreateDuck(string name, float z)
+                {
+                    GameObject duckObject = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                    duckObject.name = name;
+                    duckObject.transform.position = new Vector3(0, 1.6f, z);
+                    duckObject.transform.localScale = Vector3.one * 0.45f;
+                    Rigidbody duckBody = duckObject.AddComponent<Rigidbody>();
+                    duckBody.isKinematic = true;
+                    duckBody.useGravity = false;
+                    duckObject.AddComponent<RubberDuckInteractable>();
+                    return duckObject;
+                }
+                GameObject firstDuckObject = CreateDuck("First Test Duck", -3f);
+                GameObject secondDuckObject = CreateDuck("Second Test Duck", -2.5f);
+                var firstDuck = firstDuckObject.GetComponent<RubberDuckInteractable>();
+                var secondDuck = secondDuckObject.GetComponent<RubberDuckInteractable>();
+                Physics.SyncTransforms();
+                Assert(detector.TryInteract() && carrier.HeldDuck == firstDuck &&
+                    firstDuck.transform.IsChildOf(camera.transform) &&
+                    firstDuck.GetComponent<Renderer>().enabled &&
+                    !firstDuck.GetComponent<Collider>().enabled,
+                    "First duck is held visibly in front of the camera without collision");
+                detector.SendMessage("Update");
+                Assert(detector.CurrentInteractable == secondDuck &&
+                    InteractionOutlineSelection.HasSelection,
+                    "Second duck remains outlined while one is held");
+                Assert(!detector.TryInteract(out bool blockedDuckTarget) && blockedDuckTarget &&
+                    carrier.HeldDuck == firstDuck,
+                    "A second duck cannot be picked up or trigger a drop");
+                secondDuckObject.SetActive(false);
+                Assert(detector.TryInteract() && target.InteractionCount == 2 &&
+                    carrier.HeldDuck == firstDuck,
+                    "Other interactables still work while holding a duck");
+                camera.transform.localRotation = Quaternion.Euler(0f, 90f, 0f);
+                Assert(!detector.TryInteract(out bool emptyTarget) && !emptyTarget &&
+                    carrier.TryDrop() && !carrier.IsHoldingDuck &&
+                    !firstDuck.IsHeld && firstDuck.GetComponent<Collider>().enabled &&
+                    firstDuckObject.transform.position.x > body.position.x,
+                    "Empty-space interaction drops the duck in front of the player");
+                float releaseHeight = firstDuckObject.transform.position.y;
+                Tick(12);
+                Assert(firstDuckObject.transform.position.y < releaseHeight - 0.1f,
+                    "Released duck falls under gravity");
+                firstDuckObject.SetActive(false);
+                camera.transform.localRotation = Quaternion.identity;
                 target.gameObject.SetActive(false);
                 float start = body.position.z;
                 motor.Move(Vector2.up); Tick(1);
