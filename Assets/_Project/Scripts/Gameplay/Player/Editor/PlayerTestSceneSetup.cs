@@ -13,6 +13,8 @@ namespace Rubber.Gameplay.Player.Editor
     public static class PlayerTestSceneSetup
     {
         private const string ScenePath = "Assets/_Project/Scenes/Test/PlayerTestScene.unity";
+        private const string DefaultDuckDataPath =
+            "Assets/_Project/ScriptableObjects/Ducks/DefaultRubberDuckData.asset";
         private const string Request = "Temp/RubberPlayerSetup.request";
         static PlayerTestSceneSetup() => EditorApplication.delayCall += ProcessRequest;
 
@@ -39,6 +41,7 @@ namespace Rubber.Gameplay.Player.Editor
             var stats = AssetDatabase.LoadAssetAtPath<PlayerStats>(
                 "Assets/_Project/ScriptableObjects/Player/PlayerStats.asset");
             if (!stats) throw new System.InvalidOperationException("PlayerStats asset is not imported.");
+            RubberDuckData duckData = LoadDefaultDuckData();
             Scene previous = SceneManager.GetActiveScene();
             SceneManager.SetActiveScene(scene);
             var course = new GameObject("Player Test Course");
@@ -108,7 +111,7 @@ namespace Rubber.Gameplay.Player.Editor
             player.AddComponent<PlayerInputReader>().Configure(actions, movement, look);
             player.AddComponent<PlayerInteractionDetector>().Configure(camera, stats);
 
-            AddDuckTestObjects(course.transform, obstacle);
+            AddDuckTestObjects(course.transform, obstacle, duckData);
 
             var guide = new GameObject("Interaction Guide Canvas", typeof(RectTransform),
                 typeof(Canvas), typeof(InteractionReticle));
@@ -138,14 +141,14 @@ namespace Rubber.Gameplay.Player.Editor
 
             Material obstacle = AssetDatabase.LoadAssetAtPath<Material>(
                 "Assets/_Project/Art/Materials/TestObstacle.mat");
-            if (AddDuckTestObjects(course, obstacle))
+            if (AddDuckTestObjects(course, obstacle, LoadDefaultDuckData()))
             {
                 EditorSceneManager.MarkSceneDirty(scene);
                 EditorSceneManager.SaveScene(scene);
             }
         }
 
-        private static bool AddDuckTestObjects(Transform course, Material material)
+        private static bool AddDuckTestObjects(Transform course, Material material, RubberDuckData duckData)
         {
             Vector3[] positions =
             {
@@ -159,7 +162,19 @@ namespace Rubber.Gameplay.Player.Editor
             for (int i = 0; i < positions.Length; i++)
             {
                 string name = $"Duck Pickup Test {i + 1}";
-                if (course.Find(name)) continue;
+                Transform existing = course.Find(name);
+                if (existing)
+                {
+                    RubberDuckInteractable interactable = existing.GetComponent<RubberDuckInteractable>();
+                    if (interactable && interactable.Data != duckData)
+                    {
+                        Undo.RecordObject(interactable, "Assign Default Rubber Duck Data");
+                        interactable.Configure(duckData);
+                        EditorUtility.SetDirty(interactable);
+                        added = true;
+                    }
+                    continue;
+                }
 
                 GameObject duck = GameObject.CreatePrimitive(PrimitiveType.Cube);
                 duck.name = name;
@@ -170,10 +185,18 @@ namespace Rubber.Gameplay.Player.Editor
                 Rigidbody duckBody = duck.AddComponent<Rigidbody>();
                 duckBody.isKinematic = true;
                 duckBody.useGravity = false;
-                duck.AddComponent<RubberDuckInteractable>();
+                duck.AddComponent<RubberDuckInteractable>().Configure(duckData);
                 added = true;
             }
             return added;
+        }
+
+        private static RubberDuckData LoadDefaultDuckData()
+        {
+            RubberDuckData data = AssetDatabase.LoadAssetAtPath<RubberDuckData>(DefaultDuckDataPath);
+            if (!data)
+                throw new System.InvalidOperationException("DefaultRubberDuckData asset is not imported.");
+            return data;
         }
 
         private static Material MaterialAsset(string name, Color color)
