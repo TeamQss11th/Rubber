@@ -13,8 +13,10 @@ namespace Rubber.Gameplay.Ducks
         private Collider[] duckColliders;
         private bool[] colliderWasEnabled;
         private PlayerDuckCarrier carrier;
+        private bool isReturned;
 
         public bool IsHeld => carrier;
+        public bool IsReturned => isReturned;
         public RubberDuckData Data => data;
 
         public void Configure(RubberDuckData duckData) => data = duckData;
@@ -73,6 +75,13 @@ namespace Rubber.Gameplay.Ducks
                 if (duckColliders[i]) duckColliders[i].enabled = colliderWasEnabled[i];
 
             carrier = null;
+        }
+
+        internal bool MarkReturned()
+        {
+            if (isReturned) return false;
+            isReturned = true;
+            return true;
         }
 
         private void OnDestroy()
