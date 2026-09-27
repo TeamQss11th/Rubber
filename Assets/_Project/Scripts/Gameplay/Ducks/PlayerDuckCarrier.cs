@@ -7,7 +7,7 @@ namespace Rubber.Gameplay.Ducks
     {
         [SerializeField] private Transform view;
         [SerializeField] private Vector3 heldLocalPosition = new(0.35f, -0.3f, 0.9f);
-        [SerializeField] private Vector3 heldLocalEulerAngles = new(0f, 180f, 0f);
+        [SerializeField] private Vector3 heldLocalEulerAngles = new(0f, -20f, 0f);
         [SerializeField, Min(0.5f)] private float dropDistance = 1.2f;
         [SerializeField] private LayerMask dropSurfaceLayers = Physics.DefaultRaycastLayers;
 
@@ -42,14 +42,7 @@ namespace Rubber.Gameplay.Ducks
 
         public bool TryPickUp(RubberDuckInteractable duck)
         {
-            if (!isActiveAndEnabled || !holdAnchor || !duck || !duck.Data || heldDuck)
-                return false;
-
-            RubberDuckData data = duck.Data;
-            holdAnchor.localPosition = heldLocalPosition + data.HeldPositionOffset;
-            holdAnchor.localRotation = Quaternion.Euler(heldLocalEulerAngles) *
-                                       Quaternion.Euler(data.HeldEulerAngleOffset);
-            if (!duck.BeginCarry(this, holdAnchor))
+            if (!isActiveAndEnabled || !holdAnchor || !duck || heldDuck || !duck.BeginCarry(this, holdAnchor))
                 return false;
 
             heldDuck = duck;

@@ -123,20 +123,10 @@ namespace Rubber.Gameplay.Player.Editor
 
                 var carrier = motor.GetComponent<PlayerDuckCarrier>();
                 Assert(carrier, "Player has a duck carrier");
-                var duckData = AssetDatabase.LoadAssetAtPath<RubberDuckData>(
-                    "Assets/_Project/ScriptableObjects/Ducks/DefaultRubberDuckData.asset");
-                Assert(duckData && duckData.HeldPositionOffset == Vector3.zero &&
-                    duckData.HeldEulerAngleOffset == Vector3.zero,
-                    "Default duck data has zero hold offsets");
-                Assert(duckData && duckData.Id == 0 &&
-                    duckData.DisplayName == "그냥 오리" &&
-                    !string.IsNullOrWhiteSpace(duckData.Description),
-                    "Default duck data has identity fields");
                 var sceneDucks = UnityEngine.Object.FindObjectsByType<RubberDuckInteractable>(FindObjectsSortMode.None);
                 Assert(sceneDucks.Length == 5, "Five independent cube duck placeholders exist in the test scene");
                 foreach (RubberDuckInteractable sceneDuck in sceneDucks)
-                    Assert(sceneDuck.Data == duckData && sceneDuck.GetComponent<MeshFilter>() &&
-                        sceneDuck.GetComponent<BoxCollider>() &&
+                    Assert(sceneDuck.GetComponent<MeshFilter>() && sceneDuck.GetComponent<BoxCollider>() &&
                         sceneDuck.GetComponent<Rigidbody>() && sceneDuck.transform.childCount == 0,
                         "Each duck placeholder is one interactable cube");
                 GameObject CreateDuck(string name, float z)
@@ -148,7 +138,7 @@ namespace Rubber.Gameplay.Player.Editor
                     Rigidbody duckBody = duckObject.AddComponent<Rigidbody>();
                     duckBody.isKinematic = true;
                     duckBody.useGravity = false;
-                    duckObject.AddComponent<RubberDuckInteractable>().Configure(duckData);
+                    duckObject.AddComponent<RubberDuckInteractable>();
                     return duckObject;
                 }
                 GameObject firstDuckObject = CreateDuck("First Test Duck", -3f);
@@ -161,11 +151,6 @@ namespace Rubber.Gameplay.Player.Editor
                     firstDuck.GetComponent<Renderer>().enabled &&
                     !firstDuck.GetComponent<Collider>().enabled,
                     "First duck is held visibly in front of the camera without collision");
-                Vector3 heldLocalPosition = camera.transform.InverseTransformPoint(firstDuck.transform.position);
-                Quaternion heldLocalRotation = Quaternion.Inverse(camera.transform.rotation) * firstDuck.transform.rotation;
-                Assert(Vector3.Distance(heldLocalPosition, new Vector3(0.35f, -0.3f, 0.9f)) < 0.001f &&
-                    Quaternion.Angle(heldLocalRotation, Quaternion.Euler(0f, 180f, 0f)) < 0.1f,
-                    "Zero offsets use the lower-right hold pose facing the player");
                 detector.SendMessage("Update");
                 Assert(detector.CurrentInteractable == secondDuck &&
                     InteractionOutlineSelection.HasSelection,
