@@ -1,0 +1,2 @@
+# Unity baked probe data must not undergo text or line-ending conversion.
+*.bytes binary

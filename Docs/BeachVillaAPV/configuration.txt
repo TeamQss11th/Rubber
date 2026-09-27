@@ -1,0 +1,5 @@
+Same Beach Villa scene. Existing lightmaps preserved. APV-only bake.
+Volumes: exterior 44x12x60m at (2,3,12); interior 18x9x27m at (6.3,3.5,13).
+Base spacing 0.75m; exterior minimum 2.25m, interior minimum 0.75m; adaptive placement.
+L1, Low pool budget (enum 512; NOT 512MB), no scenario blending.
+Mixed lights with Baked Indirect. Original intensities/shadows preserved.
