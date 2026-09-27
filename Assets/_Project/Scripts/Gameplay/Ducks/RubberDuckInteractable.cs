@@ -7,18 +7,31 @@ namespace Rubber.Gameplay.Ducks
     [RequireComponent(typeof(Rigidbody))]
     public sealed class RubberDuckInteractable : MonoBehaviour, IInteractable
     {
+        [SerializeField] private RubberDuckData data;
+
         private Rigidbody body;
         private Collider[] duckColliders;
         private bool[] colliderWasEnabled;
         private PlayerDuckCarrier carrier;
+        private bool isReturned;
 
         public bool IsHeld => carrier;
+        public bool IsReturned => isReturned;
+        public RubberDuckData Data => data;
+
+        public void Configure(RubberDuckData duckData) => data = duckData;
 
         private void Awake() => body = GetComponent<Rigidbody>();
 
+        private void Start()
+        {
+            if (!data)
+                Debug.LogError("RubberDuckInteractable requires RubberDuckData.", this);
+        }
+
         public bool TryInteract(GameObject interactor)
         {
-            if (!interactor || carrier) return false;
+            if (!interactor || !data || carrier) return false;
             PlayerDuckCarrier playerCarrier = interactor.GetComponent<PlayerDuckCarrier>();
             return playerCarrier && playerCarrier.TryPickUp(this);
         }
@@ -62,6 +75,13 @@ namespace Rubber.Gameplay.Ducks
                 if (duckColliders[i]) duckColliders[i].enabled = colliderWasEnabled[i];
 
             carrier = null;
+        }
+
+        internal bool MarkReturned()
+        {
+            if (isReturned) return false;
+            isReturned = true;
+            return true;
         }
 
         private void OnDestroy()
