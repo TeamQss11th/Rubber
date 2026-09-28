@@ -4809,7 +4809,6 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Rubber.Gameplay.Ducks.RubberDuckReturnDebugHud
   registry: {fileID: 2120000002}
-  totalDuckCount: 5
 --- !u!1 &1692280873
 GameObject:
   m_ObjectHideFlags: 0

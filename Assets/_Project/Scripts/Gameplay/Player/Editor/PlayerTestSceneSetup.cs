@@ -276,7 +276,7 @@ namespace Rubber.Gameplay.Player.Editor
 
             var hud = new GameObject("Duck Return HUD");
             hud.transform.SetParent(course);
-            hud.AddComponent<RubberDuckReturnDebugHud>().Configure(registry, duckData.Length);
+            hud.AddComponent<RubberDuckReturnDebugHud>().Configure(registry);
             return true;
         }
 

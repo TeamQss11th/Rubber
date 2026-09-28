@@ -11,15 +11,25 @@ namespace Rubber.Gameplay.Ducks
 
         private readonly HashSet<int> collectionIds = new();
         private readonly HashSet<int> returnedIds = new();
+        private bool collectionInitialized;
+        private bool completionRaised;
 
         public int ReturnedCount => returnedIds.Count;
-        public int TotalDuckCount => collectionIds.Count;
+        public int TotalDuckCount
+        {
+            get
+            {
+                EnsureCollectionInitialized();
+                return collectionIds.Count;
+            }
+        }
         public int RemainingCount => CurrentProgress.RemainingCount;
         public bool IsComplete => CurrentProgress.IsComplete;
         public DuckCollectionProgress CurrentProgress => new(ReturnedCount, TotalDuckCount);
 
         public event Action<RubberDuckData> DuckReturned;
         public event Action<DuckCollectionProgress> ProgressChanged;
+        public event Action AllDucksReturned;
 
         private void Awake() => RebuildCollectionIds();
 
@@ -37,6 +47,7 @@ namespace Rubber.Gameplay.Ducks
 
         public bool TryRegister(RubberDuckInteractable duck)
         {
+            EnsureCollectionInitialized();
             if (!duck || !duck.Data || duck.IsHeld || duck.IsReturned)
                 return false;
 
@@ -54,6 +65,11 @@ namespace Rubber.Gameplay.Ducks
 
             DuckReturned?.Invoke(data);
             ProgressChanged?.Invoke(CurrentProgress);
+            if (!completionRaised && IsComplete)
+            {
+                completionRaised = true;
+                AllDucksReturned?.Invoke();
+            }
             return true;
         }
 
@@ -68,6 +84,13 @@ namespace Rubber.Gameplay.Ducks
                 if (data)
                     collectionIds.Add(data.Id);
             }
+            collectionInitialized = true;
+        }
+
+        private void EnsureCollectionInitialized()
+        {
+            if (!collectionInitialized)
+                RebuildCollectionIds();
         }
     }
 }

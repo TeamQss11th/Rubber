@@ -6,16 +6,19 @@ namespace Rubber.Gameplay.Ducks
     public sealed class RubberDuckReturnDebugHud : MonoBehaviour
     {
         [SerializeField] private RubberDuckReturnRegistry registry;
-        [SerializeField, Min(1)] private int totalDuckCount = 5;
 
         private GUIStyle labelStyle;
+        private DuckCollectionProgress displayedProgress;
 
-        public int TotalDuckCount => totalDuckCount;
+        public int TotalDuckCount => displayedProgress.TotalCount;
+        public DuckCollectionProgress DisplayedProgress => displayedProgress;
 
-        public void Configure(RubberDuckReturnRegistry returnRegistry, int totalCount)
+        public void Configure(RubberDuckReturnRegistry returnRegistry)
         {
+            Unsubscribe();
             registry = returnRegistry;
-            totalDuckCount = Mathf.Max(1, totalCount);
+            Subscribe();
+            Refresh();
         }
 
         private void Awake()
@@ -23,6 +26,38 @@ namespace Rubber.Gameplay.Ducks
             if (!registry)
                 Debug.LogError("RubberDuckReturnDebugHud requires RubberDuckReturnRegistry.", this);
         }
+
+        private void OnEnable()
+        {
+            Subscribe();
+            Refresh();
+        }
+
+        private void Start() => Refresh();
+
+        private void OnDisable() => Unsubscribe();
+
+        private void Subscribe()
+        {
+            if (!registry) return;
+            registry.ProgressChanged -= HandleProgressChanged;
+            registry.ProgressChanged += HandleProgressChanged;
+        }
+
+        private void Unsubscribe()
+        {
+            if (registry)
+                registry.ProgressChanged -= HandleProgressChanged;
+        }
+
+        private void Refresh()
+        {
+            if (registry)
+                displayedProgress = registry.CurrentProgress;
+        }
+
+        private void HandleProgressChanged(DuckCollectionProgress progress) =>
+            displayedProgress = progress;
 
         private void OnGUI()
         {
@@ -35,7 +70,8 @@ namespace Rubber.Gameplay.Ducks
                 fontStyle = FontStyle.Bold
             };
             GUI.Box(new Rect(20f, 20f, 250f, 48f),
-                $"Ducks Returned: {registry.ReturnedCount} / {totalDuckCount}", labelStyle);
+                $"Ducks Returned: {displayedProgress.ReturnedCount} / {displayedProgress.TotalCount}",
+                labelStyle);
         }
     }
 }

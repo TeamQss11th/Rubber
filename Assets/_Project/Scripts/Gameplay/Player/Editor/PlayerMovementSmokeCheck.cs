@@ -225,9 +225,30 @@ namespace Rubber.Gameplay.Player.Editor
                     lastProgress.RemainingCount == sceneDucks.Length - 1 &&
                     !lastProgress.IsComplete,
                     "Return registry publishes collection progress once for a first return");
+                Assert(returnHud.DisplayedProgress.ReturnedCount == 1 &&
+                    returnHud.DisplayedProgress.TotalCount == sceneDucks.Length,
+                    "Return HUD receives the collection progress event");
                 Assert(firstDuck.TryInteract(motor.gameObject) && carrier.HeldDuck == firstDuck,
                     "A returned duck remains otherwise interactable");
                 Assert(carrier.TryDrop(), "Returned duck can still be dropped normally");
+                int completionEventCount = 0;
+                returnRegistry.AllDucksReturned += OnAllDucksReturned;
+                void OnAllDucksReturned() => completionEventCount++;
+                foreach (RubberDuckInteractable sceneDuck in sceneDucks)
+                {
+                    if (sceneDuck.Data.Id == firstDuck.Data.Id)
+                        continue;
+                    Assert(returnRegistry.TryRegister(sceneDuck),
+                        "Each remaining collection duck can be returned");
+                }
+                Assert(returnRegistry.IsComplete && returnRegistry.RemainingCount == 0 &&
+                    completionEventCount == 1,
+                    "All ducks returned raises the completion event once");
+                foreach (RubberDuckInteractable sceneDuck in sceneDucks)
+                    returnRegistry.TryRegister(sceneDuck);
+                Assert(completionEventCount == 1 && returnHud.DisplayedProgress.IsComplete,
+                    "Duplicate returns do not repeat completion and HUD receives completion progress");
+                returnRegistry.AllDucksReturned -= OnAllDucksReturned;
                 firstDuckObject.SetActive(false);
                 camera.transform.localRotation = Quaternion.identity;
                 target.gameObject.SetActive(false);

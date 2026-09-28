@@ -31,3 +31,7 @@ Held Position Offset과 Held Euler Angle Offset은 플레이어의 기본 Hold �
 `Rubber > Add Duck Return Test Area` 메뉴는 `PlayerTestScene`에 벽과 낮은 바닥으로 된
 반환 풀을 추가합니다. 오리가 내부 Trigger로 떨어지면 최초 1회만 반환 수가 올라가며,
 화면 왼쪽 위의 테스트 HUD에서 `반환 수 / 전체 수`를 확인할 수 있습니다.
+
+`RubberDuckReturnRegistry`는 최초 반환마다 `DuckReturned`와 `ProgressChanged`를 발생시킵니다.
+모든 오리가 반환되면 `AllDucksReturned`를 한 번만 발생시키며 플레이어 조작은 유지합니다.
+테스트 HUD는 `ProgressChanged`를 구독해 표시를 갱신합니다.
