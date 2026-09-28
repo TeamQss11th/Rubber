@@ -120,7 +120,7 @@ namespace Rubber.Gameplay.Player.Editor
             player.AddComponent<PlayerInteractionDetector>().Configure(camera, stats);
 
             AddDuckTestObjects(course.transform, obstacle, duckData);
-            AddDuckReturnTestArea(course.transform, stairs, duckData.Length);
+            AddDuckReturnTestArea(course.transform, stairs, duckData);
 
             var guide = new GameObject("Interaction Guide Canvas", typeof(RectTransform),
                 typeof(Canvas), typeof(InteractionReticle));
@@ -174,7 +174,7 @@ namespace Rubber.Gameplay.Player.Editor
 
             Material poolMaterial = AssetDatabase.LoadAssetAtPath<Material>(
                 "Assets/_Project/Art/Materials/TestStairs.mat");
-            if (AddDuckReturnTestArea(course, poolMaterial, TestDuckDataPaths.Length))
+            if (AddDuckReturnTestArea(course, poolMaterial, LoadTestDuckData()))
             {
                 EditorSceneManager.MarkSceneDirty(scene);
                 EditorSceneManager.SaveScene(scene);
@@ -244,7 +244,8 @@ namespace Rubber.Gameplay.Player.Editor
             return true;
         }
 
-        private static bool AddDuckReturnTestArea(Transform course, Material material, int totalDuckCount)
+        private static bool AddDuckReturnTestArea(
+            Transform course, Material material, RubberDuckData[] duckData)
         {
             if (course.Find("Duck Return Pool")) return false;
 
@@ -252,6 +253,7 @@ namespace Rubber.Gameplay.Player.Editor
             pool.transform.SetParent(course);
             pool.transform.position = new Vector3(5f, 0f, -4.5f);
             RubberDuckReturnRegistry registry = pool.AddComponent<RubberDuckReturnRegistry>();
+            registry.Configure(duckData);
 
             Box("Pool Bottom", pool.transform.position + new Vector3(0f, 0.05f, 0f),
                 new Vector3(3.6f, 0.1f, 3.6f), material, pool.transform);
@@ -274,7 +276,7 @@ namespace Rubber.Gameplay.Player.Editor
 
             var hud = new GameObject("Duck Return HUD");
             hud.transform.SetParent(course);
-            hud.AddComponent<RubberDuckReturnDebugHud>().Configure(registry, totalDuckCount);
+            hud.AddComponent<RubberDuckReturnDebugHud>().Configure(registry, duckData.Length);
             return true;
         }
 

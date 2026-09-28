@@ -4131,6 +4131,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b222a24b0e1d4ba2acb41103edafc8a7, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Rubber.Gameplay.Ducks.RubberDuckReturnRegistry
+  collectionDucks:
+  - {fileID: 11400000, guid: d1200000000000000000000000000002, type: 2}
+  - {fileID: 11400000, guid: d1200000000000000000000000000011, type: 2}
+  - {fileID: 11400000, guid: d1200000000000000000000000000012, type: 2}
+  - {fileID: 11400000, guid: d1200000000000000000000000000013, type: 2}
+  - {fileID: 11400000, guid: d1200000000000000000000000000014, type: 2}
 --- !u!1 &2120000010
 GameObject:
   m_ObjectHideFlags: 0

@@ -152,6 +152,11 @@ namespace Rubber.Gameplay.Player.Editor
                 Assert(returnRegistry && returnZone && returnZone.Registry == returnRegistry &&
                     returnZone.GetComponent<Collider>().isTrigger,
                     "Return pool has a registry and trigger zone");
+                Assert(returnRegistry.TotalDuckCount == sceneDucks.Length &&
+                    returnRegistry.ReturnedCount == 0 &&
+                    returnRegistry.RemainingCount == sceneDucks.Length &&
+                    !returnRegistry.IsComplete,
+                    "Return registry exposes the initial collection progress");
                 Assert(returnHud && returnHud.TotalDuckCount == sceneDucks.Length,
                     "Return HUD displays the full test duck count");
                 GameObject CreateDuck(string name, float z)
@@ -203,9 +208,23 @@ namespace Rubber.Gameplay.Player.Editor
                 Tick(12);
                 Assert(firstDuckObject.transform.position.y < releaseHeight - 0.1f,
                     "Released duck falls under gravity");
+                int progressEventCount = 0;
+                DuckCollectionProgress lastProgress = default;
+                void OnProgressChanged(DuckCollectionProgress progress)
+                {
+                    progressEventCount++;
+                    lastProgress = progress;
+                }
+                returnRegistry.ProgressChanged += OnProgressChanged;
                 Assert(returnRegistry.TryRegister(firstDuck) && returnRegistry.ReturnedCount == 1 &&
                     firstDuck.IsReturned && !returnRegistry.TryRegister(firstDuck),
                     "Return registry counts one duck once");
+                returnRegistry.ProgressChanged -= OnProgressChanged;
+                Assert(progressEventCount == 1 && lastProgress.ReturnedCount == 1 &&
+                    lastProgress.TotalCount == sceneDucks.Length &&
+                    lastProgress.RemainingCount == sceneDucks.Length - 1 &&
+                    !lastProgress.IsComplete,
+                    "Return registry publishes collection progress once for a first return");
                 Assert(firstDuck.TryInteract(motor.gameObject) && carrier.HeldDuck == firstDuck,
                     "A returned duck remains otherwise interactable");
                 Assert(carrier.TryDrop(), "Returned duck can still be dropped normally");
