@@ -1,0 +1,2275 @@
+{
+    "MonoBehaviour": {
+        "m_Enabled": true,
+        "m_EditorHideFlags": 0,
+        "m_Name": "BeachVillaBakingSet",
+        "m_EditorClassIdentifier": "Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.ProbeVolumeBakingSet",
+        "m_SceneBakeData": {
+            "m_Keys": [
+                "6af4f6ba93c8b3e46aab195e61579ec0"
+            ],
+            "m_Values": [
+                {
+                    "hasProbeVolume": true,
+                    "bakeScene": true,
+                    "bounds": {
+                        "m_Center": {
+                            "x": 10.125,
+                            "y": 0.0,
+                            "z": 20.25
+                        },
+                        "m_Extent": {
+                            "x": 30.375,
+                            "y": 20.25,
+                            "z": 40.5
+                        }
+                    }
+                }
+            ]
+        },
+        "singleSceneMode": true,
+        "dialogNoProbeVolumeInSetShown": false,
+        "settings": {
+            "m_Version": 1,
+            "dilationSettings": {
+                "enableDilation": false,
+                "dilationDistance": 1.0,
+                "dilationValidityThreshold": 0.25,
+                "dilationIterations": 1,
+                "squaredDistWeighting": true
+            },
+            "virtualOffsetSettings": {
+                "useVirtualOffset": true,
+                "validityThreshold": 0.25,
+                "outOfGeoOffset": 0.009999999776482582,
+                "searchMultiplier": 0.20000000298023225,
+                "rayOriginBias": -0.0010000000474974514,
+                "collisionMask": {
+                    "serializedVersion": "2",
+                    "m_Bits": 4294967291
+                }
+            }
+        },
+        "m_SceneGUIDs": [
+            "6af4f6ba93c8b3e46aab195e61579ec0"
+        ],
+        "obsoleteScenesToNotBake": [],
+        "m_LightingScenarios": [
+            "Default",
+            "Night"
+        ],
+        "cellDescs": {
+            "m_Keys": [
+                0,
+                12,
+                24,
+                36,
+                4,
+                16,
+                28,
+                40,
+                1,
+                13,
+                25,
+                37,
+                5,
+                17,
+                29,
+                41,
+                2,
+                14,
+                26,
+                38,
+                6,
+                18,
+                30,
+                42
+            ],
+            "m_Values": [
+                {
+                    "position": {
+                        "x": -1,
+                        "y": -1,
+                        "z": -1
+                    },
+                    "index": 0,
+                    "probeCount": 768,
+                    "minSubdiv": 0,
+                    "indexChunkCount": 5,
+                    "shChunkCount": 1,
+                    "bricksCount": 12,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": -9,
+                                "y": -9,
+                                "z": -9
+                            },
+                            "minSubdiv": 0,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": -1,
+                        "y": -1,
+                        "z": 0
+                    },
+                    "index": 12,
+                    "probeCount": 1792,
+                    "minSubdiv": 0,
+                    "indexChunkCount": 5,
+                    "shChunkCount": 1,
+                    "bricksCount": 28,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": -9,
+                                "y": -9,
+                                "z": 0
+                            },
+                            "minSubdiv": 0,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": -1,
+                        "y": -1,
+                        "z": 1
+                    },
+                    "index": 24,
+                    "probeCount": 1024,
+                    "minSubdiv": 0,
+                    "indexChunkCount": 5,
+                    "shChunkCount": 1,
+                    "bricksCount": 16,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": -9,
+                                "y": -9,
+                                "z": 9
+                            },
+                            "minSubdiv": 0,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": -1,
+                        "y": -1,
+                        "z": 2
+                    },
+                    "index": 36,
+                    "probeCount": 256,
+                    "minSubdiv": 1,
+                    "indexChunkCount": 1,
+                    "shChunkCount": 1,
+                    "bricksCount": 4,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": -9,
+                                "y": -9,
+                                "z": 18
+                            },
+                            "minSubdiv": 1,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": -1,
+                        "y": 0,
+                        "z": -1
+                    },
+                    "index": 4,
+                    "probeCount": 640,
+                    "minSubdiv": 0,
+                    "indexChunkCount": 5,
+                    "shChunkCount": 1,
+                    "bricksCount": 10,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": -9,
+                                "y": 0,
+                                "z": -9
+                            },
+                            "minSubdiv": 0,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": -1,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "index": 16,
+                    "probeCount": 3776,
+                    "minSubdiv": 0,
+                    "indexChunkCount": 5,
+                    "shChunkCount": 1,
+                    "bricksCount": 59,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": -9,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "minSubdiv": 0,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": -1,
+                        "y": 0,
+                        "z": 1
+                    },
+                    "index": 28,
+                    "probeCount": 1344,
+                    "minSubdiv": 0,
+                    "indexChunkCount": 5,
+                    "shChunkCount": 1,
+                    "bricksCount": 21,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": -9,
+                                "y": 0,
+                                "z": 9
+                            },
+                            "minSubdiv": 0,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": -1,
+                        "y": 0,
+                        "z": 2
+                    },
+                    "index": 40,
+                    "probeCount": 128,
+                    "minSubdiv": 1,
+                    "indexChunkCount": 1,
+                    "shChunkCount": 1,
+                    "bricksCount": 2,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": -9,
+                                "y": 0,
+                                "z": 18
+                            },
+                            "minSubdiv": 1,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": 0,
+                        "y": -1,
+                        "z": -1
+                    },
+                    "index": 1,
+                    "probeCount": 1088,
+                    "minSubdiv": 0,
+                    "indexChunkCount": 5,
+                    "shChunkCount": 1,
+                    "bricksCount": 17,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": 0,
+                                "y": -9,
+                                "z": -9
+                            },
+                            "minSubdiv": 0,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": 0,
+                        "y": -1,
+                        "z": 0
+                    },
+                    "index": 13,
+                    "probeCount": 4672,
+                    "minSubdiv": 0,
+                    "indexChunkCount": 5,
+                    "shChunkCount": 1,
+                    "bricksCount": 73,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": 0,
+                                "y": -9,
+                                "z": 0
+                            },
+                            "minSubdiv": 0,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": 0,
+                        "y": -1,
+                        "z": 1
+                    },
+                    "index": 25,
+                    "probeCount": 1984,
+                    "minSubdiv": 0,
+                    "indexChunkCount": 5,
+                    "shChunkCount": 1,
+                    "bricksCount": 31,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": 0,
+                                "y": -9,
+                                "z": 9
+                            },
+                            "minSubdiv": 0,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": 0,
+                        "y": -1,
+                        "z": 2
+                    },
+                    "index": 37,
+                    "probeCount": 256,
+                    "minSubdiv": 1,
+                    "indexChunkCount": 1,
+                    "shChunkCount": 1,
+                    "bricksCount": 4,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": 0,
+                                "y": -9,
+                                "z": 18
+                            },
+                            "minSubdiv": 1,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "z": -1
+                    },
+                    "index": 5,
+                    "probeCount": 1664,
+                    "minSubdiv": 0,
+                    "indexChunkCount": 5,
+                    "shChunkCount": 1,
+                    "bricksCount": 26,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": 0,
+                                "y": 0,
+                                "z": -9
+                            },
+                            "minSubdiv": 0,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "index": 17,
+                    "probeCount": 16768,
+                    "minSubdiv": 0,
+                    "indexChunkCount": 5,
+                    "shChunkCount": 3,
+                    "bricksCount": 262,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "minSubdiv": 0,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 1
+                    },
+                    "index": 29,
+                    "probeCount": 5440,
+                    "minSubdiv": 0,
+                    "indexChunkCount": 5,
+                    "shChunkCount": 1,
+                    "bricksCount": 85,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 9
+                            },
+                            "minSubdiv": 0,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 2
+                    },
+                    "index": 41,
+                    "probeCount": 192,
+                    "minSubdiv": 1,
+                    "indexChunkCount": 1,
+                    "shChunkCount": 1,
+                    "bricksCount": 3,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 18
+                            },
+                            "minSubdiv": 1,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": 1,
+                        "y": -1,
+                        "z": -1
+                    },
+                    "index": 2,
+                    "probeCount": 256,
+                    "minSubdiv": 1,
+                    "indexChunkCount": 1,
+                    "shChunkCount": 1,
+                    "bricksCount": 4,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": 9,
+                                "y": -9,
+                                "z": -9
+                            },
+                            "minSubdiv": 1,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": 1,
+                        "y": -1,
+                        "z": 0
+                    },
+                    "index": 14,
+                    "probeCount": 256,
+                    "minSubdiv": 1,
+                    "indexChunkCount": 1,
+                    "shChunkCount": 1,
+                    "bricksCount": 4,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": 9,
+                                "y": -9,
+                                "z": 0
+                            },
+                            "minSubdiv": 1,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": 1,
+                        "y": -1,
+                        "z": 1
+                    },
+                    "index": 26,
+                    "probeCount": 256,
+                    "minSubdiv": 1,
+                    "indexChunkCount": 1,
+                    "shChunkCount": 1,
+                    "bricksCount": 4,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": 9,
+                                "y": -9,
+                                "z": 9
+                            },
+                            "minSubdiv": 1,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": 1,
+                        "y": -1,
+                        "z": 2
+                    },
+                    "index": 38,
+                    "probeCount": 128,
+                    "minSubdiv": 1,
+                    "indexChunkCount": 1,
+                    "shChunkCount": 1,
+                    "bricksCount": 2,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": 9,
+                                "y": -9,
+                                "z": 18
+                            },
+                            "minSubdiv": 1,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": 1,
+                        "y": 0,
+                        "z": -1
+                    },
+                    "index": 6,
+                    "probeCount": 64,
+                    "minSubdiv": 2,
+                    "indexChunkCount": 1,
+                    "shChunkCount": 1,
+                    "bricksCount": 1,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": 9,
+                                "y": 0,
+                                "z": -9
+                            },
+                            "minSubdiv": 2,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": 1,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "index": 18,
+                    "probeCount": 64,
+                    "minSubdiv": 2,
+                    "indexChunkCount": 1,
+                    "shChunkCount": 1,
+                    "bricksCount": 1,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": 9,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "minSubdiv": 2,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": 1,
+                        "y": 0,
+                        "z": 1
+                    },
+                    "index": 30,
+                    "probeCount": 64,
+                    "minSubdiv": 2,
+                    "indexChunkCount": 1,
+                    "shChunkCount": 1,
+                    "bricksCount": 1,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": 9,
+                                "y": 0,
+                                "z": 9
+                            },
+                            "minSubdiv": 2,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": 1,
+                        "y": 0,
+                        "z": 2
+                    },
+                    "index": 42,
+                    "probeCount": 64,
+                    "minSubdiv": 2,
+                    "indexChunkCount": 1,
+                    "shChunkCount": 1,
+                    "bricksCount": 1,
+                    "indirectionEntryInfo": [
+                        {
+                            "positionInBricks": {
+                                "x": 9,
+                                "y": 0,
+                                "z": 18
+                            },
+                            "minSubdiv": 2,
+                            "minBrickPos": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "maxBrickPosPlusOne": {
+                                "x": 10,
+                                "y": 10,
+                                "z": 10
+                            },
+                            "hasMinMax": true,
+                            "hasOnlyBiggerBricks": false
+                        }
+                    ]
+                }
+            ]
+        },
+        "m_SerializedPerSceneCellList": [
+            {
+                "sceneGUID": "6af4f6ba93c8b3e46aab195e61579ec0",
+                "cellList": [
+                    0,
+                    12,
+                    24,
+                    36,
+                    4,
+                    16,
+                    28,
+                    40,
+                    1,
+                    13,
+                    25,
+                    37,
+                    5,
+                    17,
+                    29,
+                    41,
+                    2,
+                    14,
+                    26,
+                    38,
+                    6,
+                    18,
+                    30,
+                    42
+                ]
+            }
+        ],
+        "cellSharedDataAsset": {
+            "m_AssetGUID": "7203bcd323bcc8341bb2c9208389a37c",
+            "m_StreamableAssetPath": "APVStreamingAssets\\b9569856fb2ded14197f8ed2b74f0d44\\7203bcd323bcc8341bb2c9208389a37c.bytes",
+            "m_ElementSize": 8192,
+            "m_StreamableCellDescs": {
+                "m_Keys": [
+                    0,
+                    12,
+                    24,
+                    36,
+                    4,
+                    16,
+                    28,
+                    40,
+                    1,
+                    13,
+                    25,
+                    37,
+                    5,
+                    17,
+                    29,
+                    41,
+                    2,
+                    14,
+                    26,
+                    38,
+                    6,
+                    18,
+                    30,
+                    42
+                ],
+                "m_Values": [
+                    {
+                        "offset": 0,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 8192,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 16384,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 24576,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 32768,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 40960,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 49152,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 57344,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 65536,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 73728,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 81920,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 90112,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 98304,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 106496,
+                        "elementCount": 3
+                    },
+                    {
+                        "offset": 131072,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 139264,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 147456,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 155648,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 163840,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 172032,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 180224,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 188416,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 196608,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 204800,
+                        "elementCount": 1
+                    }
+                ]
+            },
+            "m_Asset": {
+                "fileID": 4900000,
+                "guid": "7203bcd323bcc8341bb2c9208389a37c",
+                "type": 3
+            }
+        },
+        "scenarios": {
+            "m_Keys": [
+                "Default",
+                "Night"
+            ],
+            "m_Values": [
+                {
+                    "sceneHash": -2129941137,
+                    "cellDataAsset": {
+                        "m_AssetGUID": "bc1c76cbc7c799d4b9518efb9910f559",
+                        "m_StreamableAssetPath": "APVStreamingAssets\\b9569856fb2ded14197f8ed2b74f0d44\\bc1c76cbc7c799d4b9518efb9910f559.bytes",
+                        "m_ElementSize": 131072,
+                        "m_StreamableCellDescs": {
+                            "m_Keys": [
+                                0,
+                                12,
+                                24,
+                                36,
+                                4,
+                                16,
+                                28,
+                                40,
+                                1,
+                                13,
+                                25,
+                                37,
+                                5,
+                                17,
+                                29,
+                                41,
+                                2,
+                                14,
+                                26,
+                                38,
+                                6,
+                                18,
+                                30,
+                                42
+                            ],
+                            "m_Values": [
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 131072,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 262144,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 393216,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 524288,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 655360,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 786432,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 917504,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1048576,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1179648,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1310720,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1441792,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1572864,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1703936,
+                                    "elementCount": 3
+                                },
+                                {
+                                    "offset": 2097152,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2228224,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2359296,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2490368,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2621440,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2752512,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2883584,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 3014656,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 3145728,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 3276800,
+                                    "elementCount": 1
+                                }
+                            ]
+                        },
+                        "m_Asset": {
+                            "fileID": 4900000,
+                            "guid": "bc1c76cbc7c799d4b9518efb9910f559",
+                            "type": 3
+                        }
+                    },
+                    "cellOptionalDataAsset": {
+                        "m_AssetGUID": "a1416c0b1d93dad4080be1fd87ea5cb3",
+                        "m_StreamableAssetPath": "APVStreamingAssets\\b9569856fb2ded14197f8ed2b74f0d44\\a1416c0b1d93dad4080be1fd87ea5cb3.bytes",
+                        "m_ElementSize": 131072,
+                        "m_StreamableCellDescs": {
+                            "m_Keys": [
+                                0,
+                                12,
+                                24,
+                                36,
+                                4,
+                                16,
+                                28,
+                                40,
+                                1,
+                                13,
+                                25,
+                                37,
+                                5,
+                                17,
+                                29,
+                                41,
+                                2,
+                                14,
+                                26,
+                                38,
+                                6,
+                                18,
+                                30,
+                                42
+                            ],
+                            "m_Values": [
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 131072,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 262144,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 393216,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 524288,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 655360,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 786432,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 917504,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1048576,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1179648,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1310720,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1441792,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1572864,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1703936,
+                                    "elementCount": 3
+                                },
+                                {
+                                    "offset": 2097152,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2228224,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2359296,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2490368,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2621440,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2752512,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2883584,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 3014656,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 3145728,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 3276800,
+                                    "elementCount": 1
+                                }
+                            ]
+                        },
+                        "m_Asset": {
+                            "fileID": 4900000,
+                            "guid": "a1416c0b1d93dad4080be1fd87ea5cb3",
+                            "type": 3
+                        }
+                    },
+                    "cellProbeOcclusionDataAsset": {
+                        "m_AssetGUID": "",
+                        "m_StreamableAssetPath": "APVStreamingAssets\\b9569856fb2ded14197f8ed2b74f0d44\\.bytes",
+                        "m_ElementSize": 0,
+                        "m_StreamableCellDescs": {
+                            "m_Keys": [
+                                0,
+                                12,
+                                24,
+                                36,
+                                4,
+                                16,
+                                28,
+                                40,
+                                1,
+                                13,
+                                25,
+                                37,
+                                5,
+                                17,
+                                29,
+                                41,
+                                2,
+                                14,
+                                26,
+                                38,
+                                6,
+                                18,
+                                30,
+                                42
+                            ],
+                            "m_Values": [
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 3
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                }
+                            ]
+                        },
+                        "m_Asset": {
+                            "instanceID": 0
+                        }
+                    }
+                },
+                {
+                    "sceneHash": -2129941137,
+                    "cellDataAsset": {
+                        "m_AssetGUID": "05f9e494bdeada8468774b19c49636df",
+                        "m_StreamableAssetPath": "APVStreamingAssets\\b9569856fb2ded14197f8ed2b74f0d44\\05f9e494bdeada8468774b19c49636df.bytes",
+                        "m_ElementSize": 131072,
+                        "m_StreamableCellDescs": {
+                            "m_Keys": [
+                                0,
+                                12,
+                                24,
+                                36,
+                                4,
+                                16,
+                                28,
+                                40,
+                                1,
+                                13,
+                                25,
+                                37,
+                                5,
+                                17,
+                                29,
+                                41,
+                                2,
+                                14,
+                                26,
+                                38,
+                                6,
+                                18,
+                                30,
+                                42
+                            ],
+                            "m_Values": [
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 131072,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 262144,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 393216,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 524288,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 655360,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 786432,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 917504,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1048576,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1179648,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1310720,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1441792,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1572864,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1703936,
+                                    "elementCount": 3
+                                },
+                                {
+                                    "offset": 2097152,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2228224,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2359296,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2490368,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2621440,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2752512,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2883584,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 3014656,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 3145728,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 3276800,
+                                    "elementCount": 1
+                                }
+                            ]
+                        },
+                        "m_Asset": {
+                            "fileID": 4900000,
+                            "guid": "05f9e494bdeada8468774b19c49636df",
+                            "type": 3
+                        }
+                    },
+                    "cellOptionalDataAsset": {
+                        "m_AssetGUID": "0a1107077cf79a64bb56d23eac7d414c",
+                        "m_StreamableAssetPath": "APVStreamingAssets\\b9569856fb2ded14197f8ed2b74f0d44\\0a1107077cf79a64bb56d23eac7d414c.bytes",
+                        "m_ElementSize": 131072,
+                        "m_StreamableCellDescs": {
+                            "m_Keys": [
+                                0,
+                                12,
+                                24,
+                                36,
+                                4,
+                                16,
+                                28,
+                                40,
+                                1,
+                                13,
+                                25,
+                                37,
+                                5,
+                                17,
+                                29,
+                                41,
+                                2,
+                                14,
+                                26,
+                                38,
+                                6,
+                                18,
+                                30,
+                                42
+                            ],
+                            "m_Values": [
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 131072,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 262144,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 393216,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 524288,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 655360,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 786432,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 917504,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1048576,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1179648,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1310720,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1441792,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1572864,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 1703936,
+                                    "elementCount": 3
+                                },
+                                {
+                                    "offset": 2097152,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2228224,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2359296,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2490368,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2621440,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2752512,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 2883584,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 3014656,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 3145728,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 3276800,
+                                    "elementCount": 1
+                                }
+                            ]
+                        },
+                        "m_Asset": {
+                            "fileID": 4900000,
+                            "guid": "0a1107077cf79a64bb56d23eac7d414c",
+                            "type": 3
+                        }
+                    },
+                    "cellProbeOcclusionDataAsset": {
+                        "m_AssetGUID": "",
+                        "m_StreamableAssetPath": "APVStreamingAssets\\b9569856fb2ded14197f8ed2b74f0d44\\.bytes",
+                        "m_ElementSize": 0,
+                        "m_StreamableCellDescs": {
+                            "m_Keys": [
+                                0,
+                                12,
+                                24,
+                                36,
+                                4,
+                                16,
+                                28,
+                                40,
+                                1,
+                                13,
+                                25,
+                                37,
+                                5,
+                                17,
+                                29,
+                                41,
+                                2,
+                                14,
+                                26,
+                                38,
+                                6,
+                                18,
+                                30,
+                                42
+                            ],
+                            "m_Values": [
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 3
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                },
+                                {
+                                    "offset": 0,
+                                    "elementCount": 1
+                                }
+                            ]
+                        },
+                        "m_Asset": {
+                            "instanceID": 0
+                        }
+                    }
+                }
+            ]
+        },
+        "cellBricksDataAsset": {
+            "m_AssetGUID": "6a28ebb5682af414da0995e6a9fb0b28",
+            "m_StreamableAssetPath": "APVStreamingAssets\\b9569856fb2ded14197f8ed2b74f0d44\\6a28ebb5682af414da0995e6a9fb0b28.bytes",
+            "m_ElementSize": 16,
+            "m_StreamableCellDescs": {
+                "m_Keys": [
+                    0,
+                    12,
+                    24,
+                    36,
+                    4,
+                    16,
+                    28,
+                    40,
+                    1,
+                    13,
+                    25,
+                    37,
+                    5,
+                    17,
+                    29,
+                    41,
+                    2,
+                    14,
+                    26,
+                    38,
+                    6,
+                    18,
+                    30,
+                    42
+                ],
+                "m_Values": [
+                    {
+                        "offset": 0,
+                        "elementCount": 12
+                    },
+                    {
+                        "offset": 192,
+                        "elementCount": 28
+                    },
+                    {
+                        "offset": 640,
+                        "elementCount": 16
+                    },
+                    {
+                        "offset": 896,
+                        "elementCount": 4
+                    },
+                    {
+                        "offset": 960,
+                        "elementCount": 10
+                    },
+                    {
+                        "offset": 1120,
+                        "elementCount": 59
+                    },
+                    {
+                        "offset": 2064,
+                        "elementCount": 21
+                    },
+                    {
+                        "offset": 2400,
+                        "elementCount": 2
+                    },
+                    {
+                        "offset": 2432,
+                        "elementCount": 17
+                    },
+                    {
+                        "offset": 2704,
+                        "elementCount": 73
+                    },
+                    {
+                        "offset": 3872,
+                        "elementCount": 31
+                    },
+                    {
+                        "offset": 4368,
+                        "elementCount": 4
+                    },
+                    {
+                        "offset": 4432,
+                        "elementCount": 26
+                    },
+                    {
+                        "offset": 4848,
+                        "elementCount": 262
+                    },
+                    {
+                        "offset": 9040,
+                        "elementCount": 85
+                    },
+                    {
+                        "offset": 10400,
+                        "elementCount": 3
+                    },
+                    {
+                        "offset": 10448,
+                        "elementCount": 4
+                    },
+                    {
+                        "offset": 10512,
+                        "elementCount": 4
+                    },
+                    {
+                        "offset": 10576,
+                        "elementCount": 4
+                    },
+                    {
+                        "offset": 10640,
+                        "elementCount": 2
+                    },
+                    {
+                        "offset": 10672,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 10688,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 10704,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 10720,
+                        "elementCount": 1
+                    }
+                ]
+            },
+            "m_Asset": {
+                "fileID": 4900000,
+                "guid": "6a28ebb5682af414da0995e6a9fb0b28",
+                "type": 3
+            }
+        },
+        "cellSupportDataAsset": {
+            "m_AssetGUID": "3bedd5789ab83e049ac542e6d556e170",
+            "m_StreamableAssetPath": "APVStreamingAssets\\b9569856fb2ded14197f8ed2b74f0d44\\3bedd5789ab83e049ac542e6d556e170.bytes",
+            "m_ElementSize": 262144,
+            "m_StreamableCellDescs": {
+                "m_Keys": [
+                    0,
+                    12,
+                    24,
+                    36,
+                    4,
+                    16,
+                    28,
+                    40,
+                    1,
+                    13,
+                    25,
+                    37,
+                    5,
+                    17,
+                    29,
+                    41,
+                    2,
+                    14,
+                    26,
+                    38,
+                    6,
+                    18,
+                    30,
+                    42
+                ],
+                "m_Values": [
+                    {
+                        "offset": 0,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 262144,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 524288,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 786432,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 1048576,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 1310720,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 1572864,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 1835008,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 2097152,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 2359296,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 2621440,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 2883584,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 3145728,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 3407872,
+                        "elementCount": 3
+                    },
+                    {
+                        "offset": 4194304,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 4456448,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 4718592,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 4980736,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 5242880,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 5505024,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 5767168,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 6029312,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 6291456,
+                        "elementCount": 1
+                    },
+                    {
+                        "offset": 6553600,
+                        "elementCount": 1
+                    }
+                ]
+            },
+            "m_Asset": {
+                "fileID": 4900000,
+                "guid": "3bedd5789ab83e049ac542e6d556e170",
+                "type": 3
+            }
+        },
+        "chunkSizeInBricks": 128,
+        "maxCellPosition": {
+            "x": 2,
+            "y": 1,
+            "z": 3
+        },
+        "minCellPosition": {
+            "x": -1,
+            "y": -1,
+            "z": -1
+        },
+        "globalBounds": {
+            "m_Center": {
+                "x": 10.125,
+                "y": 0.0,
+                "z": 20.25
+            },
+            "m_Extent": {
+                "x": 30.375,
+                "y": 20.25,
+                "z": 40.5
+            }
+        },
+        "bakedSimplificationLevels": 2,
+        "bakedMinDistanceBetweenProbes": 0.75,
+        "bakedProbeOcclusion": false,
+        "bakedSkyOcclusionValue": 0,
+        "bakedSkyShadingDirectionValue": 0,
+        "bakedProbeOffset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "bakedMaskCount": 1,
+        "bakedLayerMasks": {
+            "x": 4294967295,
+            "y": 0,
+            "z": 0,
+            "w": 0
+        },
+        "maxSHChunkCount": 3,
+        "L0ChunkSize": 65536,
+        "L1ChunkSize": 32768,
+        "L2TextureChunkSize": 32768,
+        "ProbeOcclusionChunkSize": 0,
+        "sharedValidityMaskChunkSize": 8192,
+        "sharedSkyOcclusionL0L1ChunkSize": 0,
+        "sharedSkyShadingDirectionIndicesChunkSize": 0,
+        "sharedDataChunkSize": 8192,
+        "supportPositionChunkSize": 98304,
+        "supportValidityChunkSize": 32768,
+        "supportTouchupChunkSize": 32768,
+        "supportLayerMaskChunkSize": 0,
+        "supportOffsetsChunkSize": 98304,
+        "supportDataChunkSize": 262144,
+        "lightingScenario": "Night",
+        "version": 2,
+        "freezePlacement": true,
+        "probeOffset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "simplificationLevels": 2,
+        "minDistanceBetweenProbes": 0.75,
+        "renderersLayerMask": {
+            "serializedVersion": "2",
+            "m_Bits": 4294967295
+        },
+        "minRendererVolumeSize": 0.10000000149011612,
+        "skyOcclusion": false,
+        "skyOcclusionBakingSamples": 2048,
+        "skyOcclusionBakingBounces": 2,
+        "skyOcclusionAverageAlbedo": 0.6000000238418579,
+        "skyOcclusionBackFaceCulling": false,
+        "skyOcclusionShadingDirection": false,
+        "useRenderingLayers": false,
+        "renderingLayerMasks": []
+    }
+}

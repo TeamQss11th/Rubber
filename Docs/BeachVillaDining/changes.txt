@@ -1,0 +1,49 @@
+Scene-only outdoor dining pass; no bake or collection work.
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-2168337333391581302-359604923 DiningTable: (-28.0000, 0.0500, 3.0006) -> (-28.0000, 0.1500, 3.0006)
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-6841336497793376715-1961648837 DiningChair: (-28.8000, 0.0575, 1.8058) -> (-28.7000, 0.1575, 2.1058)
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-6841336497793376715-1065979439 DiningChair: (-28.0000, 0.0575, 1.8058) -> (-28.0000, 0.1575, 2.1058)
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-6841336497793376715-1436495005 DiningChair: (-27.2000, 0.0575, 1.8058) -> (-27.3000, 0.1575, 2.1058)
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-6841336497793376715-1480279707 DiningChair: (-28.8000, 0.0575, 4.1942) -> (-28.7000, 0.1575, 3.8942)
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-6841336497793376715-1195689183 DiningChair: (-28.0000, 0.0575, 4.1942) -> (-28.0000, 0.1575, 3.8942)
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-6841336497793376715-2084791007 DiningChair: (-27.2000, 0.0575, 4.1942) -> (-27.3000, 0.1575, 3.8942)
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-1396312985559822253-214867839 LargePlate: (-28.7000, 0.8361, 2.7000) -> (-28.7000, 0.9331, 2.7000)
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-2566225741892741074-697789386 Glas: (-28.5300, 0.8351, 2.7000) -> (-28.4700, 0.9321, 2.9300)
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-1396312985559822253-525784174 LargePlate: (-28.7000, 0.8361, 3.3000) -> (-28.7000, 0.9331, 3.3000)
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-2566225741892741074-1383354664 Glas: (-28.5300, 0.8351, 3.3000) -> (-28.9300, 0.9321, 3.0700)
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-1396312985559822253-118770970 LargePlate: (-28.0000, 0.8361, 2.7000) -> (-28.0000, 0.9331, 2.7000)
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-2566225741892741074-1232073493 Glas: (-27.8300, 0.8351, 2.7000) -> (-27.7700, 0.9321, 2.9300)
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-1396312985559822253-216543480 LargePlate: (-28.0000, 0.8361, 3.3000) -> (-28.0000, 0.9331, 3.3000)
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-2566225741892741074-112882153 Glas: (-27.8300, 0.8351, 3.3000) -> (-28.2300, 0.9321, 3.0700)
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-1396312985559822253-1856242208 LargePlate: (-27.3000, 0.8361, 2.7000) -> (-27.3000, 0.9331, 2.7000)
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-2566225741892741074-1237418096 Glas: (-27.1300, 0.8351, 2.7000) -> (-27.0700, 0.9321, 2.9300)
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-1396312985559822253-491974991 LargePlate: (-27.3000, 0.8361, 3.3000) -> (-27.3000, 0.9331, 3.3000)
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-2566225741892741074-1509306373 Glas: (-27.1300, 0.8351, 3.3000) -> (-27.5300, 0.9321, 3.0700)
+REPAIR BBQ Barbecue_Knob_LOD0 (1): matched intact Knob mesh pose, offset=(0.000, 0.000, 0.235); center=(-31.987, 1.100, 5.902)
+REPAIR BBQ Barbecue_Knob_LOD0 (2): matched intact Knob mesh pose, offset=(0.000, 0.000, 0.470); center=(-31.987, 1.100, 6.137)
+REPAIR BBQ Barbecue_Knob_LOD0 (3): matched intact Knob mesh pose, offset=(0.000, 0.000, 0.705); center=(-31.987, 1.100, 6.372)
+REPAIR BBQ Barbecue_Wheel_LOD0 (1): matched intact Wheel mesh pose, offset=(-0.550, 0.000, 0.000); center=(-32.684, 0.098, 6.497)
+REPAIR BBQ Barbecue_Wheel_LOD0 (2): matched intact Wheel mesh pose, offset=(0.000, 0.000, -0.960); center=(-32.134, 0.098, 5.537)
+REPAIR BBQ Barbecue_Wheel_LOD0 (3): matched intact Wheel mesh pose, offset=(-0.550, 0.000, -0.960); center=(-32.684, 0.098, 5.537)
+REPAIR BBQ Barbecue_Knob_LOD1 (1): matched intact Knob mesh pose, offset=(0.000, 0.000, 0.235); center=(-31.987, 1.100, 5.902)
+REPAIR BBQ Barbecue_Knob_LOD1 (2): matched intact Knob mesh pose, offset=(0.000, 0.000, 0.470); center=(-31.987, 1.100, 6.137)
+REPAIR BBQ Barbecue_Knob_LOD1 (3): matched intact Knob mesh pose, offset=(0.000, 0.000, 0.705); center=(-31.987, 1.100, 6.372)
+REPAIR BBQ Barbecue_Wheel_LOD1 (1): matched intact Wheel mesh pose, offset=(-0.550, 0.000, 0.000); center=(-32.684, 0.098, 6.497)
+REPAIR BBQ Barbecue_Wheel_LOD1 (2): matched intact Wheel mesh pose, offset=(0.000, 0.000, -0.960); center=(-32.134, 0.098, 5.537)
+REPAIR BBQ Barbecue_Wheel_LOD1 (3): matched intact Wheel mesh pose, offset=(-0.550, 0.000, -0.960); center=(-32.684, 0.098, 5.537)
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-3142108280241990245-1376571325 FloorLight on Variant: (-25.2000, 0.0500, 3.0000) -> (-25.6500, 0.0500, 4.7500)
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-2168337333391581302-199109838 Preparation table beside barbecue: (0.0000, 0.0000, 0.0000) -> (-32.0994, 0.0500, 3.0000)
+ADD furniture/DiningTable as Preparation table beside barbecue
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-4417403832948066053-613002750 Shared drinks pitcher: (0.0000, 0.0000, 0.0000) -> (-32.1000, 0.8322, 3.6523)
+ADD Props/JugA as Shared drinks pitcher
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-2566225741892741074-666033753 Prepared drink 1: (0.0000, 0.0000, 0.0000) -> (-31.9000, 0.8311, 3.3700)
+ADD Props/Glas as Prepared drink 1
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-2566225741892741074-1871852551 Prepared drink 2: (0.0000, 0.0000, 0.0000) -> (-31.9000, 0.8311, 3.1900)
+ADD Props/Glas as Prepared drink 2
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-3146130426880396203-116824254 Serving plate 1: (0.0000, 0.0000, 0.0000) -> (-32.0500, 0.8320, 2.3500)
+ADD Props/SmallPlate as Serving plate 1
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-3146130426880396203-1870209987 Serving plate 2: (0.0000, 0.0000, 0.0000) -> (-32.0500, 0.8359, 2.3500)
+ADD Props/SmallPlate as Serving plate 2
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-3146130426880396203-1577613411 Serving plate 3: (0.0000, 0.0000, 0.0000) -> (-32.0500, 0.8397, 2.3500)
+ADD Props/SmallPlate as Serving plate 3
+MOVE GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-2822545454414606524-541347241 Preparation corner planter: (0.0000, 0.0000, 0.0000) -> (-32.0797, 0.0491, 0.9547)
+ADD Plants/PottedPlantA as Preparation corner planter

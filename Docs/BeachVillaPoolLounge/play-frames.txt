@@ -1,0 +1,3 @@
+Runtime frame-by-frame movement using existing controller; original rig and camera restored afterwards.
+west rear approach: moved=1.938; targetError=0.062; grounded=True; feet=(-10.062, 0.080, 22.950)
+east rear approach: moved=1.940; targetError=0.060; grounded=True; feet=(-4.940, 0.080, 22.950)

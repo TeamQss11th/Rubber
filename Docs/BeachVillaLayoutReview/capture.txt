@@ -1,0 +1,1 @@
+Layout preview, existing lighting only, fog temporarily hidden for geometry inspection; no new bake. 2026-09-28T05:32:29.8405737Z

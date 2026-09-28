@@ -1,0 +1,145 @@
+CURRENT active scene objects, not an earlier survey
+PoolLevel/Pool	position=(-7.020, 0.106, 0.000)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-14.020, -0.994, 0.000)	max=(-1.020, 0.702, 18.000)	source=Assets/Modern Villa/Prefabs/buildings/Pool.prefab
+PoolLevel/Pool/Pool/PoolCornerTop (3)	position=(-14.020, 0.106, 18.000)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-14.020, -0.894, 17.000)	max=(-13.020, 0.126, 18.000)	source=Assets/Modern Villa/Prefabs/Pool/PoolCornerTop.prefab
+  COLLIDER MeshCollider enabled=True min=(-14.020, -0.894, 17.000) max=(-13.020, 0.126, 18.000)
+PoolLevel/Pool/Pool/PoolCornerTop (4)	position=(-1.020, 0.106, 18.000)	rotation=(0.00, 270.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-2.020, -0.894, 17.000)	max=(-1.020, 0.126, 18.000)	source=Assets/Modern Villa/Prefabs/Pool/PoolCornerTop.prefab
+  COLLIDER MeshCollider enabled=True min=(-2.020, -0.894, 17.000) max=(-1.020, 0.126, 18.000)
+PoolLevel/Pool/Pool/PoolStraightTop (19)	position=(-13.020, 0.106, 18.000)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-13.020, -0.894, 17.500)	max=(-12.020, 0.126, 18.000)	source=Assets/Modern Villa/Prefabs/Pool/PoolStraightTop.prefab
+  COLLIDER BoxCollider enabled=True min=(-13.020, -0.894, 17.500) max=(-12.020, 0.126, 18.000)
+PoolLevel/Pool/Pool/PoolStraightTop (20)	position=(-12.020, 0.106, 18.000)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-12.020, -0.894, 17.500)	max=(-11.020, 0.126, 18.000)	source=Assets/Modern Villa/Prefabs/Pool/PoolStraightTop.prefab
+  COLLIDER BoxCollider enabled=True min=(-12.020, -0.894, 17.500) max=(-11.020, 0.126, 18.000)
+PoolLevel/Pool/Pool/PoolStraightTop (21)	position=(-7.020, 0.106, 18.000)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-7.020, -0.894, 17.500)	max=(-6.020, 0.126, 18.000)	source=Assets/Modern Villa/Prefabs/Pool/PoolStraightTop.prefab
+  COLLIDER BoxCollider enabled=True min=(-7.020, -0.894, 17.500) max=(-6.020, 0.126, 18.000)
+PoolLevel/Pool/Pool/PoolStraightTop (22)	position=(-6.020, 0.106, 18.000)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-6.020, -0.894, 17.500)	max=(-5.020, 0.126, 18.000)	source=Assets/Modern Villa/Prefabs/Pool/PoolStraightTop.prefab
+  COLLIDER BoxCollider enabled=True min=(-6.020, -0.894, 17.500) max=(-5.020, 0.126, 18.000)
+PoolLevel/Pool/Pool/PoolStraightTop (23)	position=(-5.020, 0.106, 18.000)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-5.020, -0.894, 17.500)	max=(-4.020, 0.126, 18.000)	source=Assets/Modern Villa/Prefabs/Pool/PoolStraightTop.prefab
+  COLLIDER BoxCollider enabled=True min=(-5.020, -0.894, 17.500) max=(-4.020, 0.126, 18.000)
+PoolLevel/Pool/Pool/PoolStraightTop (25)	position=(-4.020, 0.106, 18.000)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-4.020, -0.894, 17.500)	max=(-3.020, 0.126, 18.000)	source=Assets/Modern Villa/Prefabs/Pool/PoolStraightTop.prefab
+  COLLIDER BoxCollider enabled=True min=(-4.020, -0.894, 17.500) max=(-3.020, 0.126, 18.000)
+PoolLevel/Pool/Pool/PoolStraightTop (27)	position=(-3.020, 0.106, 18.000)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-3.020, -0.894, 17.500)	max=(-2.020, 0.126, 18.000)	source=Assets/Modern Villa/Prefabs/Pool/PoolStraightTop.prefab
+  COLLIDER BoxCollider enabled=True min=(-3.020, -0.894, 17.500) max=(-2.020, 0.126, 18.000)
+PoolLevel/Pool/Pool/PoolStraightTop (32)	position=(-9.020, 0.106, 18.000)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-9.020, -0.894, 17.500)	max=(-8.020, 0.126, 18.000)	source=Assets/Modern Villa/Prefabs/Pool/PoolStraightTop.prefab
+  COLLIDER BoxCollider enabled=True min=(-9.020, -0.894, 17.500) max=(-8.020, 0.126, 18.000)
+PoolLevel/Pool/Pool/PoolStraightTop (33)	position=(-8.020, 0.106, 18.000)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-8.020, -0.894, 17.500)	max=(-7.020, 0.126, 18.000)	source=Assets/Modern Villa/Prefabs/Pool/PoolStraightTop.prefab
+  COLLIDER BoxCollider enabled=True min=(-8.020, -0.894, 17.500) max=(-7.020, 0.126, 18.000)
+PoolLevel/Pool/Pool/PoolStraightTop (34)	position=(-11.020, 0.106, 18.000)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-11.020, -0.894, 17.500)	max=(-10.020, 0.126, 18.000)	source=Assets/Modern Villa/Prefabs/Pool/PoolStraightTop.prefab
+  COLLIDER BoxCollider enabled=True min=(-11.020, -0.894, 17.500) max=(-10.020, 0.126, 18.000)
+PoolLevel/Pool/Pool/PoolStraightTop (35)	position=(-10.020, 0.106, 18.000)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-10.020, -0.894, 17.500)	max=(-9.020, 0.126, 18.000)	source=Assets/Modern Villa/Prefabs/Pool/PoolStraightTop.prefab
+  COLLIDER BoxCollider enabled=True min=(-10.020, -0.894, 17.500) max=(-9.020, 0.126, 18.000)
+PoolLevel/Lounger	position=(-4.060, 0.050, 19.880)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-4.414, 0.050, 18.704)	max=(-3.706, 0.677, 20.884)	source=Assets/Modern Villa/Prefabs/furniture/Lounger.prefab
+  COLLIDER MeshCollider enabled=True min=(-4.414, 0.050, 18.704) max=(-3.706, 0.314, 20.884)
+PoolLevel/Lounger/lounger backing	position=(-4.060, 0.363, 20.776)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-4.225, 0.196, 20.716)	max=(-3.895, 0.529, 20.837)	source=Assets/Modern Villa/Prefabs/furniture/Lounger.prefab
+PoolLevel/Lounger/lounger rest	position=(-4.060, 0.234, 20.059)	rotation=(24.96, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-4.371, 0.214, 20.013)	max=(-3.749, 0.677, 20.870)	source=Assets/Modern Villa/Prefabs/furniture/Lounger.prefab
+PoolLevel/Lounger (1)	position=(-6.060, 0.050, 19.880)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-6.414, 0.050, 18.704)	max=(-5.706, 0.677, 20.884)	source=Assets/Modern Villa/Prefabs/furniture/Lounger.prefab
+  COLLIDER MeshCollider enabled=True min=(-6.414, 0.050, 18.704) max=(-5.706, 0.314, 20.884)
+PoolLevel/Lounger (1)/lounger backing	position=(-6.060, 0.363, 20.776)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-6.225, 0.196, 20.716)	max=(-5.895, 0.529, 20.837)	source=Assets/Modern Villa/Prefabs/furniture/Lounger.prefab
+PoolLevel/Lounger (1)/lounger rest	position=(-6.060, 0.234, 20.059)	rotation=(24.96, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-6.371, 0.214, 20.013)	max=(-5.749, 0.677, 20.870)	source=Assets/Modern Villa/Prefabs/furniture/Lounger.prefab
+PoolLevel/Lounger (2)	position=(-8.321, 0.050, 19.880)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-8.675, 0.050, 18.704)	max=(-7.967, 0.677, 20.884)	source=Assets/Modern Villa/Prefabs/furniture/Lounger.prefab
+  COLLIDER MeshCollider enabled=True min=(-8.675, 0.050, 18.704) max=(-7.967, 0.314, 20.884)
+PoolLevel/Lounger (2)/lounger backing	position=(-8.321, 0.363, 20.776)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-8.486, 0.196, 20.716)	max=(-8.156, 0.529, 20.837)	source=Assets/Modern Villa/Prefabs/furniture/Lounger.prefab
+PoolLevel/Lounger (2)/lounger rest	position=(-8.321, 0.234, 20.059)	rotation=(24.96, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-8.632, 0.214, 20.013)	max=(-8.010, 0.677, 20.870)	source=Assets/Modern Villa/Prefabs/furniture/Lounger.prefab
+PoolLevel/Lounger (3)	position=(-9.790, 0.050, 19.880)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-10.144, 0.050, 18.704)	max=(-9.427, 0.677, 20.884)	source=Assets/Modern Villa/Prefabs/furniture/Lounger.prefab
+  COLLIDER MeshCollider enabled=True min=(-10.144, 0.050, 18.704) max=(-9.436, 0.314, 20.884)
+PoolLevel/Lounger (3)/lounger backing	position=(-9.790, 0.363, 20.776)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-9.955, 0.196, 20.716)	max=(-9.625, 0.529, 20.837)	source=Assets/Modern Villa/Prefabs/furniture/Lounger.prefab
+PoolLevel/Lounger (3)/lounger rest	position=(-9.790, 0.234, 20.059)	rotation=(24.96, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-10.101, 0.214, 20.013)	max=(-9.479, 0.677, 20.870)	source=Assets/Modern Villa/Prefabs/furniture/Lounger.prefab
+PoolLevel/Lounger (3)/PillowD Variant/PillowD_LOD0	position=(-9.813, 0.296, 20.067)	rotation=(0.00, 184.38, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-10.114, 0.296, 19.905)	max=(-9.428, 0.439, 20.250)	source=Assets/Modern Villa/Prefabs/Props/PillowD Variant.prefab
+PoolLevel/Lounger (3)/PillowD Variant/PillowD_LOD1	position=(-9.813, 0.296, 20.067)	rotation=(0.00, 184.38, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-10.117, 0.295, 19.905)	max=(-9.427, 0.440, 20.251)	source=Assets/Modern Villa/Prefabs/Props/PillowD Variant.prefab
+PoolLevel/Lounger (3)/PillowD Variant/PillowD_LOD2	position=(-9.814, 0.296, 20.069)	rotation=(0.00, 184.38, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-10.110, 0.295, 19.906)	max=(-9.433, 0.440, 20.253)	source=Assets/Modern Villa/Prefabs/Props/PillowD Variant.prefab
+LoungeArea/LoungerB Variant	position=(-8.746, 0.050, 23.936)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-11.982, 0.050, 22.667)	max=(-5.510, 0.961, 25.204)	source=Assets/Modern Villa/Prefabs/furniture/LoungerB Variant.prefab
+  COLLIDER MeshCollider enabled=True min=(-11.979, 0.050, 22.667) max=(-5.513, 0.961, 25.204)
+LoungeArea/LoungerB Variant/LoungerB_LOD0	position=(-8.746, 0.050, 23.936)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-11.982, 0.050, 22.670)	max=(-5.510, 0.959, 25.201)	source=Assets/Modern Villa/Prefabs/furniture/LoungerB Variant.prefab
+LoungeArea/LoungerB Variant/LoungerB_LOD1	position=(-8.746, 0.050, 23.936)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-11.979, 0.050, 22.667)	max=(-5.513, 0.961, 25.204)	source=Assets/Modern Villa/Prefabs/furniture/LoungerB Variant.prefab
+LoungeArea/GrandSunshade	position=(-9.021, 0.050, 21.122)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-10.531, 0.050, 18.158)	max=(-7.524, 2.292, 21.631)	source=Assets/Modern Villa/Prefabs/Props/GrandSunshade.prefab
+  COLLIDER MeshCollider enabled=True min=(-9.243, 0.050, 19.600) max=(-8.799, 2.292, 21.631)
+LoungeArea/GrandSunshade/shade l	position=(-9.028, 2.192, 19.662)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-10.531, 1.741, 18.158)	max=(-7.524, 2.192, 21.166)	source=Assets/Modern Villa/Prefabs/Props/GrandSunshade.prefab
+LoungeArea/GrandSunshade (1)	position=(-4.860, 0.050, 21.122)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-6.370, 0.050, 18.158)	max=(-3.363, 2.292, 21.631)	source=Assets/Modern Villa/Prefabs/Props/GrandSunshade.prefab
+  COLLIDER MeshCollider enabled=True min=(-5.082, 0.050, 19.600) max=(-4.638, 2.292, 21.631)
+LoungeArea/GrandSunshade (1)/shade l	position=(-4.866, 2.192, 19.662)	rotation=(0.00, 180.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-6.370, 1.741, 18.158)	max=(-3.363, 2.192, 21.166)	source=Assets/Modern Villa/Prefabs/Props/GrandSunshade.prefab
+LoungeArea/FloorLightB on Variant	position=(-1.302, 0.050, 18.156)	rotation=(0.00, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-1.352, 0.050, 18.106)	max=(-1.252, 0.653, 18.206)	source=Assets/Modern Villa/Prefabs/lighting/FloorLightB on Variant.prefab
+  COLLIDER MeshCollider enabled=True min=(-1.352, 0.050, 18.106) max=(-1.252, 0.653, 18.206)
+LoungeArea/FloorLightB on Variant (2)	position=(-5.302, 0.050, 18.156)	rotation=(0.00, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-5.352, 0.050, 18.106)	max=(-5.252, 0.653, 18.206)	source=Assets/Modern Villa/Prefabs/lighting/FloorLightB on Variant.prefab
+  COLLIDER MeshCollider enabled=True min=(-5.352, 0.050, 18.106) max=(-5.252, 0.653, 18.206)
+LoungeArea/FloorLightB on Variant (4)	position=(-9.302, 0.050, 18.156)	rotation=(0.00, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-9.352, 0.050, 18.106)	max=(-9.252, 0.653, 18.206)	source=Assets/Modern Villa/Prefabs/lighting/FloorLightB on Variant.prefab
+  COLLIDER MeshCollider enabled=True min=(-9.352, 0.050, 18.106) max=(-9.252, 0.653, 18.206)
+LoungeArea/FloorLightB on Variant (5)	position=(-13.302, 0.050, 18.156)	rotation=(0.00, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-13.352, 0.050, 18.106)	max=(-13.252, 0.653, 18.206)	source=Assets/Modern Villa/Prefabs/lighting/FloorLightB on Variant.prefab
+  COLLIDER MeshCollider enabled=True min=(-13.352, 0.050, 18.106) max=(-13.252, 0.653, 18.206)
+LoungeArea/CouchTable	position=(-9.048, 0.050, 20.479)	rotation=(0.00, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-9.326, 0.050, 20.200)	max=(-8.769, 0.535, 20.757)	source=Assets/Modern Villa/Prefabs/furniture/CouchTable.prefab
+  COLLIDER MeshCollider enabled=True min=(-9.326, 0.050, 20.200) max=(-8.769, 0.450, 20.757)
+LoungeArea/CouchTable/BowlB Variant (1)/Bowl 2_LOD0	position=(-8.942, 0.450, 20.546)	rotation=(0.00, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-9.019, 0.450, 20.469)	max=(-8.865, 0.485, 20.623)	source=Assets/Modern Villa/Prefabs/Props/BowlB Variant.prefab
+LoungeArea/CouchTable/BowlB Variant (1)/Bowl 2_LOD1	position=(-8.942, 0.450, 20.546)	rotation=(0.00, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-9.019, 0.450, 20.469)	max=(-8.865, 0.485, 20.623)	source=Assets/Modern Villa/Prefabs/Props/BowlB Variant.prefab
+LoungeArea/CouchTable/BowlB Variant (1)/Bowl 2_LOD2	position=(-8.942, 0.450, 20.546)	rotation=(0.00, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-9.020, 0.450, 20.468)	max=(-8.864, 0.485, 20.624)	source=Assets/Modern Villa/Prefabs/Props/BowlB Variant.prefab
+LoungeArea/CouchTable/BowlB Variant (1)/mv_Apple/mv_Apple_LOD0	position=(-8.913, 0.483, 20.586)	rotation=(13.46, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-8.946, 0.445, 20.547)	max=(-8.880, 0.528, 20.627)	source=Assets/Modern Villa/Meshes/props/mv_Apple.fbx
+LoungeArea/CouchTable/BowlB Variant (1)/mv_Apple/mv_Apple_LOD1	position=(-8.913, 0.483, 20.586)	rotation=(13.46, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-8.946, 0.445, 20.547)	max=(-8.880, 0.522, 20.625)	source=Assets/Modern Villa/Meshes/props/mv_Apple.fbx
+LoungeArea/CouchTable/BowlB Variant (1)/mv_Apple/mv_Apple_LOD2	position=(-8.913, 0.483, 20.586)	rotation=(13.46, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-8.946, 0.445, 20.547)	max=(-8.879, 0.523, 20.626)	source=Assets/Modern Villa/Meshes/props/mv_Apple.fbx
+LoungeArea/CouchTable/BowlB Variant (1)/mv_Apple/mv_Apple_LOD3	position=(-8.913, 0.483, 20.586)	rotation=(13.46, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-8.947, 0.444, 20.547)	max=(-8.879, 0.523, 20.626)	source=Assets/Modern Villa/Meshes/props/mv_Apple.fbx
+LoungeArea/CouchTable/BowlB Variant (1)/mv_Orange/mv_Orange_LOD0	position=(-8.976, 0.487, 20.545)	rotation=(0.00, 359.26, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-9.027, 0.437, 20.495)	max=(-8.928, 0.534, 20.593)	source=Assets/Modern Villa/Meshes/props/mv_Orange.fbx
+LoungeArea/CouchTable/BowlB Variant (1)/mv_Orange/mv_Orange_LOD1	position=(-8.976, 0.487, 20.545)	rotation=(0.00, 359.26, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-9.027, 0.437, 20.494)	max=(-8.928, 0.534, 20.593)	source=Assets/Modern Villa/Meshes/props/mv_Orange.fbx
+LoungeArea/CouchTable/BowlB Variant (1)/mv_Orange/mv_Orange_LOD2	position=(-8.976, 0.487, 20.545)	rotation=(0.00, 359.26, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-9.027, 0.437, 20.495)	max=(-8.929, 0.533, 20.593)	source=Assets/Modern Villa/Meshes/props/mv_Orange.fbx
+LoungeArea/CouchTable/BowlB Variant (1)/mv_Orange/mv_Orange_LOD3	position=(-8.976, 0.487, 20.545)	rotation=(0.00, 359.26, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-9.028, 0.436, 20.497)	max=(-8.928, 0.535, 20.593)	source=Assets/Modern Villa/Meshes/props/mv_Orange.fbx
+LoungeArea/CouchTable/BowlB Variant (1)/mv_Peach/mv_Peach_LOD0	position=(-8.906, 0.470, 20.523)	rotation=(0.00, 99.19, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-8.946, 0.470, 20.483)	max=(-8.869, 0.533, 20.560)	source=Assets/Modern Villa/Meshes/props/mv_Peach.fbx
+LoungeArea/CouchTable/BowlB Variant (1)/mv_Peach/mv_Peach_LOD1	position=(-8.906, 0.470, 20.523)	rotation=(0.00, 99.19, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-8.946, 0.470, 20.483)	max=(-8.869, 0.533, 20.560)	source=Assets/Modern Villa/Meshes/props/mv_Peach.fbx
+LoungeArea/CouchTable/BowlB Variant (1)/mv_Peach/mv_Peach_LOD2	position=(-8.906, 0.470, 20.523)	rotation=(0.00, 99.19, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-8.947, 0.470, 20.483)	max=(-8.869, 0.533, 20.560)	source=Assets/Modern Villa/Meshes/props/mv_Peach.fbx
+LoungeArea/CouchTable/BowlB Variant (1)/mv_Peach/mv_Peach_LOD3	position=(-8.906, 0.470, 20.523)	rotation=(0.00, 99.19, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-8.947, 0.470, 20.483)	max=(-8.868, 0.533, 20.560)	source=Assets/Modern Villa/Meshes/props/mv_Peach.fbx
+LoungeArea/CouchTable (1)	position=(-4.876, 0.046, 20.479)	rotation=(0.00, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-5.154, 0.046, 20.200)	max=(-4.598, 0.531, 20.757)	source=Assets/Modern Villa/Prefabs/furniture/CouchTable.prefab
+  COLLIDER MeshCollider enabled=True min=(-5.154, 0.046, 20.200) max=(-4.598, 0.446, 20.757)
+LoungeArea/CouchTable (1)/BowlB Variant (1)/Bowl 2_LOD0	position=(-4.770, 0.446, 20.546)	rotation=(0.00, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-4.848, 0.446, 20.469)	max=(-4.693, 0.481, 20.623)	source=Assets/Modern Villa/Prefabs/Props/BowlB Variant.prefab
+LoungeArea/CouchTable (1)/BowlB Variant (1)/Bowl 2_LOD1	position=(-4.770, 0.446, 20.546)	rotation=(0.00, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-4.848, 0.446, 20.469)	max=(-4.693, 0.481, 20.623)	source=Assets/Modern Villa/Prefabs/Props/BowlB Variant.prefab
+LoungeArea/CouchTable (1)/BowlB Variant (1)/Bowl 2_LOD2	position=(-4.770, 0.446, 20.546)	rotation=(0.00, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-4.848, 0.446, 20.468)	max=(-4.692, 0.481, 20.624)	source=Assets/Modern Villa/Prefabs/Props/BowlB Variant.prefab
+LoungeArea/CouchTable (1)/BowlB Variant (1)/mv_Apple/mv_Apple_LOD0	position=(-4.741, 0.479, 20.586)	rotation=(13.46, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-4.774, 0.441, 20.547)	max=(-4.708, 0.524, 20.627)	source=Assets/Modern Villa/Meshes/props/mv_Apple.fbx
+LoungeArea/CouchTable (1)/BowlB Variant (1)/mv_Apple/mv_Apple_LOD1	position=(-4.741, 0.479, 20.586)	rotation=(13.46, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-4.774, 0.441, 20.547)	max=(-4.708, 0.518, 20.625)	source=Assets/Modern Villa/Meshes/props/mv_Apple.fbx
+LoungeArea/CouchTable (1)/BowlB Variant (1)/mv_Apple/mv_Apple_LOD2	position=(-4.741, 0.479, 20.586)	rotation=(13.46, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-4.774, 0.441, 20.547)	max=(-4.707, 0.519, 20.626)	source=Assets/Modern Villa/Meshes/props/mv_Apple.fbx
+LoungeArea/CouchTable (1)/BowlB Variant (1)/mv_Apple/mv_Apple_LOD3	position=(-4.741, 0.479, 20.586)	rotation=(13.46, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-4.775, 0.440, 20.547)	max=(-4.707, 0.519, 20.626)	source=Assets/Modern Villa/Meshes/props/mv_Apple.fbx
+LoungeArea/CouchTable (1)/BowlB Variant (1)/mv_Orange/mv_Orange_LOD0	position=(-4.804, 0.483, 20.545)	rotation=(0.00, 359.26, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-4.855, 0.433, 20.495)	max=(-4.757, 0.530, 20.593)	source=Assets/Modern Villa/Meshes/props/mv_Orange.fbx
+LoungeArea/CouchTable (1)/BowlB Variant (1)/mv_Orange/mv_Orange_LOD1	position=(-4.804, 0.483, 20.545)	rotation=(0.00, 359.26, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-4.855, 0.433, 20.494)	max=(-4.757, 0.530, 20.593)	source=Assets/Modern Villa/Meshes/props/mv_Orange.fbx
+LoungeArea/CouchTable (1)/BowlB Variant (1)/mv_Orange/mv_Orange_LOD2	position=(-4.804, 0.483, 20.545)	rotation=(0.00, 359.26, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-4.855, 0.433, 20.495)	max=(-4.757, 0.529, 20.593)	source=Assets/Modern Villa/Meshes/props/mv_Orange.fbx
+LoungeArea/CouchTable (1)/BowlB Variant (1)/mv_Orange/mv_Orange_LOD3	position=(-4.804, 0.483, 20.545)	rotation=(0.00, 359.26, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-4.856, 0.432, 20.497)	max=(-4.756, 0.531, 20.593)	source=Assets/Modern Villa/Meshes/props/mv_Orange.fbx
+LoungeArea/CouchTable (1)/BowlB Variant (1)/mv_Peach/mv_Peach_LOD0	position=(-4.734, 0.466, 20.523)	rotation=(0.00, 99.19, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-4.774, 0.466, 20.483)	max=(-4.697, 0.529, 20.560)	source=Assets/Modern Villa/Meshes/props/mv_Peach.fbx
+LoungeArea/CouchTable (1)/BowlB Variant (1)/mv_Peach/mv_Peach_LOD1	position=(-4.734, 0.466, 20.523)	rotation=(0.00, 99.19, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-4.774, 0.466, 20.483)	max=(-4.697, 0.529, 20.560)	source=Assets/Modern Villa/Meshes/props/mv_Peach.fbx
+LoungeArea/CouchTable (1)/BowlB Variant (1)/mv_Peach/mv_Peach_LOD2	position=(-4.734, 0.466, 20.523)	rotation=(0.00, 99.19, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-4.775, 0.466, 20.483)	max=(-4.697, 0.529, 20.560)	source=Assets/Modern Villa/Meshes/props/mv_Peach.fbx
+LoungeArea/CouchTable (1)/BowlB Variant (1)/mv_Peach/mv_Peach_LOD3	position=(-4.734, 0.466, 20.523)	rotation=(0.00, 99.19, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-4.775, 0.466, 20.483)	max=(-4.697, 0.529, 20.560)	source=Assets/Modern Villa/Meshes/props/mv_Peach.fbx
+LoungeArea/OilVase	position=(0.433, 1.000, 18.496)	rotation=(0.00, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-0.131, 1.012, 17.932)	max=(0.996, 2.012, 19.060)	source=Assets/Modern Villa/Prefabs/Props/OilVase.prefab
+  COLLIDER MeshCollider enabled=True min=(-0.131, 1.012, 17.932) max=(0.996, 2.012, 19.060)
+LoungeArea/OilVase/mv_oil_vase/Vase_LOD0	position=(0.433, 1.000, 18.496)	rotation=(0.00, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-0.123, 1.012, 17.940)	max=(0.988, 2.012, 19.052)	source=Assets/Modern Villa/Meshes/props/mv_oil_vase.fbx
+LoungeArea/OilVase/mv_oil_vase/Vase_LOD1	position=(0.433, 1.000, 18.496)	rotation=(0.00, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-0.123, 1.012, 17.940)	max=(0.988, 2.012, 19.052)	source=Assets/Modern Villa/Meshes/props/mv_oil_vase.fbx
+LoungeArea/OilVase/mv_oil_vase/Vase_LOD2	position=(0.433, 1.000, 18.496)	rotation=(0.00, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-0.131, 1.012, 17.932)	max=(0.996, 2.012, 19.060)	source=Assets/Modern Villa/Meshes/props/mv_oil_vase.fbx
+LoungeArea/FloorLightB on Variant (11)	position=(-0.827, 1.000, 23.690)	rotation=(0.00, 0.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-0.877, 1.000, 23.640)	max=(-0.777, 1.603, 23.740)	source=Assets/Modern Villa/Prefabs/lighting/FloorLightB on Variant.prefab
+  COLLIDER MeshCollider enabled=True min=(-0.877, 1.000, 23.640) max=(-0.777, 1.603, 23.740)
+LoungeArea/StairsA	position=(-2.117, 0.050, 22.940)	rotation=(0.00, 270.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-2.137, 0.050, 21.940)	max=(-0.917, 0.930, 22.940)	source=Assets/Modern Villa/Prefabs/floors/StairsA.prefab
+  COLLIDER MeshCollider enabled=True min=(-2.137, 0.050, 21.940) max=(-0.917, 0.930, 22.940)
+LoungeArea/StairsA (2)	position=(-2.117, 0.050, 20.940)	rotation=(0.00, 270.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-2.137, 0.050, 19.940)	max=(-0.917, 0.930, 20.940)	source=Assets/Modern Villa/Prefabs/floors/StairsA.prefab
+  COLLIDER MeshCollider enabled=True min=(-2.137, 0.050, 19.940) max=(-0.917, 0.930, 20.940)
+LoungeArea/StairsA (1)	position=(-2.117, 0.050, 21.940)	rotation=(0.00, 270.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-2.137, 0.050, 20.940)	max=(-0.917, 0.930, 21.940)	source=Assets/Modern Villa/Prefabs/floors/StairsA.prefab
+  COLLIDER MeshCollider enabled=True min=(-2.137, 0.050, 20.940) max=(-0.917, 0.930, 21.940)
+LoungeArea/StairsA (3)	position=(-2.117, 0.050, 19.940)	rotation=(0.00, 270.00, 0.00)	scale=(1.000, 1.000, 1.000)	min=(-2.137, 0.050, 18.940)	max=(-0.917, 0.930, 19.940)	source=Assets/Modern Villa/Prefabs/floors/StairsA.prefab
+  COLLIDER MeshCollider enabled=True min=(-2.137, 0.050, 18.940) max=(-0.917, 0.930, 19.940)
+Player height=1.8; radius=0.28; step=0.3; skin=0.03; camera local=(0.00, 1.65, 0.00); FOV=60
+SURFACE -12,18.6: 0.050 Beach Villa - Ground Repair/Floor2x2 | -0.487 Terrain
+SURFACE -12,20: 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -12,21.7: 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -12,23: 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -12,25: 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -10,18.6: 0.050 Beach Villa - Ground Repair/Floor2x2 | -0.487 Terrain
+SURFACE -10,20: 0.339 PoolLevel/Lounger (3)/PillowD Variant | 0.288 PoolLevel/Lounger (3) | 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -10,21.7: 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -10,23: 0.539 LoungeArea/LoungerB Variant | 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -10,25: 0.947 LoungeArea/LoungerB Variant | 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -8,18.6: 0.050 Beach Villa - Ground Repair/Floor2x2 | -0.487 Terrain
+SURFACE -8,20: 0.250 PoolLevel/Lounger (2) | 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -8,21.7: 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -8,23: 0.537 LoungeArea/LoungerB Variant | 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -8,25: 0.947 LoungeArea/LoungerB Variant | 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -6,18.6: 0.050 Beach Villa - Ground Repair/Floor2x2 | -0.487 Terrain
+SURFACE -6,20: 0.288 PoolLevel/Lounger (1) | 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -6,21.7: 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -6,23: 0.540 LoungeArea/LoungerB Variant | 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -6,25: 0.947 LoungeArea/LoungerB Variant | 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -4,18.6: 0.050 Beach Villa - Ground Repair/Floor2x2 | -0.487 Terrain
+SURFACE -4,20: 0.288 PoolLevel/Lounger | 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -4,21.7: 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -4,23: 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -4,25: 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -2,18.6: 0.050 Beach Villa - Ground Repair/Floor2x2 | -0.487 Terrain
+SURFACE -2,20: 0.270 LoungeArea/StairsA (2) | 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -2,21.7: 0.270 LoungeArea/StairsA (1) | 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -2,23: 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain
+SURFACE -2,25: 0.050 Beach Villa - Ground Repair/Floor2x2 | 0.025 Terrain

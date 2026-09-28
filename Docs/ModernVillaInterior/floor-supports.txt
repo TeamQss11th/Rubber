@@ -1,0 +1,7 @@
+(-5.00, 2.00, 8.00): 0.750 Floor/Floor 2x2 (23) | 0.750 Floor/Floor 2x2 (29) | 1.495 Modern Villa - Interior Furnishing/01 Main ground - family dining/Family dining table
+(-5.00, 5.00, 2.00): 3.555 Main Building/roof 2 (1)/Roof 2x2 (1) | 3.555 Main Building/roof 2 (1)/Roof 2x2 | 3.555 Main Building/roof 2 (1)/Roof ,5x,5 (6) | 3.555 Main Building/roof 2 (1)/Roof ,5x,5 (6) | 3.555 Main Building/roof 2 (1)/Roof ,5x,5 (7) | 3.555 Main Building/roof 2 (1)/Roof ,5x,5 (7)
+(-5.00, 5.00, 8.00): 3.555 Main Building/roof 2 (1)/Roof 2x2 (4) | 3.555 Main Building/roof 2 (1)/Roof 2x2 (3) | 3.555 Main Building/roof 2 (1)/Roof ,5x,5 (19) | 3.555 Main Building/roof 2 (1)/Roof ,5x,5 (19) | 3.555 Main Building/roof 2 (1)/Roof ,5x,5 (18) | 3.555 Main Building/roof 2 (1)/Roof ,5x,5 (18)
+(7.00, 1.50, 14.00): 0.250 annex building/Floor/Floor 2x2 (5) | 0.250 annex building/Floor/Floor 2x2 (6) | 0.655 Modern Villa - Interior Furnishing/04 Annex ground - family living/Round coffee table
+(7.00, 1.50, 19.00): 0.250 annex building/Floor/Floor 2x2 (18) | 0.250 annex building/Floor/Floor 2x2 (17) | 0.995 Modern Villa - Interior Furnishing/05 Annex ground - breakfast room/Breakfast table
+(6.00, 4.50, 14.00): 3.050 annex building/roof 1/Roof 2x2 (1)
+(6.00, 4.50, 19.00): 3.050 annex building/roof 1/Roof 2x2 (4)

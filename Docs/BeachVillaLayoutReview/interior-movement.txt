@@ -1,0 +1,5 @@
+Additional interior CharacterController.Move checks (1/60s, 2.6m/s).
+main living passage: pass=True; remaining=0.106; end=(6.809, 1.030, 14.894)
+reading approach: pass=True; remaining=0.090; end=(4.590, 1.030, 10.500)
+guest north passage: pass=True; remaining=0.107; end=(27.200, 0.080, 23.893)
+upper lounge passage: pass=True; remaining=0.113; end=(7.500, 3.830, 20.887)
