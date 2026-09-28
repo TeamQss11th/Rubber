@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using Rubber.Gameplay.Ducks.Traits;
 using UnityEngine;
 
 namespace Rubber.Gameplay.Ducks
@@ -20,6 +22,9 @@ namespace Rubber.Gameplay.Ducks
         [SerializeField] private Vector3 heldPositionOffset = Vector3.zero;
         [SerializeField] private Vector3 heldEulerAngleOffset = Vector3.zero;
 
+        [Header("Traits")]
+        [SerializeField] private List<RubberDuckTraitType> traitTypes = new();
+
         public int Id => id;
         public string DisplayName => displayName;
         public string Description => description;
@@ -27,5 +32,6 @@ namespace Rubber.Gameplay.Ducks
         public AudioClip UniqueSound => uniqueSound;
         public Vector3 HeldPositionOffset => heldPositionOffset;
         public Vector3 HeldEulerAngleOffset => heldEulerAngleOffset;
+        public IReadOnlyList<RubberDuckTraitType> TraitTypes => traitTypes;
     }
 }
