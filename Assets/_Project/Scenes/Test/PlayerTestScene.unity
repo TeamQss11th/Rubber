@@ -3148,6 +3148,7 @@ GameObject:
   - component: {fileID: 2110000004}
   - component: {fileID: 2110000005}
   - component: {fileID: 2110000006}
+  - component: {fileID: 2110000007}
   m_Layer: 0
   m_Name: Duck Pickup Test 1
   m_TagString: Untagged
@@ -3288,7 +3289,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21e6c3f24da7451883c1614dbc841b98, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Rubber.Gameplay.Ducks.RubberDuckInteractable
-  data: {fileID: 11400000, guid: d1200000000000000000000000000002, type: 2}
+  data: {fileID: 11400000, guid: 01b510f72a4e4c85a48cff50b957454b, type: 2}
+--- !u!114 &2110000007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110000000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3d3d620b8c4aa09d6ae64b949d0abe, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Rubber.Gameplay.Ducks.Traits.RubberDuckTraitController
 --- !u!1 &2110000100
 GameObject:
   m_ObjectHideFlags: 0
@@ -3303,6 +3316,7 @@ GameObject:
   - component: {fileID: 2110000104}
   - component: {fileID: 2110000105}
   - component: {fileID: 2110000106}
+  - component: {fileID: 2110000107}
   m_Layer: 0
   m_Name: Duck Pickup Test 2
   m_TagString: Untagged
@@ -3444,6 +3458,18 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Rubber.Gameplay.Ducks.RubberDuckInteractable
   data: {fileID: 11400000, guid: d1200000000000000000000000000011, type: 2}
+--- !u!114 &2110000107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110000100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3d3d620b8c4aa09d6ae64b949d0abe, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Rubber.Gameplay.Ducks.Traits.RubberDuckTraitController
 --- !u!1 &2110000200
 GameObject:
   m_ObjectHideFlags: 0
@@ -3458,6 +3484,7 @@ GameObject:
   - component: {fileID: 2110000204}
   - component: {fileID: 2110000205}
   - component: {fileID: 2110000206}
+  - component: {fileID: 2110000207}
   m_Layer: 0
   m_Name: Duck Pickup Test 3
   m_TagString: Untagged
@@ -3599,6 +3626,18 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Rubber.Gameplay.Ducks.RubberDuckInteractable
   data: {fileID: 11400000, guid: d1200000000000000000000000000012, type: 2}
+--- !u!114 &2110000207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110000200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3d3d620b8c4aa09d6ae64b949d0abe, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Rubber.Gameplay.Ducks.Traits.RubberDuckTraitController
 --- !u!1 &2110000300
 GameObject:
   m_ObjectHideFlags: 0
@@ -3613,6 +3652,7 @@ GameObject:
   - component: {fileID: 2110000304}
   - component: {fileID: 2110000305}
   - component: {fileID: 2110000306}
+  - component: {fileID: 2110000307}
   m_Layer: 0
   m_Name: Duck Pickup Test 4
   m_TagString: Untagged
@@ -3754,6 +3794,18 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Rubber.Gameplay.Ducks.RubberDuckInteractable
   data: {fileID: 11400000, guid: d1200000000000000000000000000013, type: 2}
+--- !u!114 &2110000307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110000300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3d3d620b8c4aa09d6ae64b949d0abe, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Rubber.Gameplay.Ducks.Traits.RubberDuckTraitController
 --- !u!1 &2110000400
 GameObject:
   m_ObjectHideFlags: 0
@@ -3768,6 +3820,7 @@ GameObject:
   - component: {fileID: 2110000404}
   - component: {fileID: 2110000405}
   - component: {fileID: 2110000406}
+  - component: {fileID: 2110000407}
   m_Layer: 0
   m_Name: Duck Pickup Test 5
   m_TagString: Untagged
@@ -3909,6 +3962,18 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Rubber.Gameplay.Ducks.RubberDuckInteractable
   data: {fileID: 11400000, guid: d1200000000000000000000000000014, type: 2}
+--- !u!114 &2110000407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110000400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3d3d620b8c4aa09d6ae64b949d0abe, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Rubber.Gameplay.Ducks.Traits.RubberDuckTraitController
 --- !u!1 &2134956848
 GameObject:
   m_ObjectHideFlags: 0
@@ -4132,7 +4197,7 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Rubber.Gameplay.Ducks.RubberDuckReturnRegistry
   collectionDucks:
-  - {fileID: 11400000, guid: d1200000000000000000000000000002, type: 2}
+  - {fileID: 11400000, guid: 01b510f72a4e4c85a48cff50b957454b, type: 2}
   - {fileID: 11400000, guid: d1200000000000000000000000000011, type: 2}
   - {fileID: 11400000, guid: d1200000000000000000000000000012, type: 2}
   - {fileID: 11400000, guid: d1200000000000000000000000000013, type: 2}

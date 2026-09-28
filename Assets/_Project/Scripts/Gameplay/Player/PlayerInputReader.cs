@@ -71,8 +71,8 @@ namespace Rubber.Gameplay.Player
             // Refresh held input when focus/cursor capture returns.
             movement.Move(move.ReadValue<Vector2>());
             playerCamera.Look(look.ReadValue<Vector2>());
-            if (interact.WasPressedThisFrame() && interactionDetector)
-                interactionDetector.TryInteract();
+            if (interact.WasPressedThisFrame())
+                TryInteract();
             if (drop.WasPressedThisFrame() && duckCarrier)
                 duckCarrier.TryDrop();
         }
@@ -81,6 +81,12 @@ namespace Rubber.Gameplay.Player
         { if (captured) movement.Move(context.ReadValue<Vector2>()); }
         private void OnJump(InputAction.CallbackContext context)
         { if (captured && Cursor.lockState == CursorLockMode.Locked) movement.Jump(); }
+        private void TryInteract()
+        {
+            bool worldInteractionExecuted = interactionDetector && interactionDetector.TryInteract();
+            if (!worldInteractionExecuted && duckCarrier)
+                duckCarrier.TryUseHeldDuckTrait();
+        }
         private void SetCapture(bool value)
         {
             captured = value;

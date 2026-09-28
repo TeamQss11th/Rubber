@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using Rubber.Gameplay.Ducks;
+using Rubber.Gameplay.Ducks.Traits;
 using Rubber.Gameplay.Interaction;
 
 namespace Rubber.Gameplay.Player.Editor
@@ -13,11 +14,11 @@ namespace Rubber.Gameplay.Player.Editor
     public static class PlayerTestSceneSetup
     {
         private const string ScenePath = "Assets/_Project/Scenes/Test/PlayerTestScene.unity";
-        private const string DefaultDuckDataPath =
-            "Assets/_Project/ScriptableObjects/Ducks/DefaultRubberDuckData.asset";
+        private const string TraitTestDuckDataPath =
+            "Assets/_Project/ScriptableObjects/Ducks/TraitTestRubberDuckData.asset";
         private static readonly string[] TestDuckDataPaths =
         {
-            DefaultDuckDataPath,
+            TraitTestDuckDataPath,
             "Assets/_Project/ScriptableObjects/Ducks/ReturnTestRubberDuckData1.asset",
             "Assets/_Project/ScriptableObjects/Ducks/ReturnTestRubberDuckData2.asset",
             "Assets/_Project/ScriptableObjects/Ducks/ReturnTestRubberDuckData3.asset",
@@ -211,6 +212,11 @@ namespace Rubber.Gameplay.Player.Editor
                     }
                     if (EnsureDuckMarkerCube(existing, material))
                         added = true;
+                    if (!existing.TryGetComponent(out RubberDuckTraitController _))
+                    {
+                        Undo.AddComponent<RubberDuckTraitController>(existing.gameObject);
+                        added = true;
+                    }
                     continue;
                 }
 
@@ -224,6 +230,7 @@ namespace Rubber.Gameplay.Player.Editor
                 duckBody.isKinematic = true;
                 duckBody.useGravity = false;
                 duck.AddComponent<RubberDuckInteractable>().Configure(duckData[i]);
+                duck.AddComponent<RubberDuckTraitController>();
                 EnsureDuckMarkerCube(duck.transform, material);
                 added = true;
             }
@@ -247,7 +254,19 @@ namespace Rubber.Gameplay.Player.Editor
         private static bool AddDuckReturnTestArea(
             Transform course, Material material, RubberDuckData[] duckData)
         {
-            if (course.Find("Duck Return Pool")) return false;
+            Transform existingPool = course.Find("Duck Return Pool");
+            if (existingPool)
+            {
+                RubberDuckReturnRegistry existingRegistry =
+                    existingPool.GetComponent<RubberDuckReturnRegistry>();
+                if (existingRegistry)
+                {
+                    Undo.RecordObject(existingRegistry, "Assign Trait Test Duck Data");
+                    existingRegistry.Configure(duckData);
+                    EditorUtility.SetDirty(existingRegistry);
+                }
+                return existingRegistry;
+            }
 
             var pool = new GameObject("Duck Return Pool");
             pool.transform.SetParent(course);

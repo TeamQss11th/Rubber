@@ -7,6 +7,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Rubber.Gameplay.Ducks;
+using Rubber.Gameplay.Ducks.Traits;
 using Rubber.Gameplay.Interaction;
 
 namespace Rubber.Gameplay.Player.Editor
@@ -124,8 +125,12 @@ namespace Rubber.Gameplay.Player.Editor
 
                 var carrier = motor.GetComponent<PlayerDuckCarrier>();
                 Assert(carrier, "Player has a duck carrier");
+                var inputReader = motor.GetComponent<PlayerInputReader>();
+                Assert(inputReader, "Player has an input reader");
                 var duckData = AssetDatabase.LoadAssetAtPath<RubberDuckData>(
                     "Assets/_Project/ScriptableObjects/Ducks/DefaultRubberDuckData.asset");
+                var traitDuckData = AssetDatabase.LoadAssetAtPath<RubberDuckData>(
+                    "Assets/_Project/ScriptableObjects/Ducks/TraitTestRubberDuckData.asset");
                 Assert(duckData && duckData.HeldPositionOffset == Vector3.zero &&
                     duckData.HeldEulerAngleOffset == Vector3.zero,
                     "Default duck data has zero hold offsets");
@@ -133,6 +138,9 @@ namespace Rubber.Gameplay.Player.Editor
                     duckData.DisplayName == "그냥 오리" &&
                     !string.IsNullOrWhiteSpace(duckData.Description),
                     "Default duck data has identity fields");
+                Assert(traitDuckData && traitDuckData.TraitTypes.Count == 1 &&
+                    traitDuckData.TraitTypes[0] == RubberDuckTraitType.Test,
+                    "Trait test duck data selects the test trait");
                 var sceneDucks = UnityEngine.Object.FindObjectsByType<RubberDuckInteractable>();
                 Assert(sceneDucks.Length == 5, "Five independent cube duck placeholders exist in the test scene");
                 var duckIds = new HashSet<int>();
@@ -159,7 +167,7 @@ namespace Rubber.Gameplay.Player.Editor
                     "Return registry exposes the initial collection progress");
                 Assert(returnHud && returnHud.TotalDuckCount == sceneDucks.Length,
                     "Return HUD displays the full test duck count");
-                GameObject CreateDuck(string name, float z)
+                GameObject CreateDuck(string name, float z, RubberDuckData data)
                 {
                     GameObject duckObject = GameObject.CreatePrimitive(PrimitiveType.Sphere);
                     duckObject.name = name;
@@ -168,13 +176,17 @@ namespace Rubber.Gameplay.Player.Editor
                     Rigidbody duckBody = duckObject.AddComponent<Rigidbody>();
                     duckBody.isKinematic = true;
                     duckBody.useGravity = false;
-                    duckObject.AddComponent<RubberDuckInteractable>().Configure(duckData);
+                    duckObject.AddComponent<RubberDuckInteractable>().Configure(data);
+                    duckObject.AddComponent<RubberDuckTraitController>().Initialize();
                     return duckObject;
                 }
-                GameObject firstDuckObject = CreateDuck("First Test Duck", -3f);
-                GameObject secondDuckObject = CreateDuck("Second Test Duck", -2.5f);
+                GameObject firstDuckObject = CreateDuck("First Test Duck", -3f, traitDuckData);
+                GameObject secondDuckObject = CreateDuck("Second Test Duck", -2.5f, duckData);
                 var firstDuck = firstDuckObject.GetComponent<RubberDuckInteractable>();
                 var secondDuck = secondDuckObject.GetComponent<RubberDuckInteractable>();
+                var traitProbe = firstDuckObject.GetComponent<RubberDuckTraitTestProbe>();
+                Assert(traitProbe && traitProbe.InitializationCount == 1,
+                    "Trait controller initializes the selected trait once");
                 Physics.SyncTransforms();
                 Assert(detector.TryInteract() && carrier.HeldDuck == firstDuck &&
                     firstDuck.transform.IsChildOf(camera.transform) &&
@@ -194,10 +206,19 @@ namespace Rubber.Gameplay.Player.Editor
                 Assert(!detector.TryInteract(out bool blockedDuckTarget) && blockedDuckTarget &&
                     carrier.HeldDuck == firstDuck,
                     "A second duck cannot be picked up or trigger a drop");
-                secondDuckObject.SetActive(false);
-                Assert(detector.TryInteract() && target.InteractionCount == 2 &&
+                inputReader.SendMessage("TryInteract");
+                Assert(traitProbe.InteractionCount == 1 &&
+                    traitProbe.LastInteractor == motor.gameObject &&
                     carrier.HeldDuck == firstDuck,
-                    "Other interactables still work while holding a duck");
+                    "Failed world interaction uses the held duck trait");
+                secondDuckObject.SetActive(false);
+                inputReader.SendMessage("TryInteract");
+                Assert(target.InteractionCount == 2 && traitProbe.InteractionCount == 1 &&
+                    carrier.HeldDuck == firstDuck,
+                    "Successful world interaction takes priority over the held duck trait");
+                Tick(55);
+                Assert(traitProbe.IntervalCount >= 1,
+                    "Trait controller invokes interval traits over time");
                 camera.transform.localRotation = Quaternion.Euler(0f, 90f, 0f);
                 Assert(!detector.TryInteract(out bool emptyTarget) && !emptyTarget &&
                     carrier.TryDrop() && !carrier.IsHoldingDuck &&

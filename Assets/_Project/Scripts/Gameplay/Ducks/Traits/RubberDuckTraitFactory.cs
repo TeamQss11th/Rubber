@@ -7,6 +7,7 @@ namespace Rubber.Gameplay.Ducks.Traits
             return type switch
             {
                 RubberDuckTraitType.None => null,
+                RubberDuckTraitType.Test => new TestDuckTrait(),
                 _ => null
             };
         }

@@ -1,3 +1,4 @@
+using Rubber.Gameplay.Ducks.Traits;
 using UnityEngine;
 
 namespace Rubber.Gameplay.Ducks
@@ -13,6 +14,7 @@ namespace Rubber.Gameplay.Ducks
 
         private Transform holdAnchor;
         private RubberDuckInteractable heldDuck;
+        private RubberDuckTraitController heldTraitController;
 
         public RubberDuckInteractable HeldDuck => heldDuck;
         public bool IsHoldingDuck => heldDuck;
@@ -53,7 +55,14 @@ namespace Rubber.Gameplay.Ducks
                 return false;
 
             heldDuck = duck;
+            heldTraitController = duck.GetComponent<RubberDuckTraitController>();
             return true;
+        }
+
+        public bool TryUseHeldDuckTrait()
+        {
+            return isActiveAndEnabled && heldDuck && heldTraitController &&
+                   heldTraitController.TryInteract(gameObject);
         }
 
         public bool TryDrop()
@@ -79,13 +88,16 @@ namespace Rubber.Gameplay.Ducks
 
             RubberDuckInteractable duck = heldDuck;
             heldDuck = null;
+            heldTraitController = null;
             duck.ReleaseAt(dropPosition, Quaternion.LookRotation(forward, Vector3.up));
             return true;
         }
 
         internal void Forget(RubberDuckInteractable duck)
         {
-            if (heldDuck == duck) heldDuck = null;
+            if (heldDuck != duck) return;
+            heldDuck = null;
+            heldTraitController = null;
         }
     }
 }
