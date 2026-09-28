@@ -43,6 +43,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "Drop",
+                    "type": "Button",
+                    "id": "29c05060-ff2a-47f0-b7ad-0d550f46f1bd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "ReleaseCursor",
                     "type": "Button",
                     "id": "fea37a0c-ecf0-4e50-8d5c-c95e5733ef5d",
@@ -142,11 +151,22 @@
                 {
                     "name": "",
                     "id": "b43ae0c1-5fc2-4e3b-91dd-80bcf4438a52",
-                    "path": "<Keyboard>/f",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "KeyboardMouse",
                     "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7001a431-68b4-4748-b016-dcd871991c01",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "Drop",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

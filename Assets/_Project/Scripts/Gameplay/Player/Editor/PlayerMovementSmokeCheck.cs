@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using UnityEditor;
@@ -132,13 +133,27 @@ namespace Rubber.Gameplay.Player.Editor
                     duckData.DisplayName == "그냥 오리" &&
                     !string.IsNullOrWhiteSpace(duckData.Description),
                     "Default duck data has identity fields");
-                var sceneDucks = UnityEngine.Object.FindObjectsByType<RubberDuckInteractable>(FindObjectsSortMode.None);
+                var sceneDucks = UnityEngine.Object.FindObjectsByType<RubberDuckInteractable>();
                 Assert(sceneDucks.Length == 5, "Five independent cube duck placeholders exist in the test scene");
+                var duckIds = new HashSet<int>();
                 foreach (RubberDuckInteractable sceneDuck in sceneDucks)
-                    Assert(sceneDuck.Data == duckData && sceneDuck.GetComponent<MeshFilter>() &&
+                {
+                    Transform marker = sceneDuck.transform.Find("cube");
+                    Assert(sceneDuck.Data && duckIds.Add(sceneDuck.Data.Id) &&
+                        sceneDuck.GetComponent<MeshFilter>() &&
                         sceneDuck.GetComponent<BoxCollider>() &&
-                        sceneDuck.GetComponent<Rigidbody>() && sceneDuck.transform.childCount == 0,
-                        "Each duck placeholder is one interactable cube");
+                        sceneDuck.GetComponent<Rigidbody>() && marker &&
+                        marker.GetComponent<MeshRenderer>() && !marker.GetComponent<Collider>(),
+                        "Each duck placeholder keeps its marker cube and a unique data ID");
+                }
+                var returnRegistry = UnityEngine.Object.FindAnyObjectByType<RubberDuckReturnRegistry>();
+                var returnZone = UnityEngine.Object.FindAnyObjectByType<RubberDuckReturnZone>();
+                var returnHud = UnityEngine.Object.FindAnyObjectByType<RubberDuckReturnDebugHud>();
+                Assert(returnRegistry && returnZone && returnZone.Registry == returnRegistry &&
+                    returnZone.GetComponent<Collider>().isTrigger,
+                    "Return pool has a registry and trigger zone");
+                Assert(returnHud && returnHud.TotalDuckCount == sceneDucks.Length,
+                    "Return HUD displays the full test duck count");
                 GameObject CreateDuck(string name, float z)
                 {
                     GameObject duckObject = GameObject.CreatePrimitive(PrimitiveType.Sphere);
@@ -167,7 +182,8 @@ namespace Rubber.Gameplay.Player.Editor
                     Quaternion.Angle(heldLocalRotation, Quaternion.Euler(0f, 180f, 0f)) < 0.1f,
                     "Zero offsets use the lower-right hold pose facing the player");
                 detector.SendMessage("Update");
-                Assert(detector.CurrentInteractable == secondDuck &&
+                Assert(detector.CurrentInteractable is RubberDuckInteractable selectedDuck &&
+                    selectedDuck == secondDuck &&
                     InteractionOutlineSelection.HasSelection,
                     "Second duck remains outlined while one is held");
                 Assert(!detector.TryInteract(out bool blockedDuckTarget) && blockedDuckTarget &&
@@ -187,6 +203,12 @@ namespace Rubber.Gameplay.Player.Editor
                 Tick(12);
                 Assert(firstDuckObject.transform.position.y < releaseHeight - 0.1f,
                     "Released duck falls under gravity");
+                Assert(returnRegistry.TryRegister(firstDuck) && returnRegistry.ReturnedCount == 1 &&
+                    firstDuck.IsReturned && !returnRegistry.TryRegister(firstDuck),
+                    "Return registry counts one duck once");
+                Assert(firstDuck.TryInteract(motor.gameObject) && carrier.HeldDuck == firstDuck,
+                    "A returned duck remains otherwise interactable");
+                Assert(carrier.TryDrop(), "Returned duck can still be dropped normally");
                 firstDuckObject.SetActive(false);
                 camera.transform.localRotation = Quaternion.identity;
                 target.gameObject.SetActive(false);
@@ -239,17 +261,21 @@ namespace Rubber.Gameplay.Player.Editor
                 InputAction moveAction = actions.FindAction("Player/Move", true);
                 InputAction jumpAction = actions.FindAction("Player/Jump", true);
                 InputAction interactAction = actions.FindAction("Player/Interact", true);
+                InputAction dropAction = actions.FindAction("Player/Drop", true);
                 bool hasW = false;
                 foreach (InputBinding binding in moveAction.bindings)
                     hasW |= binding.effectivePath == "<Keyboard>/w";
                 bool hasSpace = false;
                 foreach (InputBinding binding in jumpAction.bindings)
                     hasSpace |= binding.effectivePath == "<Keyboard>/space";
-                bool hasE = false;
+                bool hasLeftClick = false;
                 foreach (InputBinding binding in interactAction.bindings)
-                    hasE |= binding.effectivePath == "<Keyboard>/e";
-                Assert(hasW && hasSpace && hasE,
-                    "New Input System W / Space / E bindings");
+                    hasLeftClick |= binding.effectivePath == "<Mouse>/leftButton";
+                bool hasG = false;
+                foreach (InputBinding binding in dropAction.bindings)
+                    hasG |= binding.effectivePath == "<Keyboard>/g";
+                Assert(hasW && hasSpace && hasLeftClick && hasG,
+                    "New Input System W / Space / Left Click / G bindings");
             }
             catch (Exception exception) { report.AppendLine("FAIL " + exception); }
             finally

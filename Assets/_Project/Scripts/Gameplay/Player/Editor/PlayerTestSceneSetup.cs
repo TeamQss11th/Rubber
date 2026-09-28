@@ -15,6 +15,14 @@ namespace Rubber.Gameplay.Player.Editor
         private const string ScenePath = "Assets/_Project/Scenes/Test/PlayerTestScene.unity";
         private const string DefaultDuckDataPath =
             "Assets/_Project/ScriptableObjects/Ducks/DefaultRubberDuckData.asset";
+        private static readonly string[] TestDuckDataPaths =
+        {
+            DefaultDuckDataPath,
+            "Assets/_Project/ScriptableObjects/Ducks/ReturnTestRubberDuckData1.asset",
+            "Assets/_Project/ScriptableObjects/Ducks/ReturnTestRubberDuckData2.asset",
+            "Assets/_Project/ScriptableObjects/Ducks/ReturnTestRubberDuckData3.asset",
+            "Assets/_Project/ScriptableObjects/Ducks/ReturnTestRubberDuckData4.asset"
+        };
         private const string Request = "Temp/RubberPlayerSetup.request";
         static PlayerTestSceneSetup() => EditorApplication.delayCall += ProcessRequest;
 
@@ -41,7 +49,7 @@ namespace Rubber.Gameplay.Player.Editor
             var stats = AssetDatabase.LoadAssetAtPath<PlayerStats>(
                 "Assets/_Project/ScriptableObjects/Player/PlayerStats.asset");
             if (!stats) throw new System.InvalidOperationException("PlayerStats asset is not imported.");
-            RubberDuckData duckData = LoadDefaultDuckData();
+            RubberDuckData[] duckData = LoadTestDuckData();
             Scene previous = SceneManager.GetActiveScene();
             SceneManager.SetActiveScene(scene);
             var course = new GameObject("Player Test Course");
@@ -112,6 +120,7 @@ namespace Rubber.Gameplay.Player.Editor
             player.AddComponent<PlayerInteractionDetector>().Configure(camera, stats);
 
             AddDuckTestObjects(course.transform, obstacle, duckData);
+            AddDuckReturnTestArea(course.transform, stairs, duckData.Length);
 
             var guide = new GameObject("Interaction Guide Canvas", typeof(RectTransform),
                 typeof(Canvas), typeof(InteractionReticle));
@@ -141,14 +150,38 @@ namespace Rubber.Gameplay.Player.Editor
 
             Material obstacle = AssetDatabase.LoadAssetAtPath<Material>(
                 "Assets/_Project/Art/Materials/TestObstacle.mat");
-            if (AddDuckTestObjects(course, obstacle, LoadDefaultDuckData()))
+            if (AddDuckTestObjects(course, obstacle, LoadTestDuckData()))
             {
                 EditorSceneManager.MarkSceneDirty(scene);
                 EditorSceneManager.SaveScene(scene);
             }
         }
 
-        private static bool AddDuckTestObjects(Transform course, Material material, RubberDuckData duckData)
+        [MenuItem("Rubber/Add Duck Return Test Area")]
+        public static void AddDuckReturnTestAreaToCurrentScene()
+        {
+            Scene scene = SceneManager.GetActiveScene();
+            if (scene.path != ScenePath || EditorApplication.isPlayingOrWillChangePlaymode)
+            {
+                Debug.LogWarning("Open PlayerTestScene in Edit mode before adding the return test area.");
+                return;
+            }
+
+            Transform course = null;
+            foreach (GameObject root in scene.GetRootGameObjects())
+                if (root.name == "Player Test Course") course = root.transform;
+            if (!course) return;
+
+            Material poolMaterial = AssetDatabase.LoadAssetAtPath<Material>(
+                "Assets/_Project/Art/Materials/TestStairs.mat");
+            if (AddDuckReturnTestArea(course, poolMaterial, TestDuckDataPaths.Length))
+            {
+                EditorSceneManager.MarkSceneDirty(scene);
+                EditorSceneManager.SaveScene(scene);
+            }
+        }
+
+        private static bool AddDuckTestObjects(Transform course, Material material, RubberDuckData[] duckData)
         {
             Vector3[] positions =
             {
@@ -158,6 +191,9 @@ namespace Rubber.Gameplay.Player.Editor
                 new(-0.225f, 0.175f, -2.55f),
                 new(0.225f, 0.175f, -2.55f)
             };
+            if (duckData == null || duckData.Length != positions.Length)
+                throw new System.InvalidOperationException("Five test duck data assets are required.");
+
             bool added = false;
             for (int i = 0; i < positions.Length; i++)
             {
@@ -166,13 +202,15 @@ namespace Rubber.Gameplay.Player.Editor
                 if (existing)
                 {
                     RubberDuckInteractable interactable = existing.GetComponent<RubberDuckInteractable>();
-                    if (interactable && interactable.Data != duckData)
+                    if (interactable && interactable.Data != duckData[i])
                     {
                         Undo.RecordObject(interactable, "Assign Default Rubber Duck Data");
-                        interactable.Configure(duckData);
+                        interactable.Configure(duckData[i]);
                         EditorUtility.SetDirty(interactable);
                         added = true;
                     }
+                    if (EnsureDuckMarkerCube(existing, material))
+                        added = true;
                     continue;
                 }
 
@@ -185,17 +223,70 @@ namespace Rubber.Gameplay.Player.Editor
                 Rigidbody duckBody = duck.AddComponent<Rigidbody>();
                 duckBody.isKinematic = true;
                 duckBody.useGravity = false;
-                duck.AddComponent<RubberDuckInteractable>().Configure(duckData);
+                duck.AddComponent<RubberDuckInteractable>().Configure(duckData[i]);
+                EnsureDuckMarkerCube(duck.transform, material);
                 added = true;
             }
             return added;
         }
 
-        private static RubberDuckData LoadDefaultDuckData()
+        private static bool EnsureDuckMarkerCube(Transform duck, Material material)
         {
-            RubberDuckData data = AssetDatabase.LoadAssetAtPath<RubberDuckData>(DefaultDuckDataPath);
-            if (!data)
-                throw new System.InvalidOperationException("DefaultRubberDuckData asset is not imported.");
+            if (duck.Find("cube")) return false;
+
+            GameObject marker = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            marker.name = "cube";
+            marker.transform.SetParent(duck, false);
+            marker.transform.localPosition = new Vector3(0f, 0f, 0.5f);
+            marker.transform.localScale = Vector3.one * 0.5f;
+            marker.GetComponent<Renderer>().sharedMaterial = material;
+            Object.DestroyImmediate(marker.GetComponent<Collider>());
+            return true;
+        }
+
+        private static bool AddDuckReturnTestArea(Transform course, Material material, int totalDuckCount)
+        {
+            if (course.Find("Duck Return Pool")) return false;
+
+            var pool = new GameObject("Duck Return Pool");
+            pool.transform.SetParent(course);
+            pool.transform.position = new Vector3(5f, 0f, -4.5f);
+            RubberDuckReturnRegistry registry = pool.AddComponent<RubberDuckReturnRegistry>();
+
+            Box("Pool Bottom", pool.transform.position + new Vector3(0f, 0.05f, 0f),
+                new Vector3(3.6f, 0.1f, 3.6f), material, pool.transform);
+            Box("Pool Wall Left", pool.transform.position + new Vector3(-1.75f, 0.45f, 0f),
+                new Vector3(0.3f, 0.9f, 3.6f), material, pool.transform);
+            Box("Pool Wall Right", pool.transform.position + new Vector3(1.75f, 0.45f, 0f),
+                new Vector3(0.3f, 0.9f, 3.6f), material, pool.transform);
+            Box("Pool Wall Back", pool.transform.position + new Vector3(0f, 0.45f, 1.75f),
+                new Vector3(3.2f, 0.9f, 0.3f), material, pool.transform);
+            Box("Pool Wall Front", pool.transform.position + new Vector3(0f, 0.45f, -1.75f),
+                new Vector3(3.2f, 0.9f, 0.3f), material, pool.transform);
+
+            var triggerObject = new GameObject("Return Trigger");
+            triggerObject.transform.SetParent(pool.transform, false);
+            triggerObject.transform.localPosition = new Vector3(0f, 0.45f, 0f);
+            BoxCollider trigger = triggerObject.AddComponent<BoxCollider>();
+            trigger.isTrigger = true;
+            trigger.size = new Vector3(3.1f, 0.8f, 3.1f);
+            triggerObject.AddComponent<RubberDuckReturnZone>().Configure(registry);
+
+            var hud = new GameObject("Duck Return HUD");
+            hud.transform.SetParent(course);
+            hud.AddComponent<RubberDuckReturnDebugHud>().Configure(registry, totalDuckCount);
+            return true;
+        }
+
+        private static RubberDuckData[] LoadTestDuckData()
+        {
+            var data = new RubberDuckData[TestDuckDataPaths.Length];
+            for (int i = 0; i < data.Length; i++)
+            {
+                data[i] = AssetDatabase.LoadAssetAtPath<RubberDuckData>(TestDuckDataPaths[i]);
+                if (!data[i])
+                    throw new System.InvalidOperationException($"Test duck data is not imported: {TestDuckDataPaths[i]}");
+            }
             return data;
         }
 

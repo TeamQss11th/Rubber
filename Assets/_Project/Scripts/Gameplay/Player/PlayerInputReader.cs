@@ -15,7 +15,7 @@ namespace Rubber.Gameplay.Player
         [SerializeField] private PlayerDuckCarrier duckCarrier;
         private InputActionAsset runtimeActions;
         private InputActionMap playerMap;
-        private InputAction move, look, jump, interact, releaseCursor, captureCursor;
+        private InputAction move, look, jump, interact, drop, releaseCursor, captureCursor;
         private bool captured;
 
         public void Configure(InputActionAsset actions, PlayerMovement motor, PlayerCamera cameraController)
@@ -43,6 +43,7 @@ namespace Rubber.Gameplay.Player
             look = playerMap.FindAction("Look", true);
             jump = playerMap.FindAction("Jump", true);
             interact = playerMap.FindAction("Interact", true);
+            drop = playerMap.FindAction("Drop", true);
             releaseCursor = playerMap.FindAction("ReleaseCursor", true);
             captureCursor = playerMap.FindAction("CaptureCursor", true);
         }
@@ -60,18 +61,20 @@ namespace Rubber.Gameplay.Player
         private void Update()
         {
             if (releaseCursor.WasPressedThisFrame()) SetCapture(false);
-            else if (!captured && captureCursor.WasPressedThisFrame()) SetCapture(true);
+            else if (!captured && captureCursor.WasPressedThisFrame())
+            {
+                SetCapture(true);
+                return;
+            }
             if (!captured || Cursor.lockState != CursorLockMode.Locked)
             { movement.ClearInput(); return; }
             // Refresh held input when focus/cursor capture returns.
             movement.Move(move.ReadValue<Vector2>());
             playerCamera.Look(look.ReadValue<Vector2>());
-            if (interact.WasPressedThisFrame())
-            {
-                bool hasTarget = false;
-                if (interactionDetector) interactionDetector.TryInteract(out hasTarget);
-                if (!hasTarget && duckCarrier) duckCarrier.TryDrop();
-            }
+            if (interact.WasPressedThisFrame() && interactionDetector)
+                interactionDetector.TryInteract();
+            if (drop.WasPressedThisFrame() && duckCarrier)
+                duckCarrier.TryDrop();
         }
 
         private void OnMove(InputAction.CallbackContext context)

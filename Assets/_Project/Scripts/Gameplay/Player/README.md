@@ -2,7 +2,7 @@
 
 `Assets/_Project/Scenes/Test/PlayerTestScene.unity`를 열고 Play를 실행합니다.
 
-- WASD: 이동 / Space: 점프 / 마우스: 시점 회전 / E: 상호작용 또는 빈 공간에서 오리 내려놓기
+- WASD: 이동 / Space: 점프 / 마우스: 시점 회전 / 좌클릭: 상호작용 / G: 오리 내려놓기
 - Esc: 커서 해제 및 조작 중지 / 게임 화면 좌클릭: 조작 재개
 - 플레이어는 Renderer 없이 CapsuleCollider와 Rigidbody만 사용합니다.
 
@@ -15,7 +15,7 @@
 Move 이벤트와 현재 입력값을 이동 스크립트에 전달합니다. 이동 스크립트는 입력 장치를
 직접 읽지 않으며 FixedUpdate에서 물리 이동을 처리합니다. 카메라는 프레임별 마우스
 이동량을 사용합니다.
-E를 누르면 감지기가 그 순간 카메라 중앙 레이를 다시 확인한 뒤 대상의
+좌클릭하면 감지기가 그 순간 카메라 중앙 레이를 다시 확인한 뒤 대상의
 `IInteractable.TryInteract(player)`를 한 번 호출합니다. 커서가 풀렸거나 게임 창의 입력
 포커스가 없을 때는 실행하지 않습니다. 테스트 큐브는 실행할 때마다 색이 바뀌고 Console에 기록됩니다.
 실제 오리와 수영장은 나중에 같은 인터페이스를 구현하면 되므로 이 테스트 씬을 수정할 필요가 없습니다.
@@ -47,7 +47,7 @@ Ground Mask에서 제외되어 자신의 캡슐을 지면으로 감지하지 않
 발판에서 벗어난 직후에도 Coyote Time 동안 점프할 수 있습니다. 기본값은 0.12초입니다.
 상호작용 감지 거리는 같은 PlayerStats 에셋의 Interaction Distance에서 관리하며 기본값은 4.5입니다.
 화면 중앙 레이가 `IInteractable`을 감지하면 대상과 모든 자식 Renderer를 하나의 마스크로
-그린 뒤 PC에서는 14픽셀, Mobile에서는 8픽셀 너비의 화면 공간 외곽선을 합성합니다.
+그린 뒤 Renderer Data에 설정된 픽셀 너비로 화면 공간 외곽선을 합성합니다.
 대상의 원본 Material 배열은 변경하지 않습니다.
 외곽선 색상과 픽셀 너비는 PC/Mobile Renderer Data의 `Interaction Outline` Feature에서 조절합니다.
 
@@ -55,6 +55,7 @@ Ground Mask에서 제외되어 자신의 캡슐을 지면으로 감지하지 않
 
 - Rubber > Setup Player Test Scene: 테스트 코스가 없을 때만 생성합니다.
 - Rubber > Add Duck Test Objects: PlayerTestScene에 각각 러버덕 상호작용이 가능한 테스트 큐브 5개를 모아 배치합니다.
+- Rubber > Add Duck Return Test Area: PlayerTestScene에 안쪽이 낮은 반환 풀과 반환 Trigger, 오리 수 HUD를 추가합니다.
 - Rubber > Check Player Test Scene: 현재 테스트 씬에서 Play 모드 물리/입력 검증을
   수행하고 종료합니다. 결과는 Console과 `Temp/RubberPlayerCheck.txt`에 기록합니다.
   시뮬레이션 위치는 씬에 저장하지 않습니다.

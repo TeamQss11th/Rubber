@@ -8,6 +8,8 @@ namespace Rubber.Gameplay.Ducks
     {
         [SerializeField] private RubberDuckReturnRegistry registry;
 
+        public RubberDuckReturnRegistry Registry => registry;
+
         public void Configure(RubberDuckReturnRegistry returnRegistry) => registry = returnRegistry;
 
         private void Reset()
