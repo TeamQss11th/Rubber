@@ -1,0 +1,9 @@
+F1 Pool terrace feet=(9.20, -0.65, -3.80) floor=Terrain (1)
+F2 Dining feet=(-2.00, 0.80, 5.30) floor=Floor 2x2 (18)
+F3 Study feet=(-2.00, 3.61, 3.30) floor=Roof 2x2 side (4)
+F4 Reading feet=(-2.80, 3.61, 6.40) floor=Roof 2x2 side (8)
+F5 Living feet=(9.90, 0.30, 11.80) floor=Floor 2x2
+F6 Breakfast feet=(9.80, 0.30, 17.80) floor=Floor 2x2 (12)
+F7 Studio feet=(6.00, 3.10, 15.30) floor=Roof 2x2 (12)
+F8 Retreat feet=(6.60, 3.10, 17.50) floor=Roof 2x2 (3)
+Revised F1=(0.00, 0.80, 0.00) floor=Floor 2x2 (5)

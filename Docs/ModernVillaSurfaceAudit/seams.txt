@@ -1,0 +1,1 @@
+Adjacent level supports, 0.5m grid. Crossings=6365; falls=0; blocked by geometry=17

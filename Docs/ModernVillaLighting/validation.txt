@@ -1,0 +1,28 @@
+Modern Villa - Interior Lighting/Main dining pendant/Warm downlight pos=(-4.700, 2.087, 8.100), intensity=1.8, range=4.5, kelvin=3600, bake=Mixed, shadows=Soft
+Modern Villa - Interior Lighting/Breakfast pendant/Warm downlight pos=(6.500, 1.582, 19.150), intensity=1.8, range=4.5, kelvin=3600, bake=Mixed, shadows=Soft
+Modern Villa - Interior Lighting/Main study wall lamp/Warm wall downlight pos=(-7.155, 5.126, 3.300), intensity=1.1, range=3.8, kelvin=3600, bake=Mixed, shadows=Soft
+Modern Villa - Interior Lighting/Main study wall lamp/Soft wall uplight pos=(-7.155, 5.374, 3.300), intensity=0.3, range=1.8, kelvin=3600, bake=Mixed, shadows=Soft
+Modern Villa - Interior Lighting/Main reading wall lamp/Warm wall downlight pos=(-7.155, 5.126, 7.150), intensity=1.1, range=3.8, kelvin=3600, bake=Mixed, shadows=Soft
+Modern Villa - Interior Lighting/Main reading wall lamp/Soft wall uplight pos=(-7.155, 5.374, 7.150), intensity=0.3, range=1.8, kelvin=3600, bake=Mixed, shadows=Soft
+Modern Villa - Interior Lighting/Living wall lamp/Warm wall downlight pos=(5.550, 1.976, 16.905), intensity=1.1, range=3.8, kelvin=3600, bake=Mixed, shadows=Soft
+Modern Villa - Interior Lighting/Living wall lamp/Soft wall uplight pos=(5.550, 2.224, 16.905), intensity=0.3, range=1.8, kelvin=3600, bake=Mixed, shadows=Soft
+Modern Villa - Interior Lighting/Retreat wall lamp/Warm wall downlight pos=(3.345, 4.676, 17.550), intensity=1.1, range=3.8, kelvin=3600, bake=Mixed, shadows=Soft
+Modern Villa - Interior Lighting/Retreat wall lamp/Soft wall uplight pos=(3.345, 4.924, 17.550), intensity=0.3, range=1.8, kelvin=3600, bake=Mixed, shadows=Soft
+Modern Villa - Interior Lighting/Sources aligned to existing lamps/Desk lamp - warm task light pos=(-6.030, 4.626, 4.860), intensity=0.18, range=2.4, kelvin=3600, bake=Mixed, shadows=Soft
+Modern Villa - Interior Lighting/Sources aligned to existing lamps/Reading lamp - warm task light pos=(-6.700, 4.551, 8.050), intensity=0.18, range=2.4, kelvin=3600, bake=Mixed, shadows=Soft
+Modern Villa - Interior Lighting/Sources aligned to existing lamps/Sofa lamp - warm task light pos=(9.500, 1.246, 16.100), intensity=0.18, range=2.4, kelvin=3600, bake=Mixed, shadows=Soft
+Modern Villa - Interior Lighting/Sources aligned to existing lamps/Studio lamp - warm task light pos=(7.730, 4.121, 12.250), intensity=0.18, range=2.4, kelvin=3600, bake=Mixed, shadows=Soft
+Modern Villa - Interior Lighting/Sources aligned to existing lamps/Ground Level - existing pendant light pos=(-5.773, 2.407, 3.199), intensity=1.8, range=4.5, kelvin=3600, bake=Mixed, shadows=Soft
+Modern Villa - Interior Lighting/Sources aligned to existing lamps/Level 1 - existing pendant light pos=(6.250, 4.891, 11.750), intensity=1.8, range=4.5, kelvin=3600, bake=Mixed, shadows=Soft
+Modern Villa - Interior Lighting/Dining wall lamp/Warm wall downlight pos=(-6.200, 2.476, 10.405), intensity=1.1, range=3.8, kelvin=3600, bake=Mixed, shadows=Soft
+Modern Villa - Interior Lighting/Dining wall lamp/Soft wall uplight pos=(-6.200, 2.724, 10.405), intensity=0.3, range=1.8, kelvin=3600, bake=Mixed, shadows=Soft
+Modern Villa - Interior Lighting/Reading back wall lamp/Warm wall downlight pos=(-3.450, 5.176, 9.405), intensity=1.1, range=3.8, kelvin=3600, bake=Mixed, shadows=Soft
+Modern Villa - Interior Lighting/Reading back wall lamp/Soft wall uplight pos=(-3.450, 5.424, 9.405), intensity=0.3, range=1.8, kelvin=3600, bake=Mixed, shadows=Soft
+FIXTURE Modern Villa - Interior Lighting/Main dining pendant bounds=(-4.9050, 2.1119, 7.8950)..(-4.4950, 3.2550, 8.3050) scale=(1.000, 1.000, 1.000)
+FIXTURE Modern Villa - Interior Lighting/Breakfast pendant bounds=(6.2950, 1.6069, 18.9450)..(6.7050, 2.7500, 19.3550) scale=(1.000, 1.000, 1.000)
+FIXTURE Modern Villa - Interior Lighting/Main study wall lamp bounds=(-7.2450, 5.1461, 3.2480)..(-7.1148, 5.3539, 3.3520) scale=(1.000, 1.000, 1.000)
+FIXTURE Modern Villa - Interior Lighting/Main reading wall lamp bounds=(-7.2450, 5.1461, 7.0980)..(-7.1148, 5.3539, 7.2020) scale=(1.000, 1.000, 1.000)
+FIXTURE Modern Villa - Interior Lighting/Living wall lamp bounds=(5.4980, 1.9961, 16.8648)..(5.6020, 2.2039, 16.9950) scale=(1.000, 1.000, 1.000)
+FIXTURE Modern Villa - Interior Lighting/Retreat wall lamp bounds=(3.2550, 4.6961, 17.4980)..(3.3852, 4.9039, 17.6020) scale=(1.000, 1.000, 1.000)
+FIXTURE Modern Villa - Interior Lighting/Dining wall lamp bounds=(-6.2520, 2.4961, 10.3648)..(-6.1480, 2.7039, 10.4950) scale=(1.000, 1.000, 1.000)
+FIXTURE Modern Villa - Interior Lighting/Reading back wall lamp bounds=(-3.5020, 5.1961, 9.3648)..(-3.3980, 5.4039, 9.4950) scale=(1.000, 1.000, 1.000)

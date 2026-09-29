@@ -1,0 +1,1 @@
+Compared with lighting baseline: changed existing documents: 9223372036854775807; removed: 0; added: 100.
