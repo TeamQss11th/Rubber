@@ -94,7 +94,7 @@ namespace Rubber.EditorTools
             File.WriteAllText(Folder+"/surfaces.tsv",inventory.ToString());File.WriteAllText(Folder+"/missing-support.tsv",issues.ToString());File.WriteAllText(Folder+"/coplanar-candidates.tsv",overlaps.ToString());File.WriteAllText(Folder+"/colliders.tsv",cs.ToString());
             var summary=new StringBuilder($"Scene={scene.path}; dirty={scene.isDirty}; mesh filters={meshes.Length}; surface meshes={surfaces.Length}; colliders={colliders.Length}; samples={count}; missing samples={missing}; coplanar AABB candidates={buried}\n");
             foreach(var root in scene.GetRootGameObjects())summary.AppendLine("ROOT "+root.name);
-            foreach(var t in UnityEngine.Object.FindObjectsByType<Terrain>(FindObjectsSortMode.None))summary.AppendLine($"TERRAIN {PathOf(t.transform)} pos={t.transform.position} size={t.terrainData.size} holes={t.terrainData.holesResolution} collider={t.GetComponent<TerrainCollider>()?.enabled}");
+            foreach(var t in UnityEngine.Object.FindObjectsByType<Terrain>())summary.AppendLine($"TERRAIN {PathOf(t.transform)} pos={t.transform.position} size={t.terrainData.size} holes={t.terrainData.holesResolution} collider={t.GetComponent<TerrainCollider>()?.enabled}");
             File.WriteAllText(Folder+"/summary.txt",summary.ToString());
         }
     }

@@ -198,7 +198,7 @@ namespace Rubber.EditorTools
             foreach(var t in candidates.Where(t=>t.name=="CoffeePot"||t.name=="CoffeeCupC"))
             {var b=B(t.gameObject);var tray=trays.OrderBy(t2=>(B(t2.gameObject).center-b.center).sqrMagnitude).FirstOrDefault();if(tray && (B(tray.gameObject).center-b.center).sqrMagnitude<1)SetBottom(t.gameObject,new Vector3(b.center.x,B(tray.gameObject).max.y+.002f,b.center.z));}
             int aligned=0;
-            foreach(var light in UnityEngine.Object.FindObjectsByType<Light>(FindObjectsSortMode.None))
+            foreach(var light in UnityEngine.Object.FindObjectsByType<Light>())
             {
                 if(light.type==LightType.Directional||!light.transform.parent)continue;
                 var fixture=light.transform.parent.gameObject;var bounds=B(fixture);

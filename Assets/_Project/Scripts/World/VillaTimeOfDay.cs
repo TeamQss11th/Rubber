@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 
 namespace Rubber.World
@@ -62,7 +61,7 @@ namespace Rubber.World
             savedSunColor = sun.color; savedSunRotation = sun.transform.rotation; savedSunEnabled = sun.enabled;
             runtimeSky = new Material(noon.sky) { name = "Villa time sky (runtime)" };
             RenderSettings.skybox = runtimeSky;
-            probes = FindObjectsByType<ReflectionProbe>(FindObjectsSortMode.None);
+            probes = FindObjectsByType<ReflectionProbe>();
             probeIntensities = new float[probes.Length];
             for (int i=0;i<probes.Length;i++) probeIntensities[i] = probes[i].intensity;
             int n = noon.maps.Length; colors = new Texture2D[n]; directions = new Texture2D[n];
@@ -106,14 +105,6 @@ namespace Rubber.World
         void Update()
         {
             if(!ready)return;
-            var k=Keyboard.current;
-            if(Application.isFocused && k!=null)
-            {
-                if(k.tKey.wasPressedThisFrame)running=!running;
-                if(k.nKey.wasPressedThisFrame)AdvancePeriod();
-                if(k.leftBracketKey.wasPressedThisFrame)SetHour(hour-1);
-                if(k.rightBracketKey.wasPressedThisFrame)SetHour(hour+1);
-            }
             if(skipElapsed>=0){skipElapsed+=Time.deltaTime;hour=Mathf.Repeat(skipStart+skipDistance*Mathf.SmoothStep(0,1,skipElapsed/5),24);if(skipElapsed>=5)skipElapsed=-1;}
             else if(running)hour=Mathf.Repeat(hour+Time.deltaTime*24/Mathf.Max(60,dayLengthSeconds),24);
             Apply(false);
@@ -152,12 +143,6 @@ namespace Rubber.World
             blender.SetTexture(kernel,"SourceA",a);blender.SetTexture(kernel,"SourceB",b);blender.SetTexture(kernel,"Result",target);
             blender.SetFloat("Weight",w);blender.Dispatch(kernel,(target.width+7)/8,(target.height+7)/8,1);
             target.GenerateMips();Graphics.CopyTexture(target,output);
-        }
-        void OnGUI()
-        {
-            if(!ready)return;
-            int h=Mathf.FloorToInt(hour),m=Mathf.FloorToInt((hour-h)*60);
-            GUI.Box(new Rect(16,150,600,45),$"{h:00}:{m:00} | {(running?"Time running":"Paused")} | T pause | N next period (5s) | [ / ] hour\n{CurrentBlend}");
         }
         void OnDisable()
         {

@@ -1,0 +1,2 @@
+Started 2026-09-29 오후 12:38:59 paused=False
+Physics wait complete 2026-09-29 오후 12:39:11

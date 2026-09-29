@@ -72,7 +72,7 @@ namespace Rubber.EditorTools
             foreach(var state in states)if(!set.lightingScenarios.Contains(state.scenario))set.TryAddScenario(state.scenario);
             var pipeline=new SerializedObject(AssetDatabase.LoadAssetAtPath<RenderPipelineAsset>("Assets/Settings/PC_RPAsset.asset"));pipeline.FindProperty("m_SupportProbeVolumeScenarioBlending").boolValue=true;pipeline.ApplyModifiedPropertiesWithoutUndo();
             // All four states share geometry, packing inputs, and probe placement.
-            foreach(var d in Object.FindObjectsByType<VillaSlidingDoor>(FindObjectsSortMode.None))foreach(var r in d.GetComponentsInChildren<MeshRenderer>())
+            foreach(var d in Object.FindObjectsByType<VillaSlidingDoor>())foreach(var r in d.GetComponentsInChildren<MeshRenderer>())
             {GameObjectUtility.SetStaticEditorFlags(r.gameObject,0);r.receiveGI=ReceiveGI.LightProbes;r.lightmapIndex=-1;}
             phase=0;active=true;Lightmapping.bakeCompleted+=Completed;EditorApplication.update+=Watch;
             BeginPhase();
@@ -109,8 +109,8 @@ namespace Rubber.EditorTools
             {
                 if(LightmapSettings.lightmaps.Length==0 || !set.HasBakedData())throw new InvalidOperationException("Missing baked data");
                 string label=states[phase].scenario;Directory.CreateDirectory(folder+"/"+label);AssetDatabase.Refresh();
-                var current=Object.FindObjectsByType<Renderer>(FindObjectsInactive.Include,FindObjectsSortMode.None).Select(r=>new ModernVillaDayNight.BakedRenderer{renderer=r,index=r.lightmapIndex,scaleOffset=r.lightmapScaleOffset}).ToArray();
-                var terrains=Object.FindObjectsByType<Terrain>(FindObjectsInactive.Include,FindObjectsSortMode.None).Select(t=>new ModernVillaDayNight.BakedTerrain{terrain=t,index=t.lightmapIndex,scaleOffset=t.lightmapScaleOffset}).ToArray();
+                var current=Object.FindObjectsByType<Renderer>(FindObjectsInactive.Include).Select(r=>new ModernVillaDayNight.BakedRenderer{renderer=r,index=r.lightmapIndex,scaleOffset=r.lightmapScaleOffset}).ToArray();
+                var terrains=Object.FindObjectsByType<Terrain>(FindObjectsInactive.Include).Select(t=>new ModernVillaDayNight.BakedTerrain{terrain=t,index=t.lightmapIndex,scaleOffset=t.lightmapScaleOffset}).ToArray();
                 if(phase==0)
                 {
                     canonical=current;terrainCanonical=terrains;

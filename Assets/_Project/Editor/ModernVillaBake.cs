@@ -46,14 +46,14 @@ namespace Rubber.EditorTools
             so.FindProperty("m_LightProbeSampleCountMultiplier").floatValue=2;
             so.ApplyModifiedProperties();
             int probes=0;
-            foreach(var r in UnityEngine.Object.FindObjectsByType<MeshRenderer>(FindObjectsSortMode.None))
+            foreach(var r in UnityEngine.Object.FindObjectsByType<MeshRenderer>())
             {
                 var b=r.bounds;string n=r.name.ToLowerInvariant();
                 bool detail=Mathf.Max(b.size.x,b.size.y,b.size.z)<.6f || n.Contains("palm") || n.Contains("plant") || n.Contains("shrub") || n.Contains("flower") || n.Contains("loungechair") || r.sharedMaterials.Any(m=>m && m.name=="mv_couches");
                 if(detail){GameObjectUtility.SetStaticEditorFlags(r.gameObject,GameObjectUtility.GetStaticEditorFlags(r.gameObject)&~StaticEditorFlags.ContributeGI);r.receiveGI=ReceiveGI.LightProbes;r.lightProbeUsage=LightProbeUsage.BlendProbes;r.lightmapIndex=-1;probes++;}
                 else if((GameObjectUtility.GetStaticEditorFlags(r.gameObject)&StaticEditorFlags.ContributeGI)!=0){r.receiveGI=ReceiveGI.Lightmaps;r.scaleInLightmap=Mathf.Min(r.scaleInLightmap,.75f);}
             }
-            foreach(var t in UnityEngine.Object.FindObjectsByType<Terrain>(FindObjectsSortMode.None))
+            foreach(var t in UnityEngine.Object.FindObjectsByType<Terrain>())
             {var ts=new SerializedObject(t);var scale=ts.FindProperty("m_ScaleInLightmap");if(scale!=null)scale.floatValue=.025f;ts.ApplyModifiedProperties();}
             foreach(var light in controller.sceneLights)if(light && light.type!=LightType.Directional)light.lightmapBakeType=LightmapBakeType.Baked;
             EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());EditorSceneManager.SaveScene(SceneManager.GetActiveScene());AssetDatabase.SaveAssets();
@@ -127,8 +127,8 @@ static LightmapData[] CopyMaps(string label)
             }
             return LightmapSettings.lightmaps.Select(m=>new LightmapData{lightmapColor=Copy(m.lightmapColor),lightmapDir=Copy(m.lightmapDir),shadowMask=Copy(m.shadowMask)}).ToArray();
         }
-        static ModernVillaDayNight.BakedRenderer[] Bindings()=>UnityEngine.Object.FindObjectsByType<Renderer>(FindObjectsInactive.Include,FindObjectsSortMode.None).Select(r=>new ModernVillaDayNight.BakedRenderer{renderer=r,index=r.lightmapIndex,scaleOffset=r.lightmapScaleOffset}).ToArray();
-        static ModernVillaDayNight.BakedTerrain[] TerrainBindings()=>UnityEngine.Object.FindObjectsByType<Terrain>(FindObjectsInactive.Include,FindObjectsSortMode.None).Select(t=>new ModernVillaDayNight.BakedTerrain{terrain=t,index=t.lightmapIndex,scaleOffset=t.lightmapScaleOffset}).ToArray();
+        static ModernVillaDayNight.BakedRenderer[] Bindings()=>UnityEngine.Object.FindObjectsByType<Renderer>(FindObjectsInactive.Include).Select(r=>new ModernVillaDayNight.BakedRenderer{renderer=r,index=r.lightmapIndex,scaleOffset=r.lightmapScaleOffset}).ToArray();
+        static ModernVillaDayNight.BakedTerrain[] TerrainBindings()=>UnityEngine.Object.FindObjectsByType<Terrain>(FindObjectsInactive.Include).Select(t=>new ModernVillaDayNight.BakedTerrain{terrain=t,index=t.lightmapIndex,scaleOffset=t.lightmapScaleOffset}).ToArray();
         static void RestoreDay()
         {
             Scenario("Default",true);RenderSettings.skybox=daySky;RenderSettings.ambientMode=ambientMode;RenderSettings.ambientLight=ambient;RenderSettings.ambientIntensity=intensity;RenderSettings.reflectionIntensity=reflection;RenderSettings.fogColor=fog;

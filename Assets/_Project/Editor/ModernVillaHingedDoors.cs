@@ -27,7 +27,7 @@ namespace Rubber.EditorTools
             var scene = SceneManager.GetActiveScene();
             if (Application.isPlaying || Lightmapping.isRunning || scene.isDirty || scene.path != ModernVillaSetup.ScenePath)
                 throw new System.InvalidOperationException("Saved Modern Villa must be open in Edit mode, with no bake running.");
-            var doors = Object.FindObjectsByType<VillaSlidingDoor>(FindObjectsSortMode.None).Where(d => d.name == "interior door" || d.name == "exterior Door").ToArray();
+            var doors = Object.FindObjectsByType<VillaSlidingDoor>().Where(d => d.name == "interior door" || d.name == "exterior Door").ToArray();
             if (doors.Length != 3) throw new System.InvalidOperationException("Expected exactly three existing hinged door leaves.");
             File.Copy(scene.path, "Docs/ModernVillaDoors/BeforeHingedDoors.unity.backup", true);
             var report = new StringBuilder();

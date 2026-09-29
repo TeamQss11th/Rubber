@@ -20,8 +20,8 @@ public static class ModernVillaInterior {
  foreach(var t in SceneManager.GetActiveScene().GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<Transform>(true))){
  if(t.GetComponentsInChildren<Renderer>(true).Length>0 && (P(t).Split('/').Length<=3 || PrefabUtility.IsOutermostPrefabInstanceRoot(t.gameObject)))s.AppendLine($"{P(t)} active={t.gameObject.activeInHierarchy} pos={t.position:F3} yaw={t.eulerAngles.y:F1} min={B(t).min:F3} max={B(t).max:F3} source={PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(t.gameObject)}");
  }
- foreach(var c in UnityEngine.Object.FindObjectsByType<Camera>(FindObjectsInactive.Include,FindObjectsSortMode.None))s.AppendLine($"CAMERA {P(c.transform)} enabled={c.enabled} pos={c.transform.position} rot={c.transform.eulerAngles}");
- foreach(var c in UnityEngine.Object.FindObjectsByType<CharacterController>(FindObjectsInactive.Include,FindObjectsSortMode.None))s.AppendLine($"PLAYER {P(c.transform)} height={c.height} radius={c.radius}");
+ foreach(var c in UnityEngine.Object.FindObjectsByType<Camera>(FindObjectsInactive.Include))s.AppendLine($"CAMERA {P(c.transform)} enabled={c.enabled} pos={c.transform.position} rot={c.transform.eulerAngles}");
+ foreach(var c in UnityEngine.Object.FindObjectsByType<CharacterController>(FindObjectsInactive.Include))s.AppendLine($"PLAYER {P(c.transform)} height={c.height} radius={c.radius}");
  File.WriteAllText(Report+"/survey.txt",s.ToString());
  Capture("before-exterior",new Vector3(22,18,-16),new Vector3(0,2,10));
  CapturePlan("before-ground",1);CapturePlan("before-upper",3.8f);
@@ -158,7 +158,7 @@ public static class ModernVillaInterior {
  if(SceneView.lastActiveSceneView){var pos=new Vector3(9.9f,1.88f,11.8f);var target=new Vector3(7.4f,1.2f,15);SceneView.lastActiveSceneView.LookAtDirect(target,Quaternion.LookRotation(target-pos),1.65f);SceneView.lastActiveSceneView.sceneLighting=false;SceneView.lastActiveSceneView.drawGizmos=false;}
  }
  static void CapturePlan(string name,float floor){
- var rs=UnityEngine.Object.FindObjectsByType<Renderer>(FindObjectsSortMode.None).Where(r=>r.enabled && (r.bounds.min.y>floor+2.2f || (P(r.transform).ToLower().Contains("roof") && r.bounds.max.y>floor+.1f))).ToArray();
+ var rs=UnityEngine.Object.FindObjectsByType<Renderer>().Where(r=>r.enabled && (r.bounds.min.y>floor+2.2f || (P(r.transform).ToLower().Contains("roof") && r.bounds.max.y>floor+.1f))).ToArray();
  foreach(var r in rs)r.enabled=false;
  try{Capture(name,new Vector3(-1,30,10),new Vector3(-1,floor,10),true);}finally{foreach(var r in rs)r.enabled=true;}
  }

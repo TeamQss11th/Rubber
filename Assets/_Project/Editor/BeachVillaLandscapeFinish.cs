@@ -52,7 +52,7 @@ namespace Rubber.EditorTools
             for(int i=0;i<24;i++){float x=-56+i*4.8f;Plant(i%2==0?"PalmA":"PalmC",x,58+(float)random.NextDouble()*8,1.2f);}
             for(int side=-1;side<=1;side+=2)for(int i=0;i<14;i++)Plant(i%2==0?"PalmB":"PalmC",side*(48+(float)random.NextDouble()*7),-18+i*5,1.1f);
             // Existing frame boxes filled the openings. Preserve frame and fixed glazing collision, slide the door open.
-            foreach(var frame in Object.FindObjectsByType<MeshFilter>(FindObjectsSortMode.None).Where(m=>m.name=="Window door frame"))
+            foreach(var frame in Object.FindObjectsByType<MeshFilter>().Where(m=>m.name=="Window door frame"))
             {
                 foreach(var box in frame.GetComponents<BoxCollider>())box.enabled=false;
                 var mc=frame.GetComponent<MeshCollider>();if(!mc)mc=frame.gameObject.AddComponent<MeshCollider>();mc.sharedMesh=frame.sharedMesh;

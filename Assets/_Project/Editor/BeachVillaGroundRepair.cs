@@ -107,7 +107,7 @@ namespace Rubber.EditorTools
             var couchTable=Find("PoolLevel/mv_CouchTableD"); if(couchTable)couchTable.position+=Vector3.down*.05f;
             TerrainGround();
             // Remove bathing props from open gardens and exposed upper terrace.
-            foreach(var t in UnityEngine.Object.FindObjectsByType<Transform>(FindObjectsSortMode.None))
+            foreach(var t in UnityEngine.Object.FindObjectsByType<Transform>())
                 if(t.name.IndexOf("Jacuzzi",StringComparison.OrdinalIgnoreCase)>=0) Park(t);
             Park(Find("Beach Villa - Expanded Grounds/Garden spa pavilion"));
             // Replace oversized spa architecture with a small shaded conversation destination.
@@ -238,7 +238,7 @@ namespace Rubber.EditorTools
             // Keep the approach to the front flight free of the original low sofa and planters.
             var sofa=Find("PoolLevel/Objects/Couch Group A");
             if(sofa && B(sofa.gameObject).center.x<9)sofa.position+=Vector3.right*5;
-            var tableCollider=UnityEngine.Object.FindObjectsByType<MeshCollider>(FindObjectsSortMode.None).FirstOrDefault(c=>BeachVillaExpansionSurvey.PathOf(c.transform)=="PoolLevel/Objects/CouchTableB (1)"&&c.bounds.center.x>5&&c.bounds.center.x<9);
+            var tableCollider=UnityEngine.Object.FindObjectsByType<MeshCollider>().FirstOrDefault(c=>BeachVillaExpansionSurvey.PathOf(c.transform)=="PoolLevel/Objects/CouchTableB (1)"&&c.bounds.center.x>5&&c.bounds.center.x<9);
             var oldTable=tableCollider?tableCollider.transform:null;
             if(oldTable)
             {

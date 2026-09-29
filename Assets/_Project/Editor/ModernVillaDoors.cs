@@ -21,7 +21,7 @@ namespace Rubber.EditorTools
             if (Object.FindAnyObjectByType<VillaDoorTestControls>()) return;
             Directory.CreateDirectory(Report);
             File.Copy(scene.path, Report + "/BeforeDoors.unity.backup", true);
-            var leaves = Object.FindObjectsByType<MeshFilter>(FindObjectsSortMode.None).Where(m => m.name == "Window door door" || m.sharedMesh && (m.sharedMesh.name.ToLowerInvariant().Contains("interior") || m.sharedMesh.name.ToLowerInvariant().Contains("exterior")) && PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(m).EndsWith("Door.prefab")).ToArray();
+            var leaves = Object.FindObjectsByType<MeshFilter>().Where(m => m.name == "Window door door" || m.sharedMesh && (m.sharedMesh.name.ToLowerInvariant().Contains("interior") || m.sharedMesh.name.ToLowerInvariant().Contains("exterior")) && PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(m).EndsWith("Door.prefab")).ToArray();
             var doors = new System.Collections.Generic.List<VillaSlidingDoor>();
             var moving = new System.Collections.Generic.HashSet<Renderer>();
             var report = new StringBuilder();
@@ -83,9 +83,9 @@ namespace Rubber.EditorTools
         {
             if (SceneManager.GetActiveScene().path != ModernVillaSetup.ScenePath) return;
             var b = new StringBuilder();
-            foreach (var t in Object.FindObjectsByType<Transform>(FindObjectsSortMode.None).Where(t => t.name.ToLowerInvariant().Contains("door")))
+            foreach (var t in Object.FindObjectsByType<Transform>().Where(t => t.name.ToLowerInvariant().Contains("door")))
             {
-                b.AppendLine($"{t.GetInstanceID()} {PathOf(t)} pos={t.position} rot={t.eulerAngles} scale={t.lossyScale} prefab={PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(t)}");
+                b.AppendLine($"{t.GetEntityId()} {PathOf(t)} pos={t.position} rot={t.eulerAngles} scale={t.lossyScale} prefab={PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(t)}");
                 foreach (var m in t.GetComponentsInChildren<MeshFilter>()) b.AppendLine($"  MESH {PathOf(m.transform)} local={m.sharedMesh.bounds} world={m.GetComponent<Renderer>()?.bounds}");
                 foreach (var c in t.GetComponentsInChildren<Collider>()) b.AppendLine($"  COL {PathOf(c.transform)} {c.GetType().Name} {c.bounds}");
             }

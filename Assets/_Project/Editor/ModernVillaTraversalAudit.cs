@@ -55,7 +55,7 @@ namespace Rubber.EditorTools
                     body.enabled=false;
                 }
                 File.WriteAllText(Folder+"/seams.txt",$"Adjacent level supports, 0.5m grid. Crossings={crossings}; falls={crossFalls}; blocked by geometry={blocked}\n"+seamReport);
-                var terrainReport=new StringBuilder();foreach(var terrain in UnityEngine.Object.FindObjectsByType<Terrain>(FindObjectsSortMode.None)){var d=terrain.terrainData;var holes=d.GetHoles(0,0,d.holesResolution,d.holesResolution);int holesCount=0;foreach(bool solid in holes)if(!solid)holesCount++;terrainReport.AppendLine($"{ModernVillaSurfaceAudit.PathOf(terrain.transform)}: holes={holesCount}/{holes.Length}");}File.WriteAllText(Folder+"/terrain.txt",terrainReport.ToString());
+                var terrainReport=new StringBuilder();foreach(var terrain in UnityEngine.Object.FindObjectsByType<Terrain>()){var d=terrain.terrainData;var holes=d.GetHoles(0,0,d.holesResolution,d.holesResolution);int holesCount=0;foreach(bool solid in holes)if(!solid)holesCount++;terrainReport.AppendLine($"{ModernVillaSurfaceAudit.PathOf(terrain.transform)}: holes={holesCount}/{holes.Length}");}File.WriteAllText(Folder+"/terrain.txt",terrainReport.ToString());
                 var routes=new[]{
                     new[]{new Vector3(3.75f,.456f,16.5f),new Vector3(3.75f,3.05f,12.5f)},
                     new[]{new Vector3(3.75f,.456f,16.5f),new Vector3(4.75f,.25f,16.5f)},

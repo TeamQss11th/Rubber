@@ -1,0 +1,11 @@
+Surface Center: (-6.60, 0.10, 26.50), Extents: (6.90, 0.00, 3.50) enabled=True active=True shader=Rubber/Pool Water supported=True passes=1
+Water test - RubberDuck: position=(-3.600, 0.020, 26.500), floating=True, settled=True, speed=0.0000, up=1.000
+Water test - RubberDuck_Balloon: position=(-4.400, 0.020, 26.500), floating=True, settled=True, speed=0.0000, up=1.000
+Water test - RubberDuck_BigHead: position=(-5.200, 0.020, 26.500), floating=True, settled=True, speed=0.0000, up=1.000
+Water test - RubberDuck_Glass: position=(-6.000, 0.020, 26.500), floating=True, settled=True, speed=0.0000, up=1.000
+Water test - RubberDuck_ToyKnife: position=(-6.800, 0.020, 26.500), floating=True, settled=True, speed=0.0000, up=1.000
+External push: (-3.873, 0.020, 26.500)
+Wall stop: position=(-7.001, 0.020, 29.878), within wall=True
+Outside water: floating=False, position=(2.000, 0.505, 26.500)
+Reset: settled=5/5
+Errors=0

@@ -22,7 +22,7 @@ public static class ModernVillaSetup {
  var labels=new[]{"F1 Pool terrace","F2 Dining","F3 Study","F4 Reading","F5 Living","F6 Breakfast","F7 Studio","F8 Retreat"};
  var points=new ModernVillaWalkthrough.Checkpoint[hints.Length];
  for(int i=0;i<hints.Length;i++){if(!Floor(hints[i],out var p,out var surface))throw new InvalidOperationException("No clear floor at "+labels[i]);points[i]=new ModernVillaWalkthrough.Checkpoint{label=labels[i],feet=p,yaw=i==0?0:-90};log.AppendLine(labels[i]+" feet="+p+" floor="+surface);}
- var camera=UnityEngine.Object.FindObjectsByType<Camera>(FindObjectsSortMode.None).First(c=>c.isActiveAndEnabled);
+ var camera=UnityEngine.Object.FindObjectsByType<Camera>().First(c=>c.isActiveAndEnabled);
  foreach(var c in scene.GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<Camera>(true)))if(c!=camera)c.enabled=false;
  foreach(var a in scene.GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<AudioListener>(true)))a.enabled=a.gameObject==camera.gameObject;
  var root=new GameObject("Modern Villa - Lighting Walkthrough");var body=root.AddComponent<CharacterController>();body.height=1.8f;body.radius=.28f;body.center=Vector3.up*.9f;body.stepOffset=.3f;body.skinWidth=.03f;body.minMoveDistance=0;body.slopeLimit=45;
@@ -37,7 +37,7 @@ public static class ModernVillaSetup {
  Volume("APV - villa grounds",new Vector3(-2,3,12),new Vector3(40,12,46),1,2);
  Volume("APV - main house",new Vector3(-2,3.5f,8),new Vector3(14,8,23),0,1);
  Volume("APV - annex",new Vector3(7.5f,3,16),new Vector3(12,8,21),0,1);
- foreach(var r in UnityEngine.Object.FindObjectsByType<MeshRenderer>(FindObjectsSortMode.None)){if(r.GetComponentInParent<Rigidbody>())continue;bool transparent=r.sharedMaterials.Any(m=>m && m.renderQueue>=3000);if(transparent)continue;GameObjectUtility.SetStaticEditorFlags(r.gameObject,GameObjectUtility.GetStaticEditorFlags(r.gameObject)|StaticEditorFlags.ContributeGI);r.receiveGI=ReceiveGI.Lightmaps;PrefabUtility.RecordPrefabInstancePropertyModifications(r);PrefabUtility.RecordPrefabInstancePropertyModifications(r.gameObject);}
+ foreach(var r in UnityEngine.Object.FindObjectsByType<MeshRenderer>()){if(r.GetComponentInParent<Rigidbody>())continue;bool transparent=r.sharedMaterials.Any(m=>m && m.renderQueue>=3000);if(transparent)continue;GameObjectUtility.SetStaticEditorFlags(r.gameObject,GameObjectUtility.GetStaticEditorFlags(r.gameObject)|StaticEditorFlags.ContributeGI);r.receiveGI=ReceiveGI.Lightmaps;PrefabUtility.RecordPrefabInstancePropertyModifications(r);PrefabUtility.RecordPrefabInstancePropertyModifications(r.gameObject);}
  AssetDatabase.SaveAssets();EditorSceneManager.MarkSceneDirty(scene);EditorSceneManager.SaveScene(scene);File.WriteAllText(Report+"/setup.txt",log.ToString());
  }
  [MenuItem("Rubber/Modern Review/Dim Furniture Strips %&k")]
