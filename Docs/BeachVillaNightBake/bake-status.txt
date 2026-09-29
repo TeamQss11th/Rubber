@@ -1,0 +1,4 @@
+Started UTC=2026-09-27T12:51:02.3333218Z
+Day backup=Library/BeachVillaBeforeNightBake-20260927-125102
+Frozen placement; L1; no blending; APV-only; existing day lightmaps preserved.
+Completed UTC=2026-09-27T12:51:16.0400283Z; NightData=True; day lightmaps=16

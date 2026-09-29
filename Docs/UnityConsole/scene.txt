@@ -1,0 +1,8 @@
+Scene=Assets/Modern Villa/Scenes/Modern Villa.unity, playing=False
+TERRAIN Terrain/Terrain (1) data=Assets/Modern Villa/New Terrain.asset instances=1614
+TREE 0 Assets/_Project/Prefabs/TerrainPlants/PlantA-Terrain.prefab instances=223
+TREE 1 Assets/_Project/Prefabs/TerrainPlants/PlantB-Terrain.prefab instances=142
+TREE 2 Assets/_Project/Prefabs/TerrainPlants/PlantC-Terrain.prefab instances=168
+TREE 3 Assets/_Project/Prefabs/TerrainPlants/PlantD-Terrain.prefab instances=179
+TREE 4 Assets/_Project/Prefabs/TerrainPlants/PlantE-Terrain.prefab instances=779
+TREE 5 Assets/_Project/Prefabs/TerrainPlants/Shrub-Terrain.prefab instances=123

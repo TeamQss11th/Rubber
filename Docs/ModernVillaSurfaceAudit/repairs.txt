@@ -1,0 +1,66 @@
+ADD exact static MeshCollider: Backyard/Pool back/Pool2/Swimming Pool Steps/Swimming Pool Steps Floor
+TRIM Pool Level/Floor/Floor 2x2 (2) world axis=0 from=2.000 to=1.500; keep outer edge and meet neighbour; floor top=-0.240
+TRIM Pool Level/Floor/Floor 2x2 (6) world axis=0 from=2.000 to=1.500; keep outer edge and meet neighbour; floor top=-0.240
+TRIM Pool Level/Floor/Floor 2x2 (22) world axis=0 from=2.000 to=1.750; keep outer edge and meet neighbour; floor top=-0.240
+TRIM Pool Level/Floor/Floor 2x2 (24) world axis=2 from=2.000 to=1.000; keep outer edge and meet neighbour; floor top=-0.240
+DISABLE exact duplicate: annex building/Floor/Floor 1x1 (14)
+TRIM Backyard/Floor 2/Floor 2x2 world axis=2 from=2.000 to=1.750; keep outer edge and meet neighbour; floor top=0.250
+TRIM Backyard/Floor 2/Floor 2x2 (1) world axis=2 from=2.000 to=1.750; keep outer edge and meet neighbour; floor top=0.250
+TRIM Backyard/Floor 2/Floor 2x2 (2) world axis=2 from=2.000 to=1.750; keep outer edge and meet neighbour; floor top=0.250
+TRIM Backyard/Floor 2/Floor 2x2 (3) world axis=2 from=2.000 to=1.750; keep outer edge and meet neighbour; floor top=0.250
+TRIM Backyard/Floor 2/Floor 2x2 (21) world axis=2 from=2.000 to=1.750; keep outer edge and meet neighbour; floor top=0.250
+TRIM Backyard/Floor 2/Floor 2x2 (26) world axis=2 from=2.000 to=1.750; keep outer edge and meet neighbour; floor top=0.250
+TRIM Backyard/Floor 2/Floor 2x2 (31) world axis=2 from=2.000 to=1.750; keep outer edge and meet neighbour; floor top=0.250
+TRIM Backyard/Floor 2/Floor 2x2 (36) world axis=2 from=2.000 to=1.750; keep outer edge and meet neighbour; floor top=0.250
+TRIM Backyard/Floor 2/Floor 2x2 (41) world axis=2 from=2.000 to=1.750; keep outer edge and meet neighbour; floor top=0.250
+TRIM Backyard/Floor 2/Floor 2x2 (49) world axis=2 from=2.000 to=1.500; keep outer edge and meet neighbour; floor top=0.250
+TRIM Backyard/Floor 2/Floor 2x2 (54) world axis=2 from=2.000 to=1.500; keep outer edge and meet neighbour; floor top=0.250
+TRIM Backyard/Floor 2/Floor 2x2 (59) world axis=2 from=2.000 to=1.500; keep outer edge and meet neighbour; floor top=0.250
+TRIM Backyard/Floor 2/Floor 2x2 (64) world axis=2 from=2.000 to=1.500; keep outer edge and meet neighbour; floor top=0.250
+TRIM Backyard/Floor 2/Floor 2x2 (69) world axis=2 from=2.000 to=1.500; keep outer edge and meet neighbour; floor top=0.250
+ADD mesh-matched pool surface collision: Pool Level/Pool/pool straight top (1)
+ADD mesh-matched pool surface collision: Pool Level/Pool/pool straight top (2)
+ADD mesh-matched pool surface collision: Pool Level/Pool/pool straight top (3)
+ADD mesh-matched pool surface collision: Pool Level/Pool/pool straight top (4)
+ADD mesh-matched pool surface collision: Pool Level/Pool/pool straight top (5)
+ADD mesh-matched pool surface collision: Pool Level/Pool/pool straight top (6)
+ADD mesh-matched pool surface collision: Pool Level/Pool/pool straight top (7)
+ADD mesh-matched pool surface collision: Pool Level/Pool/pool straight top (8)
+ADD mesh-matched pool surface collision: Pool Level/Pool/pool straight top (9)
+ADD mesh-matched pool surface collision: Pool Level/Pool/pool straight top (10)
+ADD mesh-matched pool surface collision: Pool Level/Pool/pool straight top (11)
+ADD mesh-matched pool surface collision: Pool Level/Pool/pool straight top (12)
+ADD mesh-matched pool surface collision: Pool Level/Pool/pool straight top (13)
+ADD mesh-matched pool surface collision: Pool Level/Pool/pool straight top (14)
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool straight top
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool straight top (6)
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool corner top 3x3/pool corner top 3x3.001
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool corner top 2x2/pool corner top 2x2.001
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool straight top (18)
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool corner top 3x3 (1)/pool corner top 3x3.001
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool corner top 2x2 (1)/pool corner top 2x2.001
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool straight top (7)
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool straight top (8)
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool straight top (9)
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool straight top (10)
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool straight top (11)
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool straight top (12)
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool straight top (13)
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool straight top (14)
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool straight top (15)
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool straight top (16)
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool straight top (17)
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool straight top (19)
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool straight top (20)
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool straight top (21)
+ADD mesh-matched pool surface collision: Backyard/Pool back/Pool2/pool straight top (22)
+SPLIT corner overlap into two existing floor tiles without changing outer coverage
+ADD seven existing StepBlock instances, rise 0.185m, tread 0.3m, width 3.4m; support down to pool basin
+LIFT pool fitting 0.01m: Backyard/Pool back/Pool2/mv_pool_light
+LIFT pool fitting 0.01m: Backyard/Pool back/Pool2/mv_pool_light (1)
+LIFT pool fitting 0.01m: Backyard/Pool back/Pool2/mv_pool_light (2)
+LIFT pool fitting 0.01m: Backyard/Pool back/Pool2/mv_pool_light (3)
+LIFT pool fitting 0.01m: Backyard/Pool back/Pool2/mv_pool_light (4)
+LIFT pool fitting 0.01m: Backyard/Pool back/Pool2/mv_pool_light (5)
+MATCH seven lower steps to existing pool basin material: mv_pool
+MATCH seven lower steps to existing pool basin material: mv_pool

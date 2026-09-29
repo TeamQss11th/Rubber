@@ -1,0 +1,8 @@
+Normal Game View validation; same pose per comparison.
+entrance-direct: scenario=Night, APV=0, flashlight=False, range=15, shadowResolution=512, tier=1, lightmaps=0, resolution=1920x1080
+entrance-apv: scenario=Night, APV=1, flashlight=False, range=15, shadowResolution=512, tier=1, lightmaps=0, resolution=1920x1080
+entrance-flashlight: scenario=Night, APV=1, flashlight=True, range=15, shadowResolution=512, tier=1, lightmaps=0, resolution=1920x1080
+interior-direct: scenario=Night, APV=0, flashlight=False, range=15, shadowResolution=512, tier=1, lightmaps=0, resolution=1920x1080
+interior-apv: scenario=Night, APV=1, flashlight=False, range=15, shadowResolution=512, tier=1, lightmaps=0, resolution=1920x1080
+interior-flashlight: scenario=Night, APV=1, flashlight=True, range=15, shadowResolution=512, tier=1, lightmaps=0, resolution=1920x1080
+Review completed; temporary overrides and camera pose restored. Not a performance benchmark.

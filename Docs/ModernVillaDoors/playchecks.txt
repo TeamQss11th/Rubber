@@ -1,0 +1,32 @@
+annex building/exterior Door Hinged: open error=0.000000, rotation error=0.000000, event=1, idle=True, knob error=0.000000
+  passage capsule hits=
+annex building/Window door door Sliding: open error=0.000000, rotation error=0.000000, event=1, idle=True, knob error=0.000000
+  passage capsule hits=
+annex building/interior door Hinged: open error=0.000000, rotation error=0.000000, event=1, idle=True, knob error=0.000000
+  passage capsule hits=interior door
+annex building/Window door door Sliding: open error=0.000000, rotation error=0.000000, event=1, idle=True, knob error=0.000000
+  passage capsule hits=dining chair (2)
+annex building/Window door door Sliding: open error=0.000000, rotation error=0.000000, event=1, idle=True, knob error=0.000000
+  passage capsule hits=Curtain
+Main Building/exterior Door Hinged: open error=0.000000, rotation error=0.000000, event=1, idle=True, knob error=0.000000
+  passage capsule hits=
+Main Building/Window door door Sliding: open error=0.000000, rotation error=0.000000, event=1, idle=True, knob error=0.000000
+  passage capsule hits=
+Main Building/Window door door Sliding: open error=0.000000, rotation error=0.000000, event=1, idle=True, knob error=0.000000
+  passage capsule hits=
+exterior Door: reversed=True, night map=-1, batched=False
+Window door door: reversed=True, night map=-1, batched=False
+interior door: reversed=True, night map=-1, batched=False
+Window door door: reversed=True, night map=-1, batched=False
+Window door door: reversed=True, night map=-1, batched=False
+exterior Door: reversed=True, night map=-1, batched=False
+Window door door: reversed=True, night map=-1, batched=False
+Window door door: reversed=True, night map=-1, batched=False
+exterior Door: close error=0.000000, rotation error=0.000000, closed events=1, opened events=2, idle=True
+Window door door: close error=0.000000, rotation error=0.000000, closed events=1, opened events=2, idle=True
+interior door: close error=0.000000, rotation error=0.000000, closed events=1, opened events=2, idle=True
+Window door door: close error=0.000000, rotation error=0.000000, closed events=1, opened events=2, idle=True
+Window door door: close error=0.000000, rotation error=0.000000, closed events=1, opened events=2, idle=True
+exterior Door: close error=0.000000, rotation error=0.000000, closed events=1, opened events=2, idle=True
+Window door door: close error=0.000000, rotation error=0.000000, closed events=1, opened events=2, idle=True
+Window door door: close error=0.000000, rotation error=0.000000, closed events=1, opened events=2, idle=True

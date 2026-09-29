@@ -1,0 +1,5 @@
+Layout validation; no lighting work.
+Terrain hole cells=0
+Perimeter modules=154; sampled wall gaps=0; top min=1.350; top max=1.350
+Paving modules=709; per-module 9-point coverage misses=0
+Original deck junction: 10 vendor floor modules; missing center support=0. Total new paving=719.

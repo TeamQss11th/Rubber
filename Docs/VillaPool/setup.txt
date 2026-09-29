@@ -1,0 +1,6 @@
+RubberDuck original bounds=Center: (-3.60, 0.90, 26.51), Extents: (0.09, 0.10, 0.11) materials=Duck_Yellow_Rubber,Duck_Orange_Beak,Duck_Black_Eyes
+RubberDuck_Balloon original bounds=Center: (-4.40, 0.91, 26.51), Extents: (0.09, 0.11, 0.11) materials=Balloon_Soft_Knot_Latex,Balloon_Soft_Inner_Latex,Balloon_Rose_Latex,Balloon_Coral_Latex,Balloon_Dark_Print
+RubberDuck_BigHead original bounds=Center: (-5.20, 0.99, 26.56), Extents: (0.14, 0.19, 0.16) materials=Duck_Yellow_Rubber,Duck_Orange_Beak,Duck_Black_Eyes
+RubberDuck_Glass original bounds=Center: (-6.00, 0.90, 26.51), Extents: (0.09, 0.10, 0.11) materials=Glass_Clear_BlueGray_Body,Glass_Clear_BlueGray_Beak,Glass_Clear_BlueGray_Eyes
+RubberDuck_ToyKnife original bounds=Center: (-6.81, 0.90, 26.51), Extents: (0.10, 0.10, 0.11) materials=Duck_Yellow_Rubber,Duck_Orange_Beak,Duck_Black_Eyes,ToyKnife_Purple_Plastic,ToyKnife_Lime_Plastic,ToyKnife_Orange_Plastic,ToyKnife_Light_Pin
+Water cells=8446 triangles=16892 height=0.1

@@ -1,0 +1,1 @@
+0.25m grid, opposing supports 1m apart, clear player capsule; candidates=0

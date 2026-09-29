@@ -1,0 +1,253 @@
+Assets/Modern Villa/Prefabs/buildings/BuildingA.prefab	center=(-4.25, 2.80, 5.50)	size=(6.70, 5.60, 14.20)	lights=0	colliders=206
+Assets/Modern Villa/Prefabs/buildings/BuildingB.prefab	center=(0.21, 3.02, 4.18)	size=(9.59, 5.55, 17.85)	lights=0	colliders=188
+Assets/Modern Villa/Prefabs/buildings/BuildingC.prefab	center=(-3.74, 1.40, 1.50)	size=(8.23, 2.80, 20.20)	lights=0	colliders=76
+Assets/Modern Villa/Prefabs/buildings/Pool.prefab	center=(0.50, -0.25, -9.00)	size=(13.00, 1.70, 18.00)	lights=0	colliders=250
+Assets/Modern Villa/Prefabs/buildings/PoolA.prefab	center=(0.50, -0.54, -0.25)	size=(5.00, 1.12, 6.00)	lights=0	colliders=48
+Assets/Modern Villa/Prefabs/buildings/PoolB.prefab	center=(-6.50, 0.73, 0.76)	size=(16.00, 3.97, 11.01)	lights=0	colliders=161
+Assets/Modern Villa/Prefabs/buildings/SpaPavillon.prefab	center=(-0.02, 3.43, -0.04)	size=(11.27, 6.87, 11.83)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/floors/Floor1x1.prefab	center=(0.00, 0.50, 0.00)	size=(1.00, 1.00, 1.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/floors/Floor1x1Corner.prefab	center=(0.00, 0.50, 0.00)	size=(1.00, 1.00, 1.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/floors/Floor1x1CornerLow.prefab	center=(0.00, 0.15, 0.00)	size=(1.00, 0.30, 1.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/floors/Floor1x1Low.prefab	center=(0.00, 0.17, 0.00)	size=(1.00, 0.33, 1.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/floors/Floor1x1Side.prefab	center=(0.00, 0.50, 0.00)	size=(1.00, 1.00, 1.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/floors/Floor1x1SideLow.prefab	center=(0.00, 0.15, 0.00)	size=(1.00, 0.30, 1.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/floors/Floor2x2.prefab	center=(0.00, 0.50, 0.00)	size=(2.00, 1.00, 2.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/floors/Floor2x2Corner.prefab	center=(0.00, 0.50, 0.00)	size=(2.00, 1.00, 2.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/floors/Floor2x2Side.prefab	center=(0.00, 0.50, 0.00)	size=(2.00, 1.00, 2.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/floors/FloorSideplankLowA.prefab	center=(-0.50, -0.05, 0.05)	size=(1.00, 0.10, 0.10)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/floors/FloorSideplankLowB.prefab	center=(-0.45, -0.05, 0.05)	size=(1.10, 0.10, 0.10)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/floors/FloorSideplankLowC.prefab	center=(0.45, -0.05, 0.05)	size=(1.10, 0.10, 0.10)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/floors/FloorSideplankLowD.prefab	center=(-0.50, -0.05, -0.05)	size=(1.00, 0.10, 0.10)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/floors/FloorSideplankLowE.prefab	center=(0.50, -0.05, -0.05)	size=(1.00, 0.10, 0.10)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/floors/StairsA.prefab	center=(-0.50, 0.44, -0.59)	size=(1.00, 0.88, 1.22)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/floors/StairsA_Corner.prefab	center=(0.01, 0.44, -1.09)	size=(2.02, 0.88, 2.22)	lights=0	colliders=0
+Assets/Modern Villa/Prefabs/floors/StepBlock.prefab	center=(0.00, 0.10, 0.00)	size=(1.00, 0.20, 0.30)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/floors/TerraceFloor200x200.prefab	center=(-1.00, 0.05, -1.00)	size=(2.00, 0.10, 2.00)	lights=0	colliders=0
+Assets/Modern Villa/Prefabs/furniture/bench corner Variant.prefab	center=(0.00, 0.93, 0.00)	size=(0.75, 1.85, 0.75)	lights=0	colliders=2
+Assets/Modern Villa/Prefabs/furniture/bench straight Variant.prefab	center=(0.00, 0.92, -0.05)	size=(0.75, 1.85, 0.65)	lights=0	colliders=4
+Assets/Modern Villa/Prefabs/furniture/BenchCorner.prefab	center=(0.00, 0.33, 0.00)	size=(0.75, 0.65, 0.75)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/BenchStraight.prefab	center=(0.00, 0.33, -0.05)	size=(0.75, 0.65, 0.65)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/Couch Group A.prefab	center=(-1.98, 0.36, 0.24)	size=(3.09, 0.72, 4.03)	lights=0	colliders=11
+Assets/Modern Villa/Prefabs/furniture/Couch Group B.prefab	center=(-0.11, 0.41, -0.24)	size=(2.75, 0.81, 3.45)	lights=0	colliders=9
+Assets/Modern Villa/Prefabs/furniture/CouchC Variant 1.prefab	center=(0.00, 0.22, 0.00)	size=(1.46, 0.44, 1.11)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/CouchC Variant.prefab	center=(0.00, 0.22, 0.00)	size=(1.46, 0.44, 1.11)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/CouchC.prefab	center=(0.00, 0.22, 0.00)	size=(1.46, 0.44, 1.11)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/CouchD Variant 1.prefab	center=(0.00, 0.36, -0.04)	size=(2.14, 0.72, 0.91)	lights=0	colliders=4
+Assets/Modern Villa/Prefabs/furniture/CouchD Variant.prefab	center=(0.00, 0.36, -0.04)	size=(2.14, 0.72, 0.91)	lights=0	colliders=4
+Assets/Modern Villa/Prefabs/furniture/CouchD.prefab	center=(0.00, 0.36, -0.04)	size=(2.14, 0.72, 0.91)	lights=0	colliders=4
+Assets/Modern Villa/Prefabs/furniture/CouchPoolCorner.prefab	center=(0.00, 0.35, -0.03)	size=(1.05, 0.71, 1.07)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/CouchPoolStraight.prefab	center=(-0.01, 0.35, -0.03)	size=(1.11, 0.70, 1.06)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/CouchTable.prefab	center=(0.00, 0.20, 0.00)	size=(0.56, 0.40, 0.56)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/CouchTableB.prefab	center=(0.00, 0.18, 0.00)	size=(0.77, 0.35, 0.75)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/CouchTableC.prefab	center=(0.00, 0.21, 0.00)	size=(1.05, 0.43, 1.05)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/CouchTableD.prefab	center=(0.00, 0.41, 0.00)	size=(0.40, 0.84, 0.40)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/CouchTableE.prefab	center=(0.00, 0.31, 0.00)	size=(0.40, 0.64, 0.40)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/CouchTableF.prefab	center=(0.00, 0.19, 0.00)	size=(1.40, 0.38, 1.40)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/DiningChair.prefab	center=(0.00, 0.45, -0.06)	size=(0.57, 0.91, 0.50)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/DiningChairB Variant.prefab	center=(0.00, 0.54, -0.07)	size=(0.55, 1.07, 0.65)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/DiningTable.prefab	center=(0.00, 0.39, 0.00)	size=(2.21, 0.78, 1.04)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/DiningTableB Variant.prefab	center=(0.00, 0.36, 0.00)	size=(0.99, 0.75, 2.99)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/GardenChair.prefab	center=(0.00, 0.44, -0.07)	size=(0.73, 0.89, 0.73)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/LeatherCouchCorner.prefab	center=(0.00, 0.40, 0.00)	size=(0.96, 0.80, 0.97)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/LeatherCouchStraight.prefab	center=(0.00, 0.41, 0.00)	size=(0.75, 0.81, 0.96)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/LeatherSeat.prefab	center=(0.01, 0.39, 0.01)	size=(0.83, 0.79, 0.69)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/LeatherSideElementLeft.prefab	center=(0.00, 0.30, 0.00)	size=(0.96, 0.60, 0.28)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/LeatherSideElementRight.prefab	center=(0.00, 0.30, 0.00)	size=(0.96, 0.60, 0.28)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/LoungeChair.prefab	center=(0.00, 0.38, -0.02)	size=(0.59, 0.76, 0.59)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/Lounger.prefab	center=(0.00, 0.31, 0.09)	size=(0.71, 0.63, 2.18)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/LoungerB Variant.prefab	center=(0.00, 0.46, 0.00)	size=(6.47, 0.91, 2.54)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/LoungerC Variant.prefab	center=(0.00, 0.44, 0.00)	size=(2.40, 0.89, 2.50)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/PavillonSeat.prefab	center=(0.00, 0.48, -0.05)	size=(0.94, 0.95, 1.11)	lights=0	colliders=4
+Assets/Modern Villa/Prefabs/furniture/PavillonSideTable.prefab	center=(0.00, 0.30, 0.00)	size=(0.43, 0.60, 0.43)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/PillowA.prefab	center=(0.00, 0.00, 0.00)	size=(0.32, 0.06, 0.33)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/PillowB.prefab	center=(0.00, 0.00, 0.00)	size=(0.55, 0.06, 0.32)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/furniture/SideTable Variant.prefab	center=(0.00, 0.33, 0.00)	size=(0.49, 0.67, 0.49)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/lighting/Candle.prefab	center=(0.00, 0.06, 0.00)	size=(0.09, 0.12, 0.09)	lights=0	colliders=5
+Assets/Modern Villa/Prefabs/lighting/CouchClipOutdoor.prefab	center=(0.00, 0.05, 0.00)	size=(0.10, 0.10, 0.01)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/lighting/CouchTableLamp.prefab	center=(0.00, 0.23, 0.00)	size=(0.21, 0.46, 0.21)	lights=0	colliders=4
+Assets/Modern Villa/Prefabs/lighting/FloorLight off Variant.prefab	center=(0.00, 0.39, 0.00)	size=(0.08, 0.77, 0.08)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/lighting/FloorLight on Variant.prefab	center=(0.00, 0.39, 0.00)	size=(0.08, 0.77, 0.08)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/lighting/FloorLightB off Variant.prefab	center=(0.00, 0.30, 0.00)	size=(0.10, 0.60, 0.10)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/lighting/FloorLightB on Variant.prefab	center=(0.00, 0.30, 0.00)	size=(0.10, 0.60, 0.10)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/lighting/PoolLight.prefab	center=(0.00, 0.03, 0.00)	size=(0.13, 0.05, 0.13)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/lighting/RoofLamp.prefab	center=(0.00, 0.41, 0.00)	size=(0.41, 1.14, 0.41)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/lighting/WallLight.prefab	center=(0.00, 0.00, 0.07)	size=(0.10, 0.21, 0.13)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Plants/FlowerA.prefab	center=(0.03, 0.08, 0.00)	size=(0.21, 0.16, 0.25)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Plants/FlowerB.prefab	center=(0.03, 0.07, 0.01)	size=(0.21, 0.16, 0.26)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Plants/FlowerC.prefab	center=(0.02, 0.07, 0.01)	size=(0.23, 0.15, 0.27)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Plants/FlowerD.prefab	center=(0.03, 0.07, 0.01)	size=(0.19, 0.15, 0.26)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Plants/FlowerE.prefab	center=(0.02, 0.07, 0.00)	size=(0.20, 0.15, 0.24)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Plants/FlowerF.prefab	center=(0.02, 0.07, 0.02)	size=(0.26, 0.16, 0.29)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Plants/FlowerG.prefab	center=(0.02, 0.07, 0.01)	size=(0.24, 0.16, 0.28)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Plants/PalmA.prefab	center=(-0.39, 3.09, 0.03)	size=(4.26, 6.18, 4.02)	lights=0	colliders=4
+Assets/Modern Villa/Prefabs/Plants/PalmB.prefab	center=(-0.21, 2.19, 0.07)	size=(4.15, 4.39, 4.33)	lights=0	colliders=7
+Assets/Modern Villa/Prefabs/Plants/PalmC.prefab	center=(-0.68, 2.73, -0.76)	size=(5.78, 5.46, 5.40)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Plants/PlantA.prefab	center=(-0.01, 0.22, -0.01)	size=(1.32, 0.44, 1.12)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Plants/PlantB.prefab	center=(-0.03, 0.18, -0.03)	size=(0.99, 0.43, 0.89)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Plants/PlantC.prefab	center=(-0.01, 0.15, -0.03)	size=(0.87, 0.35, 0.77)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Plants/PlantD.prefab	center=(0.00, 0.09, -0.06)	size=(0.57, 0.21, 0.59)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Plants/PlantE.prefab	center=(0.02, 0.11, 0.00)	size=(0.55, 0.29, 0.61)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Plants/PottedPlantA.prefab	center=(-0.03, 0.68, 0.04)	size=(1.19, 1.36, 1.20)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Plants/PottedPlantB.prefab	center=(0.03, 0.90, 0.00)	size=(1.35, 1.80, 1.21)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Plants/PottedPlantC.prefab	center=(-0.01, 0.26, -0.02)	size=(0.52, 0.51, 0.49)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Plants/Shrub.prefab	center=(0.01, 0.24, -0.02)	size=(1.04, 0.48, 1.10)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Plants/VasePalmLarge.prefab	center=(0.12, 1.50, -0.29)	size=(4.25, 3.00, 3.48)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Plants/VasePalmSmall.prefab	center=(-0.06, 1.04, 0.03)	size=(2.06, 2.09, 2.11)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolBottom.prefab	center=(-0.50, -0.05, -0.50)	size=(1.00, 0.10, 1.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolBottomCorner.prefab	center=(-0.25, -0.07, 0.25)	size=(0.51, 0.13, 0.51)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolBottomSide.prefab	center=(-0.50, -0.07, 0.26)	size=(1.00, 0.13, 0.51)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolCornerBottom1x1.prefab	center=(-0.75, -0.07, -0.25)	size=(0.51, 0.13, 0.51)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolCornerBottom2x2.prefab	center=(-1.25, -0.06, -0.75)	size=(1.51, 0.12, 1.50)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolCornerBottom3x3.prefab	center=(-1.75, -0.06, -1.26)	size=(2.51, 0.12, 2.51)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolCornerReverse.prefab	center=(-0.25, -0.49, 0.25)	size=(0.50, 1.02, 0.50)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolCornerSide.prefab	center=(-0.75, -0.50, -0.75)	size=(0.51, 1.00, 0.51)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolCornerSide1x1.prefab	center=(-0.75, -0.50, -0.25)	size=(0.51, 1.00, 0.51)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolCornerSide2x2.prefab	center=(-1.25, -0.50, -0.75)	size=(1.51, 1.00, 1.50)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolCornerSide3x3.prefab	center=(-1.75, -0.50, -1.26)	size=(2.51, 1.00, 2.51)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolCornerSideReverse.prefab	center=(0.26, -0.50, 0.26)	size=(0.51, 1.00, 0.51)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolCornerTop.prefab	center=(-0.50, -0.49, 0.50)	size=(1.00, 1.02, 1.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolCornerTop1x1.prefab	center=(-0.50, -0.49, -0.50)	size=(1.00, 1.03, 1.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolCornerTop2x2.prefab	center=(-1.00, -0.48, -0.99)	size=(2.00, 1.02, 2.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolCornerTop3x3.prefab	center=(-1.50, -0.49, -1.50)	size=(3.00, 1.02, 3.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolLadder.prefab	center=(0.00, -0.18, 0.14)	size=(0.58, 1.50, 0.36)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolShower.prefab	center=(-0.66, 0.91, 0.00)	size=(1.93, 1.83, 0.62)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolSlide.prefab	center=(-0.50, 0.17, -0.50)	size=(1.00, 0.33, 1.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolSlideBlock.prefab	center=(-0.50, 0.17, -0.50)	size=(1.00, 0.33, 1.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolStraightSide.prefab	center=(-0.50, -0.50, 0.50)	size=(1.00, 1.00, 0.01)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/PoolStraightTop.prefab	center=(-0.50, -0.49, 0.25)	size=(1.00, 1.02, 0.50)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Pool/SwimmingPoolSteps.prefab	center=(0.00, 0.51, 0.00)	size=(3.00, 1.02, 4.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/Apple.prefab	center=(0.00, 0.00, 0.00)	size=(0.07, 0.07, 0.07)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/Ashtray Variant.prefab	center=(0.00, 0.03, 0.00)	size=(0.12, 0.05, 0.12)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/Banana.prefab	center=(0.01, -0.06, 0.05)	size=(0.14, 0.14, 0.17)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/Barbecue.prefab	center=(0.02, 0.67, 0.40)	size=(2.01, 1.52, 2.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/Basketball.prefab	center=(0.00, 0.00, 0.00)	size=(0.20, 0.20, 0.20)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/BookA.prefab	center=(0.00, 0.15, 0.00)	size=(0.03, 0.30, 0.20)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/BookB.prefab	center=(0.00, 0.12, 0.00)	size=(0.05, 0.25, 0.17)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/BookC.prefab	center=(0.00, 0.19, -0.04)	size=(0.03, 0.38, 0.29)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/BookD.prefab	center=(0.00, 0.10, 0.00)	size=(0.03, 0.20, 0.11)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/BookE.prefab	center=(0.00, 0.14, 0.00)	size=(0.08, 0.28, 0.20)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/BookF.prefab	center=(0.00, 0.15, 0.00)	size=(0.03, 0.30, 0.20)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/BottleA.prefab	center=(0.00, 0.06, 0.00)	size=(0.08, 0.12, 0.03)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/Bowl.prefab	center=(0.00, 0.03, 0.00)	size=(0.16, 0.06, 0.16)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/BowlB Variant.prefab	center=(0.00, 0.02, 0.00)	size=(0.16, 0.04, 0.16)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/CarpetA.prefab	center=(0.00, 0.01, 0.00)	size=(4.00, 0.01, 4.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/CarpetB.prefab	center=(0.00, 0.00, 0.00)	size=(2.00, 0.02, 2.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/Chandelier.prefab	center=(0.00, 0.16, 0.00)	size=(0.44, 0.32, 0.10)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/CoffeeCupC.prefab	center=(0.00, 0.04, -0.02)	size=(0.11, 0.09, 0.14)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/CoffeePot.prefab	center=(-0.01, 0.13, 0.00)	size=(0.32, 0.26, 0.20)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/CurtainA.prefab	center=(-0.03, 1.25, 0.03)	size=(1.25, 2.50, 0.36)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/CurtainB.prefab	center=(0.03, 1.27, 0.00)	size=(0.61, 2.47, 0.50)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/CurtainC.prefab	center=(-0.02, 1.26, -0.01)	size=(0.94, 2.49, 0.41)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/CurtainD.prefab	center=(-0.01, -1.25, 0.02)	size=(0.19, 2.52, 1.14)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/CurtainE.prefab	center=(0.01, -1.25, -0.01)	size=(0.15, 2.52, 0.45)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/DecorativeBowl.prefab	center=(0.00, 0.05, 0.00)	size=(0.35, 0.10, 0.35)	lights=0	colliders=4
+Assets/Modern Villa/Prefabs/Props/Firebowl.prefab	center=(0.00, 0.16, 0.00)	size=(0.79, 0.32, 0.79)	lights=0	colliders=7
+Assets/Modern Villa/Prefabs/Props/FireBox.prefab	center=(0.00, 0.14, 0.00)	size=(0.60, 0.28, 0.20)	lights=0	colliders=2
+Assets/Modern Villa/Prefabs/Props/FloorDecorationA.prefab	center=(0.00, 0.20, 0.00)	size=(0.60, 0.41, 0.60)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/FloorDecorationB.prefab	center=(0.00, 0.43, 0.00)	size=(0.54, 0.86, 0.54)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/FloorDecorationC.prefab	center=(0.00, 0.27, 0.00)	size=(0.60, 0.55, 0.60)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/Fork.prefab	center=(0.00, -0.01, -0.10)	size=(0.03, 0.02, 0.20)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/Glas.prefab	center=(0.00, 0.07, 0.00)	size=(0.08, 0.14, 0.08)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/GrandSunshade.prefab	center=(0.01, 1.12, 1.23)	size=(3.01, 2.24, 3.47)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/Jacuzzi.prefab	center=(0.00, 0.48, 0.00)	size=(2.30, 0.96, 2.30)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/JugA.prefab	center=(0.02, 0.16, 0.00)	size=(0.24, 0.31, 0.18)	lights=0	colliders=4
+Assets/Modern Villa/Prefabs/Props/JugB.prefab	center=(0.02, 0.18, 0.00)	size=(0.24, 0.35, 0.18)	lights=0	colliders=4
+Assets/Modern Villa/Prefabs/Props/Knife.prefab	center=(0.00, 0.00, -0.11)	size=(0.02, 0.01, 0.23)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/Lantern.prefab	center=(0.00, 0.12, 0.00)	size=(0.15, 0.24, 0.15)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/LanternB.prefab	center=(0.00, 0.27, -0.09)	size=(0.19, 0.54, 0.38)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/LanternC.prefab	center=(-0.07, 0.20, 0.00)	size=(0.30, 0.40, 0.17)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/LargeAntipastiPlate.prefab	center=(0.00, 0.01, 0.00)	size=(0.32, 0.02, 0.32)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/LargePlate.prefab	center=(0.00, 0.01, 0.00)	size=(0.32, 0.01, 0.32)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/LongSpoon Variant.prefab	center=(0.00, 0.00, -0.14)	size=(0.03, 0.02, 0.28)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/mv_Planter.prefab	center=(0.00, 0.39, 0.00)	size=(1.00, 0.77, 1.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/Napkin Variant.prefab	center=(0.00, 0.00, -0.01)	size=(0.11, 0.00, 0.11)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/Napkin.prefab	center=(0.00, 0.02, 0.00)	size=(0.10, 0.03, 0.20)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/OilVase.prefab	center=(0.00, 0.51, 0.00)	size=(1.13, 1.00, 1.13)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/OilVaseB Variant.prefab	center=(-0.02, 0.40, -0.02)	size=(1.03, 0.79, 1.03)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/Orange.prefab	center=(0.00, 0.00, 0.00)	size=(0.10, 0.10, 0.10)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/PaintingA.prefab	center=(0.00, 0.00, 0.01)	size=(1.00, 0.63, 0.02)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/PaintingB.prefab	center=(0.00, 0.00, 0.01)	size=(0.50, 0.67, 0.02)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/PaintingC.prefab	center=(0.00, 0.00, 0.01)	size=(0.76, 1.00, 0.02)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/PaintingD.prefab	center=(0.00, 0.00, 0.01)	size=(1.50, 1.00, 0.02)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/PastaPlate.prefab	center=(0.00, 0.03, 0.00)	size=(0.31, 0.06, 0.31)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/PavillonA.prefab	center=(0.00, 1.74, 0.00)	size=(3.62, 3.48, 3.62)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/PavillonB.prefab	center=(0.00, 1.74, 0.00)	size=(3.62, 3.48, 3.62)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/PavillonC.prefab	center=(0.00, 1.74, 0.00)	size=(3.62, 3.48, 3.62)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/PavillonOpen.prefab	center=(0.00, 1.74, 0.00)	size=(3.62, 3.48, 3.62)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/Peach.prefab	center=(0.00, 0.03, 0.00)	size=(0.07, 0.06, 0.07)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/PillarA.prefab	center=(0.00, 1.25, 0.00)	size=(0.28, 2.50, 0.28)	lights=0	colliders=0
+Assets/Modern Villa/Prefabs/Props/PillarB.prefab	center=(0.00, 1.25, 0.00)	size=(0.65, 2.50, 0.65)	lights=0	colliders=0
+Assets/Modern Villa/Prefabs/Props/PillowC Variant.prefab	center=(-0.01, 0.02, 0.00)	size=(0.51, 0.17, 0.28)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/PillowD Variant.prefab	center=(-0.04, 0.07, -0.02)	size=(0.67, 0.15, 0.30)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/PillowE Variant.prefab	center=(0.04, 0.07, 0.01)	size=(0.38, 0.14, 0.36)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/PillowF Variant.prefab	center=(0.00, 0.00, 0.00)	size=(0.21, 0.09, 0.21)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/PillowG Variant.prefab	center=(0.00, 0.00, 0.00)	size=(0.72, 0.18, 0.36)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/PillowSeat.prefab	center=(0.00, 0.03, 0.00)	size=(0.37, 0.07, 0.37)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/Placeholder Deck Variant.prefab	center=(0.00, 0.10, 0.00)	size=(0.56, 0.24, 0.44)	lights=0	colliders=10
+Assets/Modern Villa/Prefabs/Props/Placeholder.prefab	center=(0.00, 0.00, 0.00)	size=(0.56, 0.00, 0.44)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/Planter.prefab	center=(0.00, 0.39, 0.00)	size=(1.00, 0.77, 1.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/RedWineGlas.prefab	center=(0.00, 0.11, 0.00)	size=(0.10, 0.22, 0.10)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/SaucerB.prefab	center=(0.00, 0.01, 0.00)	size=(0.16, 0.02, 0.16)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/SmallPlate.prefab	center=(0.00, 0.01, 0.00)	size=(0.17, 0.01, 0.17)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/SoupBowl.prefab	center=(0.00, 0.03, 0.00)	size=(0.24, 0.05, 0.24)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/Spoon.prefab	center=(0.00, 0.01, -0.12)	size=(0.06, 0.02, 0.23)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/Sunshade.prefab	center=(0.00, 1.18, 0.00)	size=(3.00, 2.57, 3.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/TabletA.prefab	center=(0.00, 0.03, 0.00)	size=(0.44, 0.07, 0.36)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/TabletB.prefab	center=(0.00, 0.02, 0.00)	size=(0.52, 0.05, 0.52)	lights=0	colliders=2
+Assets/Modern Villa/Prefabs/Props/TowelA.prefab	center=(0.00, 0.00, 0.00)	size=(0.21, 0.19, 0.48)	lights=0	colliders=2
+Assets/Modern Villa/Prefabs/Props/VaseA.prefab	center=(-0.01, 0.24, 0.05)	size=(0.29, 0.48, 0.23)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/VaseB.prefab	center=(-0.03, 0.97, 0.05)	size=(1.31, 1.94, 1.21)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/VaseC.prefab	center=(0.00, 0.32, 0.00)	size=(0.14, 0.64, 0.14)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Props/WhiteWineGlas.prefab	center=(0.00, 0.10, 0.00)	size=(0.09, 0.20, 0.09)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/railing/GlasRailing.75m.prefab	center=(0.00, 0.60, 0.00)	size=(0.75, 1.20, 0.05)	lights=0	colliders=2
+Assets/Modern Villa/Prefabs/railing/GlasRailing.75mCorner.prefab	center=(0.35, 0.60, -0.35)	size=(0.75, 1.20, 0.75)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/railing/GlasRailing1m.prefab	center=(0.00, 0.60, 0.00)	size=(1.00, 1.20, 0.05)	lights=0	colliders=2
+Assets/Modern Villa/Prefabs/railing/GlasRailing2m.prefab	center=(0.00, 0.60, 0.00)	size=(2.00, 1.20, 0.05)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/railing/Railing.5m.prefab	center=(-0.22, 0.41, 0.00)	size=(0.50, 0.83, 0.07)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/railing/Railing1m.prefab	center=(-0.47, 0.41, 0.00)	size=(1.00, 0.83, 0.07)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/railing/Railing2m.prefab	center=(-0.97, 0.41, 0.00)	size=(2.00, 0.83, 0.07)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/railing/RailingCorner1m.prefab	center=(-0.46, 0.41, -0.47)	size=(1.02, 0.83, 1.02)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/railing/RailingCornerShort.prefab	center=(0.00, 0.41, 0.00)	size=(0.08, 0.83, 0.08)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/railing/RailingEnd1m.prefab	center=(-0.47, 0.41, 0.00)	size=(1.01, 0.83, 0.07)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/railing/RailingEndShort.prefab	center=(0.00, 0.41, 0.00)	size=(0.07, 0.83, 0.07)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/railing/RailingPost.prefab	center=(0.00, 0.41, 0.00)	size=(0.06, 0.83, 0.07)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/roof/Roof ,5x,5 corner.prefab	center=(-0.30, 0.15, 0.30)	size=(0.60, 0.30, 0.60)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/roof/Roof ,5x,5 side.prefab	center=(-0.25, 0.15, 0.30)	size=(0.50, 0.30, 0.60)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/roof/Roof ,5x,5.prefab	center=(-0.25, 0.15, 0.25)	size=(0.50, 0.30, 0.50)	lights=0	colliders=2
+Assets/Modern Villa/Prefabs/roof/Roof.2x1.prefab	center=(-0.50, 0.15, 0.12)	size=(1.00, 0.30, 0.23)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/roof/Roof1x1.prefab	center=(-0.50, 0.15, 0.50)	size=(1.00, 0.30, 1.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/roof/Roof1x1Corner.prefab	center=(-0.55, 0.15, 0.55)	size=(1.10, 0.30, 1.10)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/roof/Roof1x1Side.prefab	center=(-0.55, 0.15, 0.50)	size=(1.10, 0.30, 1.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/roof/Roof2x2.prefab	center=(-1.00, 0.15, 1.00)	size=(2.00, 0.30, 2.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/roof/Roof2x2corner.prefab	center=(-1.05, 0.15, 1.05)	size=(2.10, 0.30, 2.10)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/roof/Roof2x2Side.prefab	center=(-1.05, 0.15, 1.00)	size=(2.10, 0.30, 2.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Stoneboxes/stonebox large Variant.prefab	center=(-0.05, 1.04, 0.03)	size=(4.09, 2.09, 2.11)	lights=0	colliders=3
+Assets/Modern Villa/Prefabs/Stoneboxes/stonebox medium Variant.prefab	center=(0.10, 0.61, 0.00)	size=(4.19, 1.21, 1.70)	lights=0	colliders=5
+Assets/Modern Villa/Prefabs/Stoneboxes/StoneboxHigh.prefab	center=(0.00, 0.25, 0.00)	size=(1.00, 0.50, 0.50)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Stoneboxes/StoneboxLarge.prefab	center=(0.00, 0.13, 0.00)	size=(4.00, 0.25, 2.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Stoneboxes/StoneboxLong.prefab	center=(0.00, 0.35, 0.00)	size=(4.00, 0.70, 0.50)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Stoneboxes/StoneboxLow.prefab	center=(0.00, 0.13, 0.00)	size=(1.00, 0.25, 0.50)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Stoneboxes/StoneboxMedium.prefab	center=(0.00, 0.35, 0.00)	size=(4.00, 0.70, 1.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Stoneboxes/XL stonebox Variant.prefab	center=(-0.39, 1.63, -0.31)	size=(6.78, 3.26, 5.26)	lights=0	colliders=24
+Assets/Modern Villa/Prefabs/Stoneboxes/XLStonebox.prefab	center=(0.00, 0.18, 0.00)	size=(6.00, 0.35, 2.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Walls/AlternateWall2x2,5DoorDouble.prefab	center=(-1.00, 1.25, 0.13)	size=(2.00, 2.50, 0.25)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Walls/ExteriorDoor.prefab	center=(0.61, 1.00, 0.02)	size=(1.23, 1.99, 0.14)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Walls/InteriorDoor.prefab	center=(0.31, 1.00, 0.02)	size=(0.64, 1.99, 0.16)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Walls/mv_WallSupportElement.prefab	center=(0.19, 1.25, -0.34)	size=(0.38, 2.50, 0.68)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Walls/Stairs.prefab	center=(-1.75, 1.32, 0.50)	size=(3.50, 2.65, 1.00)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Walls/Wall 1x2,5.prefab	center=(-0.50, 1.25, 0.13)	size=(1.00, 2.50, 0.25)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Walls/Wall 2x2,5 door single Variant.prefab	center=(-0.89, 1.25, 0.13)	size=(2.22, 2.50, 0.25)	lights=0	colliders=2
+Assets/Modern Villa/Prefabs/Walls/Wall2x2,5.prefab	center=(-1.00, 1.25, 0.13)	size=(2.00, 2.50, 0.25)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Walls/Wall2x2,5DoorDouble.prefab	center=(-1.00, 1.25, 0.13)	size=(2.00, 2.50, 0.25)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Walls/Wall2x2,5DoorSingle.prefab	center=(-1.00, 1.25, 0.13)	size=(2.00, 2.50, 0.25)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Walls/Wall2x2,5Window.prefab	center=(-1.00, 1.25, 0.12)	size=(2.00, 2.50, 0.25)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Walls/WallCorner2,5.prefab	center=(-0.13, 1.25, 0.13)	size=(0.25, 2.50, 0.25)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Walls/WallInner1x2,5.prefab	center=(-0.50, 1.25, 0.08)	size=(1.00, 2.50, 0.15)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Walls/WallInner1x2,5Door.prefab	center=(-0.50, 1.25, 0.08)	size=(1.00, 2.50, 0.16)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Walls/WallInner2x2,5Door.prefab	center=(-1.00, 1.25, 0.08)	size=(2.00, 2.50, 0.15)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Windows/WindowCorner.prefab	center=(-0.93, 1.25, -0.93)	size=(2.14, 2.50, 2.14)	lights=0	colliders=2
+Assets/Modern Villa/Prefabs/Windows/WindowCornerLeft.prefab	center=(-0.93, 1.25, -0.93)	size=(2.14, 2.50, 2.14)	lights=0	colliders=2
+Assets/Modern Villa/Prefabs/Windows/WindowCornerRight.prefab	center=(-0.93, 1.25, -0.93)	size=(2.14, 2.50, 2.14)	lights=0	colliders=2
+Assets/Modern Villa/Prefabs/Windows/WindowDoor.prefab	center=(-2.00, 1.25, -0.07)	size=(4.00, 2.50, 0.14)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Windows/WindowStraight.prefab	center=(-1.00, 1.25, 0.07)	size=(2.00, 2.50, 0.14)	lights=0	colliders=1
+Assets/Modern Villa/Prefabs/Windows/WindowStraightOnesided.prefab	center=(-1.00, 1.25, 0.07)	size=(2.00, 2.50, 0.14)	lights=0	colliders=1

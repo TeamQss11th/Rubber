@@ -1,0 +1,10 @@
+annex building/Level 1/Walls/Window Door/Window door frame/Window door door width=1.7684 travel=1.1789 duration=2 local-left; narrow=False
+Main Building/Level 1/WindowDoor/Window door frame/Window door door width=1.7684 travel=1.1789 duration=2 local-left; narrow=False
+annex building/Level 1/Walls/Window Door (1)/Window door frame/Window door door width=1.7684 travel=1.1789 duration=2 local-left; narrow=False
+annex building/Level 1/Walls/Wall inner 1x2,5 door/interior door width=0.6392 travel=0.4261 duration=2 local-left; narrow=True
+Main Building/Ground Level/WindowDoor/Window door frame/Window door door width=1.7684 travel=1.1789 duration=2 local-left; narrow=False
+annex building/Ground Level/Wall 2x2,5 door single/exterior Door width=1.2301 travel=0.8200 duration=2 local-left; narrow=False
+Main Building/Ground Level/Wall 2x2,5 door single/exterior Door width=1.2301 travel=0.8200 duration=2 local-left; narrow=False
+annex building/Ground Level/Window Door/Window door frame/Window door door width=1.7684 travel=1.1789 duration=2 local-left; narrow=False
+
+Doors=8; moving renderers=15; baked lighting NOT regenerated.

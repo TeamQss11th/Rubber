@@ -1,0 +1,2 @@
+Grid 0.5m, x[-17.875,13), z[-4.875,33), all support layers below 4.8m. Controller h=1.8, r=0.28, step=0.3, slope=45.
+Support nodes=8975; obstructed/excluded=5098; clear standing tests=3877; failures=0

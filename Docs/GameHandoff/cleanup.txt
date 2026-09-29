@@ -1,0 +1,13 @@
+Removed sample camera: Camera
+Removed sample camera: Camera
+Removed sample camera: Camera (1)
+Removed sample camera: Camera (2)
+Removed sample camera: Camera (3)
+Removed sample camera: Camera (4)
+Removed sample camera: Camera (5)
+Remaining VillaSlidingDoor: 8
+Remaining UniversalAdditionalLightData: 22
+Remaining VillaTimeOfDay: 1
+Remaining ProbeVolume: 3
+Remaining ProbeVolumePerSceneData: 1
+Remaining VillaPoolWater: 2

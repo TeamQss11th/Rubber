@@ -1,0 +1,8 @@
+LoungeChair: ReceiveGI LightProbes -> LightProbes; old lightmap index=-1
+ContributeGI disabled for this renderer only; realtime shadows and colliders retained; UV source unchanged.
+LoungeChair (1): ReceiveGI LightProbes -> LightProbes; old lightmap index=-1
+ContributeGI disabled for this renderer only; realtime shadows and colliders retained; UV source unchanged.
+mv_LoungeChair: ReceiveGI LightProbes -> LightProbes; old lightmap index=-1
+ContributeGI disabled for this renderer only; realtime shadows and colliders retained; UV source unchanged.
+mv_LoungeChair (1): ReceiveGI LightProbes -> LightProbes; old lightmap index=-1
+ContributeGI disabled for this renderer only; realtime shadows and colliders retained; UV source unchanged.

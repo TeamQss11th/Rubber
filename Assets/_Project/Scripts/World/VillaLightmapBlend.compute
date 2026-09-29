@@ -1,0 +1,32 @@
+#pragma kernel Blend
+#pragma kernel Remap
+#pragma kernel SampleBase
+Texture2D<float4> SourceA;
+Texture2D<float4> SourceB;
+RWTexture2D<float4> Result;
+SamplerState sampler_linear_clamp;
+float Weight;
+float4 SourceRect;
+float4 DestinationRect;
+[numthreads(8,8,1)]
+void Blend(uint3 id:SV_DispatchThreadID)
+{
+    uint w,h;Result.GetDimensions(w,h);if(id.x>=w || id.y>=h)return;
+    Result[id.xy]=lerp(SourceA[id.xy],SourceB[id.xy],Weight);
+}
+[numthreads(8,8,1)]
+void Remap(uint3 id:SV_DispatchThreadID)
+{
+    uint w,h;Result.GetDimensions(w,h);
+    uint2 pixel=id.xy+(uint2)DestinationRect.zw;
+    if(id.x>=(uint)DestinationRect.x || id.y>=(uint)DestinationRect.y || pixel.x>=w || pixel.y>=h)return;
+    float2 uv=(id.xy+.5)/DestinationRect.xy;
+    Result[pixel]=SourceA.SampleLevel(sampler_linear_clamp,SourceRect.zw+uv*SourceRect.xy,0);
+}
+[numthreads(8,8,1)]
+void SampleBase(uint3 id:SV_DispatchThreadID)
+{
+    uint w,h,sw,sh;Result.GetDimensions(w,h);SourceA.GetDimensions(sw,sh);
+    if(id.x>=w || id.y>=h)return;
+    Result[id.xy]=SourceA.Load(int3(id.x*sw/w,id.y*sh/h,0));
+}

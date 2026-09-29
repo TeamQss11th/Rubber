@@ -1,0 +1,1 @@
+Night ready=True; night atlases=3; APV=Night; renderers=3861; baked local=16; resolution=1920x1080

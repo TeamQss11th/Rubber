@@ -1,0 +1,28 @@
+Camera cleanup: 2026-09-22T07:47:45.5516239Z
+Cameras/Main Camera: enabled True -> True; transform preserved
+Cameras/Camera: enabled True -> False; transform preserved
+Cameras/Camera (1): enabled True -> False; transform preserved
+Cameras/Camera (2): enabled True -> False; transform preserved
+Cameras/Camera (3): enabled True -> False; transform preserved
+Cameras/Camera (4): enabled True -> False; transform preserved
+Cameras/Camera (5): enabled True -> False; transform preserved
+Cameras/Camera (6): enabled True -> False; transform preserved
+Cameras/Camera (7): enabled True -> False; transform preserved
+Cameras/Camera (8): enabled True -> False; transform preserved
+Cameras/Camera (9): enabled True -> False; transform preserved
+Cameras/Camera (10): enabled True -> False; transform preserved
+Cameras/Camera (11): enabled True -> False; transform preserved
+AudioListener Cameras/Main Camera: enabled True -> True
+AudioListener Cameras/Camera: enabled False -> False
+AudioListener Cameras/Camera (1): enabled False -> False
+AudioListener Cameras/Camera (2): enabled False -> False
+AudioListener Cameras/Camera (3): enabled False -> False
+AudioListener Cameras/Camera (4): enabled False -> False
+AudioListener Cameras/Camera (5): enabled False -> False
+AudioListener Cameras/Camera (6): enabled False -> False
+AudioListener Cameras/Camera (7): enabled False -> False
+AudioListener Cameras/Camera (8): enabled False -> False
+AudioListener Cameras/Camera (9): enabled False -> False
+AudioListener Cameras/Camera (10): enabled False -> False
+AudioListener Cameras/Camera (11): enabled False -> False
+Active enabled cameras after cleanup: 1

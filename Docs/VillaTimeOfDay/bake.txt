@@ -1,0 +1,15 @@
+START 2026-09-28T15:47:33.4466809Z
+APV backup=Library/VillaTimeBackup-20260928-154733
+BEGIN Default
+DONE Default: 19.4s atlases=2 APV=True
+BEGIN Morning
+Packing matched=True; canonical maps=2
+DONE Morning: 14.3s atlases=2 APV=True
+BEGIN Sunset
+Packing matched=True; canonical maps=2
+DONE Sunset: 14.2s atlases=2 APV=True
+BEGIN Night
+Packing matched=True; canonical maps=2
+DONE Night: 13.5s atlases=2 APV=True
+COMPLETE 2026-09-28T15:48:37.7400224Z
+Folder=Assets/_Project/Lighting/ModernVilla/TimeOfDay

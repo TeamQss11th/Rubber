@@ -1,0 +1,43 @@
+Current outdoor dining furnishings and actual support samples
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-7121159731488290498-1726230223; Barbecue; pos=(-32.4038, 0.1442, 6.0153); rot=(0.00, 90.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-33.0022, 0.0500, 4.9969); max=(-30.9978, 1.5711, 7.0031); source=Assets/Modern Villa/Prefabs/Props/Barbecue.prefab
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-2168337333391581302-359604923; DiningTable; pos=(-28.0000, 0.0500, 3.0006); rot=(0.00, 0.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-29.1055, 0.0500, 2.4825); max=(-26.8945, 0.8322, 3.5175); source=Assets/Modern Villa/Prefabs/furniture/DiningTable.prefab
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-6841336497793376715-1961648837; DiningChair; pos=(-28.8000, 0.0575, 1.8058); rot=(0.00, 0.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-29.0859, 0.0500, 1.5012); max=(-28.5141, 0.9601, 1.9988); source=Assets/Modern Villa/Prefabs/furniture/DiningChair.prefab
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-6841336497793376715-1480279707; DiningChair; pos=(-28.8000, 0.0575, 4.1942); rot=(0.00, 180.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-29.0859, 0.0500, 4.0012); max=(-28.5141, 0.9601, 4.4988); source=Assets/Modern Villa/Prefabs/furniture/DiningChair.prefab
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-6841336497793376715-1065979439; DiningChair; pos=(-28.0000, 0.0575, 1.8058); rot=(0.00, 0.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-28.2859, 0.0500, 1.5012); max=(-27.7141, 0.9601, 1.9988); source=Assets/Modern Villa/Prefabs/furniture/DiningChair.prefab
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-6841336497793376715-1195689183; DiningChair; pos=(-28.0000, 0.0575, 4.1942); rot=(0.00, 180.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-28.2859, 0.0500, 4.0012); max=(-27.7141, 0.9601, 4.4988); source=Assets/Modern Villa/Prefabs/furniture/DiningChair.prefab
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-6841336497793376715-1436495005; DiningChair; pos=(-27.2000, 0.0575, 1.8058); rot=(0.00, 0.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-27.4859, 0.0500, 1.5012); max=(-26.9141, 0.9601, 1.9988); source=Assets/Modern Villa/Prefabs/furniture/DiningChair.prefab
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-6841336497793376715-2084791007; DiningChair; pos=(-27.2000, 0.0575, 4.1942); rot=(0.00, 180.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-27.4859, 0.0500, 4.0012); max=(-26.9141, 0.9601, 4.4988); source=Assets/Modern Villa/Prefabs/furniture/DiningChair.prefab
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-1396312985559822253-214867839; LargePlate; pos=(-28.7000, 0.8361, 2.7000); rot=(0.00, 0.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-28.8592, 0.8362, 2.5408); max=(-28.5408, 0.8482, 2.8592); source=Assets/Modern Villa/Prefabs/Props/LargePlate.prefab
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-2566225741892741074-697789386; Glas; pos=(-28.5300, 0.8351, 2.7000); rot=(0.00, 0.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-28.5720, 0.8362, 2.6580); max=(-28.4880, 0.9732, 2.7420); source=Assets/Modern Villa/Prefabs/Props/Glas.prefab
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-1396312985559822253-525784174; LargePlate; pos=(-28.7000, 0.8361, 3.3000); rot=(0.00, 0.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-28.8592, 0.8362, 3.1408); max=(-28.5408, 0.8482, 3.4592); source=Assets/Modern Villa/Prefabs/Props/LargePlate.prefab
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-2566225741892741074-1383354664; Glas; pos=(-28.5300, 0.8351, 3.3000); rot=(0.00, 0.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-28.5720, 0.8362, 3.2580); max=(-28.4880, 0.9732, 3.3420); source=Assets/Modern Villa/Prefabs/Props/Glas.prefab
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-1396312985559822253-118770970; LargePlate; pos=(-28.0000, 0.8361, 2.7000); rot=(0.00, 0.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-28.1592, 0.8362, 2.5408); max=(-27.8408, 0.8482, 2.8592); source=Assets/Modern Villa/Prefabs/Props/LargePlate.prefab
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-2566225741892741074-1232073493; Glas; pos=(-27.8300, 0.8351, 2.7000); rot=(0.00, 0.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-27.8720, 0.8362, 2.6580); max=(-27.7880, 0.9732, 2.7420); source=Assets/Modern Villa/Prefabs/Props/Glas.prefab
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-1396312985559822253-216543480; LargePlate; pos=(-28.0000, 0.8361, 3.3000); rot=(0.00, 0.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-28.1592, 0.8362, 3.1408); max=(-27.8408, 0.8482, 3.4592); source=Assets/Modern Villa/Prefabs/Props/LargePlate.prefab
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-2566225741892741074-112882153; Glas; pos=(-27.8300, 0.8351, 3.3000); rot=(0.00, 0.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-27.8720, 0.8362, 3.2580); max=(-27.7880, 0.9732, 3.3420); source=Assets/Modern Villa/Prefabs/Props/Glas.prefab
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-1396312985559822253-1856242208; LargePlate; pos=(-27.3000, 0.8361, 2.7000); rot=(0.00, 0.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-27.4592, 0.8362, 2.5408); max=(-27.1408, 0.8482, 2.8592); source=Assets/Modern Villa/Prefabs/Props/LargePlate.prefab
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-2566225741892741074-1237418096; Glas; pos=(-27.1300, 0.8351, 2.7000); rot=(0.00, 0.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-27.1720, 0.8362, 2.6580); max=(-27.0880, 0.9732, 2.7420); source=Assets/Modern Villa/Prefabs/Props/Glas.prefab
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-1396312985559822253-491974991; LargePlate; pos=(-27.3000, 0.8361, 3.3000); rot=(0.00, 0.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-27.4592, 0.8362, 3.1408); max=(-27.1408, 0.8482, 3.4592); source=Assets/Modern Villa/Prefabs/Props/LargePlate.prefab
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-2566225741892741074-1509306373; Glas; pos=(-27.1300, 0.8351, 3.3000); rot=(0.00, 0.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-27.1720, 0.8362, 3.2580); max=(-27.0880, 0.9732, 3.3420); source=Assets/Modern Villa/Prefabs/Props/Glas.prefab
+id=GlobalObjectId_V1-2-6af4f6ba93c8b3e46aab195e61579ec0-3142108280241990245-1376571325; FloorLight on Variant; pos=(-25.2000, 0.0500, 3.0000); rot=(0.00, 0.00, 0.00); scale=(1.000, 1.000, 1.000); min=(-25.2412, 0.0500, 2.9588); max=(-25.1588, 0.8210, 3.0412); source=Assets/Modern Villa/Prefabs/lighting/FloorLight on Variant.prefab
+PAVILION Beach Villa - Expanded Grounds/PavillonOpen; min=(-29.811, 0.050, 1.189); max=(-26.189, 3.533, 4.811); pos=(-28.000, 0.050, 3.000)
+SUPPORT -33,0: 0.050 Floor2x2 | 0.050 Floor2x2 | 0.025 Terrain
+SUPPORT -33,3: 0.050 Floor2x2 | 0.025 Terrain
+SUPPORT -33,6: 0.050 Floor2x2 | 0.050 Floor2x2 | 0.025 Terrain
+SUPPORT -33,8: 0.050 Floor2x2 | 0.050 Floor2x2 | 0.025 Terrain
+SUPPORT -31,0: 0.050 Floor2x2 | 0.050 Floor2x2 | 0.025 Terrain
+SUPPORT -31,3: 0.050 Floor2x2 | 0.025 Terrain
+SUPPORT -31,6: 0.050 Floor2x2 | 0.050 Floor2x2 | 0.025 Terrain
+SUPPORT -31,8: 0.050 Floor2x2 | 0.050 Floor2x2 | 0.025 Terrain
+SUPPORT -29,0: 0.050 Floor2x2 | 0.050 Floor2x2 | 0.025 Terrain
+SUPPORT -29,3: 2.867 PavillonOpen | 0.227 DiningTable | 0.050 Floor2x2 | 0.025 Terrain
+SUPPORT -29,6: 0.050 Floor2x2 | 0.050 Floor2x2 | 0.025 Terrain
+SUPPORT -29,8: 0.050 Floor2x2 | 0.050 Floor2x2 | 0.025 Terrain
+SUPPORT -27,0: 0.050 Floor2x2 | 0.050 Floor2x2 | 0.025 Terrain
+SUPPORT -27,3: 2.867 PavillonOpen | 0.227 DiningTable | 0.050 Floor2x2 | 0.025 Terrain
+SUPPORT -27,6: 0.050 Floor2x2 | 0.050 Floor2x2 | 0.025 Terrain
+SUPPORT -27,8: 0.050 Floor2x2 | 0.050 Floor2x2 | 0.025 Terrain
+SUPPORT -25,0: 0.050 Floor2x2 | 0.050 Floor2x2 | 0.025 Terrain
+SUPPORT -25,3: 0.050 Floor2x2 | 0.025 Terrain
+SUPPORT -25,6: 0.050 Floor2x2 | 0.050 Floor2x2 | 0.025 Terrain
+SUPPORT -25,8: 0.050 Floor2x2 | 0.050 Floor2x2 | 0.025 Terrain
