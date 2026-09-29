@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RubberDuck_ToyKnife
   m_EditorClassIdentifier: Assembly-CSharp::Rubber.Gameplay.Ducks.RubberDuckData
   id: 1005
-  displayName: RubberDuck_ToyKnife
+  displayName: RubberDuck_ToyKnife #1
   description: 
   collectionIcon: {fileID: 0}
   uniqueSound: {fileID: 0}

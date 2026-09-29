@@ -60,6 +60,10 @@ namespace Rubber.Gameplay.Player
 
         private void Update()
         {
+            // Unity/the OS can release the cursor without a focus callback.
+            // Keep our state aligned so the next click can capture it again.
+            if (captured && Cursor.lockState != CursorLockMode.Locked)
+                SetCapture(false);
             if (releaseCursor.WasPressedThisFrame()) SetCapture(false);
             else if (!captured && captureCursor.WasPressedThisFrame())
             {
@@ -78,7 +82,7 @@ namespace Rubber.Gameplay.Player
         }
 
         private void OnMove(InputAction.CallbackContext context)
-        { if (captured) movement.Move(context.ReadValue<Vector2>()); }
+        { if (captured && Cursor.lockState == CursorLockMode.Locked) movement.Move(context.ReadValue<Vector2>()); }
         private void OnJump(InputAction.CallbackContext context)
         { if (captured && Cursor.lockState == CursorLockMode.Locked) movement.Jump(); }
         private void TryInteract()

@@ -1,5 +1,1 @@
-Console count=2
-ENTRY 0: The referenced script (Unknown) on this Behaviour is missing!
-
-ENTRY 1: The referenced script (Unknown) on this Behaviour is missing!
-
+Console count=0

@@ -1,0 +1,30 @@
+PASS player grounded at spawn
+PASS player jump
+PASS five unique ducks, none returned on land
+PASS idle door accepts interaction: exterior Door
+PASS idle door accepts interaction: Window door door
+PASS idle door accepts interaction: Window door door
+PASS idle door accepts interaction: Window door door
+PASS idle door accepts interaction: interior door
+PASS idle door accepts interaction: Window door door
+PASS idle door accepts interaction: exterior Door
+PASS idle door accepts interaction: Window door door
+PASS all eight doors finish opening
+PASS duck pickup via IInteractable
+PASS held duck buoyancy suspended
+PASS duck release restores physics
+PASS pool interior placement 0
+PASS pool interior placement 1
+PASS pool interior placement 2
+PASS pool interior placement 3
+PASS pool interior placement 4
+PASS no collection while still above water
+PASS floating and registered: RubberDuck pos=(-6.55, 0.02, 26.45) settled=True returned=True
+PASS floating and registered: RubberDuck_Balloon pos=(7.45, -0.46, -0.25) settled=True returned=True
+PASS floating and registered: RubberDuck_BigHead pos=(-7.45, 0.02, 27.25) settled=True returned=True
+PASS floating and registered: RubberDuck_Glass pos=(8.65, -0.46, -0.35) settled=True returned=True
+PASS floating and registered: RubberDuck_ToyKnife pos=(-7.65, 0.02, 25.95) settled=True returned=True
+PASS collection completes across both pools
+PASS duplicate return rejected
+PASS all doors close
+PASS runtime errors=0

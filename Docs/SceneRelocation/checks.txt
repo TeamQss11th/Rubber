@@ -1,0 +1,5 @@
+Scene=Assets/_Project/Scenes/Modern Villa.unity
+GUID preserved=True (c5c5438aec093734ca0f431d36c22f40)
+Dependencies unchanged=True
+Lighting data unchanged=True
+Lightmaps before=2 after=2

@@ -29,7 +29,7 @@ namespace Rubber.EditorTools
                 var pools=UnityEngine.Object.FindObjectsByType<VillaPoolWater>();
                 yield return new WaitForSecondsRealtime(2);
                 Assert(player.IsGrounded,"player grounded at spawn");float y=player.transform.position.y;player.Jump();yield return new WaitForSeconds(.2f);Assert(player.transform.position.y>y+.1f,"player jump");yield return new WaitForSeconds(1);
-                Assert(registry.TotalDuckCount==5 && registry.ReturnedCount==0,"five unique ducks, none returned on land");
+                Assert(registry.TotalDuckCount==ducks.Length && ducks.Length>0 && registry.ReturnedCount==0,"all unique ducks registered, none returned on land");
                 var doors=UnityEngine.Object.FindObjectsByType<VillaDoorInteractable>();
                 foreach(var door in doors)Assert(door.TryInteract(player.gameObject),"idle door accepts interaction: "+door.name);
                 yield return new WaitForSeconds(3);
@@ -61,8 +61,8 @@ namespace Rubber.EditorTools
                 Assert(registry.ReturnedCount==0,"no collection while still above water");
                 yield return new WaitForSeconds(12);
                 foreach(var duck in ducks){var b=duck.GetComponent<VillaDuckBuoyancy>();Assert(duck.IsReturned && b.IsFloating,"floating and registered: "+duck.name+" pos="+duck.transform.position+" settled="+b.IsSettled+" returned="+duck.IsReturned);}
-                Assert(registry.IsComplete && registry.ReturnedCount==5,"collection completes across both pools");
-                Assert(!registry.TryRegister(ducks[0]) && registry.ReturnedCount==5,"duplicate return rejected");
+                Assert(registry.IsComplete && registry.ReturnedCount==ducks.Length,"collection completes across both pools");
+                Assert(!registry.TryRegister(ducks[0]) && registry.ReturnedCount==ducks.Length,"duplicate return rejected");
                 Assert(doors.All(d=>d.GetComponent<VillaSlidingDoor>().Progress<.01f),"all doors close");
                 Assert(errors.Count==0,"runtime errors="+errors.Count);report.AddRange(errors);
             }

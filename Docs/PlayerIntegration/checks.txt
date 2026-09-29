@@ -2,12 +2,12 @@ PASS player grounded at spawn
 PASS player jump
 PASS five unique ducks, none returned on land
 PASS idle door accepts interaction: Window door door
+PASS idle door accepts interaction: Window door door
+PASS idle door accepts interaction: Window door door
+PASS idle door accepts interaction: exterior Door
+PASS idle door accepts interaction: exterior Door
+PASS idle door accepts interaction: Window door door
 PASS idle door accepts interaction: interior door
-PASS idle door accepts interaction: exterior Door
-PASS idle door accepts interaction: Window door door
-PASS idle door accepts interaction: Window door door
-PASS idle door accepts interaction: exterior Door
-PASS idle door accepts interaction: Window door door
 PASS idle door accepts interaction: Window door door
 PASS all eight doors finish opening
 PASS duck pickup via IInteractable

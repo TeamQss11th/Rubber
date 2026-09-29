@@ -14,7 +14,7 @@ namespace Rubber.EditorTools
     {
         static string Folder="Assets/_Project/Lighting/ModernVilla/Verified";
         const string Report="Docs/ModernVillaDayNight/bake.txt";
-        const string ScenePath="Assets/Modern Villa/Scenes/Modern Villa.unity";
+        const string ScenePath="Assets/_Project/Scenes/Modern Villa.unity";
         static int phase;
         static double start;
         static ModernVillaDayNight controller;

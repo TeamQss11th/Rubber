@@ -1,6 +1,6 @@
 # Player + Map integration
 
-Merged `origin/Player` at `31ffdce` into `Map`. The playable scene is `Assets/Modern Villa/Scenes/Modern Villa.unity`; it is now the enabled first scene in Build Settings. The teammate's separate PlayerTestScene is preserved as a development asset and is not loaded by the game scene.
+Merged `origin/Player` at `31ffdce` into `Map`. The playable scene is `Assets/_Project/Scenes/Modern Villa.unity`; it is now the enabled first scene in Build Settings. The teammate's separate PlayerTestScene is preserved as a development asset and is not loaded by the game scene.
 
 ## Controls
 

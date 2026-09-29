@@ -17,12 +17,18 @@ namespace Rubber.EditorTools
             const string request="Library/VillaConsole.request";
             if(EditorApplication.isCompiling||EditorApplication.isUpdating||!File.Exists(request))return;
             string command=File.ReadAllText(request).Trim();File.Delete(request);Directory.CreateDirectory(Folder);
+            if(command=="hunt-survey"){VillaDuckHuntSetup.Survey();return;}
+            if(command=="hunt-check"){VillaHuntChecks.Run();return;}
+            if(command=="hunt-place"){try{VillaDuckHuntSetup.Install();}catch(Exception e){File.WriteAllText("Docs/DuckHunt/error.txt",e.ToString());}return;}
+            if(command=="input-check"){VillaInputChecks.Run();return;}
+            if(command=="carry-check"){VillaCarryChecks.Run();return;}
+            if(command=="move-scene"){try{VillaSceneRelocation.Move();Inspect();}catch(Exception e){File.WriteAllText(Folder+"/error.txt",e.ToString());}return;}
             try{if(command=="integration-check")VillaIntegrationChecks.Run();if(command=="integrate")VillaPlayerIntegration.Install();if(command=="handoff")VillaGameHandoff.Clean();if(command=="repair")Repair();if(command=="inspect"||command=="repair"||command=="handoff"||command=="integrate")Inspect();}catch(Exception e){File.WriteAllText(Folder+"/error.txt",e.ToString());}
         }
         static void Repair()
         {
             var scene=SceneManager.GetActiveScene();
-            if(Application.isPlaying||scene.path!="Assets/Modern Villa/Scenes/Modern Villa.unity")throw new InvalidOperationException("Open Modern Villa in Edit mode first.");
+            if(Application.isPlaying||scene.path!="Assets/_Project/Scenes/Modern Villa.unity")throw new InvalidOperationException("Open Modern Villa in Edit mode first.");
             string backup=Folder+"/Backup-"+DateTime.Now.ToString("yyyyMMdd-HHmmss");
             Directory.CreateDirectory(backup);
             File.Copy(scene.path,backup+"/Modern Villa.unity.backup");

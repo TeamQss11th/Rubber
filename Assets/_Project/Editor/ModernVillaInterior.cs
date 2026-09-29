@@ -8,7 +8,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 namespace Rubber.EditorTools {
 public static class ModernVillaInterior {
- const string Path="Assets/Modern Villa/Scenes/Modern Villa.unity", Report="Docs/ModernVillaInterior";
+ const string Path="Assets/_Project/Scenes/Modern Villa.unity", Report="Docs/ModernVillaInterior";
  static Bounds B(Transform t) => BeachVillaExpansionSurvey.BoundsOf(t.gameObject);
  static string P(Transform t)=>t.parent?P(t.parent)+"/"+t.name:t.name;
  [MenuItem("Rubber/Modern Interior/1 Open and Inspect")]

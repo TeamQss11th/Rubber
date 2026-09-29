@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RubberDuck_Balloon
   m_EditorClassIdentifier: Assembly-CSharp::Rubber.Gameplay.Ducks.RubberDuckData
   id: 1002
-  displayName: RubberDuck_Balloon
+  displayName: RubberDuck_Balloon #1
   description: 
   collectionIcon: {fileID: 0}
   uniqueSound: {fileID: 0}

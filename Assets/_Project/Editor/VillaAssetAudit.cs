@@ -28,7 +28,7 @@ namespace Rubber.EditorTools
             }
             Directory.CreateDirectory("Docs/MapBuild");
             File.WriteAllText("Docs/MapBuild/asset-bounds.txt", report.ToString());
-            var demo = EditorSceneManager.OpenPreviewScene("Assets/Modern Villa/Scenes/Modern Villa.unity");
+            var demo = EditorSceneManager.OpenPreviewScene("Assets/_Project/Scenes/Modern Villa.unity");
             var sceneReport = new StringBuilder();
             try
             {

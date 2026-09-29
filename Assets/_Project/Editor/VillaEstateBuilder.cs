@@ -37,7 +37,7 @@ namespace Rubber.EditorTools
                 if (!EditorSceneManager.SaveScene(open, backup, true)) throw new IOException("Could not preserve unsaved scene.");
                 File.AppendAllText(ReportPath + "/preserved-scenes.txt", backup + "\n");
             }
-            var scene = EditorSceneManager.OpenScene("Assets/Modern Villa/Scenes/Modern Villa.unity", OpenSceneMode.Single);
+            var scene = EditorSceneManager.OpenScene("Assets/_Project/Scenes/Modern Villa.unity", OpenSceneMode.Single);
             if (!EditorSceneManager.SaveScene(scene, PathName)) throw new IOException("Could not create estate copy.");
             var originalRoots = scene.GetRootGameObjects();
             var core = new GameObject("01 Original Villa - furnished main house").transform;

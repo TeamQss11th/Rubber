@@ -13,6 +13,7 @@ namespace Rubber.Gameplay.Ducks
         private Collider[] duckColliders;
         private bool[] colliderWasEnabled;
         private PlayerDuckCarrier carrier;
+        private RigidbodyInterpolation releasedInterpolation;
         private bool isReturned;
 
         public bool IsHeld => carrier;
@@ -55,6 +56,10 @@ namespace Rubber.Gameplay.Ducks
                 body.linearVelocity = Vector3.zero;
                 body.angularVelocity = Vector3.zero;
             }
+            // While carried, the camera anchor owns the pose every render frame.
+            // Rigidbody interpolation would overwrite it with a previous physics pose.
+            releasedInterpolation = body.interpolation;
+            body.interpolation = RigidbodyInterpolation.None;
             body.isKinematic = true;
             body.useGravity = false;
             transform.SetParent(anchor, true);
@@ -70,10 +75,13 @@ namespace Rubber.Gameplay.Ducks
 
             transform.SetParent(null, true);
             transform.SetPositionAndRotation(position, rotation);
+            body.position = position;
+            body.rotation = rotation;
             body.isKinematic = false;
             body.useGravity = true;
             body.linearVelocity = Vector3.zero;
             body.angularVelocity = Vector3.zero;
+            body.interpolation = releasedInterpolation;
             for (int i = 0; i < duckColliders.Length; i++)
                 if (duckColliders[i]) duckColliders[i].enabled = colliderWasEnabled[i];
 

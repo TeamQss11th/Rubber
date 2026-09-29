@@ -8,7 +8,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 namespace Rubber.EditorTools {
 public static class ModernVillaLighting {
- const string ScenePath="Assets/Modern Villa/Scenes/Modern Villa.unity", Report="Docs/ModernVillaLighting", Marker="Modern Villa - Interior Lighting";
+ const string ScenePath="Assets/_Project/Scenes/Modern Villa.unity", Report="Docs/ModernVillaLighting", Marker="Modern Villa - Interior Lighting";
  static Bounds B(GameObject g)=>BeachVillaExpansionSurvey.BoundsOf(g);
  static string P(Transform t)=>t.parent?P(t.parent)+"/"+t.name:t.name;
  static void Guard(){if(Application.isPlaying || Lightmapping.isRunning || SceneManager.GetActiveScene().path!=ScenePath)throw new InvalidOperationException("Open Modern Villa in Edit mode with baking stopped.");Directory.CreateDirectory(Report);}

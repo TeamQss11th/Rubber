@@ -1,0 +1,57 @@
+PASS 25 unique collectibles registered
+PASS 4 static invisible solid barriers
+PASS West capsule crossings blocked=33/33
+PASS East capsule crossings blocked=33/33
+PASS South capsule crossings blocked=33/33
+PASS North capsule crossings blocked=33/33
+PASS Duck 01 - Main lounge - beside couch table stable placement; drift=0.006
+PASS Duck 01 - Main lounge - beside couch table reachable pickup ray
+PASS Duck 02 - Dining - under table stable placement; drift=0.006
+PASS Duck 02 - Dining - under table reachable pickup ray
+PASS Duck 03 - Dining - beside corner planter stable placement; drift=0.006
+PASS Duck 03 - Dining - beside corner planter reachable pickup ray
+PASS Duck 04 - Dining - behind flowers stable placement; drift=0.006
+PASS Duck 04 - Dining - behind flowers reachable pickup ray
+PASS Duck 05 - Study - behind reference books stable placement; drift=0.006
+PASS Duck 05 - Study - behind reference books reachable pickup ray
+PASS Duck 06 - Study - beside window armchair stable placement; drift=0.006
+PASS Duck 06 - Study - beside window armchair reachable pickup ray
+PASS Duck 07 - Study - coffee table edge stable placement; drift=0.006
+PASS Duck 07 - Study - coffee table edge reachable pickup ray
+PASS Duck 08 - Reading - beside floor planter stable placement; drift=0.006
+PASS Duck 08 - Reading - beside floor planter reachable pickup ray
+PASS Duck 09 - Reading - between chairs stable placement; drift=0.006
+PASS Duck 09 - Reading - between chairs reachable pickup ray
+PASS Duck 10 - Reading - behind coffee book stable placement; drift=0.006
+PASS Duck 10 - Reading - behind coffee book reachable pickup ray
+PASS Duck 11 - Living - behind sofa arm stable placement; drift=0.006
+PASS Duck 11 - Living - behind sofa arm reachable pickup ray
+PASS Duck 12 - Living - beside low palm stable placement; drift=0.006
+PASS Duck 12 - Living - beside low palm reachable pickup ray
+PASS Duck 13 - Living - coffee table edge stable placement; drift=0.006
+PASS Duck 13 - Living - coffee table edge reachable pickup ray
+PASS Duck 14 - Breakfast - beside coffee tray stable placement; drift=0.006
+PASS Duck 14 - Breakfast - beside coffee tray reachable pickup ray
+PASS Duck 15 - Breakfast - near window planter stable placement; drift=0.006
+PASS Duck 15 - Breakfast - near window planter reachable pickup ray
+PASS Duck 16 - Studio - behind reference books stable placement; drift=0.006
+PASS Duck 16 - Studio - behind reference books reachable pickup ray
+PASS Duck 17 - Studio - beside reading chair stable placement; drift=0.006
+PASS Duck 17 - Studio - beside reading chair reachable pickup ray
+PASS Duck 18 - Retreat - beside tea table stable placement; drift=0.006
+PASS Duck 18 - Retreat - beside tea table reachable pickup ray
+PASS Duck 19 - Retreat - beside low palm stable placement; drift=0.006
+PASS Duck 19 - Retreat - beside low palm reachable pickup ray
+PASS Duck 20 - Front pool - beside lounge corner stable placement; drift=0.006
+PASS Duck 20 - Front pool - beside lounge corner reachable pickup ray
+PASS Duck 21 - Front pool - beside lamp table stable placement; drift=0.006
+PASS Duck 21 - Front pool - beside lamp table reachable pickup ray
+PASS Duck 22 - Garden - beside lounger stable placement; drift=0.006
+PASS Duck 22 - Garden - beside lounger reachable pickup ray
+PASS Duck 23 - Garden - behind second lounger stable placement; drift=0.006
+PASS Duck 23 - Garden - behind second lounger reachable pickup ray
+PASS Duck 24 - Garden - beside bench corner stable placement; drift=0.006
+PASS Duck 24 - Garden - beside bench corner reachable pickup ray
+PASS Duck 25 - Garden - beside garden chair stable placement; drift=0.006
+PASS Duck 25 - Garden - beside garden chair reachable pickup ray
+PASS hidden ducks not accidentally inside return pools

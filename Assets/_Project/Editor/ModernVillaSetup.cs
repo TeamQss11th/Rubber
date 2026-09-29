@@ -10,7 +10,7 @@ using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 namespace Rubber.EditorTools {
 public static class ModernVillaSetup {
- public const string Folder="Assets/_Project/Lighting/ModernVilla", Report="Docs/ModernVillaDayNight", ScenePath="Assets/Modern Villa/Scenes/Modern Villa.unity";
+ public const string Folder="Assets/_Project/Lighting/ModernVilla", Report="Docs/ModernVillaDayNight", ScenePath="Assets/_Project/Scenes/Modern Villa.unity";
  [MenuItem("Rubber/Modern Review/Configure Day Night %&n")]
  public static void Configure(){
  var scene=SceneManager.GetActiveScene();

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RubberDuck_BigHead
   m_EditorClassIdentifier: Assembly-CSharp::Rubber.Gameplay.Ducks.RubberDuckData
   id: 1003
-  displayName: RubberDuck_BigHead
+  displayName: RubberDuck_BigHead #1
   description: 
   collectionIcon: {fileID: 0}
   uniqueSound: {fileID: 0}

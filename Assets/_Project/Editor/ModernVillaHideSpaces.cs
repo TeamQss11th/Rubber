@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 
 namespace Rubber.EditorTools {
 public static class ModernVillaHideSpaces {
- const string ScenePath="Assets/Modern Villa/Scenes/Modern Villa.unity";
+ const string ScenePath="Assets/_Project/Scenes/Modern Villa.unity";
  const string Report="Docs/ModernVillaHideSpaces", Marker="Modern Villa - Search Details";
  const string Assets="Assets/Modern Villa/Prefabs/";
  static Bounds B(GameObject g) => BeachVillaExpansionSurvey.BoundsOf(g);

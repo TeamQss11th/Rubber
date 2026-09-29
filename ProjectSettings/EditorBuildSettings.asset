@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Modern Villa/Scenes/Modern Villa.unity
+    path: Assets/_Project/Scenes/Modern Villa.unity
     guid: c5c5438aec093734ca0f431d36c22f40
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
