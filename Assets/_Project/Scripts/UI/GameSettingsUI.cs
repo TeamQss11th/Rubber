@@ -69,7 +69,15 @@ public class GameSettingsUI : MonoBehaviour
     {
         openButton.onClick.AddListener(OpenSettings);
         closeButton.onClick.AddListener(CloseSettings);
-        applyButton.onClick.AddListener(ApplySettings);
+        if (applyButton != null)
+            applyButton.onClick.AddListener(ApplySettings);
+        masterVolumeSlider.onValueChanged.AddListener(_ => ApplySettings());
+        bgmVolumeSlider.onValueChanged.AddListener(_ => ApplySettings());
+        sfxVolumeSlider.onValueChanged.AddListener(_ => ApplySettings());
+        ambienceVolumeSlider.onValueChanged.AddListener(_ => ApplySettings());
+        sensitivitySlider.onValueChanged.AddListener(_ => ApplySettings());
+        fullScreenToggle.onValueChanged.AddListener(_ => ApplySettings());
+        resolutionDropdown.onValueChanged.AddListener(_ => ApplySettings());
         quitButton.onClick.AddListener(OpenQuitConfirm);
         confirmQuitButton.onClick.AddListener(QuitGame);
         cancelQuitButton.onClick.AddListener(CloseQuitConfirm);
