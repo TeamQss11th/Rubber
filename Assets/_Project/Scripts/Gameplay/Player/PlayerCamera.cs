@@ -24,8 +24,9 @@ namespace Rubber.Gameplay.Player
         {
             if (!cameraPivot) return;
             // Mouse delta already measures movement per frame; do not multiply by deltaTime.
-            yaw += mouseDelta.x * sensitivity;
-            pitch = Mathf.Clamp(pitch - mouseDelta.y * sensitivity, -pitchLimit, pitchLimit);
+            float effectiveSensitivity = sensitivity * Mathf.Max(0.01f, GameSettingsUI.Sensitivity);
+            yaw += mouseDelta.x * effectiveSensitivity;
+            pitch = Mathf.Clamp(pitch - mouseDelta.y * effectiveSensitivity, -pitchLimit, pitchLimit);
             cameraPivot.localRotation = Quaternion.Euler(pitch, yaw, 0f);
         }
 

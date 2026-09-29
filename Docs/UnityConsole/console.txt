@@ -1,1 +1,9 @@
-Console count=0
+Console count=4
+ENTRY 0: The referenced script (Unknown) on this Behaviour is missing!
+
+ENTRY 1: The referenced script (Unknown) on this Behaviour is missing!
+
+ENTRY 2: The referenced script (Unknown) on this Behaviour is missing!
+
+ENTRY 3: The referenced script (Unknown) on this Behaviour is missing!
+

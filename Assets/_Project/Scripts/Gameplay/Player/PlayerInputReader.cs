@@ -17,6 +17,7 @@ namespace Rubber.Gameplay.Player
         private InputActionMap playerMap;
         private InputAction move, look, jump, interact, drop, releaseCursor, captureCursor;
         private bool captured;
+        public bool PauseHandledExternally { get; set; }
 
         public void Configure(InputActionAsset actions, PlayerMovement motor, PlayerCamera cameraController)
         { inputActions = actions; movement = motor; playerCamera = cameraController; }
@@ -64,7 +65,7 @@ namespace Rubber.Gameplay.Player
             // Keep our state aligned so the next click can capture it again.
             if (captured && Cursor.lockState != CursorLockMode.Locked)
                 SetCapture(false);
-            if (releaseCursor.WasPressedThisFrame()) SetCapture(false);
+            if (!PauseHandledExternally && releaseCursor.WasPressedThisFrame()) SetCapture(false);
             else if (!captured && captureCursor.WasPressedThisFrame())
             {
                 SetCapture(true);

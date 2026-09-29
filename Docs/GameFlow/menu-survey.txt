@@ -1,0 +1,92 @@
+Main Camera active=True components=Transform,Camera,AudioListener,UniversalAdditionalCameraData
+Directional Light active=True components=Transform,Light,UniversalAdditionalLightData
+Canvas active=True components=RectTransform,Canvas,CanvasScaler,GraphicRaycaster,PauseSettingsUI
+Canvas/Count active=True components=RectTransform
+Canvas/Count/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=New Text font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Count/Duck active=True components=RectTransform,CanvasRenderer,Image
+Canvas/Background active=True components=RectTransform,CanvasRenderer,Image
+Canvas/Setting (1) active=True components=RectTransform
+Canvas/Setting (1)/Setting active=True components=RectTransform,CanvasRenderer,Image
+Canvas/Setting (1)/FullScreen active=True components=RectTransform,Toggle
+Canvas/Setting (1)/FullScreen/Background active=True components=RectTransform,CanvasRenderer,Image
+Canvas/Setting (1)/FullScreen/FullScreen active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=FullScreen font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Setting (1)/Sensitivity active=True components=RectTransform,Slider
+Canvas/Setting (1)/Sensitivity/Background active=True components=RectTransform,CanvasRenderer,Image
+Canvas/Setting (1)/Sensitivity/Fill Area active=True components=RectTransform
+Canvas/Setting (1)/Sensitivity/Handle Slide Area active=True components=RectTransform
+Canvas/Setting (1)/Sensitivity/Sensitivity active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=Sensitivity font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Setting (1)/ControlKey active=True components=RectTransform,CanvasRenderer,Image,Button
+Canvas/Setting (1)/ControlKey/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=Control font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Setting (1)/ControlKey/BackGround active=False components=RectTransform,CanvasRenderer,Image
+Canvas/Setting (1)/Quit active=True components=RectTransform,CanvasRenderer,Image,Button
+Canvas/Setting (1)/Quit/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=Quit font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Setting (1)/Resolution active=True components=RectTransform,CanvasRenderer,Image,TMP_Dropdown
+Canvas/Setting (1)/Resolution/Resolution Title active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=Resolution font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Setting (1)/Resolution/Label active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=Option A font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Setting (1)/Resolution/Arrow active=True components=RectTransform,CanvasRenderer,Image
+Canvas/Setting (1)/Resolution/Template active=False components=RectTransform,CanvasRenderer,Image,ScrollRect
+Canvas/Setting (1)/Sound active=True components=RectTransform
+Canvas/Setting (1)/Sound/MasterVolume active=True components=RectTransform,Slider
+Canvas/Setting (1)/Sound/SFX active=True components=RectTransform,Slider
+Canvas/Setting (1)/Sound/BGM active=True components=RectTransform,Slider
+Canvas/Setting (1)/Sound/Ambience active=True components=RectTransform,Slider
+Canvas/Setting (1)/SoundText active=True components=RectTransform
+Canvas/Setting (1)/SoundText/Master active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=Master font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Setting (1)/SoundText/SFX active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=SFX font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Setting (1)/SoundText/BGM active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=BGM font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Setting (1)/SoundText/Ambience active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=Ambience font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas active=False components=RectTransform,Canvas,CanvasScaler,GraphicRaycaster
+Canvas/Title active=True components=RectTransform,CanvasRenderer,Image
+Canvas/Setting active=True components=RectTransform,CanvasRenderer,Image,Button
+Canvas/Setting/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=Setting font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Start active=True components=RectTransform,CanvasRenderer,Image,Button
+Canvas/Start/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=Start font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Quit active=True components=RectTransform,CanvasRenderer,Image,Button
+Canvas/Quit/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=Quit font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/UIBackground active=False components=RectTransform,CanvasRenderer,Image
+Canvas/Setting active=False components=RectTransform
+Canvas/Setting/Setting active=True components=RectTransform,CanvasRenderer,Image
+Canvas/Setting/QuitSetting active=True components=RectTransform,CanvasRenderer,Image,Button
+Canvas/Setting/FullScreen active=True components=RectTransform,Toggle
+Canvas/Setting/FullScreen/Background active=True components=RectTransform,CanvasRenderer,Image
+Canvas/Setting/FullScreen/FullScreen active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=FullScreen font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Setting/Sensitivity active=True components=RectTransform,Slider
+Canvas/Setting/Sensitivity/Background active=True components=RectTransform,CanvasRenderer,Image
+Canvas/Setting/Sensitivity/Fill Area active=True components=RectTransform
+Canvas/Setting/Sensitivity/Handle Slide Area active=True components=RectTransform
+Canvas/Setting/Sensitivity/Sensitivity active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=Sensitivity font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Setting/Resolution active=True components=RectTransform,CanvasRenderer,Image,TMP_Dropdown
+Canvas/Setting/Resolution/Resolution Title active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=Resolution font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Setting/Resolution/Label active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=Option A font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Setting/Resolution/Arrow active=True components=RectTransform,CanvasRenderer,Image
+Canvas/Setting/Resolution/Template active=True components=RectTransform,CanvasRenderer,Image,ScrollRect
+Canvas/Setting/Sound active=True components=RectTransform
+Canvas/Setting/Sound/MasterVolume active=True components=RectTransform,Slider
+Canvas/Setting/Sound/SFX active=True components=RectTransform,Slider
+Canvas/Setting/Sound/BGM active=True components=RectTransform,Slider
+Canvas/Setting/Sound/Ambience active=True components=RectTransform,Slider
+Canvas/Setting/SoundText active=True components=RectTransform
+Canvas/Setting/SoundText/Master active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=Master font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Setting/SoundText/SFX active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=SFX font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Setting/SoundText/BGM active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=BGM font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Setting/SoundText/Ambience active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=Ambience font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Setting/ControlKey active=True components=RectTransform,CanvasRenderer,Image,Button
+Canvas/Setting/ControlKey/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=Control font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Setting/ControlKey/BackGround active=False components=RectTransform,CanvasRenderer,Image
+Canvas/Quit active=False components=RectTransform
+Canvas/Quit/Background active=True components=RectTransform,CanvasRenderer,Image
+Canvas/Quit/QuitGame? active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=Do you want Quit Game? font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Quit/QuitGame active=True components=RectTransform,CanvasRenderer,Image,Button
+Canvas/Quit/QuitGame/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=Sure! font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Quit/No active=True components=RectTransform,CanvasRenderer,Image,Button
+Canvas/Quit/No/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=I want play more! font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Loading active=False components=RectTransform,LoadingScreenUI
+Canvas/Loading/Image active=True components=RectTransform,CanvasRenderer,Image
+Canvas/Loading/LoadingContent active=True components=RectTransform
+Canvas/Loading/LoadingContent/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI text=Did you know? Ducks are all hiding font=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Canvas/Loading/LoadingContent/Slider active=True components=RectTransform,Slider
+EventSystem active=True components=Transform,EventSystem,InputSystemUIInputModule
+GameSettingsUI active=True components=Transform,GameSettingsUI,MainMenuTransition
+BGM active=True components=Transform,AudioSource
+SFX active=True components=Transform,AudioSource
+Ambience active=True components=Transform,AudioSource

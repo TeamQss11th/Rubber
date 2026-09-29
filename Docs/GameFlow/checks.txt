@@ -1,0 +1,44 @@
+PASS MainMenu ready
+PASS menu starts 25-duck game
+PASS HUD/input/time ready after loading
+Escape sample 0: phase=Paused frame=851 current=25 virtual=25 pressed=True held=True
+Escape sample 1: phase=Paused frame=852 current=25 virtual=25 pressed=False held=True
+Escape sample 2: phase=Paused frame=853 current=25 virtual=25 pressed=False held=True
+Escape sample 3: phase=Paused frame=854 current=25 virtual=25 pressed=False held=True
+PASS Escape pauses and blocks gameplay input/physics
+PASS session timer excludes pause
+PASS shared settings while paused
+PASS back closes control help before settings
+PASS settings close returns to pause
+PASS Escape resume restores gameplay and cursor
+PASS progress registration 1014
+PASS progress registration 1019
+PASS progress registration 1020
+PASS progress registration 1010
+PASS progress registration 1022
+PASS progress registration 1008
+PASS progress registration 1021
+PASS progress registration 1011
+PASS progress registration 1005
+PASS progress registration 1013
+PASS progress registration 1018
+PASS progress registration 1001
+PASS progress registration 1009
+PASS progress registration 1025
+PASS progress registration 1016
+PASS progress registration 1007
+PASS progress registration 1024
+PASS progress registration 1002
+PASS progress registration 1006
+PASS progress registration 1004
+PASS progress registration 1023
+PASS progress registration 1012
+PASS progress registration 1003
+PASS progress registration 1015
+PASS progress registration 1017
+PASS 25 returns produce completion and block gameplay
+PASS duplicate does not count
+PASS restart resets collection/input/time
+PASS return to menu resets time/cursor
+PASS no duplicate EventSystem or scene manager
+PASS runtime errors=0

@@ -17,6 +17,11 @@ namespace Rubber.EditorTools
             const string request="Library/VillaConsole.request";
             if(EditorApplication.isCompiling||EditorApplication.isUpdating||!File.Exists(request))return;
             string command=File.ReadAllText(request).Trim();File.Delete(request);Directory.CreateDirectory(Folder);
+            if(command=="flow-survey"){VillaFlowSetup.Survey();return;}
+            if(command=="flow-fix"){VillaFlowSetup.FixCanvasReferences();return;}
+            if(command=="flow-polish"){VillaFlowSetup.Polish();return;}
+            if(command=="flow-check"){VillaFlowChecks.Run();return;}
+            if(command=="flow-install"){try{VillaFlowSetup.Install();}catch(Exception e){Directory.CreateDirectory("Docs/GameFlow");File.WriteAllText("Docs/GameFlow/error.txt",e.ToString());}return;}
             if(command=="hunt-survey"){VillaDuckHuntSetup.Survey();return;}
             if(command=="hunt-check"){VillaHuntChecks.Run();return;}
             if(command=="hunt-place"){try{VillaDuckHuntSetup.Install();}catch(Exception e){File.WriteAllText("Docs/DuckHunt/error.txt",e.ToString());}return;}
