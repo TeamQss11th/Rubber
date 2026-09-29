@@ -66,4 +66,4 @@ MonoBehaviour:
   m_Active: 1
   outlineShader: {fileID: 4800000, guid: b1400000000000000000000000000004, type: 3}
   outlineColor: {r: 1, g: 0.78, b: 0.25, a: 0.85}
-  outlineWidthPixels: 3
+  outlineWidthPixels: 8

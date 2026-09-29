@@ -19,3 +19,4 @@ MonoBehaviour:
   uniqueSound: {fileID: 0}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldEulerAngleOffset: {x: 0, y: 0, z: 0}
+  traitTypes: 
