@@ -1,5 +1,7 @@
 # Modern Villa 게임 연결 안내
 
+> 후속 작업: Player 브랜치 연결이 완료된 현재 상태는 `Docs/PlayerIntegration/README.md`를 참고하세요. 아래 내용은 연결 전 환경 씬 인계 기록입니다.
+
 대상 씬: `Assets/Modern Villa/Scenes/Modern Villa.unity`
 
 ## 이번 정리

@@ -1,0 +1,354 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
+using UnityEditor;
+using UnityEditor.SceneManagement;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using Rubber.Gameplay.Ducks;
+using Rubber.Gameplay.Ducks.Traits;
+using Rubber.Gameplay.Interaction;
+
+namespace Rubber.Gameplay.Player.Editor
+{
+    // Runs against the test scene in Play mode; never saves simulated positions.
+    [InitializeOnLoad]
+    public static class PlayerMovementSmokeCheck
+    {
+        private const string Request = "Temp/RubberPlayerCheck.request";
+        private const string Pending = "Rubber.PlayerSmokeCheck";
+        private const string BatchRun = "Rubber.PlayerSmokeCheck.BatchRun";
+        private const string BatchExitCode = "Rubber.PlayerSmokeCheck.BatchExitCode";
+        static PlayerMovementSmokeCheck()
+        {
+            EditorApplication.playModeStateChanged += OnPlayMode;
+            EditorApplication.delayCall += () =>
+            {
+                if (!File.Exists(Request) || EditorApplication.isPlayingOrWillChangePlaymode) return;
+                File.Delete(Request);
+                Run();
+            };
+        }
+        [MenuItem("Rubber/Check Player Test Scene")]
+        public static void Run()
+        {
+            if (EditorApplication.isPlayingOrWillChangePlaymode) return;
+            if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().path !=
+                "Assets/_Project/Scenes/Test/PlayerTestScene.unity")
+            { Debug.LogWarning("Open PlayerTestScene before running its checks."); return; }
+            SessionState.SetBool(Pending, true);
+            EditorApplication.isPlaying = true;
+        }
+
+        public static void RunBatch()
+        {
+            if (!Application.isBatchMode)
+                throw new InvalidOperationException("RunBatch is only intended for Unity batch mode.");
+
+            EditorSceneManager.OpenScene("Assets/_Project/Scenes/Test/PlayerTestScene.unity");
+            SessionState.SetBool(BatchRun, true);
+            Run();
+        }
+        private static void OnPlayMode(PlayModeStateChange state)
+        {
+            if (state == PlayModeStateChange.EnteredPlayMode && SessionState.GetBool(Pending, false))
+                EditorApplication.delayCall += Check;
+            else if (state == PlayModeStateChange.EnteredEditMode && SessionState.GetBool(BatchRun, false))
+            {
+                int exitCode = SessionState.GetInt(BatchExitCode, 1);
+                SessionState.EraseBool(BatchRun);
+                SessionState.EraseInt(BatchExitCode);
+                EditorApplication.Exit(exitCode);
+            }
+        }
+        private static void Check()
+        {
+            SessionState.SetBool(Pending, false);
+            var report = new StringBuilder();
+            SimulationMode oldMode = Physics.simulationMode;
+            InputActionAsset actions = null;
+            try
+            {
+                var motor = UnityEngine.Object.FindAnyObjectByType<PlayerMovement>();
+                if (!motor) throw new Exception("PlayerMovement missing.");
+                var body = motor.GetComponent<Rigidbody>();
+                var serializedMotor = new SerializedObject(motor);
+                motor.GetComponent<PlayerInputReader>().enabled = false;
+                motor.enabled = false;
+                Physics.simulationMode = SimulationMode.Script;
+                void Assert(bool condition, string label)
+                { if (!condition) throw new Exception(label + " at " + body.position); report.AppendLine("PASS " + label); }
+                void Tick(int count)
+                {
+                    for (int i = 0; i < count; i++)
+                    { motor.SendMessage("FixedUpdate"); Physics.Simulate(Time.fixedDeltaTime); }
+                }
+                void Place(Vector3 position)
+                {
+                    motor.ClearInput(); body.position = position; body.linearVelocity = Vector3.zero;
+                    Physics.SyncTransforms(); Tick(30);
+                }
+                Assert(motor.GetComponent<CapsuleCollider>() && motor.GetComponentsInChildren<Renderer>().Length == 0,
+                    "Capsule player has no visual renderer");
+                Assert(serializedMotor.FindProperty("stats").objectReferenceValue is PlayerStats,
+                    "PlayerMovement references PlayerStats asset");
+                Place(new Vector3(0,0.05f,-5));
+                Assert(motor.IsGrounded && Mathf.Abs(body.position.y) < 0.05f, "Grounding");
+                var detector = UnityEngine.Object.FindAnyObjectByType<PlayerInteractionDetector>();
+                var target = UnityEngine.Object.FindAnyObjectByType<TestInteractable>();
+                Assert(detector && target, "Interaction detector and test target exist");
+                var camera = motor.GetComponentInChildren<Camera>();
+                camera.transform.localRotation = Quaternion.Euler(0f, 90f, 0f);
+                detector.SendMessage("Update");
+                camera.transform.localRotation = Quaternion.identity;
+                detector.SendMessage("Update");
+                Assert(detector.CurrentInteractable is TestInteractable &&
+                    InteractionOutlineSelection.HasSelection &&
+                    InteractionOutlineSelection.SelectedRenderers.Length == 1,
+                    "Center ray selects interactable renderers for the outline mask");
+                Assert(detector.TryInteract() && target.InteractionCount == 1 &&
+                    target.LastInteractor == motor.gameObject,
+                    "Interaction executes once on the centered target");
+                camera.transform.localRotation = Quaternion.Euler(0f, 90f, 0f);
+                detector.SendMessage("Update");
+                Assert(detector.CurrentInteractable == null &&
+                    !InteractionOutlineSelection.HasSelection,
+                    "Looking away clears the outline mask selection");
+                Assert(!detector.TryInteract() && target.InteractionCount == 1,
+                    "Interaction does not execute without a target");
+                camera.transform.localRotation = Quaternion.identity;
+                Place(new Vector3(0,0.05f,-7));
+                Assert(!detector.TryInteract() && target.InteractionCount == 1,
+                    "Interaction does not execute beyond its range");
+                Place(new Vector3(0,0.05f,-5));
+
+                var carrier = motor.GetComponent<PlayerDuckCarrier>();
+                Assert(carrier, "Player has a duck carrier");
+                var inputReader = motor.GetComponent<PlayerInputReader>();
+                Assert(inputReader, "Player has an input reader");
+                var duckData = AssetDatabase.LoadAssetAtPath<RubberDuckData>(
+                    "Assets/_Project/ScriptableObjects/Ducks/DefaultRubberDuckData.asset");
+                var traitDuckData = AssetDatabase.LoadAssetAtPath<RubberDuckData>(
+                    "Assets/_Project/ScriptableObjects/Ducks/TraitTestRubberDuckData.asset");
+                Assert(duckData && duckData.HeldPositionOffset == Vector3.zero &&
+                    duckData.HeldEulerAngleOffset == Vector3.zero,
+                    "Default duck data has zero hold offsets");
+                Assert(duckData && duckData.Id == 0 &&
+                    duckData.DisplayName == "그냥 오리" &&
+                    !string.IsNullOrWhiteSpace(duckData.Description),
+                    "Default duck data has identity fields");
+                Assert(traitDuckData && traitDuckData.TraitTypes.Count == 1 &&
+                    traitDuckData.TraitTypes[0] == RubberDuckTraitType.Test,
+                    "Trait test duck data selects the test trait");
+                var sceneDucks = UnityEngine.Object.FindObjectsByType<RubberDuckInteractable>();
+                Assert(sceneDucks.Length == 5, "Five independent cube duck placeholders exist in the test scene");
+                var duckIds = new HashSet<int>();
+                foreach (RubberDuckInteractable sceneDuck in sceneDucks)
+                {
+                    Transform marker = sceneDuck.transform.Find("cube");
+                    Assert(sceneDuck.Data && duckIds.Add(sceneDuck.Data.Id) &&
+                        sceneDuck.GetComponent<MeshFilter>() &&
+                        sceneDuck.GetComponent<BoxCollider>() &&
+                        sceneDuck.GetComponent<Rigidbody>() && marker &&
+                        marker.GetComponent<MeshRenderer>() && !marker.GetComponent<Collider>(),
+                        "Each duck placeholder keeps its marker cube and a unique data ID");
+                }
+                var returnRegistry = UnityEngine.Object.FindAnyObjectByType<RubberDuckReturnRegistry>();
+                var returnZone = UnityEngine.Object.FindAnyObjectByType<RubberDuckReturnZone>();
+                var returnHud = UnityEngine.Object.FindAnyObjectByType<RubberDuckReturnDebugHud>();
+                Assert(returnRegistry && returnZone && returnZone.Registry == returnRegistry &&
+                    returnZone.GetComponent<Collider>().isTrigger,
+                    "Return pool has a registry and trigger zone");
+                Assert(returnRegistry.TotalDuckCount == sceneDucks.Length &&
+                    returnRegistry.ReturnedCount == 0 &&
+                    returnRegistry.RemainingCount == sceneDucks.Length &&
+                    !returnRegistry.IsComplete,
+                    "Return registry exposes the initial collection progress");
+                Assert(returnHud && returnHud.TotalDuckCount == sceneDucks.Length,
+                    "Return HUD displays the full test duck count");
+                GameObject CreateDuck(string name, float z, RubberDuckData data)
+                {
+                    GameObject duckObject = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                    duckObject.name = name;
+                    duckObject.transform.position = new Vector3(0, 1.6f, z);
+                    duckObject.transform.localScale = Vector3.one * 0.45f;
+                    Rigidbody duckBody = duckObject.AddComponent<Rigidbody>();
+                    duckBody.isKinematic = true;
+                    duckBody.useGravity = false;
+                    duckObject.AddComponent<RubberDuckInteractable>().Configure(data);
+                    duckObject.AddComponent<RubberDuckTraitController>().Initialize();
+                    return duckObject;
+                }
+                GameObject firstDuckObject = CreateDuck("First Test Duck", -3f, traitDuckData);
+                GameObject secondDuckObject = CreateDuck("Second Test Duck", -2.5f, duckData);
+                var firstDuck = firstDuckObject.GetComponent<RubberDuckInteractable>();
+                var secondDuck = secondDuckObject.GetComponent<RubberDuckInteractable>();
+                var traitProbe = firstDuckObject.GetComponent<RubberDuckTraitTestProbe>();
+                Assert(traitProbe && traitProbe.InitializationCount == 1,
+                    "Trait controller initializes the selected trait once");
+                Physics.SyncTransforms();
+                Assert(detector.TryInteract() && carrier.HeldDuck == firstDuck &&
+                    firstDuck.transform.IsChildOf(camera.transform) &&
+                    firstDuck.GetComponent<Renderer>().enabled &&
+                    !firstDuck.GetComponent<Collider>().enabled,
+                    "First duck is held visibly in front of the camera without collision");
+                Vector3 heldLocalPosition = camera.transform.InverseTransformPoint(firstDuck.transform.position);
+                Quaternion heldLocalRotation = Quaternion.Inverse(camera.transform.rotation) * firstDuck.transform.rotation;
+                Assert(Vector3.Distance(heldLocalPosition, new Vector3(0.35f, -0.3f, 0.9f)) < 0.001f &&
+                    Quaternion.Angle(heldLocalRotation, Quaternion.Euler(0f, 180f, 0f)) < 0.1f,
+                    "Zero offsets use the lower-right hold pose facing the player");
+                detector.SendMessage("Update");
+                Assert(detector.CurrentInteractable is RubberDuckInteractable selectedDuck &&
+                    selectedDuck == secondDuck &&
+                    InteractionOutlineSelection.HasSelection,
+                    "Second duck remains outlined while one is held");
+                Assert(!detector.TryInteract(out bool blockedDuckTarget) && blockedDuckTarget &&
+                    carrier.HeldDuck == firstDuck,
+                    "A second duck cannot be picked up or trigger a drop");
+                inputReader.SendMessage("TryInteract");
+                Assert(traitProbe.InteractionCount == 1 &&
+                    traitProbe.LastInteractor == motor.gameObject &&
+                    carrier.HeldDuck == firstDuck,
+                    "Failed world interaction uses the held duck trait");
+                secondDuckObject.SetActive(false);
+                inputReader.SendMessage("TryInteract");
+                Assert(target.InteractionCount == 2 && traitProbe.InteractionCount == 1 &&
+                    carrier.HeldDuck == firstDuck,
+                    "Successful world interaction takes priority over the held duck trait");
+                Tick(55);
+                Assert(traitProbe.IntervalCount >= 1,
+                    "Trait controller invokes interval traits over time");
+                camera.transform.localRotation = Quaternion.Euler(0f, 90f, 0f);
+                Assert(!detector.TryInteract(out bool emptyTarget) && !emptyTarget &&
+                    carrier.TryDrop() && !carrier.IsHoldingDuck &&
+                    !firstDuck.IsHeld && firstDuck.GetComponent<Collider>().enabled &&
+                    firstDuckObject.transform.position.x > body.position.x,
+                    "Empty-space interaction drops the duck in front of the player");
+                float releaseHeight = firstDuckObject.transform.position.y;
+                Tick(12);
+                Assert(firstDuckObject.transform.position.y < releaseHeight - 0.1f,
+                    "Released duck falls under gravity");
+                int progressEventCount = 0;
+                DuckCollectionProgress lastProgress = default;
+                void OnProgressChanged(DuckCollectionProgress progress)
+                {
+                    progressEventCount++;
+                    lastProgress = progress;
+                }
+                returnRegistry.ProgressChanged += OnProgressChanged;
+                Assert(returnRegistry.TryRegister(firstDuck) && returnRegistry.ReturnedCount == 1 &&
+                    firstDuck.IsReturned && !returnRegistry.TryRegister(firstDuck),
+                    "Return registry counts one duck once");
+                returnRegistry.ProgressChanged -= OnProgressChanged;
+                Assert(progressEventCount == 1 && lastProgress.ReturnedCount == 1 &&
+                    lastProgress.TotalCount == sceneDucks.Length &&
+                    lastProgress.RemainingCount == sceneDucks.Length - 1 &&
+                    !lastProgress.IsComplete,
+                    "Return registry publishes collection progress once for a first return");
+                Assert(returnHud.DisplayedProgress.ReturnedCount == 1 &&
+                    returnHud.DisplayedProgress.TotalCount == sceneDucks.Length,
+                    "Return HUD receives the collection progress event");
+                Assert(firstDuck.TryInteract(motor.gameObject) && carrier.HeldDuck == firstDuck,
+                    "A returned duck remains otherwise interactable");
+                Assert(carrier.TryDrop(), "Returned duck can still be dropped normally");
+                int completionEventCount = 0;
+                returnRegistry.AllDucksReturned += OnAllDucksReturned;
+                void OnAllDucksReturned() => completionEventCount++;
+                foreach (RubberDuckInteractable sceneDuck in sceneDucks)
+                {
+                    if (sceneDuck.Data.Id == firstDuck.Data.Id)
+                        continue;
+                    Assert(returnRegistry.TryRegister(sceneDuck),
+                        "Each remaining collection duck can be returned");
+                }
+                Assert(returnRegistry.IsComplete && returnRegistry.RemainingCount == 0 &&
+                    completionEventCount == 1,
+                    "All ducks returned raises the completion event once");
+                foreach (RubberDuckInteractable sceneDuck in sceneDucks)
+                    returnRegistry.TryRegister(sceneDuck);
+                Assert(completionEventCount == 1 && returnHud.DisplayedProgress.IsComplete,
+                    "Duplicate returns do not repeat completion and HUD receives completion progress");
+                returnRegistry.AllDucksReturned -= OnAllDucksReturned;
+                firstDuckObject.SetActive(false);
+                camera.transform.localRotation = Quaternion.identity;
+                target.gameObject.SetActive(false);
+                float start = body.position.z;
+                motor.Move(Vector2.up); Tick(1);
+                Assert(body.linearVelocity.z > 0f && body.linearVelocity.z < 4f,
+                    "Movement accelerates instead of starting at full speed");
+                Tick(49);
+                Assert(Mathf.Abs(body.linearVelocity.z - 4f) < 0.01f && body.position.z - start > 3.5f,
+                    "Forward speed reaches 4 m/s");
+                motor.Move(Vector2.zero); Tick(1);
+                Assert(Mathf.Abs(body.linearVelocity.z) < 0.01f,
+                    "Releasing movement stops grounded horizontal drift");
+                Tick(12);
+                Assert(Mathf.Abs(body.linearVelocity.z) < 0.01f,
+                    "Standing still does not resume horizontal movement");
+                motor.Jump(); Tick(10);
+                Assert(body.position.y > 0.7f && !motor.IsGrounded, "Fast jump rises off floor");
+                float yVelocity = body.linearVelocity.y; motor.Jump(); Tick(1);
+                Assert(body.linearVelocity.y < yVelocity, "No midair double jump");
+                Tick(50); Assert(motor.IsGrounded, "Fast jump lands");
+                Place(new Vector3(0,0.05f,-5));
+                body.position += Vector3.up;
+                Physics.SyncTransforms(); Tick(1);
+                Assert(!motor.IsGrounded, "Player has just left the ground");
+                motor.Jump(); Tick(1);
+                Assert(body.linearVelocity.y > 0f, "Coyote time allows a late jump");
+                Place(new Vector3(0,0.05f,-5));
+                body.position += Vector3.up * 2f;
+                Physics.SyncTransforms(); Tick(8);
+                motor.Jump(); Tick(1);
+                Assert(body.linearVelocity.y < 0f, "Coyote time expires after its window");
+                Place(new Vector3(0,0.05f,10)); motor.Move(Vector2.up); Tick(60);
+                Assert(body.position.z < 11.5f && body.position.z > 11.2f, "Wall blocks movement");
+                Place(new Vector3(3,0.05f,-1.4f)); motor.Move(Vector2.up); Tick(70);
+                Assert(body.position.y > 1.1f && body.position.z > 3.5f, "Walk up 0.20 m stairs");
+                motor.Move(Vector2.down); Tick(95);
+                Assert(body.position.y < 0.1f && motor.IsGrounded, "Walk down stairs");
+                Place(new Vector3(7,0.05f,3.5f)); motor.Move(Vector2.up); Tick(75);
+                Assert(body.position.y > 1.3f && body.position.z > 8.5f, "Walk up 0.28 m stairs");
+                Place(new Vector3(0,0.05f,-5)); motor.Move(Vector2.one); Tick(30);
+                Assert(new Vector2(body.linearVelocity.x,body.linearVelocity.z).magnitude < 4.01f,
+                    "Diagonal speed is normalized");
+                motor.GetComponent<PlayerCamera>().Look(new Vector2(0,10000));
+                float pitch = Mathf.DeltaAngle(0,camera.transform.localEulerAngles.x);
+                Assert(Mathf.Abs(pitch + 85) < 0.1f, "Camera pitch clamps at 85 degrees");
+
+                actions = UnityEngine.Object.Instantiate(AssetDatabase.LoadAssetAtPath<InputActionAsset>(
+                    "Assets/_Project/Scripts/Gameplay/Player/PlayerControls.inputactions"));
+                InputAction moveAction = actions.FindAction("Player/Move", true);
+                InputAction jumpAction = actions.FindAction("Player/Jump", true);
+                InputAction interactAction = actions.FindAction("Player/Interact", true);
+                InputAction dropAction = actions.FindAction("Player/Drop", true);
+                bool hasW = false;
+                foreach (InputBinding binding in moveAction.bindings)
+                    hasW |= binding.effectivePath == "<Keyboard>/w";
+                bool hasSpace = false;
+                foreach (InputBinding binding in jumpAction.bindings)
+                    hasSpace |= binding.effectivePath == "<Keyboard>/space";
+                bool hasLeftClick = false;
+                foreach (InputBinding binding in interactAction.bindings)
+                    hasLeftClick |= binding.effectivePath == "<Mouse>/leftButton";
+                bool hasG = false;
+                foreach (InputBinding binding in dropAction.bindings)
+                    hasG |= binding.effectivePath == "<Keyboard>/g";
+                Assert(hasW && hasSpace && hasLeftClick && hasG,
+                    "New Input System W / Space / Left Click / G bindings");
+            }
+            catch (Exception exception) { report.AppendLine("FAIL " + exception); }
+            finally
+            {
+                if (actions) { actions.Disable(); UnityEngine.Object.DestroyImmediate(actions); }
+                Physics.simulationMode = oldMode;
+                File.WriteAllText("Temp/RubberPlayerCheck.txt", report.ToString());
+                Debug.Log(report.ToString());
+                if (SessionState.GetBool(BatchRun, false))
+                    SessionState.SetInt(BatchExitCode, report.ToString().Contains("FAIL") ? 1 : 0);
+                EditorApplication.isPlaying = false;
+            }
+        }
+    }
+}

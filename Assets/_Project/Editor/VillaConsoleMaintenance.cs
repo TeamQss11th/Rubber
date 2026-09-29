@@ -17,7 +17,7 @@ namespace Rubber.EditorTools
             const string request="Library/VillaConsole.request";
             if(EditorApplication.isCompiling||EditorApplication.isUpdating||!File.Exists(request))return;
             string command=File.ReadAllText(request).Trim();File.Delete(request);Directory.CreateDirectory(Folder);
-            try{if(command=="handoff")VillaGameHandoff.Clean();if(command=="repair")Repair();if(command=="inspect"||command=="repair"||command=="handoff")Inspect();}catch(Exception e){File.WriteAllText(Folder+"/error.txt",e.ToString());}
+            try{if(command=="integration-check")VillaIntegrationChecks.Run();if(command=="integrate")VillaPlayerIntegration.Install();if(command=="handoff")VillaGameHandoff.Clean();if(command=="repair")Repair();if(command=="inspect"||command=="repair"||command=="handoff"||command=="integrate")Inspect();}catch(Exception e){File.WriteAllText(Folder+"/error.txt",e.ToString());}
         }
         static void Repair()
         {
@@ -92,6 +92,10 @@ namespace Rubber.EditorTools
                 {var prefab=d.treePrototypes[i].prefab;if(!prefab)continue;lines.Add($"TREE {i} {AssetDatabase.GetAssetPath(prefab)} instances={d.treeInstances.Count(t=>t.prototypeIndex==i)}");foreach(var c in prefab.GetComponentsInChildren<Collider>(true))lines.Add($" COLLIDER {ModernVillaSurfaceAudit.PathOf(c.transform)} {c.GetType().Name} enabled={c.enabled} bounds={c.bounds}");}
             }
             File.WriteAllLines(Folder+"/scene.txt",lines);
+            var missing=new List<string>();
+            foreach(var go in Resources.FindObjectsOfTypeAll<GameObject>())
+                if(GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(go)>0)missing.Add(ModernVillaSurfaceAudit.PathOf(go.transform)+" asset="+AssetDatabase.GetAssetPath(go)+" scene="+go.scene.path);
+            File.WriteAllLines(Folder+"/loaded-missing.txt",missing);
         }
     }
 }

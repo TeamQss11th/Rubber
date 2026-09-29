@@ -1,0 +1,6 @@
+RubberDuck id=1001 position=(-0.80, 0.92, -0.40) floor=Floor 2x2 (5)
+RubberDuck_Balloon id=1002 position=(-2.00, 0.92, 5.30) floor=Floor 2x2 (18)
+RubberDuck_BigHead id=1003 position=(-2.00, 3.73, 3.30) floor=Roof 2x2 side (4)
+RubberDuck_Glass id=1004 position=(9.90, 0.42, 11.80) floor=Floor 2x2
+RubberDuck_ToyKnife id=1005 position=(6.00, 3.22, 15.30) floor=Roof 2x2 (12)
+Player=1; Camera=1; Ducks=5; Doors=8; Pools=2
