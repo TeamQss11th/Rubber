@@ -19,6 +19,9 @@ public class MainMenuTransition : MonoBehaviour
             loadingPanel.SetActive(false);
         if (startButton != null)
             startButton.onClick.AddListener(StartGame);
+        var background = FindAnyObjectByType<Rubber.UI.VillaMenuBackground>();
+        if (background && !LoadingScreenUI.IsLoading && loadingPanel && loadingPanel.GetComponent<LoadingScreenUI>().IsConfigured)
+            CreateOverlay(out var root).ShowMenuLoading(root, background, loadingTips);
     }
 
     private void OnDestroy()
@@ -29,7 +32,7 @@ public class MainMenuTransition : MonoBehaviour
 
     public void StartGame()
     {
-        if (isTransitioning)
+        if (isTransitioning || LoadingScreenUI.IsLoading)
             return;
 
         if (loadingPanel == null ||
@@ -49,7 +52,13 @@ public class MainMenuTransition : MonoBehaviour
         if (startButton != null)
             startButton.interactable = false;
 
-        GameObject transitionRoot = new GameObject("SceneTransition");
+        CreateOverlay(out var transitionRoot).Play(transitionRoot, nextSceneName,
+            transitionDuration, minimumLoadingTime, tipInterval, loadingTips);
+    }
+
+    private LoadingScreenUI CreateOverlay(out GameObject transitionRoot)
+    {
+        transitionRoot = new GameObject("SceneTransition");
         DontDestroyOnLoad(transitionRoot);
 
         Canvas canvas = transitionRoot.AddComponent<Canvas>();
@@ -70,7 +79,6 @@ public class MainMenuTransition : MonoBehaviour
         panelRect.offsetMax = Vector2.zero;
         panel.SetActive(true);
 
-        panel.GetComponent<LoadingScreenUI>().Play(transitionRoot, nextSceneName,
-            transitionDuration, minimumLoadingTime, tipInterval, loadingTips);
+        return panel.GetComponent<LoadingScreenUI>();
     }
 }

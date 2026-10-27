@@ -22,6 +22,7 @@ namespace Rubber.World
         [Range(0,24)] public float hour = 7;
         [Min(60)] public float dayLengthSeconds = 600;
         public bool running = true;
+        public bool FastForwardEnabled { get; private set; }
         [Range(1,30)] public float lightmapUpdatesPerSecond = 10;
         public string CurrentBlend { get; private set; }
         public int LightmapUpdates { get; private set; }
@@ -105,10 +106,48 @@ namespace Rubber.World
         void Update()
         {
             if(!ready)return;
+            HandleFastForwardShortcut();
+#if UNITY_EDITOR
+            HandleEditorTimeKeys();
+#endif
             if(skipElapsed>=0){skipElapsed+=Time.deltaTime;hour=Mathf.Repeat(skipStart+skipDistance*Mathf.SmoothStep(0,1,skipElapsed/5),24);if(skipElapsed>=5)skipElapsed=-1;}
-            else if(running)hour=Mathf.Repeat(hour+Time.deltaTime*24/Mathf.Max(60,dayLengthSeconds),24);
+            else if(running)hour=Mathf.Repeat(hour+Time.deltaTime*24/Mathf.Max(60,dayLengthSeconds)*(FastForwardEnabled?10f:1f),24);
             Apply(false);
         }
+        void HandleFastForwardShortcut()
+        {
+            var keyboard = UnityEngine.InputSystem.Keyboard.current;
+            if (keyboard == null || !keyboard.tKey.wasPressedThisFrame || !keyboard.ctrlKey.isPressed ||
+                !keyboard.altKey.isPressed || !keyboard.shiftKey.isPressed) return;
+            if (!Application.isFocused || LoadingScreenUI.IsLoading || Time.timeScale <= 0f) return;
+#if UNITY_EDITOR
+            var window = UnityEditor.EditorWindow.focusedWindow;
+            if (!window || window.GetType().Name != "GameView" || UnityEditor.EditorGUIUtility.editingTextField) return;
+#endif
+            var selected = UnityEngine.EventSystems.EventSystem.current?.currentSelectedGameObject;
+            if (selected && (selected.GetComponent<TMPro.TMP_InputField>() || selected.GetComponent<UnityEngine.UI.InputField>())) return;
+            FastForwardEnabled = !FastForwardEnabled;
+            skipElapsed = -1;
+            Debug.Log(FastForwardEnabled ? "Time of day: 10x" : "Time of day: normal", this);
+        }
+#if UNITY_EDITOR
+        // Preview shortcuts are compiled out of player builds, including development builds.
+        void HandleEditorTimeKeys()
+        {
+            if (!Application.isPlaying || LoadingScreenUI.IsLoading || UnityEditor.EditorGUIUtility.editingTextField)
+                return;
+            var window = UnityEditor.EditorWindow.focusedWindow;
+            if (!window || window.GetType().Name != "GameView") return;
+            var selected = UnityEngine.EventSystems.EventSystem.current?.currentSelectedGameObject;
+            if (selected && (selected.GetComponent<TMPro.TMP_InputField>() || selected.GetComponent<UnityEngine.UI.InputField>()))
+                return;
+            var keyboard = UnityEngine.InputSystem.Keyboard.current;
+            if (keyboard == null) return;
+            if (keyboard.tKey.wasPressedThisFrame && !keyboard.ctrlKey.isPressed && !keyboard.altKey.isPressed && !keyboard.shiftKey.isPressed) AdvancePeriod();
+            else if (keyboard.leftBracketKey.wasPressedThisFrame) SetHour(hour - 1);
+            else if (keyboard.rightBracketKey.wasPressedThisFrame) SetHour(hour + 1);
+        }
+#endif
         void Apply(bool force)
         {
             if(!ready)return;

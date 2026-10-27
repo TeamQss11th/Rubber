@@ -19,11 +19,35 @@ namespace Rubber.EditorTools
     public static class VillaFlowSetup
     {
         public const string Menu="Assets/_Project/Scenes/Main/MainMenu.unity";
+        public static void UseMenuCount()
+        {
+            if(Application.isPlaying)throw new InvalidOperationException("Edit mode required.");
+            EditorSceneManager.SaveOpenScenes();
+            var game=EditorSceneManager.OpenScene(ModernVillaSetup.ScenePath);
+            var menu=EditorSceneManager.OpenScene(Menu,OpenSceneMode.Additive);
+            try
+            {
+                var source=menu.GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<Canvas>(true))
+                    .First(c=>c.transform.Find("Count"));
+                var hud=game.GetRootGameObjects().First(g=>g.name=="Game HUD");
+                var flow=game.GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<Rubber.Core.VillaGameFlow>(true)).Single();
+                var count=UnityEngine.Object.Instantiate(source.transform.Find("Count").gameObject,hud.transform,false);
+                var counter=count.GetComponentInChildren<TMP_Text>(true);
+                if(!counter)throw new InvalidOperationException("Menu Count has no text component.");
+                UnityEngine.Object.DestroyImmediate(hud.transform.Find("Count").gameObject);
+                count.name="Count";count.SetActive(true);
+                EditorUtility.CopySerialized(source.GetComponent<CanvasScaler>(),hud.GetComponent<CanvasScaler>());
+                flow.counter=counter;counter.text=$"00 / {flow.registry.TotalDuckCount:00}";
+                EditorUtility.SetDirty(flow);EditorSceneManager.MarkSceneDirty(game);EditorSceneManager.SaveScene(game);
+                Directory.CreateDirectory("Docs/GameFlow");
+                File.WriteAllText("Docs/GameFlow/count-ui.txt","Replaced Game HUD/Count with MainMenu Canvas/Count, preserving original transforms, font, colors, sprite and canvas scaling. Only displayed text and active state are changed. Registry events remain connected.\n");
+            }
+            finally{EditorSceneManager.CloseScene(menu,true);SceneManager.SetActiveScene(game);}
+        }
         public static void Polish()
         {
             if(Application.isPlaying)throw new InvalidOperationException("Edit mode required.");
             EditorSceneManager.SaveOpenScenes();var game=EditorSceneManager.OpenScene(ModernVillaSetup.ScenePath);
-            var icon=GameObject.Find("Game HUD").transform.Find("Count/Duck").GetComponent<Image>();icon.color=new Color(.65f,.37f,.04f);
             var flow=UnityEngine.Object.FindAnyObjectByType<Rubber.Core.VillaGameFlow>();
             var settingsData=new SerializedObject(flow.settings);var panel=(GameObject)settingsData.FindProperty("settingsPanel").objectReferenceValue;
             var source=panel.GetComponentsInChildren<Image>(true).First(i=>i.name=="Setting");
@@ -103,12 +127,10 @@ namespace Rubber.EditorTools
                 UnityEngine.Object.DestroyImmediate(hud.GetComponent<PauseSettingsUI>());
                 foreach(Transform child in hud.transform.Cast<Transform>().ToArray())if(child.name!="Count")UnityEngine.Object.DestroyImmediate(child.gameObject);
                 hud.GetComponent<Canvas>().sortingOrder=100;hud.GetComponent<Canvas>().renderMode=RenderMode.ScreenSpaceOverlay;hud.GetComponent<Canvas>().worldCamera=null;
-                var count=(RectTransform)hud.transform.Find("Count");count.anchorMin=count.anchorMax=new Vector2(1,1);count.pivot=new Vector2(1,1);count.anchoredPosition=new Vector2(-30,-24);count.sizeDelta=new Vector2(255,80);
-                var backdrop=count.gameObject.AddComponent<Image>();backdrop.color=new Color(.98f,.97f,.90f,.94f);backdrop.raycastTarget=false;
-                var counter=count.GetComponentInChildren<TMP_Text>();var cr=counter.rectTransform;cr.anchorMin=cr.anchorMax=new Vector2(.5f,.5f);cr.pivot=new Vector2(.5f,.5f);cr.anchoredPosition=new Vector2(25,0);cr.sizeDelta=new Vector2(170,60);counter.fontSize=32;counter.color=new Color(.18f,.15f,.12f);counter.alignment=TextAlignmentOptions.Center;counter.text="00 / 25";
-                var icon=count.Find("Duck") as RectTransform;if(icon){icon.anchorMin=icon.anchorMax=new Vector2(.5f,.5f);icon.pivot=new Vector2(.5f,.5f);icon.anchoredPosition=new Vector2(-85,0);icon.sizeDelta=new Vector2(52,52);icon.GetComponent<Image>().preserveAspect=true;icon.GetComponent<Image>().raycastTarget=false;}
+                var count=(RectTransform)hud.transform.Find("Count");
+                var counter=count.GetComponentInChildren<TMP_Text>();counter.text="00 / 25";
                 var objective=Text("Objective",hud.transform,"Find the ducks. Bring them back to either pool.",font,25,new Vector2(920,48),Vector2.zero);objective.color=Color.white;objective.rectTransform.anchorMin=objective.rectTransform.anchorMax=new Vector2(.5f,1);objective.rectTransform.anchoredPosition=new Vector2(0,-42);
-                var hint=Text("Controls",hud.transform,"WASD  Move     SPACE  Jump     CLICK  Interact     G  Drop     ESC  Pause",font,21,new Vector2(1050,40),Vector2.zero);hint.color=Color.white;hint.rectTransform.anchorMin=hint.rectTransform.anchorMax=new Vector2(.5f,0);hint.rectTransform.anchoredPosition=new Vector2(0,28);
+                var hint=Text("Controls",hud.transform,"WASD  Move    SPACE  Jump    CLICK  Interact    G  Drop    F  Flashlight    ESC  Pause",font,21,new Vector2(1500,40),Vector2.zero);hint.color=Color.white;hint.rectTransform.anchorMin=hint.rectTransform.anchorMax=new Vector2(.5f,0);hint.rectTransform.anchoredPosition=new Vector2(0,28);
                 SceneManager.SetActiveScene(game);var flow=new GameObject("Game Flow").AddComponent<Rubber.Core.VillaGameFlow>();
                 flow.registry=UnityEngine.Object.FindAnyObjectByType<RubberDuckReturnRegistry>();flow.input=UnityEngine.Object.FindAnyObjectByType<PlayerInputReader>();flow.movement=flow.input.GetComponent<PlayerMovement>();flow.detector=flow.input.GetComponent<PlayerInteractionDetector>();flow.reticle=UnityEngine.Object.FindAnyObjectByType<InteractionReticle>().gameObject;flow.counter=counter;flow.settings=gameSettings;flow.loadingPanel=loading;flow.tips=tips;
                 flow.pausePanel=Panel(hud.transform,"Take a break",font,out var pause);

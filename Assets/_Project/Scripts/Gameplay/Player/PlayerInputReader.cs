@@ -17,6 +17,8 @@ namespace Rubber.Gameplay.Player
         private InputActionMap playerMap;
         private InputAction move, look, jump, interact, drop, releaseCursor, captureCursor;
         private bool captured;
+        private PlayerFlashlight flashlight;
+        private InputAction toggleFlashlight;
         public bool PauseHandledExternally { get; set; }
 
         public void Configure(InputActionAsset actions, PlayerMovement motor, PlayerCamera cameraController)
@@ -39,6 +41,7 @@ namespace Rubber.Gameplay.Player
                 return;
             }
             runtimeActions = Instantiate(inputActions);
+            flashlight = GetComponent<PlayerFlashlight>();
             playerMap = runtimeActions.FindActionMap("Player", true);
             move = playerMap.FindAction("Move", true);
             look = playerMap.FindAction("Look", true);
@@ -47,6 +50,7 @@ namespace Rubber.Gameplay.Player
             drop = playerMap.FindAction("Drop", true);
             releaseCursor = playerMap.FindAction("ReleaseCursor", true);
             captureCursor = playerMap.FindAction("CaptureCursor", true);
+            toggleFlashlight = playerMap.FindAction("Flashlight", false);
         }
 
         private void OnEnable()
@@ -76,6 +80,8 @@ namespace Rubber.Gameplay.Player
             // Refresh held input when focus/cursor capture returns.
             movement.Move(move.ReadValue<Vector2>());
             playerCamera.Look(look.ReadValue<Vector2>());
+            if (toggleFlashlight != null && toggleFlashlight.WasPressedThisFrame() && flashlight)
+                flashlight.Toggle();
             if (interact.WasPressedThisFrame())
                 TryInteract();
             if (drop.WasPressedThisFrame() && duckCarrier)

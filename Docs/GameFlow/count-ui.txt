@@ -1,0 +1,1 @@
+Replaced Game HUD/Count with MainMenu Canvas/Count, preserving original transforms, font, colors, sprite and canvas scaling. Only displayed text and active state are changed. Registry events remain connected.

@@ -20,6 +20,27 @@ public class LoadingScreenUI : MonoBehaviour
         loadingBar.transform.IsChildOf(loadingContent.transform) &&
         tipText.transform.IsChildOf(loadingContent.transform);
 
+    public void ShowMenuLoading(GameObject root, Rubber.UI.VillaMenuBackground background, LoadingTips tips)
+    {
+        IsLoading = true;
+        fadeImage.color = new Color(fadeImage.color.r,fadeImage.color.g,fadeImage.color.b,1);
+        fadeImage.raycastTarget = true;
+        loadingContent.SetActive(true);
+        loadingBar.minValue=0;loadingBar.maxValue=1;loadingBar.wholeNumbers=false;loadingBar.interactable=false;
+        loadingBar.SetValueWithoutNotify(0);
+        tipText.text=tips != null ? tips.GetTip(0) : "Preparing the villa...";
+        StartCoroutine(FinishMenuLoading(root,background));
+    }
+    private IEnumerator FinishMenuLoading(GameObject root, Rubber.UI.VillaMenuBackground background)
+    {
+        while(background && !background.Ready){loadingBar.SetValueWithoutNotify(background.LoadProgress);yield return null;}
+        loadingBar.SetValueWithoutNotify(1);
+        yield return null;
+        loadingContent.SetActive(false);
+        yield return Fade(1,0,.6f);
+        IsLoading=false;Destroy(root);
+    }
+
     public void Play(GameObject transitionRoot, string sceneName, float fadeDuration,
         float minimumLoadingTime, float tipInterval, LoadingTips tips)
     {
@@ -46,6 +67,8 @@ public class LoadingScreenUI : MonoBehaviour
         loadingContent.SetActive(true);
         yield return null;
 
+        var menuBackground = FindAnyObjectByType<Rubber.UI.VillaMenuBackground>();
+        if (menuBackground != null) yield return menuBackground.PrepareForGame();
         AsyncOperation loading = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName);
         loading.allowSceneActivation = false;
         float elapsed = 0f;
@@ -65,13 +88,20 @@ public class LoadingScreenUI : MonoBehaviour
             yield return null;
         }
 
-        loadingBar.SetValueWithoutNotify(1f);
+        loadingBar.SetValueWithoutNotify(sceneName == "MainMenu" ? .9f : 1f);
         yield return null;
         loading.allowSceneActivation = true;
         while (!loading.isDone)
             yield return null;
 
         yield return null;
+        var destinationBackground=FindAnyObjectByType<Rubber.UI.VillaMenuBackground>();
+        while(destinationBackground && !destinationBackground.Ready)
+        {
+            loadingBar.SetValueWithoutNotify(.9f + .1f * destinationBackground.LoadProgress);
+            yield return null;
+        }
+        loadingBar.SetValueWithoutNotify(1);
         loadingContent.SetActive(false);
         yield return Fade(1f, 0f, fadeDuration);
         IsLoading = false;

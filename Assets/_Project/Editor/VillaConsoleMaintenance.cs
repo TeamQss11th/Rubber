@@ -18,6 +18,13 @@ namespace Rubber.EditorTools
             if(EditorApplication.isCompiling||EditorApplication.isUpdating||!File.Exists(request))return;
             string command=File.ReadAllText(request).Trim();File.Delete(request);Directory.CreateDirectory(Folder);
             if(command=="flow-survey"){VillaFlowSetup.Survey();return;}
+            if(command=="player-comfort"){VillaPlayerComfortSetup.Install();return;}
+            if(command=="player-comfort-check"){VillaPlayerComfortChecks.Run();return;}
+            if(command=="flow-count"){VillaFlowSetup.UseMenuCount();return;}
+            if(command=="menu-background"){VillaMenuSetup.Install();return;}
+            if(command=="menu-background-refine"){VillaMenuSetup.Refine();return;}
+            if(command=="menu-frost"){VillaMenuSetup.Frost();return;}
+            if(command=="menu-background-check"){VillaMenuChecks.Run();return;}
             if(command=="flow-fix"){VillaFlowSetup.FixCanvasReferences();return;}
             if(command=="flow-polish"){VillaFlowSetup.Polish();return;}
             if(command=="flow-check"){VillaFlowChecks.Run();return;}

@@ -1,0 +1,1 @@
+Existing villa loaded additively for menu only; player, collection, physics and HUD disabled. Shared lighting, constrained orbit, 1080p source, reusable half-resolution Gaussian blur buffers and white frost. Preview unloaded before fresh gameplay.

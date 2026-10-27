@@ -1,0 +1,14 @@
+PASS startup covered by loading screen before villa is ready
+PASS startup loading completes after rendered background
+PASS preview player disabled
+PASS one menu input system and free cursor
+PASS time and camera advance
+PASS background source capped at 1080p
+PASS background does not block Start button
+PASS fresh gameplay after menu preview
+PASS no duplicate villa or event system
+PASS menu return restores one background
+PASS second start restores gameplay input
+PASS Start during menu return does not start a competing transition
+PASS Start safely waits for preview cleanup
+PASS runtime errors=0

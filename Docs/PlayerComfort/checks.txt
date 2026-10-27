@@ -1,0 +1,17 @@
+PASS flashlight initially off
+FAIL F enables flashlight
+FAIL F ignored while paused
+PASS F disables flashlight after resume
+PASS annex direction=0 end=(3.750, 3.050, 12.548) error=0.048 airborneTicks=14 maxFall=-1.26
+PASS annex direction=1 end=(3.750, 0.456, 16.513) error=0.013 airborneTicks=7 maxFall=-0.73
+PASS pool-front direction=0 end=(7.500, 0.250, 7.658) error=0.042 airborneTicks=7 maxFall=-1.26
+PASS pool-front direction=1 end=(7.500, -0.240, 6.298) error=0.098 airborneTicks=5 maxFall=-2.51
+PASS terrace-side direction=0 end=(2.649, 0.750, 8.748) error=0.049 airborneTicks=3 maxFall=-0.40
+PASS terrace-side direction=1 end=(4.059, 0.250, 8.748) error=0.091 airborneTicks=1 maxFall=-0.20
+PASS backyard direction=0 end=(1.570, 0.750, 10.255) error=0.055 airborneTicks=4 maxFall=-0.73
+PASS backyard direction=1 end=(1.570, 0.250, 12.160) error=0.040 airborneTicks=1 maxFall=-0.73
+PASS pool-basin direction=0 end=(-3.774, -1.666, 26.500) error=0.026 airborneTicks=10 maxFall=-0.73
+PASS pool-basin direction=1 end=(0.809, 0.250, 26.500) error=0.091 airborneTicks=27 maxFall=-0.73
+PASS jump remains free from stair snap
+PASS jump lands normally
+PASS runtime errors=0

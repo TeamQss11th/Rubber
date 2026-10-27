@@ -55,6 +55,8 @@ namespace Rubber.Gameplay.Player
                 Physics.SphereCast(bottom + Vector3.up * 0.05f, capsule.radius * 0.9f,
                     Vector3.down, out RaycastHit ground, 0.13f, stats.GroundMask, QueryTriggerInteraction.Ignore) &&
                 Vector3.Angle(ground.normal, Vector3.up) <= stats.MaxSlopeAngle;
+            if (!jumpRequested && body.linearVelocity.y <= .1f && (IsGrounded || coyoteTimeRemaining > 0f))
+                IsGrounded |= TryStepDown();
             if (IsGrounded)
                 coyoteTimeRemaining = stats.CoyoteTime;
             else
@@ -94,7 +96,7 @@ namespace Rubber.Gameplay.Player
             }
             jumpRequested = false;
             body.linearVelocity = velocity;
-            if (IsGrounded && !jumping && direction.sqrMagnitude > 0.001f)
+            if ((IsGrounded || coyoteTimeRemaining > 0f) && !jumping && velocity.y <= .1f && direction.sqrMagnitude > 0.001f)
                 TryStep(direction.normalized);
 
             if (body.position.y < -15f)
@@ -115,7 +117,7 @@ namespace Rubber.Gameplay.Player
                 return;
             Vector3 probe = foot + direction * reach + Vector3.up * (stats.StepHeight + 0.05f);
             if (!Physics.Raycast(probe, Vector3.down, out RaycastHit top, stats.StepHeight,
-                    stats.GroundMask, QueryTriggerInteraction.Ignore) ||
+                    stats.GroundMask, QueryTriggerInteraction.Ignore) || top.rigidbody != null ||
                 Vector3.Angle(top.normal, Vector3.up) > stats.MaxSlopeAngle)
                 return;
             float rise = top.point.y - foot.y + 0.015f;
@@ -129,7 +131,29 @@ namespace Rubber.Gameplay.Player
             if (Physics.CheckCapsule(lower + offset, upper + offset, capsule.radius * 0.95f,
                     stats.GroundMask, QueryTriggerInteraction.Ignore)) return;
             body.position += offset;
+            var velocity = body.linearVelocity; velocity.y = 0f; body.linearVelocity = velocity;
+            IsGrounded = true;
             if (playerCamera) playerCamera.SmoothStep(rise);
+        }
+
+        private bool TryStepDown()
+        {
+            // Follow one stair tread, never magnetize the player to a large drop or a loose duck.
+            Vector3 center = body.position + capsule.center;
+            Vector3 offset = Vector3.up * (capsule.height * .5f - capsule.radius);
+            const float lift = .05f;
+            float radius = capsule.radius * .95f;
+            if (!Physics.CapsuleCast(center-offset+Vector3.up*lift, center+offset+Vector3.up*lift,
+                    radius, Vector3.down, out var hit, stats.StepHeight + .1f,
+                    stats.GroundMask, QueryTriggerInteraction.Ignore) ||
+                hit.rigidbody != null || Vector3.Angle(hit.normal, Vector3.up) > stats.MaxSlopeAngle)
+                return false;
+            float drop = hit.distance - lift - (capsule.radius-radius) - .015f;
+            if (drop <= .01f || drop > stats.StepHeight) return false;
+            body.position -= Vector3.up * drop;
+            var velocity = body.linearVelocity; velocity.y = 0; body.linearVelocity = velocity;
+            if (playerCamera) playerCamera.SmoothStep(-drop);
+            return true;
         }
 
         private void OnDisable() => ClearInput();

@@ -1,0 +1,1 @@
+annex building/Ground Level/stairs bounds=Center: (3.75, 1.57, 14.75), Extents: (0.50, 1.33, 1.75)

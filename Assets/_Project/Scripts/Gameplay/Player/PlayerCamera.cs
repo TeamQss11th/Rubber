@@ -32,8 +32,8 @@ namespace Rubber.Gameplay.Player
 
         public void SmoothStep(float height)
         {
-            if (!cameraPivot || height <= 0f) return;
-            stepOffset -= height;
+            if (!cameraPivot || Mathf.Abs(height) < .001f) return;
+            stepOffset = Mathf.Clamp(stepOffset - height, -.4f, .4f);
             cameraPivot.localPosition = cameraLocalPosition + Vector3.up * stepOffset;
         }
 
