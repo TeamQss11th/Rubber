@@ -1,0 +1,22 @@
+Scene=Assets/Modern Villa/Scenes/Modern Villa.unity; dirty=False; mesh filters=1526; surface meshes=402; colliders=1307; samples=36197; missing samples=551; coplanar AABB candidates=26
+ROOT Cameras
+ROOT Floor
+ROOT Main Building
+ROOT Pool Level
+ROOT annex building
+ROOT Backyard
+ROOT Terrain
+ROOT Lighting
+ROOT StaticLightingSky
+ROOT SceneIDMap
+ROOT SceneIDMap
+ROOT Point Light
+ROOT Modern Villa - Interior Furnishing
+ROOT Modern Villa - Search Details
+ROOT Modern Villa - Interior Lighting
+ROOT Modern Villa - Lighting Walkthrough
+ROOT APV - villa grounds
+ROOT APV - main house
+ROOT APV - annex
+ROOT ProbeVolumePerSceneData
+TERRAIN Terrain/Terrain (1) pos=(-54.80, -2.10, -31.10) size=(100.00, 60.00, 100.00) holes=512 collider=True

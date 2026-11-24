@@ -1,0 +1,22 @@
+SUPPORT Desk reference stack - large base: Writing desk, mesh y=4.3000
+Desk reference stack - large base | Props/BookC | bottom=(-5.6300, 4.3010, 4.6700) | rotation=(0.00, 0.00, 90.00) | bounds=(-5.8175, 4.3010, 4.5260) .. (-5.4425, 4.3310, 4.8140)
+SUPPORT Desk reference stack - volume 1: Desk reference stack - large base, mesh y=4.3310
+Desk reference stack - volume 1 | Props/BookE | bottom=(-5.6300, 4.3320, 4.6700) | rotation=(0.00, 357.00, 90.00) | bounds=(-5.7755, 4.3320, 4.5638) .. (-5.4845, 4.4158, 4.7762)
+SUPPORT Desk reference stack - volume 2: Desk reference stack - volume 1, mesh y=4.4158
+Desk reference stack - volume 2 | Props/BookE | bottom=(-5.6220, 4.4168, 4.6700) | rotation=(0.00, 5.00, 90.00) | bounds=(-5.7706, 4.4168, 4.5591) .. (-5.4734, 4.5006, 4.7809)
+SUPPORT Desk reference stack - volume 3: Desk reference stack - volume 2, mesh y=4.5006
+Desk reference stack - volume 3 | Props/BookE | bottom=(-5.6300, 4.5016, 4.6700) | rotation=(0.00, 357.00, 90.00) | bounds=(-5.7755, 4.5016, 4.5638) .. (-5.4845, 4.5854, 4.7762)
+SUPPORT Sofa left back cushion: Sofa seat 1, mesh y=0.6527
+Sofa left back cushion | Props/PillowG Variant | bottom=(6.8500, 0.6537, 16.1300) | rotation=(58.00, 180.00, 0.00) | bounds=(6.4889, 0.6537, 15.9584) .. (7.2111, 1.0559, 16.3016)
+SUPPORT Sofa right back cushion: Sofa seat 3, mesh y=0.6527
+Sofa right back cushion | Props/PillowG Variant | bottom=(8.0800, 0.6537, 16.1300) | rotation=(58.00, 180.00, 0.00) | bounds=(7.7189, 0.6537, 15.9584) .. (8.4411, 1.0559, 16.3016)
+SUPPORT Low palm by sofa end table: Floor 2x2 (8), y=0.2500
+Low palm by sofa end table | Plants/PottedPlantC | bottom=(9.4000, 0.2500, 15.2500) | rotation=(0.00, 25.00, 0.00) | bounds=(9.0614, 0.2500, 14.9173) .. (9.7386, 0.7637, 15.5827)
+SUPPORT Breakfast coffee tray: Breakfast table, mesh y=0.9950
+Breakfast coffee tray | Props/TabletA | bottom=(5.5800, 0.9960, 19.2600) | rotation=(0.00, 0.00, 0.00) | bounds=(5.3600, 0.9960, 19.0800) .. (5.8000, 1.0616, 19.4400)
+SUPPORT Coffee pot on serving tray: Breakfast coffee tray, mesh y=1.0110
+Coffee pot on serving tray | Props/CoffeePot | bottom=(5.5800, 1.0120, 19.2600) | rotation=(0.00, 0.00, 0.00) | bounds=(5.4188, 1.0120, 19.1599) .. (5.7412, 1.2753, 19.3601)
+SUPPORT Reading corner low palm: Roof 2x2 side (10), y=3.5550
+Reading corner low palm | Plants/PottedPlantC | bottom=(-2.9800, 3.5550, 8.7800) | rotation=(0.00, 12.00, 0.00) | bounds=(-3.2842, 3.5550, 8.4850) .. (-2.6758, 4.0687, 9.0750)
+SUPPORT Retreat low palm: Roof 2x2 (9), y=3.0500
+Retreat low palm | Plants/PottedPlantC | bottom=(7.6500, 3.0500, 19.2500) | rotation=(0.00, 335.00, 0.00) | bounds=(7.3116, 3.0500, 18.9171) .. (7.9884, 3.5637, 19.5829)

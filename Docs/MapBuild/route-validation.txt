@@ -1,0 +1,2 @@
+Sampled 222 positions along entry/interior/pool loop using radius 0.28m and 0.2m steps.
+PASS: floor and capsule clearance. Does not verify collection or visual clues.

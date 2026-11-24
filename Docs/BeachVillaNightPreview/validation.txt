@@ -1,0 +1,5 @@
+1920x1080 captures from existing Beach Villa. Temporary lighting concept, not night APV bake.
+Day lightmap indices temporarily disabled; APV intensity=0 with ambient fallback.
+Existing 11 lights reused; no additional shadow lights.
+All light values, sky, ambient probe, renderer lightmap indices, reflection intensity and camera restored. No scene save or rebake.
+Not an FPS benchmark.

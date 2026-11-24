@@ -1,0 +1,12 @@
+F1 / Pool terrace: feet=(-4.500, 0.050, -6.500); floor=Floor1x1 (2); capsule clear=True
+Grounded=True; drift=0.020m
+F2 / Entrance: feet=(5.000, 1.050, 0.000); floor=Floor2x2 (32); capsule clear=True
+Grounded=True; drift=0.020m
+F3 / Interior: feet=(5.000, 1.060, 11.000); floor=CarpetA (3); capsule clear=True
+Grounded=True; drift=0.020m
+F4 / Rear interior: feet=(0.500, 1.050, 17.500); floor=Floor2x2 (12); capsule clear=True
+Grounded=True; drift=0.020m
+F5 / Upper floor: feet=(6.000, 3.850, 13.000); floor=Roof2x2 (20); capsule clear=True
+Grounded=True; drift=0.020m
+F6 / Upper front: feet=(4.500, 3.850, 2.500); floor=Roof2x2Side (1); capsule clear=True
+Grounded=True; drift=0.020m

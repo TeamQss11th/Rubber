@@ -1,0 +1,4 @@
+Normal disable restored surviving sun; intensity=1.2
+PASS: Apply and Update tolerate a destroyed Unity Light.
+PASS: OnDisable with destroyed sun completes and releases all blend buffers.
+Errors=0

@@ -1,0 +1,5 @@
+Scene=Assets/Modern Villa/Scenes/Modern Villa.unity
+Pool=Pool Level/Pool
+Water height=-0.380, bottom=-1.450, cells=2886, triangles=5772
+Shared material=Assets/_Project/Art/PoolPrototype/PoolWater.mat
+Saved. No Play-mode test or new test ducks requested.

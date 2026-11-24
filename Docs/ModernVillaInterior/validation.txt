@@ -1,0 +1,198 @@
+Scene has no CharacterController. Clearance sample uses a temporary 1.8m height / 0.28m radius capsule, not a verified gameplay player.
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Family dining table min=(-6.1929, 0.7500, 7.6054) max=(-3.2071, 1.4950, 8.5946)
+SUPPORT gap=0.0000 Floor/Floor 2x2 (23)
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Dining chair min=(-5.8748, 0.7500, 6.8235) max=(-5.3252, 1.8232, 7.4765)
+SUPPORT gap=0.0000 Floor/Floor 2x2 (29)
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Place setting min=(-5.7592, 1.4960, 7.6608) max=(-5.4408, 1.5080, 7.9792)
+PLATE Modern Villa - Interior Furnishing/01 Main ground - family dining/Place setting/LargePlate_LOD0 enabled=True active=True min=(-5.7563, 1.4962, 7.6637) max=(-5.4437, 1.5078, 7.9763)
+PLATE Modern Villa - Interior Furnishing/01 Main ground - family dining/Place setting/LargePlate_LOD1 enabled=True active=True min=(-5.7592, 1.4960, 7.6608) max=(-5.4408, 1.5080, 7.9792)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/01 Main ground - family dining/Family dining table
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Water glass min=(-5.4320, 1.4960, 7.9380) max=(-5.3480, 1.6330, 8.0220)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/01 Main ground - family dining/Family dining table
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Dining chair min=(-4.9748, 0.7500, 6.8235) max=(-4.4252, 1.8232, 7.4765)
+SUPPORT gap=0.0000 Floor/Floor 2x2 (23)
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Place setting min=(-4.8592, 1.4960, 7.6608) max=(-4.5408, 1.5080, 7.9792)
+PLATE Modern Villa - Interior Furnishing/01 Main ground - family dining/Place setting/LargePlate_LOD0 enabled=True active=True min=(-4.8563, 1.4962, 7.6637) max=(-4.5437, 1.5078, 7.9763)
+PLATE Modern Villa - Interior Furnishing/01 Main ground - family dining/Place setting/LargePlate_LOD1 enabled=True active=True min=(-4.8592, 1.4960, 7.6608) max=(-4.5408, 1.5080, 7.9792)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/01 Main ground - family dining/Family dining table
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Water glass min=(-4.5320, 1.4960, 7.9380) max=(-4.4480, 1.6330, 8.0220)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/01 Main ground - family dining/Family dining table
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Dining chair min=(-4.0748, 0.7500, 6.8235) max=(-3.5252, 1.8232, 7.4765)
+SUPPORT gap=0.0000 Floor/Floor 2x2 (23)
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Place setting min=(-3.9592, 1.4960, 7.6608) max=(-3.6408, 1.5080, 7.9792)
+PLATE Modern Villa - Interior Furnishing/01 Main ground - family dining/Place setting/LargePlate_LOD0 enabled=True active=True min=(-3.9563, 1.4962, 7.6637) max=(-3.6437, 1.5078, 7.9763)
+PLATE Modern Villa - Interior Furnishing/01 Main ground - family dining/Place setting/LargePlate_LOD1 enabled=True active=True min=(-3.9592, 1.4960, 7.6608) max=(-3.6408, 1.5080, 7.9792)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/01 Main ground - family dining/Family dining table
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Water glass min=(-3.6320, 1.4960, 7.9380) max=(-3.5480, 1.6330, 8.0220)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/01 Main ground - family dining/Family dining table
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Dining chair min=(-5.8748, 0.7500, 8.7235) max=(-5.3252, 1.8232, 9.3765)
+SUPPORT gap=0.0000 Floor/Floor 2x2 (67)
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Place setting min=(-5.7592, 1.4960, 8.2208) max=(-5.4408, 1.5080, 8.5392)
+PLATE Modern Villa - Interior Furnishing/01 Main ground - family dining/Place setting/LargePlate_LOD0 enabled=True active=True min=(-5.7563, 1.4962, 8.2237) max=(-5.4437, 1.5078, 8.5363)
+PLATE Modern Villa - Interior Furnishing/01 Main ground - family dining/Place setting/LargePlate_LOD1 enabled=True active=True min=(-5.7592, 1.4960, 8.2208) max=(-5.4408, 1.5080, 8.5392)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/01 Main ground - family dining/Family dining table
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Water glass min=(-5.4320, 1.4960, 8.1780) max=(-5.3480, 1.6330, 8.2620)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/01 Main ground - family dining/Family dining table
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Dining chair min=(-4.9748, 0.7500, 8.7235) max=(-4.4252, 1.8232, 9.3765)
+SUPPORT gap=0.0000 Floor/Floor 2x2 (66)
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Place setting min=(-4.8592, 1.4960, 8.2208) max=(-4.5408, 1.5080, 8.5392)
+PLATE Modern Villa - Interior Furnishing/01 Main ground - family dining/Place setting/LargePlate_LOD0 enabled=True active=True min=(-4.8563, 1.4962, 8.2237) max=(-4.5437, 1.5078, 8.5363)
+PLATE Modern Villa - Interior Furnishing/01 Main ground - family dining/Place setting/LargePlate_LOD1 enabled=True active=True min=(-4.8592, 1.4960, 8.2208) max=(-4.5408, 1.5080, 8.5392)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/01 Main ground - family dining/Family dining table
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Water glass min=(-4.5320, 1.4960, 8.1780) max=(-4.4480, 1.6330, 8.2620)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/01 Main ground - family dining/Family dining table
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Dining chair min=(-4.0748, 0.7500, 8.7235) max=(-3.5252, 1.8232, 9.3765)
+SUPPORT gap=0.0000 Floor/Floor 2x2 (66)
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Place setting min=(-3.9592, 1.4960, 8.2208) max=(-3.6408, 1.5080, 8.5392)
+PLATE Modern Villa - Interior Furnishing/01 Main ground - family dining/Place setting/LargePlate_LOD0 enabled=True active=True min=(-3.9563, 1.4962, 8.2237) max=(-3.6437, 1.5078, 8.5363)
+PLATE Modern Villa - Interior Furnishing/01 Main ground - family dining/Place setting/LargePlate_LOD1 enabled=True active=True min=(-3.9592, 1.4960, 8.2208) max=(-3.6408, 1.5080, 8.5392)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/01 Main ground - family dining/Family dining table
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Water glass min=(-3.6320, 1.4960, 8.1780) max=(-3.5480, 1.6330, 8.2620)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/01 Main ground - family dining/Family dining table
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Dining flowers min=(-4.8461, 1.4960, 7.9852) max=(-4.5539, 1.9713, 8.2148)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/01 Main ground - family dining/Family dining table
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Dining corner plant min=(-2.9152, 0.7500, 8.8830) max=(-1.3848, 2.1078, 10.4170)
+SUPPORT gap=0.0000 Floor/Floor 2x2 (65)
+PIECE Modern Villa - Interior Furnishing/01 Main ground - family dining/Dining artwork min=(-5.4500, 1.7500, 10.4600) max=(-3.9500, 2.7500, 10.4800)
+SUPPORT mesh visual review required (disabled prop collider / wall art / slatted surface)
+PIECE Modern Villa - Interior Furnishing/02 Main upper - writing and coffee/Writing desk min=(-6.3929, 3.5550, 4.3054) max=(-3.4071, 4.3000, 5.2946)
+SUPPORT gap=0.0000 Main Building/roof 2 (1)/Roof 2x2 (2)
+PIECE Modern Villa - Interior Furnishing/02 Main upper - writing and coffee/Desk chair min=(-5.1748, 3.5550, 3.5535) max=(-4.6252, 4.6282, 4.2065)
+SUPPORT gap=0.0000 Main Building/roof 2 (1)/Roof 2x2 (1)
+PIECE Modern Villa - Interior Furnishing/02 Main upper - writing and coffee/Current reading on desk min=(-5.2173, 4.3010, 4.5220) max=(-4.8827, 4.3310, 4.7780)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/02 Main upper - writing and coffee/Writing desk
+PIECE Modern Villa - Interior Furnishing/02 Main upper - writing and coffee/Reference book min=(-4.5673, 4.3010, 4.7920) max=(-4.2327, 4.3310, 5.0480)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/02 Main upper - writing and coffee/Writing desk
+PIECE Modern Villa - Interior Furnishing/02 Main upper - writing and coffee/Desk coffee min=(-4.6246, 4.3010, 4.5403) max=(-4.5154, 4.3910, 4.6797)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/02 Main upper - writing and coffee/Writing desk
+PIECE Modern Villa - Interior Furnishing/02 Main upper - writing and coffee/Desk lamp min=(-6.1359, 4.3010, 4.7543) max=(-5.9241, 4.7639, 4.9657)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/02 Main upper - writing and coffee/Writing desk
+PIECE Modern Villa - Interior Furnishing/02 Main upper - writing and coffee/Small desk flowers min=(-3.9261, 4.3010, 4.7652) max=(-3.6339, 4.7763, 4.9948)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/02 Main upper - writing and coffee/Writing desk
+PIECE Modern Villa - Interior Furnishing/02 Main upper - writing and coffee/Window armchair min=(-6.3307, 3.5550, 0.9951) max=(-5.2693, 4.3411, 2.0049)
+SUPPORT gap=0.0000 Main Building/roof 2 (1)/Roof 2x2 side
+PIECE Modern Villa - Interior Furnishing/02 Main upper - writing and coffee/Window companion chair min=(-4.2307, 3.5550, 0.9951) max=(-3.1693, 4.3411, 2.0049)
+SUPPORT gap=0.0000 Main Building/roof 2 (1)/Roof 2x2
+PIECE Modern Villa - Interior Furnishing/02 Main upper - writing and coffee/Window coffee table min=(-5.1365, 3.5550, 2.0750) max=(-4.3635, 3.9056, 2.8250)
+SUPPORT gap=0.0000 Main Building/roof 2 (1)/Roof 2x2 (1)
+PIECE Modern Villa - Interior Furnishing/02 Main upper - writing and coffee/Window coffee min=(-4.9846, 3.9066, 2.3803) max=(-4.8754, 3.9966, 2.5197)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/02 Main upper - writing and coffee/Window coffee table
+PIECE Modern Villa - Interior Furnishing/02 Main upper - writing and coffee/Window book min=(-4.7873, 3.9066, 2.3220) max=(-4.4527, 3.9366, 2.5780)
+SUPPORT mesh visual review required (disabled prop collider / wall art / slatted surface)
+PIECE Modern Villa - Interior Furnishing/02 Main upper - writing and coffee/Window corner plant min=(-7.2310, 3.5550, -0.1831) max=(-5.7690, 4.9128, 1.2831)
+SUPPORT gap=0.0000 Main Building/roof 2 (1)/Roof 2x2 side
+PIECE Modern Villa - Interior Furnishing/03 Main upper - quiet reading room/Reading armchair min=(-6.2708, 3.5550, 7.6134) max=(-5.2292, 4.3411, 8.5866)
+SUPPORT gap=0.0000 Main Building/roof 2 (1)/Roof 2x2 side (9)
+PIECE Modern Villa - Interior Furnishing/03 Main upper - quiet reading room/Companion armchair min=(-4.5708, 3.5550, 7.6134) max=(-3.5292, 4.3411, 8.5866)
+SUPPORT gap=0.0000 Main Building/roof 2 (1)/Roof 2x2 (4)
+PIECE Modern Villa - Interior Furnishing/03 Main upper - quiet reading room/Shared reading table min=(-5.2865, 3.5550, 6.8250) max=(-4.5135, 3.9056, 7.5750)
+SUPPORT gap=0.0000 Main Building/roof 2 (1)/Roof 2x2 (3)
+PIECE Modern Villa - Interior Furnishing/03 Main upper - quiet reading room/Book left after reading min=(-5.2273, 3.9066, 7.0720) max=(-4.8927, 3.9366, 7.3280)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/03 Main upper - quiet reading room/Shared reading table
+PIECE Modern Villa - Interior Furnishing/03 Main upper - quiet reading room/Coffee beside book min=(-4.7546, 3.9066, 7.2603) max=(-4.6454, 3.9966, 7.3997)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/03 Main upper - quiet reading room/Shared reading table
+PIECE Modern Villa - Interior Furnishing/03 Main upper - quiet reading room/Reading side table min=(-6.9463, 3.5550, 7.8037) max=(-6.4537, 4.2248, 8.2963)
+SUPPORT gap=0.0000 Main Building/roof 2 (1)/Roof 2x2 side (9)
+PIECE Modern Villa - Interior Furnishing/03 Main upper - quiet reading room/Reading lamp min=(-6.8059, 4.2258, 7.9443) max=(-6.5941, 4.6887, 8.1557)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/03 Main upper - quiet reading room/Reading side table
+PIECE Modern Villa - Interior Furnishing/03 Main upper - quiet reading room/Reading room plant min=(-2.7462, 3.5550, 8.0504) max=(-1.5538, 4.9128, 9.2496)
+SUPPORT gap=0.0000 Main Building/roof 2 (1)/Roof 2x2 side (10)
+PIECE Modern Villa - Interior Furnishing/03 Main upper - quiet reading room/Reading room artwork min=(-5.4000, 4.7350, 9.4600) max=(-4.4000, 5.3650, 9.4800)
+SUPPORT mesh visual review required (disabled prop collider / wall art / slatted surface)
+PIECE Modern Villa - Interior Furnishing/04 Annex ground - family living/Sofa seat 1 min=(6.2737, 0.2500, 15.6682) max=(7.0263, 1.0631, 16.6318)
+SUPPORT gap=0.0000 annex building/Floor/Floor 2x2 (10)
+PIECE Modern Villa - Interior Furnishing/04 Annex ground - family living/Sofa seat 2 min=(7.0237, 0.2500, 15.6682) max=(7.7763, 1.0631, 16.6318)
+SUPPORT gap=0.0000 annex building/Floor/Floor 2x2 (9)
+PIECE Modern Villa - Interior Furnishing/04 Annex ground - family living/Sofa seat 3 min=(7.7737, 0.2500, 15.6682) max=(8.5263, 1.0631, 16.6318)
+SUPPORT gap=0.0000 annex building/Floor/Floor 2x2 (9)
+PIECE Modern Villa - Interior Furnishing/04 Annex ground - family living/Sofa left arm min=(8.5250, 0.2500, 15.6702) max=(8.8050, 0.8500, 16.6298)
+SUPPORT gap=0.0000 annex building/Floor/Floor 2x2 (9)
+PIECE Modern Villa - Interior Furnishing/04 Annex ground - family living/Sofa right arm min=(5.9950, 0.2500, 15.6702) max=(6.2750, 0.8500, 16.6298)
+SUPPORT gap=0.0000 annex building/Floor/Floor 2x2 (10)
+PIECE Modern Villa - Interior Furnishing/04 Annex ground - family living/Conversation rug min=(6.4000, 0.2500, 13.4500) max=(8.4000, 0.2700, 15.4500)
+SUPPORT gap=0.0000 annex building/Floor/Floor 2x2 (9)
+PIECE Modern Villa - Interior Furnishing/04 Annex ground - family living/Round coffee table min=(6.7000, 0.2700, 13.7500) max=(8.1000, 0.6549, 15.1500)
+SUPPORT gap=0.0200 annex building/Floor/Floor 2x2 (9)
+PIECE Modern Villa - Interior Furnishing/04 Annex ground - family living/Living armchair left min=(5.5193, 0.2500, 12.3451) max=(6.5807, 1.0361, 13.3549)
+SUPPORT gap=0.0000 annex building/Floor/Floor 2x2 (6)
+PIECE Modern Villa - Interior Furnishing/04 Annex ground - family living/Living armchair right min=(8.2693, 0.2500, 12.3451) max=(9.3307, 1.0361, 13.3549)
+SUPPORT gap=0.0000 annex building/Floor/Floor 2x2 (5)
+PIECE Modern Villa - Interior Furnishing/04 Annex ground - family living/Living room book min=(6.9827, 0.6559, 14.3220) max=(7.3173, 0.6859, 14.5780)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/04 Annex ground - family living/Round coffee table
+PIECE Modern Villa - Interior Furnishing/04 Annex ground - family living/Living coffee min=(7.6154, 0.6559, 14.2003) max=(7.7246, 0.7459, 14.3397)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/04 Annex ground - family living/Round coffee table
+PIECE Modern Villa - Interior Furnishing/04 Annex ground - family living/Living flowers min=(7.3539, 0.6559, 14.6152) max=(7.6461, 1.1312, 14.8448)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/04 Annex ground - family living/Round coffee table
+PIECE Modern Villa - Interior Furnishing/04 Annex ground - family living/Sofa end table min=(9.2537, 0.2500, 15.8537) max=(9.7463, 0.9198, 16.3463)
+SUPPORT gap=0.0000 annex building/Floor/Floor 2x2 (8)
+PIECE Modern Villa - Interior Furnishing/04 Annex ground - family living/Sofa lamp min=(9.3941, 0.9208, 15.9943) max=(9.6059, 1.3837, 16.2057)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/04 Annex ground - family living/Sofa end table
+PIECE Modern Villa - Interior Furnishing/04 Annex ground - family living/Living corner plant min=(9.5588, 0.2500, 14.9063) max=(10.9412, 1.6078, 16.2937)
+SUPPORT gap=0.0000 annex building/Floor/Floor 2x2 (8)
+PIECE Modern Villa - Interior Furnishing/04 Annex ground - family living/Living artwork min=(6.6500, 1.2500, 16.9600) max=(8.1500, 2.2500, 16.9800)
+SUPPORT mesh visual review required (disabled prop collider / wall art / slatted surface)
+PIECE Modern Villa - Interior Furnishing/05 Annex ground - breakfast room/Breakfast table min=(5.0071, 0.2500, 18.6554) max=(7.9929, 0.9950, 19.6446)
+SUPPORT gap=0.0000 annex building/Floor/Floor 2x2 (18)
+PIECE Modern Villa - Interior Furnishing/05 Annex ground - breakfast room/Breakfast chair min=(5.5752, 0.2500, 17.9235) max=(6.1248, 1.3232, 18.5765)
+SUPPORT gap=0.0000 annex building/Floor/Floor 2x2 (14)
+PIECE Modern Villa - Interior Furnishing/05 Annex ground - breakfast room/Breakfast chair min=(6.8752, 0.2500, 17.9235) max=(7.4248, 1.3232, 18.5765)
+SUPPORT gap=0.0000 annex building/Floor/Floor 2x2 (13)
+PIECE Modern Villa - Interior Furnishing/05 Annex ground - breakfast room/Breakfast chair min=(5.5752, 0.2500, 19.7235) max=(6.1248, 1.3232, 20.3765)
+SUPPORT gap=0.0000 annex building/Floor/Floor 2x2 (18)
+PIECE Modern Villa - Interior Furnishing/05 Annex ground - breakfast room/Breakfast chair min=(6.8752, 0.2500, 19.7235) max=(7.4248, 1.3232, 20.3765)
+SUPPORT gap=0.0000 annex building/Floor/Floor 2x2 (17)
+PIECE Modern Villa - Interior Furnishing/05 Annex ground - breakfast room/Breakfast cup one min=(5.7954, 0.9960, 18.8303) max=(5.9046, 1.0860, 18.9697)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/05 Annex ground - breakfast room/Breakfast table
+PIECE Modern Villa - Interior Furnishing/05 Annex ground - breakfast room/Breakfast cup two min=(7.0954, 0.9960, 19.3303) max=(7.2046, 1.0860, 19.4697)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/05 Annex ground - breakfast room/Breakfast table
+PIECE Modern Villa - Interior Furnishing/05 Annex ground - breakfast room/Breakfast reading min=(6.2327, 0.9960, 18.8920) max=(6.5673, 1.0260, 19.1480)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/05 Annex ground - breakfast room/Breakfast table
+PIECE Modern Villa - Interior Furnishing/05 Annex ground - breakfast room/Breakfast flowers min=(7.0039, 0.9960, 18.9752) max=(7.2961, 1.4713, 19.2048)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/05 Annex ground - breakfast room/Breakfast table
+PIECE Modern Villa - Interior Furnishing/05 Annex ground - breakfast room/Breakfast window plant min=(8.6088, 0.2500, 19.4063) max=(9.9912, 1.6078, 20.7937)
+SUPPORT gap=0.0000 annex building/Floor/Floor 2x2 (16)
+PIECE Modern Villa - Interior Furnishing/06 Annex upper - home studio/Studio work table min=(7.1554, 3.0500, 11.8571) max=(8.1446, 3.7950, 14.8429)
+SUPPORT gap=0.0000 annex building/roof 1/Roof 2x2 (6)
+PIECE Modern Villa - Interior Furnishing/06 Annex upper - home studio/Studio chair min=(6.3735, 3.0500, 13.0752) max=(7.0265, 4.1232, 13.6248)
+SUPPORT gap=0.0000 annex building/roof 1/Roof 2x2 (1)
+PIECE Modern Villa - Interior Furnishing/06 Annex upper - home studio/Studio reference min=(7.3827, 3.7960, 13.1220) max=(7.7173, 3.8260, 13.3780)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/06 Annex upper - home studio/Studio work table
+PIECE Modern Villa - Interior Furnishing/06 Annex upper - home studio/Second reference min=(7.5827, 3.7960, 13.7720) max=(7.9173, 3.8260, 14.0280)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/06 Annex upper - home studio/Studio work table
+PIECE Modern Villa - Interior Furnishing/06 Annex upper - home studio/Studio coffee min=(7.3754, 3.7960, 12.8003) max=(7.4846, 3.8860, 12.9397)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/06 Annex upper - home studio/Studio work table
+PIECE Modern Villa - Interior Furnishing/06 Annex upper - home studio/Studio lamp min=(7.6241, 3.7960, 12.1443) max=(7.8359, 4.2589, 12.3557)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/06 Annex upper - home studio/Studio work table
+PIECE Modern Villa - Interior Furnishing/06 Annex upper - home studio/Studio flowers min=(7.5439, 3.7960, 14.3152) max=(7.8361, 4.2713, 14.5448)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/06 Annex upper - home studio/Studio work table
+PIECE Modern Villa - Interior Furnishing/06 Annex upper - home studio/Studio reading chair min=(4.4134, 3.0500, 11.5808) max=(5.4866, 3.8361, 12.6193)
+SUPPORT gap=0.0000 annex building/roof 1/Roof 2x2 side
+PIECE Modern Villa - Interior Furnishing/06 Annex upper - home studio/Studio reading side table min=(5.5537, 3.0500, 11.9037) max=(6.0463, 3.7198, 12.3963)
+SUPPORT gap=0.0000 annex building/roof 1/Roof 2x2
+PIECE Modern Villa - Interior Furnishing/06 Annex upper - home studio/Studio reading book min=(5.6327, 3.7208, 12.0220) max=(5.9673, 3.7508, 12.2780)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/06 Annex upper - home studio/Studio reading side table
+PIECE Modern Villa - Interior Furnishing/06 Annex upper - home studio/Studio corner plant min=(7.7588, 3.0500, 15.1563) max=(9.1412, 4.4078, 16.5437)
+SUPPORT gap=0.0000 annex building/roof 1/Roof 2x2 (7)
+PIECE Modern Villa - Interior Furnishing/07 Annex upper - terrace reading/Retreat chair one min=(3.7607, 3.0500, 17.5108) max=(4.6393, 3.8361, 18.4892)
+SUPPORT gap=0.0000 annex building/roof 1/Roof 2x2 side (7)
+PIECE Modern Villa - Interior Furnishing/07 Annex upper - terrace reading/Retreat chair two min=(3.7607, 3.0500, 18.8608) max=(4.6393, 3.8361, 19.8392)
+SUPPORT gap=0.0000 annex building/roof 1/Roof 2x2 side (9)
+PIECE Modern Villa - Interior Furnishing/07 Annex upper - terrace reading/Retreat tea table min=(5.0635, 3.0500, 18.3250) max=(5.8365, 3.4006, 19.0750)
+SUPPORT gap=0.0000 annex building/roof 1/Roof 2x2 (3)
+PIECE Modern Villa - Interior Furnishing/07 Annex upper - terrace reading/Retreat tea cup min=(5.3954, 3.4016, 18.4303) max=(5.5046, 3.4916, 18.5697)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/07 Annex upper - terrace reading/Retreat tea table
+PIECE Modern Villa - Interior Furnishing/07 Annex upper - terrace reading/Retreat reading min=(5.2827, 3.4016, 18.7020) max=(5.6173, 3.4316, 18.9580)
+SUPPORT gap=0.0010 Modern Villa - Interior Furnishing/07 Annex upper - terrace reading/Retreat tea table
+PIECE Modern Villa - Interior Furnishing/07 Annex upper - terrace reading/Retreat corner plant min=(7.7538, 3.0500, 18.9504) max=(8.9462, 4.4078, 20.1496)
+SUPPORT gap=0.0000 annex building/roof 1/Roof 2x2 (9)
+ROUTE Main ground window aisle: PASS
+ROUTE Main dining entry: PASS
+ROUTE Main upper east aisle: PASS
+ROUTE Main reading entry: PASS
+ROUTE Annex living stair aisle: PASS
+ROUTE Annex living east aisle: PASS
+ROUTE Breakfast approach: PASS
+ROUTE Studio landing: PASS
+ROUTE Studio desk approach: PASS
+ROUTE Retreat passage: PASS
+Blocked sampled routes=0

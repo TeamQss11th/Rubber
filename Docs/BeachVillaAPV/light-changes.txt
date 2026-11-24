@@ -1,0 +1,11 @@
+Directional Light: Realtime -> Mixed; intensity=1; shadows=Soft
+Spot Light: Realtime -> Mixed; intensity=3.06; shadows=None
+Spot Light: Realtime -> Mixed; intensity=3.06; shadows=None
+Spot Light: Realtime -> Mixed; intensity=3.06; shadows=None
+Spot Light: Realtime -> Mixed; intensity=3.06; shadows=None
+Spot Light: Realtime -> Mixed; intensity=3.06; shadows=None
+Spot Light: Realtime -> Mixed; intensity=3.06; shadows=None
+Point Light: Realtime -> Mixed; intensity=1; shadows=None
+Point Light: Realtime -> Mixed; intensity=1; shadows=None
+Point Light: Realtime -> Mixed; intensity=1; shadows=None
+Point Light: Realtime -> Mixed; intensity=1; shadows=None

@@ -1,0 +1,276 @@
+Scene=Assets/Modern Villa/Scenes/Modern Villa.unity dirty=False
+ROOT Cameras bounds=Center: (0.00, 0.00, 0.00), Extents: (0.00, 0.00, 0.00)
+ROOT Floor bounds=Center: (-3.45, 0.76, 10.52), Extents: (9.55, 1.01, 13.77)
+ROOT Main Building bounds=Center: (-1.51, 3.55, 7.79), Extents: (6.09, 2.80, 9.89)
+ROOT Pool Level bounds=Center: (3.89, 0.82, 3.25), Extents: (8.64, 2.17, 6.50)
+ROOT annex building bounds=Center: (7.46, 2.53, 16.05), Extents: (4.54, 3.28, 8.80)
+ROOT Backyard bounds=Center: (-3.11, 0.93, 21.21), Extents: (15.11, 2.82, 10.54)
+ROOT Terrain bounds=Center: (0.00, 0.00, 0.00), Extents: (0.00, 0.00, 0.00)
+ROOT Lighting bounds=Center: (1.02, 1.85, -7.12), Extents: (0.00, 0.00, 0.00)
+ROOT StaticLightingSky bounds=Center: (0.00, 0.00, 0.00), Extents: (0.00, 0.00, 0.00)
+ROOT SceneIDMap bounds=Center: (0.00, 0.00, 0.00), Extents: (0.00, 0.00, 0.00)
+ROOT SceneIDMap bounds=Center: (0.00, 0.00, 0.00), Extents: (0.00, 0.00, 0.00)
+ROOT Point Light bounds=Center: (5.73, 2.67, 15.48), Extents: (0.00, 0.00, 0.00)
+ROOT Modern Villa - Interior Furnishing bounds=Center: (1.86, 2.81, 10.31), Extents: (9.09, 2.56, 10.49)
+ROOT Modern Villa - Search Details bounds=Center: (1.96, 2.42, 12.05), Extents: (7.78, 2.17, 7.53)
+ROOT Modern Villa - Interior Lighting bounds=Center: (-0.27, 3.51, 11.30), Extents: (6.98, 1.90, 8.05)
+HIT Roof 2x2 side (4) p=(-2.00, 3.56, 3.30) normal=(0.00, 1.00, 0.00)
+CAM Main Camera enabled=True pos=(9.91, 1.54, -9.41)
+LIGHT Warm downlight type=Spot bake=Mixed power=1.8 enabled=True
+LIGHT Warm wall downlight type=Spot bake=Mixed power=1.1 enabled=True
+LIGHT Warm wall downlight type=Spot bake=Mixed power=1.1 enabled=True
+LIGHT Warm wall downlight type=Spot bake=Mixed power=1.1 enabled=True
+LIGHT Reading lamp - warm task light type=Spot bake=Mixed power=0.18 enabled=True
+LIGHT Point Light type=Point bake=Realtime power=1 enabled=True
+LIGHT Warm downlight type=Spot bake=Mixed power=1.8 enabled=True
+LIGHT Soft wall uplight type=Spot bake=Mixed power=0.3 enabled=True
+LIGHT Warm wall downlight type=Spot bake=Mixed power=1.1 enabled=True
+LIGHT Warm wall downlight type=Spot bake=Mixed power=1.1 enabled=True
+LIGHT Level 1 - existing pendant light type=Spot bake=Mixed power=1.8 enabled=True
+LIGHT Soft wall uplight type=Spot bake=Mixed power=0.3 enabled=True
+LIGHT Soft wall uplight type=Spot bake=Mixed power=0.3 enabled=True
+LIGHT Directional Light type=Directional bake=Realtime power=1 enabled=True
+LIGHT Soft wall uplight type=Spot bake=Mixed power=0.3 enabled=True
+LIGHT Soft wall uplight type=Spot bake=Mixed power=0.3 enabled=True
+LIGHT Soft wall uplight type=Spot bake=Mixed power=0.3 enabled=True
+LIGHT Desk lamp - warm task light type=Spot bake=Mixed power=0.18 enabled=True
+LIGHT Warm wall downlight type=Spot bake=Mixed power=1.1 enabled=True
+LIGHT Studio lamp - warm task light type=Spot bake=Mixed power=0.18 enabled=True
+LIGHT Ground Level - existing pendant light type=Spot bake=Mixed power=1.8 enabled=True
+LIGHT Sofa lamp - warm task light type=Spot bake=Mixed power=0.18 enabled=True
+Settings={
+    "LightingSettings": {
+        "m_Name": "Modern Villa Lighting Settings",
+        "serializedVersion": "10",
+        "m_EnableBakedLightmaps": true,
+        "m_EnableRealtimeLightmaps": true,
+        "m_RealtimeEnvironmentLighting": true,
+        "m_BounceScale": 1.0,
+        "m_AlbedoBoost": 1.0,
+        "m_IndirectOutputScale": 1.0,
+        "m_UsingShadowmask": true,
+        "m_BakeBackend": 2,
+        "m_LightmapMaxSize": 1024,
+        "m_LightmapSizeFixed": false,
+        "m_UseMipmapLimits": true,
+        "m_BakeResolution": 40.0,
+        "m_Padding": 2,
+        "m_LightmapCompression": 3,
+        "m_LightmapPackingMode": 1,
+        "m_LightmapPackingMethod": 0,
+        "m_XAtlasPackingAttempts": 16384,
+        "m_XAtlasBruteForce": false,
+        "m_XAtlasBlockAlign": false,
+        "m_XAtlasRepackUnderutilizedLightmaps": true,
+        "m_AO": false,
+        "m_AOMaxDistance": 1.0,
+        "m_CompAOExponent": 1.0,
+        "m_CompAOExponentDirect": 0.0,
+        "m_ExtractAO": false,
+        "m_MixedBakeMode": 2,
+        "m_LightmapsBakeMode": 1,
+        "m_FilterMode": 1,
+        "m_LightmapParameters": {
+            "fileID": 15200,
+            "guid": "0000000000000000f000000000000000",
+            "type": 0
+        },
+        "m_ExportTrainingData": false,
+        "m_EnableWorkerProcessBaking": true,
+        "m_TrainingDataDestination": "TrainingData",
+        "m_RealtimeResolution": 2.0,
+        "m_ForceWhiteAlbedo": false,
+        "m_ForceUpdates": false,
+        "m_PVRCulling": true,
+        "m_PVRSampling": 1,
+        "m_PVRDirectSampleCount": 32,
+        "m_PVRSampleCount": 512,
+        "m_PVREnvironmentSampleCount": 256,
+        "m_PVREnvironmentReferencePointCount": 2048,
+        "m_LightProbeSampleCountMultiplier": 4.0,
+        "m_PVRBounces": 2,
+        "m_PVRMinBounces": 2,
+        "m_PVREnvironmentImportanceSampling": true,
+        "m_PVRFilteringMode": 1,
+        "m_PVRDenoiserTypeDirect": 1,
+        "m_PVRDenoiserTypeIndirect": 1,
+        "m_PVRDenoiserTypeAO": 1,
+        "m_PVRFilterTypeDirect": 0,
+        "m_PVRFilterTypeIndirect": 0,
+        "m_PVRFilterTypeAO": 0,
+        "m_PVRFilteringGaussRadiusDirect": 1.0,
+        "m_PVRFilteringGaussRadiusIndirect": 5.0,
+        "m_PVRFilteringGaussRadiusAO": 2.0,
+        "m_PVRFilteringAtrousPositionSigmaDirect": 0.5,
+        "m_PVRFilteringAtrousPositionSigmaIndirect": 2.0,
+        "m_PVRFilteringAtrousPositionSigmaAO": 1.0,
+        "m_RespectSceneVisibilityWhenBakingGI": false
+    }
+}
+Pipeline={
+    "MonoBehaviour": {
+        "m_Enabled": true,
+        "m_EditorHideFlags": 0,
+        "m_Name": "PC_RPAsset",
+        "m_EditorClassIdentifier": "",
+        "k_AssetVersion": 13,
+        "k_AssetPreviousVersion": 13,
+        "m_RendererType": 1,
+        "m_RendererData": {
+            "instanceID": 0
+        },
+        "m_RendererDataList": [
+            {
+                "fileID": 11400000,
+                "guid": "f288ae1f4751b564a96ac7587541f7a2",
+                "type": 2
+            }
+        ],
+        "m_DefaultRendererIndex": 0,
+        "m_RequireDepthTexture": true,
+        "m_RequireOpaqueTexture": true,
+        "m_OpaqueDownsampling": 1,
+        "m_SupportsTerrainHoles": true,
+        "m_SupportsHDR": true,
+        "m_HDRColorBufferPrecision": 0,
+        "m_MSAA": 1,
+        "m_RenderScale": 1.0,
+        "m_UpscalingFilter": 0,
+        "m_FsrOverrideSharpness": false,
+        "m_FsrSharpness": 0.9200000166893005,
+        "m_EnableLODCrossFade": true,
+        "m_LODCrossFadeDitheringType": 1,
+        "m_ShEvalMode": 0,
+        "m_LightProbeSystem": 1,
+        "m_ProbeVolumeMemoryBudget": 512,
+        "m_ProbeVolumeBlendingMemoryBudget": 256,
+        "m_SupportProbeVolumeGPUStreaming": false,
+        "m_SupportProbeVolumeDiskStreaming": false,
+        "m_SupportProbeVolumeScenarios": true,
+        "m_SupportProbeVolumeScenarioBlending": false,
+        "m_ProbeVolumeSHBands": 1,
+        "m_MainLightRenderingMode": 1,
+        "m_MainLightShadowsSupported": true,
+        "m_MainLightShadowmapResolution": 2048,
+        "m_AdditionalLightsRenderingMode": 1,
+        "m_AdditionalLightsPerObjectLimit": 4,
+        "m_AdditionalLightShadowsSupported": true,
+        "m_AdditionalLightsShadowmapResolution": 2048,
+        "m_AdditionalLightsShadowResolutionTierLow": 256,
+        "m_AdditionalLightsShadowResolutionTierMedium": 512,
+        "m_AdditionalLightsShadowResolutionTierHigh": 1024,
+        "m_ReflectionProbeBlending": true,
+        "m_ReflectionProbeBoxProjection": true,
+        "m_ReflectionProbeAtlas": true,
+        "m_ShadowDistance": 50.0,
+        "m_ShadowCascadeCount": 4,
+        "m_Cascade2Split": 0.25,
+        "m_Cascade3Split": {
+            "x": 0.10000000149011612,
+            "y": 0.30000001192092898
+        },
+        "m_Cascade4Split": {
+            "x": 0.12299998849630356,
+            "y": 0.29260000586509707,
+            "z": 0.5359999537467957
+        },
+        "m_CascadeBorder": 0.10775860399007797,
+        "m_ShadowDepthBias": 0.10000000149011612,
+        "m_ShadowNormalBias": 0.5,
+        "m_AnyShadowsSupported": true,
+        "m_SoftShadowsSupported": true,
+        "m_ConservativeEnclosingSphere": true,
+        "m_NumIterationsEnclosingSphere": 64,
+        "m_SoftShadowQuality": 3,
+        "m_AdditionalLightsCookieResolution": 2048,
+        "m_AdditionalLightsCookieFormat": 3,
+        "m_UseSRPBatcher": true,
+        "m_SupportsDynamicBatching": false,
+        "m_MixedLightingSupported": true,
+        "m_SupportsLightCookies": true,
+        "m_SupportsLightLayers": true,
+        "m_DebugLevel": 0,
+        "m_StoreActionsOptimization": 0,
+        "m_UseAdaptivePerformance": true,
+        "m_ColorGradingMode": 0,
+        "m_ColorGradingLutSize": 32,
+        "m_AllowPostProcessAlphaOutput": false,
+        "m_UseFastSRGBLinearConversion": false,
+        "m_SupportDataDrivenLensFlare": true,
+        "m_SupportScreenSpaceLensFlare": true,
+        "m_GPUResidentDrawerMode": 0,
+        "m_SmallMeshScreenPercentage": 0.0,
+        "m_GPUResidentDrawerEnableOcclusionCullingInCameras": false,
+        "m_ShadowType": 1,
+        "m_LocalShadowsSupported": false,
+        "m_LocalShadowsAtlasResolution": 256,
+        "m_MaxPixelLights": 0,
+        "m_ShadowAtlasResolution": 256,
+        "m_VolumeFrameworkUpdateMode": 0,
+        "m_VolumeProfile": {
+            "fileID": 11400000,
+            "guid": "10fc4df2da32a41aaa32d77bc913491c",
+            "type": 2
+        },
+        "apvScenesData": {
+            "obsoleteSceneBounds": {
+                "m_Keys": [],
+                "m_Values": []
+            },
+            "obsoleteHasProbeVolumes": {
+                "m_Keys": [],
+                "m_Values": []
+            }
+        },
+        "m_PrefilteringModeMainLightShadows": 3,
+        "m_PrefilteringModeAdditionalLight": 0,
+        "m_PrefilteringModeAdditionalLightShadows": 2,
+        "m_PrefilterXRKeywords": true,
+        "m_PrefilteringModeForwardPlus": 2,
+        "m_PrefilteringModeDeferredRendering": 0,
+        "m_PrefilteringModeScreenSpaceOcclusion": 2,
+        "m_PrefilterDebugKeywords": true,
+        "m_PrefilterWriteRenderingLayers": true,
+        "m_PrefilterHDROutput": true,
+        "m_PrefilterAlphaOutput": true,
+        "m_PrefilterSSAODepthNormals": false,
+        "m_PrefilterSSAOSourceDepthLow": true,
+        "m_PrefilterSSAOSourceDepthMedium": true,
+        "m_PrefilterSSAOSourceDepthHigh": true,
+        "m_PrefilterSSAOInterleaved": true,
+        "m_PrefilterSSAOBlueNoise": false,
+        "m_PrefilterSSAOSampleCountLow": true,
+        "m_PrefilterSSAOSampleCountMedium": false,
+        "m_PrefilterSSAOSampleCountHigh": true,
+        "m_PrefilterDBufferMRT1": true,
+        "m_PrefilterDBufferMRT2": true,
+        "m_PrefilterDBufferMRT3": true,
+        "m_PrefilterSoftShadowsQualityLow": true,
+        "m_PrefilterSoftShadowsQualityMedium": true,
+        "m_PrefilterSoftShadowsQualityHigh": true,
+        "m_PrefilterSoftShadows": false,
+        "m_PrefilterScreenCoord": true,
+        "m_PrefilterScreenSpaceIrradiance": true,
+        "m_PrefilterNativeRenderPass": true,
+        "m_PrefilterUseLegacyLightmaps": false,
+        "m_PrefilterBicubicLightmapSampling": true,
+        "m_PrefilterReflectionProbeRotation": true,
+        "m_PrefilterReflectionProbeBlending": false,
+        "m_PrefilterReflectionProbeBoxProjection": false,
+        "m_PrefilterReflectionProbeAtlas": false,
+        "m_ShaderVariantLogLevel": 0,
+        "m_ShadowCascades": 0,
+        "m_Textures": {
+            "blueNoise64LTex": {
+                "fileID": 2800000,
+                "guid": "e3d24661c1e055f45a7560c033dbb837",
+                "type": 3
+            },
+            "bayerMatrixTex": {
+                "fileID": 2800000,
+                "guid": "f9ee4ed84c1d10c49aabb9b210b0fc44",
+                "type": 3
+            }
+        }
+    }
+}

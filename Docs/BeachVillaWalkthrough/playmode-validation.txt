@@ -1,0 +1,9 @@
+Play mode=True; focused=True; keyboard=True; mouse=True; timeScale=1
+F1 / Pool terrace: grounded=True; feet=(-4.500, 0.030, -6.500)
+F2 / Entrance: grounded=True; feet=(5.000, 1.030, 0.000)
+F3 / Interior: grounded=True; feet=(5.000, 1.040, 11.000)
+F4 / Rear interior: grounded=True; feet=(0.500, 1.030, 17.500)
+F5 / Upper floor: grounded=True; feet=(6.000, 3.830, 13.000)
+F6 / Upper front: grounded=True; feet=(4.500, 3.830, 2.500)
+Forward movement distance=1.300m (0.5 second simulation)
+Enabled cameras=1

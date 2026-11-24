@@ -1,0 +1,9 @@
+Reference facility envelope: approximately 30.75 x 35.01m (1076.6 square metres bounding rectangle).
+Estate facility foundation: 72 x 80m (5760 square metres); 5.35x bounding footprint.
+Reference terrain: 100 x 100m. Estate landscape: 120 x 110m.
+Original furnished main villa retained; 6 new furnished rooms plus 2 garden pavilions.
+Active renderers: 2198
+Missing/unsupported material slots: 0
+Local light candidates: 27; runtime max active: 8; runtime max local shadows: 2
+Per-frame reflection cameras: 0
+GPU performance: NOT MEASURED for this expanded scene.

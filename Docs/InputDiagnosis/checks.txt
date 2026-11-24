@@ -1,0 +1,6 @@
+Reader enabled=True map enabled=True
+After unexpected unlock: captured=False cursor=None
+Click recaptures=True
+W action=(0.00, 1.00) travel=0.729
+Escape releases=True
+Click after Escape recaptures=True

@@ -1,0 +1,34 @@
+Design probes only: no actual duck prefab, collection test, or gameplay player test. Probe center is 8cm above support.
+ROUTE Main east: PASS
+ROUTE Dining: PASS
+ROUTE Upper main: PASS
+ROUTE Reading entry: PASS
+ROUTE Stair aisle: PASS
+ROUTE Living east: PASS
+ROUTE Breakfast: PASS
+ROUTE Landing: PASS
+ROUTE Studio: PASS
+ROUTE Retreat: PASS
+SIDE APPROACH Desk books: PASS
+SIDE APPROACH Sofa cushion edge: PASS
+SIDE APPROACH Coffee service: PASS
+SIDE APPROACH Living low palm: PASS
+SIDE APPROACH Reading low palm: PASS
+SIDE APPROACH Retreat low palm: PASS
+CANDIDATE Desk books: center=(-5.6300, 4.3800, 4.9800); entry eye=(-5.630, 5.180, 2.600); side eye=(-6.750, 5.185, 5.200); blocked sight samples entry=9/9, side=0/9 (lower side is better).
+CANDIDATE Sofa cushion edge: center=(6.3700, 0.7327, 16.1500); entry eye=(9.400, 1.880, 15.500); side eye=(5.450, 1.880, 15.400); blocked sight samples entry=9/9, side=3/9 (lower side is better).
+CANDIDATE Coffee service: center=(5.5800, 1.0750, 19.5300); entry eye=(5.580, 1.880, 17.700); side eye=(4.500, 1.880, 19.500); blocked sight samples entry=9/9, side=0/9 (lower side is better).
+CANDIDATE Living low palm: center=(9.4000, 0.3300, 15.6400); entry eye=(9.400, 1.880, 12.600); side eye=(8.700, 1.880, 15.000); blocked sight samples entry=9/9, side=0/9 (lower side is better).
+CANDIDATE Reading low palm: center=(-2.9800, 3.6350, 9.1500); entry eye=(-2.980, 5.180, 6.400); side eye=(-3.800, 5.185, 9.050); blocked sight samples entry=9/9, side=0/9 (lower side is better).
+CANDIDATE Retreat low palm: center=(7.6500, 3.1300, 19.6300); entry eye=(7.650, 4.680, 17.100); side eye=(6.650, 4.680, 19.500); blocked sight samples entry=6/9, side=0/9 (lower side is better).
+FINAL Desk reference stack - large base: min=(-5.8175, 4.3010, 4.5260), max=(-5.4425, 4.3310, 4.8140), scale=(1.000, 1.000, 1.000)
+FINAL Desk reference stack - volume 1: min=(-5.7755, 4.3320, 4.5638), max=(-5.4845, 4.4158, 4.7762), scale=(1.000, 1.000, 1.000)
+FINAL Desk reference stack - volume 2: min=(-5.7706, 4.4168, 4.5591), max=(-5.4734, 4.5006, 4.7809), scale=(1.000, 1.000, 1.000)
+FINAL Desk reference stack - volume 3: min=(-5.7755, 4.5016, 4.5638), max=(-5.4845, 4.5854, 4.7762), scale=(1.000, 1.000, 1.000)
+FINAL Sofa left back cushion: min=(6.4889, 0.6537, 15.9584), max=(7.2111, 1.0559, 16.3016), scale=(1.000, 1.000, 1.000)
+FINAL Sofa right back cushion: min=(7.7189, 0.6537, 15.9584), max=(8.4411, 1.0559, 16.3016), scale=(1.000, 1.000, 1.000)
+FINAL Low palm by sofa end table: min=(9.0614, 0.2500, 14.9173), max=(9.7386, 0.7637, 15.5827), scale=(1.000, 1.000, 1.000)
+FINAL Breakfast coffee tray: min=(5.3600, 0.9960, 19.0800), max=(5.8000, 1.0616, 19.4400), scale=(1.000, 1.000, 1.000)
+FINAL Coffee pot on serving tray: min=(5.4188, 1.0120, 19.1599), max=(5.7412, 1.2753, 19.3601), scale=(1.000, 1.000, 1.000)
+FINAL Reading corner low palm: min=(-3.2842, 3.5550, 8.4850), max=(-2.6758, 4.0687, 9.0750), scale=(1.000, 1.000, 1.000)
+FINAL Retreat low palm: min=(7.3116, 3.0500, 18.9171), max=(7.9884, 3.5637, 19.5829), scale=(1.000, 1.000, 1.000)

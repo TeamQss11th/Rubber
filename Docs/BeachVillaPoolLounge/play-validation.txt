@@ -1,0 +1,27 @@
+Play mode=True. Actual existing CharacterController, fixed 1/60 step at walking speed. Sampled routes, not exhaustive movement coverage.
+pool edge forward: pass=True; remaining=0.073; end=(-3.073, 0.080, 18.650); maxRise=0.000; cameraOverlap=False
+pool edge reverse: pass=True; remaining=0.073; end=(-11.927, 0.080, 18.650); maxRise=0.000; cameraOverlap=False
+rear promenade forward: pass=True; remaining=0.073; end=(-3.073, 0.080, 22.950); maxRise=0.000; cameraOverlap=False
+rear promenade reverse: pass=True; remaining=0.073; end=(-11.927, 0.080, 22.950); maxRise=0.000; cameraOverlap=False
+west entry forward: pass=True; remaining=0.053; end=(-12.000, 0.080, 22.897); maxRise=0.000; cameraOverlap=False
+west entry reverse: pass=True; remaining=0.053; end=(-12.000, 0.080, 18.703); maxRise=0.000; cameraOverlap=False
+east entry forward: pass=True; remaining=0.053; end=(-3.000, 0.080, 22.897); maxRise=0.000; cameraOverlap=False
+east entry reverse: pass=True; remaining=0.053; end=(-3.000, 0.080, 18.703); maxRise=0.000; cameraOverlap=False
+between pairs forward: pass=True; remaining=0.053; end=(-7.200, 0.080, 22.897); maxRise=0.000; cameraOverlap=False
+between pairs reverse: pass=True; remaining=0.053; end=(-7.200, 0.080, 18.703); maxRise=0.000; cameraOverlap=False
+existing villa stairs forward: pass=True; remaining=0.037; end=(0.163, 1.030, 21.450); maxRise=0.930; cameraOverlap=False
+existing villa stairs reverse: pass=True; remaining=0.080; end=(-2.920, 0.080, 21.450); maxRise=0.000; cameraOverlap=False
+FURNITURE PoolLevel/Lounger (3): min=(-10.4035, 0.0500, 19.2740) max=(-9.6865, 0.6652, 21.4545) scale=(1.00, 1.00, 1.00)
+FURNITURE PoolLevel/Lounger (2): min=(-8.7035, 0.0500, 19.2740) max=(-7.9965, 0.6652, 21.4545) scale=(1.00, 1.00, 1.00)
+FURNITURE PoolLevel/Lounger (1): min=(-6.4035, 0.0500, 19.2740) max=(-5.6965, 0.6652, 21.4545) scale=(1.00, 1.00, 1.00)
+FURNITURE PoolLevel/Lounger: min=(-4.7035, 0.0500, 19.2740) max=(-3.9965, 0.6652, 21.4545) scale=(1.00, 1.00, 1.00)
+FURNITURE LoungeArea/CouchTable: min=(-9.4785, 0.0500, 20.4217) max=(-8.9215, 0.5345, 20.9783) scale=(1.00, 1.00, 1.00)
+FURNITURE LoungeArea/CouchTable (1): min=(-5.4785, 0.0500, 20.4217) max=(-4.9215, 0.5345, 20.9783) scale=(1.00, 1.00, 1.00)
+FURNITURE LoungeArea/GrandSunshade: min=(-10.7101, 0.0500, 18.7365) max=(-7.7026, 2.2916, 22.2093) scale=(1.00, 1.00, 1.00)
+FURNITURE LoungeArea/GrandSunshade (1): min=(-6.7101, 0.0500, 18.7365) max=(-3.7026, 2.2916, 22.2093) scale=(1.00, 1.00, 1.00)
+FURNITURE LoungeArea/LoungerB Variant: min=(-11.9816, 0.0500, 23.6318) max=(-5.5101, 0.9605, 26.1682) scale=(1.00, 1.00, 1.00)
+DETAIL West - juice beside fruit: min=(-9.3720, 0.4500, 20.5480) max=(-9.2880, 0.5870, 20.6320)
+DETAIL East - juice beside fruit: min=(-5.3720, 0.4500, 20.5480) max=(-5.2880, 0.5870, 20.6320)
+DETAIL West - lounge edge planter: min=(-13.8436, 0.0500, 23.9049) max=(-12.2564, 1.4078, 25.4951)
+DETAIL East - lounge edge planter: min=(-5.2436, 0.0500, 24.3049) max=(-3.6564, 1.4078, 25.8951)
+Route failures=0. Duck collection not checked: no collection component identified; no ducks moved.

@@ -1,0 +1,14 @@
+Pool Level/Pool/Pool Corner Top | Pool Level/Floor/Floor 2x2 (17): same-height top samples=0/30
+Pool Level/Pool/pool straight top (1) | Pool Level/Floor/Floor 2x2 (18): same-height top samples=0/30
+Pool Level/Pool/pool straight top (2) | Pool Level/Floor/Floor 2x2 (18): same-height top samples=0/30
+Backyard/Pool back/Pool2/Bottom/Pool Bottom (16) | Backyard/Pool back/Pool2/mv_pool_light (2): same-height top samples=0/1
+Backyard/Pool back/Pool2/Bottom/Pool Bottom (19) | Backyard/Pool back/Pool2/mv_pool_light (3): same-height top samples=0/1
+Backyard/Pool back/Pool2/Bottom/Pool Bottom (36) | Backyard/Pool back/Pool2/mv_pool_light: same-height top samples=0/1
+Backyard/Pool back/Pool2/Bottom/Pool Bottom (39) | Backyard/Pool back/Pool2/mv_pool_light (1): same-height top samples=0/1
+Backyard/Pool back/Pool2/Bottom/Pool Bottom (41) | Backyard/Pool back/Pool2/mv_pool_light: same-height top samples=0/1
+Backyard/Pool back/Pool2/Bottom/Pool Bottom (44) | Backyard/Pool back/Pool2/mv_pool_light (1): same-height top samples=0/1
+Backyard/Pool back/Pool2/Swimming Pool Steps | Backyard/Pool back/Pool2/Swimming Pool Steps/Swimming Pool Steps Floor: same-height top samples=0/840
+Backyard/Pool back/Pool2/pool corner top 3x3 | Backyard/Pool back/Pool2/pool corner top 3x3/pool corner top 3x3.001: same-height top samples=0/900
+Backyard/Pool back/Pool2/pool corner top 2x2 | Backyard/Pool back/Pool2/pool corner top 2x2/pool corner top 2x2.001: same-height top samples=0/400
+Backyard/Pool back/Pool2/pool corner top 3x3 (1) | Backyard/Pool back/Pool2/pool corner top 3x3 (1)/pool corner top 3x3.001: same-height top samples=0/900
+Backyard/Pool back/Pool2/pool corner top 2x2 (1) | Backyard/Pool back/Pool2/pool corner top 2x2 (1)/pool corner top 2x2.001: same-height top samples=0/400

@@ -1,0 +1,15 @@
+Front pool - beside lounge corner y=0.7730567 Pool Level/Stoneboxes/stonebox medium (1)/Shrub (2)
+Front pool - beside lounge corner y=0.45 Pool Level/Stoneboxes/stonebox medium (1)
+Front pool - beside lounge corner y=-0.2400001 Pool Level/Floor/Floor 2x2 (1)
+Front pool - beside lounge corner y=-1.741091 Terrain/Terrain (1)
+Front pool - beside lamp table y=0.1013 Pool Level/seating area/tables/tableA (1)/CouchTableB
+Front pool - beside lamp table y=-0.2400001 Pool Level/Floor/Floor 2x2 (3)
+Front pool - beside lamp table y=-1.741091 Terrain/Terrain (1)
+Garden - beside lounger y=0.2499999 Backyard/Pool back/Pool2/Floor/Floor 2x2 (5)
+Garden - beside lounger y=-2.032538 Terrain/Terrain (1)
+Garden - behind second lounger y=0.2499999 Backyard/Floor 2/Floor 2x2 (48)
+Garden - behind second lounger y=-2.1 Terrain/Terrain (1)
+Garden - beside bench corner y=0.2499999 Backyard/Pool back/Pool2/Floor/Floor 2x2 side
+Garden - beside bench corner y=-1.510086 Terrain/Terrain (1)
+Pavilion - beside side table y=3.008055 Backyard/Pavillon/Pavillon 3
+Pavilion - beside side table y=0.03185964 Terrain/Terrain (1)

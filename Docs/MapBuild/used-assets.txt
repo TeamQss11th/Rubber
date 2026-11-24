@@ -1,0 +1,25 @@
+Assets/Modern Villa/Prefabs/buildings/PoolA.prefab
+Assets/Modern Villa/Prefabs/floors/Floor2x2.prefab
+Assets/Modern Villa/Prefabs/floors/TerraceFloor200x200.prefab
+Assets/Modern Villa/Prefabs/furniture/CouchC.prefab
+Assets/Modern Villa/Prefabs/furniture/CouchD.prefab
+Assets/Modern Villa/Prefabs/furniture/CouchTable.prefab
+Assets/Modern Villa/Prefabs/furniture/DiningChair.prefab
+Assets/Modern Villa/Prefabs/furniture/DiningTable.prefab
+Assets/Modern Villa/Prefabs/furniture/Lounger.prefab
+Assets/Modern Villa/Prefabs/furniture/SideTable Variant.prefab
+Assets/Modern Villa/Prefabs/lighting/FloorLight on Variant.prefab
+Assets/Modern Villa/Prefabs/lighting/RoofLamp.prefab
+Assets/Modern Villa/Prefabs/Plants/PalmA.prefab
+Assets/Modern Villa/Prefabs/Plants/PottedPlantA.prefab
+Assets/Modern Villa/Prefabs/Plants/PottedPlantB.prefab
+Assets/Modern Villa/Prefabs/Props/BookA.prefab
+Assets/Modern Villa/Prefabs/Props/Bowl.prefab
+Assets/Modern Villa/Prefabs/Props/CarpetA.prefab
+Assets/Modern Villa/Prefabs/Props/CoffeePot.prefab
+Assets/Modern Villa/Prefabs/Props/PaintingA.prefab
+Assets/Modern Villa/Prefabs/Props/TowelA.prefab
+Assets/Modern Villa/Prefabs/roof/Roof2x2.prefab
+Assets/Modern Villa/Prefabs/Stoneboxes/StoneboxLow.prefab
+Assets/Modern Villa/Prefabs/Walls/Wall2x2,5.prefab
+Assets/Modern Villa/Prefabs/Windows/WindowStraight.prefab

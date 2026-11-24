@@ -1,0 +1,19 @@
+Different indices=0; different UV layouts=0; affected renderers removed from static batching.
+LightingData=Assets/_Project/Lighting/BeachVillaExpanded/Day/LightingData.asset
+DAY Assets/Modern Villa/Scenes/Beach Villa/Lightmap-0_comp_light.exr
+DAY Assets/Modern Villa/Scenes/Beach Villa/Lightmap-1_comp_light.exr
+DAY Assets/Modern Villa/Scenes/Beach Villa/Lightmap-2_comp_light.exr
+NIGHT Assets/_Project/Lighting/BeachVillaExpanded/Night/Lightmap-0_comp_light.exr
+NIGHT Assets/_Project/Lighting/BeachVillaExpanded/Night/Lightmap-1_comp_light.exr
+NIGHT Assets/_Project/Lighting/BeachVillaExpanded/Night/Lightmap-2_comp_light.exr
+WALL WallCorner2,5 (3): index=1; uv=(0.02, 0.02, 0.66, 0.91); mat=mv_Wall 01
+WALL Wall2x2,5 (5): index=0; uv=(0.04, 0.04, 0.85, 0.96); mat=mv_Wall 01
+WALL Wall2x2,5 (6): index=0; uv=(0.04, 0.04, 0.26, 0.96); mat=mv_Wall 01
+WALL Wall2x2,5 (7): index=0; uv=(0.04, 0.04, 0.76, 0.96); mat=mv_Wall 01
+WALL Wall2x2,5 (8): index=0; uv=(0.04, 0.04, 0.44, 0.96); mat=mv_Wall 01
+WALL Wall2x2,5 (11): index=0; uv=(0.04, 0.04, 0.31, 0.96); mat=mv_Wall 01
+WALL Wall2x2,5 (12): index=0; uv=(0.04, 0.04, 0.48, 0.96); mat=mv_Wall 01
+WALL Wall2x2,5 (13): index=0; uv=(0.04, 0.04, 0.09, 0.96); mat=mv_Wall 01
+WALL Wall 1x2,5 (1): index=1; uv=(0.04, 0.04, 0.65, 0.20); mat=mv_Wall 01
+WALL WallCorner2,5 (4): index=1; uv=(0.02, 0.02, 0.66, 0.85); mat=mv_Wall 01
+WALL WallCorner2,5 (6): index=1; uv=(0.02, 0.02, 0.66, 0.83); mat=mv_Wall 01

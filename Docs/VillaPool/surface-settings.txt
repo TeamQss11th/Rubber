@@ -1,0 +1,5 @@
+Shared material saved: Assets/_Project/Art/PoolPrototype/PoolWater.mat
+Wave scales=2, directions=4; depth distance=1.8m; absorption=0.8; refraction <=3 pixels per axis.
+Existing reflection settings unchanged. No additional cameras or render passes.
+Shader errors=False
+Play mode and performance tests were not run.

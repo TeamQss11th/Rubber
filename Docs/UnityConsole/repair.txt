@@ -1,0 +1,8 @@
+Removed unresolved StaticLightingSky components: 1
+Terrain prototype 0: Assets/Modern Villa/Prefabs/Plants/PlantA.prefab -> Assets/_Project/Prefabs/TerrainPlants/PlantA-Terrain.prefab
+Terrain prototype 1: Assets/Modern Villa/Prefabs/Plants/PlantB.prefab -> Assets/_Project/Prefabs/TerrainPlants/PlantB-Terrain.prefab
+Terrain prototype 2: Assets/Modern Villa/Prefabs/Plants/PlantC.prefab -> Assets/_Project/Prefabs/TerrainPlants/PlantC-Terrain.prefab
+Terrain prototype 3: Assets/Modern Villa/Prefabs/Plants/PlantD.prefab -> Assets/_Project/Prefabs/TerrainPlants/PlantD-Terrain.prefab
+Terrain prototype 4: Assets/Modern Villa/Prefabs/Plants/PlantE.prefab -> Assets/_Project/Prefabs/TerrainPlants/PlantE-Terrain.prefab
+Terrain prototype 5: Assets/Modern Villa/Prefabs/Plants/Shrub.prefab -> Assets/_Project/Prefabs/TerrainPlants/Shrub-Terrain.prefab
+Preserved tree placements: 1614

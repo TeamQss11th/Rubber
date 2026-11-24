@@ -1,0 +1,124 @@
+{
+  "original_duck_and_crown_unchanged": true,
+  "source_geometry_hashes": {
+    "Crown_Gold": "ddc82328914ac04c8dcd6ab1d479ce67cf80159c858fa30dbc941a74ead72fe7",
+    "Duck_Body": "e192d32cac17187222502615674a9f89b9de7037c4b3c19b583538a1e9936e71",
+    "Duck_Eye_L": "f1632c4ea0d2c93a9257836ca3178da7a489ce026401578e2ed6fde376f3cc82",
+    "Duck_Eye_R": "3ef7853351cc7280f3a20e4dfc144d631d84aa7265433867c7010bdd82056c42",
+    "Duck_LowerBeak": "e21f5700908cd3e4897eb8a2bfeaf39431d83d71476be0424f9fa873445569f5",
+    "Duck_UpperBeak": "bb8d179562751a9cb5d9316c9a96f5beaf9c9e774762a25cfa6229431187f849",
+    "Duck_Wing_L": "faa4dc8f18abc202b7fd232a4c2c2a2d75392867899add61985172073375b0bb",
+    "Duck_Wing_R": "7a632c08f7fb56649f7204c8fcd84a8461ffdaf23af38356384bf500f78cf404",
+    "RubberDuck": "5be09555709c48daeadb0ac35de490beb1e713a784912ab923670cdb607ca962"
+  },
+  "rig_bones": 22,
+  "animation": "Cape_Idle_Breeze_4s",
+  "frames": [
+    1,
+    121
+  ],
+  "fps": 30,
+  "cape_vertices": 5994,
+  "skinned_meshes": [
+    "Cape_Rigged",
+    "Cape_Gold_Edging",
+    "Cape_Ivory_Collar",
+    "Cape_Gold_Clasp",
+    "Cape_Clasp_Rim",
+    "Cape_Clasp_Ivory_Inlay"
+  ],
+  "blend_reopen": {
+    "geometry_preserved": true,
+    "weights_normalized": true,
+    "max_four_bone_influences": true,
+    "loop_seam_error_m": 0.0,
+    "motion_checks": [
+      {
+        "frame": 1,
+        "max_displacement_m": 0.0,
+        "duck_triangle_intersection_pairs": 0,
+        "min_z_m": 0.013990091159939766
+      },
+      {
+        "frame": 16,
+        "max_displacement_m": 0.0024974276968193253,
+        "duck_triangle_intersection_pairs": 0,
+        "min_z_m": 0.013711224310100079
+      },
+      {
+        "frame": 31,
+        "max_displacement_m": 0.0035790899512392013,
+        "duck_triangle_intersection_pairs": 0,
+        "min_z_m": 0.013272020034492016
+      },
+      {
+        "frame": 46,
+        "max_displacement_m": 0.003712042047785232,
+        "duck_triangle_intersection_pairs": 0,
+        "min_z_m": 0.012708356603980064
+      },
+      {
+        "frame": 61,
+        "max_displacement_m": 0.003839542334824951,
+        "duck_triangle_intersection_pairs": 0,
+        "min_z_m": 0.012567421421408653
+      },
+      {
+        "frame": 76,
+        "max_displacement_m": 0.004035000403391049,
+        "duck_triangle_intersection_pairs": 0,
+        "min_z_m": 0.01246069185435772
+      },
+      {
+        "frame": 91,
+        "max_displacement_m": 0.004077242623796694,
+        "duck_triangle_intersection_pairs": 0,
+        "min_z_m": 0.012527702376246452
+      },
+      {
+        "frame": 106,
+        "max_displacement_m": 0.0030357582601941986,
+        "duck_triangle_intersection_pairs": 0,
+        "min_z_m": 0.013175473548471928
+      },
+      {
+        "frame": 121,
+        "max_displacement_m": 0.0,
+        "duck_triangle_intersection_pairs": 0,
+        "min_z_m": 0.013990091159939766
+      }
+    ]
+  },
+  "fbx_reimport": {
+    "mesh_count": 8,
+    "bone_count": 22,
+    "action": "Cape_Rig|Scene",
+    "animation_max_position_error_m": 1.991550088617751e-07,
+    "textures": [
+      {
+        "name": "Cape_Red_BaseColor",
+        "size": [
+          1024,
+          1024
+        ],
+        "loaded": true
+      },
+      {
+        "name": "Collar_Ivory_BaseColor",
+        "size": [
+          1024,
+          1024
+        ],
+        "loaded": true
+      },
+      {
+        "name": "Crown_Gold_BaseColor",
+        "size": [
+          1024,
+          1024
+        ],
+        "loaded": true
+      }
+    ]
+  }
+}

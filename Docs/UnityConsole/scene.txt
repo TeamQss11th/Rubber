@@ -1,0 +1,1 @@
+Scene=Assets/_Project/Scenes/Main/MainMenu.unity, playing=False

@@ -1,0 +1,110 @@
+Inactive: PoolLevel/Floor
+Inactive: PoolLevel/Terrace
+Inactive: Beach Villa - Layout Revision/Original pool deck junction
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Beach Villa - Layout Revision/Continuous paving - deduplicated 2m grid/Floor2x2
+Inactive: Front Area/StairsA
+Inactive: Front Area/StairsA (4)
+Inactive: Front Area/StairsA (1)
+Inactive: Front Area/StairsA (5)
+Inactive: Front Area/StairsA (2)
+Inactive: Front Area/StairsA (6)
+Inactive: Front Area/StairsA (3)
+Inactive: Front Area/StairsA (7)
+Inactive: Front Area/LanternC
+Inactive: Front Area/LanternB
+Inactive: Front Area/Lantern (1)
+Inactive: Front Area/LanternC (1)
+Inactive: Front Area/LanternB (1)
+Inactive: PoolLevel/Stairs
+External paving top=0.05m; planted soil=0.025m. Main house top=1m. Pool basin retained. No legacy terrain depression remains under exterior routes.
+Inactive: PavillonC/PavillonSideTable/Jacuzzi
+Inactive: Beach Villa - Expanded Grounds/Furniture and lived-in details/Jacuzzi/Jacuzzi_LOD3
+Inactive: BuildingD/Level1 Objects/Jacuzzi/Jacuzzi_LOD0
+Inactive: Beach Villa - Expanded Grounds/Furniture and lived-in details/Jacuzzi/Jacuzzi_LOD1
+Inactive: PavillonC/PavillonSideTable/Jacuzzi/Jacuzzi_LOD2
+Inactive: BuildingD/Level1 Objects/Jacuzzi/Jacuzzi_LOD2
+Inactive: BuildingD/Level1 Objects/Jacuzzi/Jacuzzi_LOD1
+Inactive: BuildingD/Level1 Objects/Jacuzzi
+Inactive: BuildingD/Level1 Objects/Jacuzzi/Jacuzzi_LOD3
+Inactive: Beach Villa - Expanded Grounds/Furniture and lived-in details/Jacuzzi
+Inactive: Beach Villa - Expanded Grounds/Furniture and lived-in details/Jacuzzi/Jacuzzi_LOD0
+Inactive: PavillonC/PavillonSideTable/Jacuzzi/Jacuzzi_LOD0
+Inactive: Beach Villa - Expanded Grounds/Furniture and lived-in details/Jacuzzi/Jacuzzi_LOD2
+Inactive: PavillonC/PavillonSideTable/Jacuzzi/Jacuzzi_LOD1
+Inactive: PavillonC/PavillonSideTable/Jacuzzi/Jacuzzi_LOD3
+Inactive: Beach Villa - Expanded Grounds/Garden spa pavilion
+Inactive: Plants
+Grounded 40 palms using mesh root positions; 16 courtyard trunks placed exclusively in soil strips. Old 5 uncontained palms inactive.
+Entry flights: source mesh colliders replace enclosing boxes. East legacy support columns inactive. South sofa and planter obstructions moved clear of approaches.
+Entry flights: high ends face the house, retaining source mesh collision. East unsupported pavilion and legacy support columns inactive. South sofa and planter obstructions moved clear of approaches.
+Entry flights: high ends face the house, retaining source mesh collision. East unsupported pavilion and legacy support columns inactive. South sofa and planter obstructions moved clear of approaches.
+Entry flights: high ends face the house, retaining source mesh collision. East unsupported pavilion and legacy support columns inactive. South sofa and planter obstructions moved clear of approaches.
+Entry flights: high ends face the house, retaining source mesh collision. East unsupported pavilion and legacy support columns inactive. South sofa and planter obstructions moved clear of approaches.

@@ -1,0 +1,6 @@
+Floor	center=(-3.45, 0.76, 10.52)	size=(19.10, 2.02, 27.53)	renderers=68
+Main Building	center=(-1.51, 3.55, 7.79)	size=(12.17, 5.60, 19.78)	renderers=221
+Pool Level	center=(3.89, 0.82, 3.25)	size=(17.28, 4.33, 13.00)	renderers=224
+annex building	center=(7.46, 2.53, 16.05)	size=(9.08, 6.57, 17.60)	renderers=385
+Backyard	center=(-3.11, 0.93, 21.21)	size=(30.21, 5.63, 21.09)	renderers=389
+TERRAIN Terrain (1)	position=(-54.80, -2.10, -31.10)	size=(100.00, 60.00, 100.00)

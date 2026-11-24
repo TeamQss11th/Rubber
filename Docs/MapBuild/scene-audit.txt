@@ -1,0 +1,9 @@
+Scene: Assets/_Project/Scenes/Test/VillaLightingStudy.unity
+Objects: 268
+Renderers: 226
+Lights: 5
+Shadow-capable lights: 3
+Missing/unsupported material slots: 0
+Duck markers: 6
+Pipeline: unchanged PC_RPAsset baseline
+GPU/frame timings: NOT MEASURED

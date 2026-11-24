@@ -1,0 +1,21 @@
+Play=True; existing controller height=1.8 radius=0.28. Sampled routes and support checks.
+pool to east opening 0: pass=True; remaining=0.053; end=(-26.447, 0.175, 3.000); peak=0.175; cameraOverlap=False
+pool to east opening 1: pass=True; remaining=0.053; end=(-17.053, 0.080, 3.000); peak=0.200; cameraOverlap=False
+preparation aisle 0: pass=True; remaining=0.070; end=(-30.750, 0.080, 7.930); peak=0.100; cameraOverlap=False
+preparation aisle 1: pass=True; remaining=0.070; end=(-30.750, 0.080, 0.070); peak=0.100; cameraOverlap=False
+west opening 0: pass=True; remaining=0.080; end=(-29.580, 0.168, 3.000); peak=0.168; cameraOverlap=False
+west opening 1: pass=True; remaining=0.080; end=(-30.670, 0.080, 3.000); peak=0.200; cameraOverlap=False
+north seat backs 0: pass=True; remaining=0.084; end=(-26.719, 0.147, 4.632); peak=0.200; cameraOverlap=False
+north seat backs 1: pass=True; remaining=0.084; end=(-29.281, 0.147, 4.632); peak=0.200; cameraOverlap=False
+south seat backs 0: pass=True; remaining=0.084; end=(-26.719, 0.147, 1.368); peak=0.200; cameraOverlap=False
+south seat backs 1: pass=True; remaining=0.084; end=(-29.281, 0.147, 1.368); peak=0.200; cameraOverlap=False
+barbecue working side 0: pass=True; remaining=0.050; end=(-31.400, 0.080, 6.000); peak=0.100; cameraOverlap=False
+barbecue working side 1: pass=True; remaining=0.050; end=(-30.800, 0.080, 6.000); peak=0.100; cameraOverlap=False
+DECK CONTACT DiningTable: bottom=0.1500; error=0.0000
+DECK CONTACT DiningChair: bottom=0.1500; error=0.0000
+DECK CONTACT DiningChair: bottom=0.1500; error=0.0000
+DECK CONTACT DiningChair: bottom=0.1500; error=0.0000
+DECK CONTACT DiningChair: bottom=0.1500; error=0.0000
+DECK CONTACT DiningChair: bottom=0.1500; error=0.0000
+DECK CONTACT DiningChair: bottom=0.1500; error=0.0000
+Failures=0

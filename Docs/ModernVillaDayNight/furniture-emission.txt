@@ -1,0 +1,1 @@
+Original vendor emissive strips, not a lightmap defect. Scene-only warm material overrides=16. Shared vendor material preserved. Emission reduced from 0.972 white to linear (0.08,0.045,0.022).

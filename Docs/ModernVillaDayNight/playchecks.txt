@@ -1,0 +1,27 @@
+F1 Pool terrace grounded=True feet=(0.00, 0.78, 0.00)
+F2 Dining grounded=True feet=(-2.00, 0.78, 5.30)
+F3 Study grounded=True feet=(-2.00, 3.59, 3.30)
+F4 Reading grounded=True feet=(-2.80, 3.59, 6.40)
+F5 Living grounded=True feet=(9.90, 0.28, 11.80)
+F6 Breakfast grounded=True feet=(9.80, 0.28, 17.80)
+F7 Studio grounded=True feet=(6.00, 3.08, 15.30)
+F8 Retreat grounded=True feet=(6.60, 3.08, 17.50)
+Jump height=0.963m; airJumpAllowed=False; landed=True; landing drift=0.000m
+Walking distance=1.3
+0-day: scenario=Default; lightmaps=2; flash=False; resolution=1920x1080; cameras=1
+0-night: scenario=Night; lightmaps=2; flash=False; resolution=1920x1080; cameras=1
+0-flashlight: scenario=Night; lightmaps=2; flash=True; resolution=1920x1080; cameras=1
+1-day: scenario=Default; lightmaps=2; flash=False; resolution=1920x1080; cameras=1
+1-night: scenario=Night; lightmaps=2; flash=False; resolution=1920x1080; cameras=1
+1-flashlight: scenario=Night; lightmaps=2; flash=True; resolution=1920x1080; cameras=1
+4-day: scenario=Default; lightmaps=2; flash=False; resolution=1920x1080; cameras=1
+4-night: scenario=Night; lightmaps=2; flash=False; resolution=1920x1080; cameras=1
+4-flashlight: scenario=Night; lightmaps=2; flash=True; resolution=1920x1080; cameras=1
+Editor frame sampling; includes editor overhead; no baseline or standalone 60 FPS claim. GPU=NVIDIA GeForce RTX 5070 Laptop GPU CPU=AMD Ryzen AI 7 350 w/ Radeon 860M 
+EDITOR 0 night=False flashlight=False: median=9.69ms p95=10.63ms mean=9.81ms
+EDITOR 0 night=True flashlight=True: median=8.63ms p95=9.59ms mean=8.76ms
+EDITOR 1 night=False flashlight=False: median=7.89ms p95=8.78ms mean=8.00ms
+EDITOR 1 night=True flashlight=True: median=7.36ms p95=9.00ms mean=7.53ms
+EDITOR 4 night=False flashlight=False: median=9.36ms p95=10.38ms mean=9.36ms
+EDITOR 4 night=True flashlight=True: median=8.53ms p95=9.41ms mean=8.58ms
+PASS. Normal Game View captures. Not a standalone FPS benchmark.

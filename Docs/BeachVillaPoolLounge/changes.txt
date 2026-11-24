@@ -1,0 +1,14 @@
+North pool lounge only. Existing prefab links, hierarchy, rotation and native scale preserved.
+MOVE PoolLevel/Lounger (3): (-9.7900, 0.0500, 19.8800) -> (-10.0500, 0.0500, 20.4500); original orientation and scale retained
+MOVE PoolLevel/Lounger (2): (-8.3210, 0.0500, 19.8800) -> (-8.3500, 0.0500, 20.4500); original orientation and scale retained
+MOVE LoungeArea/CouchTable: (-9.0479, 0.0500, 20.4788) -> (-9.2000, 0.0500, 20.7000); original orientation and scale retained
+MOVE LoungeArea/GrandSunshade: (-9.0212, 0.0500, 21.1217) -> (-9.2000, 0.0500, 21.7000); original orientation and scale retained
+ADD West - juice beside fruit: Props/Glas; min=(-9.3720, 0.4500, 20.5480); max=(-9.2880, 0.5870, 20.6320); native scale
+MOVE PoolLevel/Lounger (1): (-6.0600, 0.0500, 19.8800) -> (-6.0500, 0.0500, 20.4500); original orientation and scale retained
+MOVE PoolLevel/Lounger: (-4.0600, 0.0500, 19.8800) -> (-4.3500, 0.0500, 20.4500); original orientation and scale retained
+MOVE LoungeArea/CouchTable (1): (-4.8760, 0.0460, 20.4788) -> (-5.2000, 0.0500, 20.7000); original orientation and scale retained
+MOVE LoungeArea/GrandSunshade (1): (-4.8600, 0.0500, 21.1217) -> (-5.2000, 0.0500, 21.7000); original orientation and scale retained
+ADD East - juice beside fruit: Props/Glas; min=(-5.3720, 0.4500, 20.5480); max=(-5.2880, 0.5870, 20.6320); native scale
+MOVE LoungeArea/LoungerB Variant: (-8.7458, 0.0500, 23.9356) -> (-8.7458, 0.0500, 24.9000); original orientation and scale retained
+ADD West - lounge edge planter: Plants/PottedPlantA; min=(-13.8436, 0.0500, 23.9049); max=(-12.2564, 1.4078, 25.4951); native scale
+ADD East - lounge edge planter: Plants/PottedPlantA; min=(-5.2436, 0.0500, 24.3049); max=(-3.6564, 1.4078, 25.8951); native scale

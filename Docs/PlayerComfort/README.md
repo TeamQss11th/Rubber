@@ -1,0 +1,11 @@
+# Player flashlight and stairs
+
+F toggles a camera-mounted realtime spotlight through the existing Player input action map. It starts off, follows the view, and ignores input while paused, loading or without cursor capture. The menu preview disables the flashlight along with other gameplay behaviours. The existing bottom HUD now includes `F Flashlight`; no physical flashlight model or battery mechanic is added.
+
+The beam has an 18 m range, a 55 degree outer/30 degree inner cone, warm neutral color, and soft shadows. URP additional-light data explicitly selects the Medium shadow tier (512 in both current pipeline assets) and local shadow bias (the built-in shadowCustomResolution alone does not control URP's selected shadow tier). There is one additional light, no per-frame object search, and no extra lightmap/APV bake. Actual GPU/FPS cost has not been benchmarked.
+
+Stair movement retains the Rigidbody controller. A bounded downward capsule sweep follows small drops of at most the existing 0.3 m step height, only from grounded/recently grounded states, and rejects loose rigidbodies and steep surfaces. Jump ascent is excluded. Ascending steps can continue during the short ground-contact grace period and cancel downward velocity when lifted onto a tread. Camera compensation now handles both upward and downward steps, capped to 0.4 m so offsets cannot accumulate excessively. No staircase meshes/colliders or movement-speed/jump-height stats were changed.
+
+Editor Play-mode validation in `checks.txt` covers injected F input, pause/resume behavior, five real villa stair routes in both directions, jump ascent and landing, and runtime errors. All ten route traversals passed. While tuning downward contact, the annex descent's peak falling speed improved from 6.25 m/s (first ray-probe candidate) to 0.73 m/s (final capsule-sweep implementation); airborne ticks reduced from 29 to 7. This comparison is between candidates in this task, not a measured comparison with the original controller. `flashlight.png` shows the nighttime beam and updated HUD.
+
+These route tests are not an exhaustive collision audit of every approach angle. Existing missing-script load warnings remain separate from runtime errors. No standalone build or FPS benchmark was run.

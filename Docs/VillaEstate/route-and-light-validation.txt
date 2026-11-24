@@ -1,0 +1,9 @@
+Ground-level extension route grid: 20961 samples, 0.5m spacing, 0.28m capsule radius.
+Start (0,-34). Excludes original villa stairs/upper floor; not a full playthrough.
+Room interior (-24, -15): PASS
+Room interior (-24, -3): PASS
+Room interior (-24, 9): PASS
+Room interior (26, -15): PASS
+Room interior (26, -3): PASS
+Room interior (26, 9): PASS
+969 light-budget samples: max active 8, max local shadows 2, violations 0.

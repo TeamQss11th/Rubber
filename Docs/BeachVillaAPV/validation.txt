@@ -1,0 +1,5 @@
+HasBakedData=True; lightmaps retained=16; scenarios=Default
+interior: center 80x80 mean absolute RGB byte difference APV vs ambient=25.319
+entrance: center 80x80 mean absolute RGB byte difference APV vs ambient=29.858
+poolside: center 80x80 mean absolute RGB byte difference APV vs ambient=37.146
+Temporary spheres/camera/volume removed. Not an FPS benchmark or exhaustive leak test.

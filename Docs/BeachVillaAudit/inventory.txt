@@ -1,0 +1,357 @@
+Scene=Assets/Modern Villa/Scenes/Beach Villa.unity; preview=False; unsaved=False; UTC=2026-09-22T07:47:45.8688684Z
+Objects total=2872; active=2858; active enabled renderers=2351; unique meshes=336; mesh instances=2351; materials=75; textures=170
+Mesh-instance triangle sum=4300770; excludes terrain and visibility/LOD culling; NOT per-frame triangles.
+Renderers shadow-casting=2351; receive-shadows=2351; assigned lightmap index=2147
+Renderers BatchingStatic=2147
+Renderers LightmapStatic=2147
+Renderers OccluderStatic=2147
+Renderers OccludeeStatic=2147
+LODGroups=341; rigidbodies=0; animators=0; particle systems=0; missing scripts=0
+Collider BoxCollider=792; enabled=792; triggers=0
+Collider MeshCollider=828; enabled=828; triggers=0
+Collider TerrainCollider=1; enabled=1; triggers=0
+ROOT Directional Light: active=True; objects=1; renderers=0; center=(0.00, 3.00, 0.00); size=(0.00, 0.00, 0.00)
+ROOT Floor: active=True; objects=133; renderers=132; center=(8.25, -1.36, 15.00); size=(18.51, 4.97, 32.00)
+ROOT BuildingD: active=True; objects=1468; renderers=1166; center=(6.32, 3.75, 12.95); size=(13.56, 5.67, 22.11)
+ROOT Terrain: active=True; objects=1; renderers=0; center=(-57.28, -5.70, -44.00); size=(0.00, 0.00, 0.00)
+ROOT PoolLevel: active=True; objects=676; renderers=624; center=(-2.18, 0.24, 11.52); size=(31.64, 3.17, 40.97)
+ROOT FloorLevelTerrace: active=True; objects=163; renderers=122; center=(5.43, 1.52, 9.51); size=(19.01, 2.84, 29.05)
+ROOT Plants: active=True; objects=21; renderers=15; center=(2.47, 1.64, 10.45); size=(25.03, 7.26, 52.41)
+ROOT FireBox: active=True; objects=3; renderers=2; center=(14.04, 1.14, -0.02); size=(0.60, 0.28, 0.20)
+ROOT PavillonC: active=True; objects=52; renderers=42; center=(15.26, 2.76, 18.91); size=(5.52, 3.55, 16.95)
+ROOT Sunshade: active=True; objects=1; renderers=1; center=(12.30, 0.06, -9.55); size=(4.67, 3.47, 4.35)
+ROOT LoungeArea: active=True; objects=83; renderers=64; center=(-6.18, 1.40, 14.36); size=(14.35, 2.80, 21.68)
+ROOT Front Area: active=True; objects=126; renderers=94; center=(7.36, 1.63, 26.74); size=(13.26, 5.26, 8.99)
+ROOT Cameras: active=True; objects=14; renderers=0; center=(0.00, 0.00, 0.00); size=(0.00, 0.00, 0.00)
+ROOT Foliage: active=True; objects=109; renderers=72; center=(14.01, -1.04, 12.94); size=(3.41, 1.36, 24.93)
+ROOT CarpetA: active=True; objects=1; renderers=1; center=(9.68, 1.01, 19.76); size=(4.00, 0.01, 4.00)
+ROOT CarpetA (1): active=True; objects=1; renderers=1; center=(9.85, 3.81, 8.43); size=(4.00, 0.01, 4.00)
+ROOT CarpetB: active=True; objects=1; renderers=1; center=(3.98, 3.80, 7.48); size=(2.00, 0.02, 2.00)
+ROOT Orange: active=True; objects=5; renderers=4; center=(11.39, 1.72, 11.46); size=(0.16, 0.16, 0.13)
+ROOT Peach: active=True; objects=5; renderers=4; center=(11.38, 1.73, 11.66); size=(0.09, 0.09, 0.07)
+ROOT Apple: active=True; objects=5; renderers=4; center=(11.29, 1.69, 11.59); size=(0.10, 0.10, 0.07)
+ROOT VaseB: active=True; objects=3; renderers=2; center=(-1.80, 0.97, 23.68); size=(1.31, 1.94, 1.21)
+LIGHT Directional Light: active=True; type=Directional; bake=Realtime; intensity=1; range=10; shadows=Soft; resolution=FromQualitySettings; color=RGBA(1.000, 0.957, 0.839, 1.000); bakedOutput=False; mixedOutput=Shadowmask
+LIGHT BuildingD/Level0 Objects/RoofLamp/Spot Light: active=True; type=Spot; bake=Realtime; intensity=3.06; range=5; shadows=None; resolution=FromQualitySettings; color=RGBA(1.000, 1.000, 1.000, 1.000); bakedOutput=False; mixedOutput=Shadowmask
+LIGHT BuildingD/Level0 Objects/RoofLamp (4)/Spot Light: active=True; type=Spot; bake=Realtime; intensity=3.06; range=5; shadows=None; resolution=FromQualitySettings; color=RGBA(1.000, 1.000, 1.000, 1.000); bakedOutput=False; mixedOutput=Shadowmask
+LIGHT BuildingD/Level0 Objects/RoofLamp (1)/Spot Light: active=True; type=Spot; bake=Realtime; intensity=3.06; range=5; shadows=None; resolution=FromQualitySettings; color=RGBA(1.000, 1.000, 1.000, 1.000); bakedOutput=False; mixedOutput=Shadowmask
+LIGHT BuildingD/Level0 Objects/RoofLamp (3)/Spot Light: active=True; type=Spot; bake=Realtime; intensity=3.06; range=5; shadows=None; resolution=FromQualitySettings; color=RGBA(1.000, 1.000, 1.000, 1.000); bakedOutput=False; mixedOutput=Shadowmask
+LIGHT BuildingD/Level0 Objects/RoofLamp (2)/Spot Light: active=True; type=Spot; bake=Realtime; intensity=3.06; range=5; shadows=None; resolution=FromQualitySettings; color=RGBA(1.000, 1.000, 1.000, 1.000); bakedOutput=False; mixedOutput=Shadowmask
+LIGHT BuildingD/Level0 Objects/RoofLamp (5)/Spot Light: active=True; type=Spot; bake=Realtime; intensity=3.06; range=5; shadows=None; resolution=FromQualitySettings; color=RGBA(1.000, 1.000, 1.000, 1.000); bakedOutput=False; mixedOutput=Shadowmask
+LIGHT LoungeArea/FloorLightB on Variant (7)/Point Light: active=True; type=Point; bake=Realtime; intensity=1; range=3; shadows=None; resolution=FromQualitySettings; color=RGBA(1.000, 1.000, 1.000, 1.000); bakedOutput=False; mixedOutput=Shadowmask
+LIGHT LoungeArea/FloorLightB on Variant (9)/Point Light: active=True; type=Point; bake=Realtime; intensity=1; range=3; shadows=None; resolution=FromQualitySettings; color=RGBA(1.000, 1.000, 1.000, 1.000); bakedOutput=False; mixedOutput=Shadowmask
+LIGHT LoungeArea/FloorLightB on Variant (10)/Point Light: active=True; type=Point; bake=Realtime; intensity=1; range=3; shadows=None; resolution=FromQualitySettings; color=RGBA(1.000, 1.000, 1.000, 1.000); bakedOutput=False; mixedOutput=Shadowmask
+LIGHT LoungeArea/FloorLightB on Variant (11)/Point Light: active=True; type=Point; bake=Realtime; intensity=1; range=3; shadows=None; resolution=FromQualitySettings; color=RGBA(1.000, 1.000, 1.000, 1.000); bakedOutput=False; mixedOutput=Shadowmask
+CAMERA Cameras/Main Camera: enabled=True; clip=0.3..1000; occlusion=True; HDR=True; MSAA=True; display=0; target=screen; depth=-1; rect=(x:0.00, y:0.00, width:1.00, height:1.00); mask=-1; clear=Skybox; cameraType=Game; URPdata=False
+CAMERA Cameras/Camera: enabled=False; clip=0.3..1000; occlusion=True; HDR=True; MSAA=True; display=0; target=screen; depth=0; rect=(x:0.00, y:0.00, width:1.00, height:1.00); mask=-1; clear=Skybox; cameraType=Game; URPdata=False
+CAMERA Cameras/Camera (1): enabled=False; clip=0.3..1000; occlusion=True; HDR=True; MSAA=True; display=0; target=screen; depth=0; rect=(x:0.00, y:0.00, width:1.00, height:1.00); mask=-1; clear=Skybox; cameraType=Game; URPdata=False
+CAMERA Cameras/Camera (2): enabled=False; clip=0.3..1000; occlusion=True; HDR=True; MSAA=True; display=0; target=screen; depth=0; rect=(x:0.00, y:0.00, width:1.00, height:1.00); mask=-1; clear=Skybox; cameraType=Game; URPdata=False
+CAMERA Cameras/Camera (3): enabled=False; clip=0.3..1000; occlusion=True; HDR=True; MSAA=True; display=0; target=screen; depth=0; rect=(x:0.00, y:0.00, width:1.00, height:1.00); mask=-1; clear=Skybox; cameraType=Game; URPdata=False
+CAMERA Cameras/Camera (4): enabled=False; clip=0.3..1000; occlusion=True; HDR=True; MSAA=True; display=0; target=screen; depth=0; rect=(x:0.00, y:0.00, width:1.00, height:1.00); mask=-1; clear=Skybox; cameraType=Game; URPdata=False
+CAMERA Cameras/Camera (5): enabled=False; clip=0.3..1000; occlusion=True; HDR=True; MSAA=True; display=0; target=screen; depth=0; rect=(x:0.00, y:0.00, width:1.00, height:1.00); mask=-1; clear=Skybox; cameraType=Game; URPdata=False
+CAMERA Cameras/Camera (6): enabled=False; clip=0.3..1000; occlusion=True; HDR=True; MSAA=True; display=0; target=screen; depth=0; rect=(x:0.00, y:0.00, width:1.00, height:1.00); mask=-1; clear=Skybox; cameraType=Game; URPdata=False
+CAMERA Cameras/Camera (7): enabled=False; clip=0.3..1000; occlusion=True; HDR=True; MSAA=True; display=0; target=screen; depth=0; rect=(x:0.00, y:0.00, width:1.00, height:1.00); mask=-1; clear=Skybox; cameraType=Game; URPdata=False
+CAMERA Cameras/Camera (8): enabled=False; clip=0.3..1000; occlusion=True; HDR=True; MSAA=True; display=0; target=screen; depth=0; rect=(x:0.00, y:0.00, width:1.00, height:1.00); mask=-1; clear=Skybox; cameraType=Game; URPdata=False
+CAMERA Cameras/Camera (9): enabled=False; clip=0.3..1000; occlusion=True; HDR=True; MSAA=True; display=0; target=screen; depth=0; rect=(x:0.00, y:0.00, width:1.00, height:1.00); mask=-1; clear=Skybox; cameraType=Game; URPdata=False
+CAMERA Cameras/Camera (10): enabled=False; clip=0.3..1000; occlusion=True; HDR=True; MSAA=True; display=0; target=screen; depth=0; rect=(x:0.00, y:0.00, width:1.00, height:1.00); mask=-1; clear=Skybox; cameraType=Game; URPdata=False
+CAMERA Cameras/Camera (11): enabled=False; clip=0.3..1000; occlusion=True; HDR=True; MSAA=True; display=0; target=screen; depth=0; rect=(x:0.00, y:0.00, width:1.00, height:1.00); mask=-1; clear=Skybox; cameraType=Game; URPdata=False
+LOD levels=3; enabled=True; fade=None; thresholds=0.250,0.125,0.010: groups=107
+LOD levels=2; enabled=True; fade=None; thresholds=0.250,0.010: groups=116
+LOD levels=3; enabled=True; fade=None; thresholds=0.233,0.009,0.010: groups=18
+LOD levels=2; enabled=True; fade=None; thresholds=0.138,0.004: groups=18
+LOD levels=3; enabled=True; fade=None; thresholds=0.250,0.059,0.010: groups=2
+LOD levels=4; enabled=True; fade=None; thresholds=0.250,0.125,0.063,0.010: groups=63
+LOD levels=4; enabled=True; fade=None; thresholds=0.493,0.125,0.063,0.010: groups=2
+LOD levels=2; enabled=True; fade=None; thresholds=0.600,0.025: groups=9
+LOD levels=2; enabled=True; fade=None; thresholds=0.600,0.022: groups=6
+MESHCOLLIDER convex=0; nonconvex=828; triangles=1506273
+TEXTURE SUMMARY editor runtime bytes=1283326604; >=4k=0; 2k=115; 1k=53
+TERRAIN Terrain: size=(200.00, 600.00, 200.00); heightmap=513; pixelError=5; instanced=False; detailDistance=80; treeDistance=5000; trees=0; detailPrototypes=0
+SCRIPT UnityEngine.Rendering.Universal.UniversalAdditionalLightData: 11
+MATERIAL Assets/Modern Villa/Materials/mv_Floor.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_OCCLUSIONMAP,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_Wall 01.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_window_glass.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=3000; keywords=_SURFACE_TYPE_TRANSPARENT,_ALPHAPREMULTIPLY_ON,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_window frame.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_railing.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_blue_milky_glassA.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=3000; keywords=_SURFACE_TYPE_TRANSPARENT,_ALPHAPREMULTIPLY_ON,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_Emitting White Light.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_EMISSION,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_pillarB.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_pillarA.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP,_SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_Furniture 05.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MATERIAL Assets/Modern Villa/Materials/mv_Furniture 04.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MATERIAL Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=
+MATERIAL Assets/Modern Villa/Materials/mv_PlantA.mat: shader=Universal Render Pipeline/Nature/SpeedTree8_PBRLit; supported=True; instancing=False; queue=2450; keywords=_WINDQUALITY_NONE,BACKFACE_NORMAL_MODE_MIRROR
+MATERIAL Assets/Modern Villa/Materials/mv_tableware.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_porcellain.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_pool_props.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_props1.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_Glass.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=3000; keywords=_SURFACE_TYPE_TRANSPARENT,_ALPHAPREMULTIPLY_ON,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_paintings.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_CouchTableD.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MATERIAL Assets/Modern Villa/Materials/mv_Dining_furniture.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_CouchTable.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MATERIAL Assets/Modern Villa/Materials/mv_couches.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_fabric 01.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_OCCLUSIONMAP,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_plain_white.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_atlas.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_METALLICSPECGLOSSMAP,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_Orangejuice.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_Fruits.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=True; queue=2000; keywords=_NORMALMAP,_SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A,_OCCLUSIONMAP
+MATERIAL Assets/Modern Villa/Materials/mv_CouchD 03.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MATERIAL Assets/Modern Villa/Materials/mv_CouchTableE.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MATERIAL Assets/Modern Villa/Materials/mv_CoffeePot.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MATERIAL Assets/Modern Villa/Materials/mv_CouchC 02.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MATERIAL Assets/Modern Villa/Materials/mv_CouchC 01.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MATERIAL Assets/Modern Villa/Materials/mv_CarpetA.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MATERIAL Assets/Modern Villa/Materials/mv_FloorDecorationA.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MATERIAL Assets/Modern Villa/Materials/mv_FloorDecorationB.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MATERIAL Assets/Modern Villa/Materials/mv_Furniture 02.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=
+MATERIAL Assets/Modern Villa/Materials/mv_fabric 02.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_silver.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=
+MATERIAL Assets/Modern Villa/Materials/mv_towel.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_OCCLUSIONMAP
+MATERIAL Assets/Modern Villa/Materials/mv_LanternB.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MATERIAL Assets/Modern Villa/Materials/mv_LoungeChair.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MATERIAL Assets/Modern Villa/Materials/mv_Jacuzzi.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MATERIAL Assets/Modern Villa/Materials/mv_Planter.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP,_OCCLUSIONMAP
+MATERIAL Assets/Modern Villa/Materials/mv_Palm.mat: shader=Universal Render Pipeline/Nature/SpeedTree8_PBRLit; supported=True; instancing=False; queue=2450; keywords=_WINDQUALITY_NONE,BACKFACE_NORMAL_MODE_MIRROR
+MATERIAL Assets/Modern Villa/Materials/mv_PottedPlantB.mat: shader=Universal Render Pipeline/Nature/SpeedTree8_PBRLit; supported=True; instancing=False; queue=2450; keywords=_WINDQUALITY_NONE,BACKFACE_NORMAL_MODE_MIRROR
+MATERIAL Assets/Modern Villa/Materials/mv_PottedPlantC.mat: shader=Universal Render Pipeline/Nature/SpeedTree8_PBRLit; supported=True; instancing=False; queue=2450; keywords=_WINDQUALITY_NONE,BACKFACE_NORMAL_MODE_MIRROR
+MATERIAL Assets/Modern Villa/Materials/mv_PottedPlantA.mat: shader=Universal Render Pipeline/Nature/SpeedTree8_PBRLit; supported=True; instancing=False; queue=2450; keywords=_WINDQUALITY_NONE,BACKFACE_NORMAL_MODE_MIRROR
+MATERIAL Assets/Modern Villa/Materials/mv_Books.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MATERIAL Assets/Modern Villa/Materials/mv_Basketball.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A,_SPECGLOSSMAP
+MATERIAL Assets/Modern Villa/Materials/mv_Furniture 03.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MATERIAL Assets/Modern Villa/Materials/mv_pool.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_Terrace.mat: shader=Universal Render Pipeline/Autodesk Interactive/AutodeskInteractive; supported=True; instancing=False; queue=2000; keywords=
+MATERIAL Assets/Modern Villa/Materials/mv_Furniture 01.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP,_OCCLUSIONMAP
+MATERIAL Assets/Modern Villa/Materials/mv_LanternC.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MATERIAL Assets/Modern Villa/Materials/mv_fabric 03.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_CouchTableC.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+MATERIAL Assets/Modern Villa/Materials/mv_GlassLabeled.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=3000; keywords=_SURFACE_TYPE_TRANSPARENT
+MATERIAL Assets/Modern Villa/Materials/mv_CouchC 03.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MATERIAL Assets/Modern Villa/Materials/mv_stoneboxes.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP,_OCCLUSIONMAP,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_FlowerA.mat: shader=Universal Render Pipeline/Nature/SpeedTree8_PBRLit; supported=True; instancing=False; queue=2450; keywords=_WINDQUALITY_NONE,BACKFACE_NORMAL_MODE_MIRROR
+MATERIAL Assets/Modern Villa/Materials/mv_FlowerB.mat: shader=Universal Render Pipeline/Nature/SpeedTree8_PBRLit; supported=True; instancing=False; queue=2450; keywords=_WINDQUALITY_NONE,BACKFACE_NORMAL_MODE_MIRROR
+MATERIAL Assets/Modern Villa/Materials/mv_FlowerC.mat: shader=Universal Render Pipeline/Nature/SpeedTree8_PBRLit; supported=True; instancing=False; queue=2450; keywords=_WINDQUALITY_NONE,BACKFACE_NORMAL_MODE_MIRROR
+MATERIAL Assets/Modern Villa/Materials/mv_FlowerD.mat: shader=Universal Render Pipeline/Nature/SpeedTree8_PBRLit; supported=True; instancing=False; queue=2450; keywords=_WINDQUALITY_NONE,BACKFACE_NORMAL_MODE_MIRROR
+MATERIAL Assets/Modern Villa/Materials/mv_Lounger.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_FloorDecorationC.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MATERIAL Assets/Modern Villa/Materials/mv_plants.mat: shader=Universal Render Pipeline/Nature/SpeedTree8; supported=True; instancing=False; queue=2450; keywords=_WINDQUALITY_NONE
+MATERIAL Assets/Modern Villa/Materials/mv_fern.mat: shader=Universal Render Pipeline/Nature/SpeedTree8_PBRLit; supported=True; instancing=False; queue=2450; keywords=_WINDQUALITY_NONE,BACKFACE_NORMAL_MODE_MIRROR
+MATERIAL Assets/Modern Villa/Materials/mv_Barbecue.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP,_SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A,_OCCLUSIONMAP
+MATERIAL Assets/Modern Villa/Materials/mv_pavillon.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_pavillon_furniture.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_OilVase.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP,_OCCLUSIONMAP
+MATERIAL Assets/Modern Villa/Materials/mv_sunshades.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP,_ENVIRONMENTREFLECTIONS_OFF
+MATERIAL Assets/Modern Villa/Materials/mv_PlasticB.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=
+MATERIAL Assets/Modern Villa/Materials/mv_CarpetB.mat: shader=Universal Render Pipeline/Lit; supported=True; instancing=False; queue=2000; keywords=_NORMALMAP,_METALLICSPECGLOSSMAP
+MESH mv_CurtainD_LOD0: instances=20; trianglesEach=22044; total=440880; path=Assets/Modern Villa/Meshes/props/mv_CurtainD.fbx
+MESH mv_CurtainD_LOD1: instances=20; trianglesEach=11022; total=220440; path=Assets/Modern Villa/Meshes/props/mv_CurtainD.fbx
+MESH SoupBowl_LOD0: instances=18; trianglesEach=9472; total=170496; path=Assets/Modern Villa/Meshes/props/mv_SoupBowl.fbx
+MESH LargeAntipastiPlate_LOD0: instances=18; trianglesEach=8832; total=158976; path=Assets/Modern Villa/Meshes/props/mv_LargeAntipastiPlate.fbx
+MESH DiningChairB_LOD0: instances=18; trianglesEach=8240; total=148320; path=Assets/Modern Villa/Meshes/furniture/mv_DiningChair.fbx
+MESH Bowl 2_LOD0: instances=8; trianglesEach=17920; total=143360; path=Assets/Modern Villa/Meshes/props/mv_BowlB.fbx
+MESH mv_CurtainD_LOD2: instances=20; trianglesEach=5510; total=110200; path=Assets/Modern Villa/Meshes/props/mv_CurtainD.fbx
+MESH SmallPlate_LOD0: instances=19; trianglesEach=4864; total=92416; path=Assets/Modern Villa/Meshes/props/mv_SmallPlate.fbx
+MESH mv_CurtainE_LOD0: instances=4; trianglesEach=22036; total=88144; path=Assets/Modern Villa/Meshes/props/mv_CurtainE.fbx
+MESH FloorDecorationB_LOD0: instances=3; trianglesEach=26624; total=79872; path=Assets/Modern Villa/Meshes/props/mv_FloorDecorationB.fbx
+MESH DiningChairB_LOD1: instances=18; trianglesEach=4120; total=74160; path=Assets/Modern Villa/Meshes/furniture/mv_DiningChair.fbx
+MESH JugB_LOD0: instances=2; trianglesEach=35480; total=70960; path=Assets/Modern Villa/Meshes/props/mv_JugB.fbx
+MESH Basketball_LOD0: instances=3; trianglesEach=22720; total=68160; path=Assets/Modern Villa/Meshes/props/mv_Basketball.fbx
+MESH VaseB_LOD0: instances=9; trianglesEach=6977; total=62793; path=Assets/Modern Villa/Meshes/plants/mv_PottedPlantD.fbx
+MESH Sofa_LOD0: instances=4; trianglesEach=15646; total=62584; path=Assets/Modern Villa/Meshes/furniture/mv_Sofa.fbx
+MESH CouchD_LOD0: instances=2; trianglesEach=29870; total=59740; path=Assets/Modern Villa/Meshes/furniture/mv_CouchD.fbx
+MESH LongSpoon_LOD0: instances=18; trianglesEach=3188; total=57384; path=Assets/Modern Villa/Meshes/props/mv_LongSpoon.fbx
+MESH OilVaseB_LOD0: instances=2; trianglesEach=28042; total=56084; path=Assets/Modern Villa/Meshes/props/mv_OilVaseB.fbx
+MESH mv_CurtainD_LOD3: instances=20; trianglesEach=2756; total=55120; path=Assets/Modern Villa/Meshes/props/mv_CurtainD.fbx
+MESH FloorDecorationA_LOD0: instances=2; trianglesEach=26624; total=53248; path=Assets/Modern Villa/Meshes/props/mv_FloorDecorationA.fbx
+MESH PottedPlantB_LOD0: instances=4; trianglesEach=12645; total=50580; path=Assets/Modern Villa/Meshes/plants/mv_PottedPlantB.fbx
+MESH DecorativeBowl_LOD0: instances=3; trianglesEach=16844; total=50532; path=Assets/Modern Villa/Meshes/props/mv_DecorativeBowl.fbx
+MESH CoffeeCupC_LOD0: instances=5; trianglesEach=9466; total=47330; path=Assets/Modern Villa/Meshes/props/mv_CoffeeCup.fbx
+MESH mv_CurtainE_LOD1: instances=4; trianglesEach=11018; total=44072; path=Assets/Modern Villa/Meshes/props/mv_CurtainE.fbx
+MESH SoupBowl_LOD1: instances=18; trianglesEach=2368; total=42624; path=Assets/Modern Villa/Meshes/props/mv_SoupBowl.fbx
+TEXTURE Assets/Modern Villa/Textures/mv_floor1_b.png: 2048x2048; runtimeBytes=5614928; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_floor1_n.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_floor1_ao.png: 2048x2048; runtimeBytes=5614928; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_floor1_s.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_wall_1_b.png: 2048x2048; runtimeBytes=5614928; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_wall_1_n.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_PillarB_BaseColor.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_PillarB_Normal.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_PillarB_MetallicSmoothness.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_furniture5_b.png: 2048x2048; runtimeBytes=5615168; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_furniture5_n.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_furniture5_m.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_furniture4_b.png: 2048x2048; runtimeBytes=5615168; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_furniture4_n.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_furniture4_m.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_PlantA_Diffuse.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_PlantA_Normal.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_PlantA_MetallicSmoothness.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_tableware_b.png: 2048x2048; runtimeBytes=5614928; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_tableware_n.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_Props1_b.png: 2048x2048; runtimeBytes=5614928; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_Props1_n.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_Props1_m.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_paintings_b.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_dining_furniture_b.png: 2048x2048; runtimeBytes=5614928; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_dining_furniture_n.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_dining_furniture_m.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CouchTable_b.png: 2048x2048; runtimeBytes=5614928; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CouchTable_n.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CouchTable_m.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_couch_b.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_couch_n.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_couch_s.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_fabric_01_ b.png: 2048x2048; runtimeBytes=5614928; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_fabric_01_n.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_fabric_01_ao.png: 2048x2048; runtimeBytes=5614928; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CouchD_Alt3_BaseColor.png: 2048x2048; runtimeBytes=5615168; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CouchD_Normal.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CouchD_MetallicSmoothness.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CouchTableF_BaseColor.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CouchTableF_Normal.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CouchTableF_MetallicSmoothness.png: 2048x2048; runtimeBytes=11229466; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CouchC_Alt3_BaseColor.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CouchC_Normal.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CouchC_MetallicSmoothness.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CouchC_Alt2_BaseColor.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CarpetA_BaseColor.png: 2048x2048; runtimeBytes=5615168; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CarpetA_Normal.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CarpetA_MetallicSmoothness.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_furniture2_b.png: 2048x2048; runtimeBytes=5615168; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_fabric_02_b.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_fabric_02_n.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_towel_b.png: 2048x2048; runtimeBytes=5615168; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_towel_n.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_towel_ao.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_jacuzzi_BaseColor.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_Jacuzzi_Normal.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_jacuzzi_MetallicSmoothness.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_Planter_AmbientOcclusion.png: 2048x2048; runtimeBytes=5615168; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_Palm_Diffuse.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_Palm_Normal.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_Palm_Smoothness.png: 2048x2048; runtimeBytes=5615168; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_books_BaseColor.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_books_Normal.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_books_MetallicSmoothness.png: 2048x2048; runtimeBytes=5615168; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_furniture3_b.png: 2048x2048; runtimeBytes=5615168; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_furniture3_n.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_furniture3_m.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_pool_b.png: 2048x2048; runtimeBytes=5614928; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_pool_n.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_pool_s.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_TerraceFloor_Diffuse.png: 2048x2048; runtimeBytes=5615168; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_TerraceFloor_normal.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_furniture1_b.png: 2048x2048; runtimeBytes=5615168; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_furniture1_n.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_furniture1_m.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_furniture1_ao.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_fabric_03_b.png: 2048x2048; runtimeBytes=5614928; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_fabric_03_n.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_fabric_03_m.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_glass_a.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CouchC_Alt1_BaseColor.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_stoneboxes_b.png: 2048x2048; runtimeBytes=5614928; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_stoneboxes_n.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_stoneboxes_m.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_stoneboxes_ao.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_FlowersA_Diffuse.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_FlowersA_Normal.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_FlowersA_MetallicSmoothness.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_FlowersB_Diffuse.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_FlowersC_Diffuse.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_FlowersC_Normal.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_FlowersC_MetallicSmoothness.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_FlowersD_Diffuse.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_FlowersD_Normal.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_FlowersD_MetallicSmoothness.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_lounger_b.png: 2048x2048; runtimeBytes=5614928; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_lounger_n.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_lounger_s.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_plants_b.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_plants_n.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_fern_b.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_pavillon_furniture_b.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_pavillon_furniture_n.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_pavillon_furniture_s.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_OilVase_b.png: 2048x2048; runtimeBytes=5615168; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_OilVase_n.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_OilVase_m.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_OilVase_ao.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_sunshade_b.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_sunshade_n.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_sunshade_s.png: 2048x2048; runtimeBytes=11229192; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CarpetB_BaseColor.png: 2048x2048; runtimeBytes=5615168; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CarpetB_Normal.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CarpetB_MetallicSmoothness.png: 2048x2048; runtimeBytes=11229432; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_pillarA_BaseColor.png: 1024x1024; runtimeBytes=1420864; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_pillarA_Normal.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_pillarA_MetallicSmoothness.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CouchTableD_BaseColor.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CouchTableD_Normal.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CouchTableD_MetallicSmoothness.png: 1024x1024; runtimeBytes=2840858; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_Fruits_Diffuse.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_Fruits_Normal.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_Fruits_Ambient_Occlusion.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CoffeePot_BaseColor.png: 1024x1024; runtimeBytes=1420864; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CoffeePot_Normal.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CoffeePot_MetallicSmoothness.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_FloorDecorationA_BaseColor.png: 1024x1024; runtimeBytes=1420864; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_FloorDecorationA_Normal.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_FloorDecorationA_MetallicSmoothness.png: 1024x1024; runtimeBytes=2840863; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_FloorDecorationB_BaseColor.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_FloorDecorationB_Normal.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_FloorDecorationB_MetallicSmoothness.png: 1024x1024; runtimeBytes=2840863; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_LanternB_BaseColor.png: 1024x1024; runtimeBytes=1420864; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_LanternB_Normal.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_LanternB_MetallicSmoothness.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_LoungeChair_BaseColor.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_LoungeChair_Normal.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_LoungeChair_MetallicSmoothness.png: 1024x1024; runtimeBytes=2840858; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_Planter_BaseColor.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_Planter_Normal.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_Planter_MetallicSmoothness.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_PottedPlantB_BaseColor.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_PottedPlantB_Normal.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_PottedPlantB_MetallicSmoothness.png: 1024x1024; runtimeBytes=2840859; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_PottedPlantC_BaseColor.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_PottedPlantC_Normal.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_PottedPlantC_MetallicSmoothness.png: 1024x1024; runtimeBytes=2840859; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_PottedPlantA_BaseColor.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_PottedPlantA_Normal.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_PottedPlantA_MetallicSmoothness.png: 1024x1024; runtimeBytes=2840859; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_Basketball_Diffuse.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_Basketball_Normal.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_LanternC_BaseColor.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_LanternC_Normal.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_LanternC_MetallicSmoothness.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CouchTableC_BaseColor.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_CouchTableC_Normal.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_FloorDecorationC_BaseColor.png: 1024x1024; runtimeBytes=1420864; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_FloorDecorationC_Normal.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_FloorDecorationC_MetallicSmoothness.png: 1024x1024; runtimeBytes=2840863; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_Barbecue_BaseColor.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_Barbecue_Normal.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_Barbecue_MetallicSmoothness.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_Barbecue_AmbientOcclusion.png: 1024x1024; runtimeBytes=2840824; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_pavillon_b.png: 1024x1024; runtimeBytes=2840584; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_pavillon_n.png: 1024x1024; runtimeBytes=2840584; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_pavillon_m.png: 1024x1024; runtimeBytes=2840584; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_atlas_b.png: 128x128; runtimeBytes=27984; mipmaps=True; streaming=False; readable=False; compression=Compressed
+TEXTURE Assets/Modern Villa/Textures/mv_atlas_m.png: 128x128; runtimeBytes=47112; mipmaps=True; streaming=False; readable=False; compression=Compressed
+LOADED LIGHTMAPS=16; mode=Single, Dual; lightProbeCount=0; pipeline=PC_RPAsset; quality=PC
+LIGHTMAP color=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-0_comp_light.exr; directional=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-0_comp_dir.png; shadowMask=; size=1024x1024
+LIGHTMAP color=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-1_comp_light.exr; directional=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-1_comp_dir.png; shadowMask=; size=1024x1024
+LIGHTMAP color=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-2_comp_light.exr; directional=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-2_comp_dir.png; shadowMask=; size=1024x1024
+LIGHTMAP color=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-3_comp_light.exr; directional=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-3_comp_dir.png; shadowMask=; size=1024x1024
+LIGHTMAP color=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-4_comp_light.exr; directional=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-4_comp_dir.png; shadowMask=; size=1024x1024
+LIGHTMAP color=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-5_comp_light.exr; directional=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-5_comp_dir.png; shadowMask=; size=1024x1024
+LIGHTMAP color=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-6_comp_light.exr; directional=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-6_comp_dir.png; shadowMask=; size=1024x1024
+LIGHTMAP color=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-7_comp_light.exr; directional=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-7_comp_dir.png; shadowMask=; size=1024x1024
+LIGHTMAP color=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-8_comp_light.exr; directional=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-8_comp_dir.png; shadowMask=; size=1024x1024
+LIGHTMAP color=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-9_comp_light.exr; directional=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-9_comp_dir.png; shadowMask=; size=1024x1024
+LIGHTMAP color=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-10_comp_light.exr; directional=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-10_comp_dir.png; shadowMask=; size=1024x1024
+LIGHTMAP color=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-11_comp_light.exr; directional=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-11_comp_dir.png; shadowMask=; size=1024x1024
+LIGHTMAP color=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-12_comp_light.exr; directional=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-12_comp_dir.png; shadowMask=; size=1024x1024
+LIGHTMAP color=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-13_comp_light.exr; directional=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-13_comp_dir.png; shadowMask=; size=1024x1024
+LIGHTMAP color=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-14_comp_light.exr; directional=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-14_comp_dir.png; shadowMask=; size=1024x1024
+LIGHTMAP color=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-15_comp_light.exr; directional=Assets/Modern Villa/Scenes/Beach Villa/Lightmap-15_comp_dir.png; shadowMask=; size=512x512

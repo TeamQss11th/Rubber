@@ -1,0 +1,2 @@
+Night=True; resolution=2560x1440; lightmaps=0; directional enabled=0; local lights enabled=10; reflection=0
+Normal Game View capture; no Camera.Render. Not an FPS benchmark.

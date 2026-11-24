@@ -1,0 +1,15 @@
+Runtime checks 2026-09-28T15:51:21.7723954Z
+GPU=NVIDIA GeForce RTX 5070 Laptop GPU Resolution=2560x1440 APV blending=True
+Blend buffers reported bytes=71398272
+hour=7 blend=Morning → Default (0 %) APV=Morning factor=0.000 maps=2 sun=0.9000
+hour=12 blend=Default → Default (0 %) APV=Default factor=0.000 maps=2 sun=1.2000
+hour=16.5 blend=Default → Sunset (50 %) APV=Default factor=0.500 maps=2 sun=0.9250
+hour=18 blend=Sunset → Night (0 %) APV=Sunset factor=0.000 maps=2 sun=0.6500
+hour=19.5 blend=Sunset → Night (50 %) APV=Sunset factor=0.500 maps=2 sun=0.3250
+hour=0 blend=Night → Night (0 %) APV=Night factor=0.000 maps=2 sun=0.0000
+GPU midpoint max RGB error=0.0001220703 (half precision and sampling)
+Editor running=False: median=12.12ms p95=14.27ms lightmap updates=0
+Editor running=True: median=11.91ms p95=13.80ms lightmap updates=20
+Midnight wrap hour=0.008023818
+Runtime errors=0
+No standalone FPS guarantee. Legacy door, jump, flashlight components retained.

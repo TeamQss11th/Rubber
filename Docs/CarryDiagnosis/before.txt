@@ -1,0 +1,7 @@
+Initial interpolation=Interpolate collision=ContinuousDynamic
+Pickup=True
+Actual held interpolation=Interpolate
+Interpolate: max anchor local position drift=0.748408 m; rotation drift=16.8730 deg
+None: max anchor local position drift=0.000000 m; rotation drift=0.0000 deg
+Drop=True
+Released interpolation=None

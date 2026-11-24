@@ -1,0 +1,36 @@
+Reachable samples from pool return=15180; grid=.5m; capsule=height1.8 radius.28; max sampled step=.31; excludes pool water and small-decor player layer.
+HIDE 1 Outdoor dining chair: duck=(-28.88, 0.64, 4.15); approach=(-29.50, 0.21, 3.50); horizontalReach=0.90; within2m=True; clearSphere=True
+HIDE 2 Barbecue side: duck=(-32.00, 0.25, 7.30); approach=(-32.00, 0.10, 7.50); horizontalReach=0.20; within2m=True; clearSphere=True
+HIDE 3 Garden conversation sofa side: duck=(-26.50, 0.19, 11.65); approach=(-26.50, -0.08, 11.50); horizontalReach=0.15; within2m=True; clearSphere=True
+HIDE 4 Garden conversation table foot: duck=(-28.10, 0.60, 12.64); approach=(-28.00, -0.08, 12.00); horizontalReach=0.65; within2m=True; clearSphere=True
+HIDE 5 Guest terrace sofa side: duck=(27.65, 0.19, 31.50); approach=(27.50, 0.11, 31.50); horizontalReach=0.15; within2m=True; clearSphere=True
+HIDE 6 Guest terrace table foot: duck=(28.64, 0.60, 33.10); approach=(28.00, -0.08, 33.00); horizontalReach=0.65; within2m=True; clearSphere=True
+HIDE 7 Beach sunset lounge sofa side: duck=(7.35, 0.19, -14.50); approach=(7.50, 0.10, -14.50); horizontalReach=0.15; within2m=True; clearSphere=True
+HIDE 8 Beach sunset lounge table foot: duck=(6.42, 0.60, -16.00); approach=(7.00, 0.10, -16.00); horizontalReach=0.58; within2m=True; clearSphere=True
+HIDE 9 Beach reading lounge sofa side: duck=(-6.65, 0.19, -14.50); approach=(-6.50, 0.10, -14.50); horizontalReach=0.15; within2m=True; clearSphere=True
+HIDE 10 Beach reading lounge table foot: duck=(-7.58, 0.60, -16.00); approach=(-7.00, 0.10, -16.00); horizontalReach=0.58; within2m=True; clearSphere=True
+HIDE 11 Spa lounger towel -32: duck=(-31.94, 1.00, 31.40); approach=(-33.00, 0.10, 31.50); horizontalReach=1.06; within2m=True; clearSphere=True
+HIDE 12 Spa lounger towel -24: duck=(-23.94, 1.00, 31.40); approach=(-25.00, 0.10, 31.50); horizontalReach=1.06; within2m=True; clearSphere=True
+HIDE 13 Guest sitting room sofa side: duck=(31.35, 0.19, 14.50); approach=(31.00, 0.10, 13.50); horizontalReach=1.06; within2m=True; clearSphere=True
+HIDE 14 Guest sitting room table foot: duck=(30.42, 0.60, 13.00); approach=(31.00, 0.10, 13.00); horizontalReach=0.58; within2m=True; clearSphere=True
+HIDE 15 Guest tea books: duck=(28.40, 0.95, 18.30); approach=(29.00, 0.10, 18.50); horizontalReach=0.63; within2m=True; clearSphere=True
+HIDE 16 Planter pocket 15: duck=(-32.38, 0.87, 12.00); approach=(-32.50, -0.08, 11.00); horizontalReach=1.01; within2m=True; clearSphere=True
+HIDE 17 Planter pocket 16: duck=(-32.38, 0.87, 34.00); approach=(-32.50, -0.08, 33.00); horizontalReach=1.01; within2m=True; clearSphere=True
+HIDE 18 Planter pocket 17: duck=(-22.38, 0.87, -3.00); approach=(-22.50, -0.08, -4.00); horizontalReach=1.01; within2m=True; clearSphere=True
+HIDE 19 Planter pocket 18: duck=(26.62, 0.87, 2.00); approach=(26.50, -0.08, 1.00); horizontalReach=1.01; within2m=True; clearSphere=True
+HIDE 20 Planter pocket 19: duck=(36.62, 0.87, 33.00); approach=(36.50, -0.08, 32.00); horizontalReach=1.01; within2m=True; clearSphere=True
+HIDE 21 Planter pocket 20: duck=(-5.38, 0.87, 40.00); approach=(-5.50, 0.10, 39.00); horizontalReach=1.01; within2m=True; clearSphere=True
+HIDE 22 Planter pocket 21: duck=(16.62, 0.87, 40.00); approach=(16.50, -0.08, 39.00); horizontalReach=1.01; within2m=True; clearSphere=True
+HIDE 23 Planter pocket 22: duck=(-10.38, 0.87, -19.00); approach=(-10.50, 0.10, -20.00); horizontalReach=1.01; within2m=True; clearSphere=True
+HIDE 24 Planter pocket 23: duck=(13.62, 0.87, -19.00); approach=(13.50, -0.08, -20.00); horizontalReach=1.01; within2m=True; clearSphere=True
+CHECKPOINT 1 F1 / Pool terrace feet=(-4.500, 0.050, -6.500)
+CHECKPOINT 2 F2 / Entrance feet=(5.000, 1.050, 0.000)
+CHECKPOINT 3 F3 / Interior feet=(5.000, 1.060, 11.000)
+CHECKPOINT 4 F4 / Rear interior feet=(0.500, 1.050, 17.500)
+CHECKPOINT 5 F5 / Upper floor feet=(6.000, 3.850, 13.000)
+CHECKPOINT 6 F6 / Upper front feet=(4.500, 3.850, 2.500)
+CHECKPOINT 7 F7 | West dining garden feet=(-20.000, 0.105, 3.000)
+CHECKPOINT 8 F8 | Spa courtyard feet=(-20.000, 0.105, 25.000)
+CHECKPOINT 9 F9 | Guest wing feet=(21.000, 0.105, 18.000)
+CHECKPOINT 10 F10 | Arrival garden feet=(5.000, 0.105, 39.000)
+CHECKPOINT 11 F11 | Beach lounge feet=(0.000, 0.105, -12.000)
